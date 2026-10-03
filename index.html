@@ -85,7 +85,10 @@
   .tag { color: var(--accent); background: var(--accent-soft); border-radius: 999px; padding: 4px 10px; font-size: 13px; font-weight: 700; }
   .tool-card h3 { margin: 17px 0 5px; font-size: 19px; }
   .tool-card p { margin: 0; color: var(--muted); font-size: 15px; }
+  .tool-card .source { margin-top: 12px; font-size: 12px; overflow-wrap: anywhere; }
+  .source a { color: inherit; text-underline-offset: 2px; }
   .tool-action { margin-top: auto; padding-top: 18px; display: flex; align-items: center; justify-content: space-between; color: var(--accent); font-size: 14px; font-weight: 700; }
+  .tool-action a { color: inherit; text-underline-offset: 3px; }
   .tool-action span:last-child { font-size: 20px; transition: transform .18s ease; }
   .tool-card:hover .tool-action span:last-child { transform: translateX(3px); }
   .coming { margin: 20px 0 0; color: var(--muted); font-size: 14px; }
@@ -108,7 +111,7 @@
   <section aria-labelledby="tools-title">
     <div class="section-head">
       <h2 id="tools-title">全部工具</h2>
-      <span class="count">3 个工具</span>
+      <span class="count">4 个工具</span>
     </div>
     <div class="tool-grid">
       <a class="tool-card" href="./salary-calculator.html">
@@ -138,6 +141,16 @@
         <p>100 道题逐题讲解，配合 17 张题型示意图，读懂直觉、步骤、易错点与复杂度。</p>
         <div class="tool-action"><span>查看题解思路</span><span aria-hidden="true">→</span></div>
       </a>
+      <article class="tool-card">
+        <div class="tool-top">
+          <div class="tool-icon" aria-hidden="true">书</div>
+          <span class="tag">生活指南 · PDF</span>
+        </div>
+        <h3>高性价比人生指南</h3>
+        <p>34 节、650 条生活建议，含成本、收益、证据等级及文献来源。490 页，约 16.3 MB。</p>
+        <p class="source">原书：<a href="https://github.com/eternity4719/HowToLiveBetter" target="_blank" rel="noopener">eternity4719/HowToLiveBetter</a>，正文采用 <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener">CC BY 4.0</a>。<br>阅读版：<a href="https://github.com/cdyforever/how-to-live-better" target="_blank" rel="noopener">cdyforever/how-to-live-better</a>。<br>正文版本：2026-10-02（<a href="https://github.com/eternity4719/HowToLiveBetter/tree/fcc93eb9a4bdc26e8a4e4c94bdaae0a89265927b" target="_blank" rel="noopener">fcc93eb</a>）。本站于 2026-10-03 排版导出 PDF，正文未改写；最新内容请查看原书。</p>
+        <div class="tool-action"><a href="./how-to-live-better.pdf" target="_blank" rel="noopener">阅读 PDF ↗</a><a href="./how-to-live-better.pdf" download="高性价比人生指南.pdf">下载 PDF ↓</a></div>
+      </article>
     </div>
   </section>
 </main>
