@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Hot 100 在线编程练习：Python、JavaScript、C++、Java、Go 编辑、运行与本站用例判题，自动保存本地草稿。">
+  <title>Hot 100 编码练习 · 智能工具小站</title>
+  <link rel="stylesheet" href="./vendor/codemirror.css">
+  <link rel="stylesheet" href="./hot100-editor.css">
+  <script defer src="./vendor/codemirror.js"></script>
+  <script defer src="./hot100-runner.js"></script>
+  <script defer src="./hot100-editor.js"></script>
+</head>
+<body>
+  <a class="skip" href="#code-panel">跳到代码编辑器</a>
+  <header class="topbar">
+    <a class="brand" href="./index.html">智能工具小站 <span>/ HOT 100</span></a>
+    <a href="./hot100.html" id="back-link">← 思路图解</a>
+  </header>
+  <main>
+    <div class="page-heading"><div><p class="eyebrow">从理解到实现</p><h1>把思路写成代码<span class="badge">100 道练习</span></h1></div><p>独立实现，运行用例，再回看推导。</p></div>
+    <p id="notice" class="notice" role="status" hidden></p>
+    <div class="workspace" id="workspace" aria-busy="true">
+      <section class="question-panel panel" aria-label="题目与输入输出">
+        <div class="question-navigation">
+          <label for="question-search">查找题目</label><input id="question-search" type="search" placeholder="题号、题名或题型" autocomplete="off" disabled>
+          <label class="sr-only" for="question-select">选择题目</label><select id="question-select" disabled><option>正在加载题目…</option></select>
+          <div class="question-progress"><span id="position">100 题 · 17 类题型</span><div><button id="previous" disabled aria-label="上一题">←</button><button id="next" disabled aria-label="下一题">→</button></div></div>
+        </div>
+        <div class="question-content">
+          <div class="problem-meta"><span id="category"></span><span id="difficulty"></span></div>
+          <h2 id="question-title">正在准备练习…</h2>
+          <p id="statement">题目与草稿加载完成后即可开始。</p>
+          <div class="format"><h3>输入格式</h3><p id="input-format"></p><h3>输出格式</h3><p id="output-format"></p></div>
+          <p class="small" id="comparison"></p>
+          <h3>样例</h3><div id="examples"></div>
+          <details class="explanation"><summary>查看思路与易错点</summary><div id="explanation"></div></details>
+          <p class="small">题单来自 <a id="original" href="https://leetcode.cn/studyplan/top-100-liked/" target="_blank" rel="noopener">力扣原题 ↗</a>。本页为原创练习说明，使用本站标准输入 / 输出格式，与力扣的函数提交格式不同。</p>
+        </div>
+      </section>
+      <section class="coding-panel panel" id="code-panel" aria-label="代码编辑与运行" tabindex="-1">
+        <div class="editor-toolbar"><div><label for="language">语言</label><select id="language" disabled></select></div><div class="code-actions"><button id="copy" disabled>复制</button><button id="download" disabled>下载</button><button id="reset-code" disabled>重置</button></div></div>
+        <div class="editor-caption"><span id="filename">solution.py</span><span id="draft-status" role="status">草稿保存在当前浏览器</span></div>
+        <label class="sr-only" for="code">代码</label><textarea id="code" spellcheck="false" autocapitalize="off" autocomplete="off" disabled></textarea>
+        <div class="editor-help"><span>按模板函数处理一个用例，无需编写主程序；每组调用一次，请在函数内初始化状态。</span><span>⌘ / Ctrl + Enter 运行 · Esc 后 Tab 离开编辑器</span></div>
+        <div class="test-panel">
+          <div class="test-heading"><h3>测试用例</h3><label class="sr-only" for="case-select">载入测试用例</label><select id="case-select" disabled></select></div>
+          <div class="test-fields"><div><label for="stdin">输入</label><textarea id="stdin" spellcheck="false" disabled></textarea></div><div><label for="expected">预期输出</label><textarea id="expected" spellcheck="false" disabled></textarea></div></div>
+          <label class="compare-toggle"><input type="checkbox" id="compare" checked disabled>运行时比较预期输出（自定义输入可取消）</label>
+          <div class="run-actions"><button id="run" disabled>▷ 运行用例</button><button id="judge" class="primary" disabled>判题 · 全部用例</button><button id="stop" hidden>停止等待</button><span id="execution-status" role="status">就绪</span></div>
+          <p class="service-note">执行服务：<a href="https://wandbox.org/" target="_blank" rel="noopener">Wandbox ↗</a>。运行时会发送代码和输入；请勿填写密钥等私密内容。服务繁忙或限流时请稍后手动重试。</p>
+        </div>
+        <section class="results" aria-label="运行结果"><div class="result-heading"><h3>运行结果</h3><span id="result-summary" role="status">尚未运行</span></div><p id="result-stale" class="small" hidden>代码或输入已修改，下方保留的是上次运行结果。</p><div id="results"><p class="empty-state">从左侧选题，在编辑器中完成实现。<br>先运行一个用例，再检查全部本站用例。</p></div><details id="diagnostics" hidden><summary>编译与运行日志</summary><pre id="diagnostic-text"></pre></details><p class="small judge-note">“通过”仅表示通过本页的学习用例，不等于力扣官方通过；不检验复杂度、对象身份或原地修改等内存行为。</p></section>
+      </section>
+    </div>
+    <noscript><p class="notice">编码练习需要启用 JavaScript。你仍可阅读 <a href="./hot100.html">思路图解</a>。</p></noscript>
+  </main>
+  <footer>智能工具小站 · 练习数据与编辑器代码见 <a href="https://github.com/nkzz-zzx/zzxai-site" target="_blank" rel="noopener">GitHub</a> · 编辑器使用 <a href="./vendor/codemirror-LICENSE">CodeMirror（MIT）</a></footer>
+</body>
+</html>
