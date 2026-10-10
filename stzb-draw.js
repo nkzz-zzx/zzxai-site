@@ -7,6 +7,7 @@
   const format = n => n.toLocaleString('zh-CN');
   let data, state, pool, category = 'regular', recordView = 'collection', busy = false, queue = [];
   let pendingConfirmation = null;
+  let pendingResults = [], stopIntro = () => {};
   let storageWorks = true;
   let prefs = { poolId: 'dongwu', fast: false };
 
@@ -70,7 +71,7 @@
     $('stat-fives').textContent = format(state.stars[5]);
     $('stat-rate').textContent = state.total ? `${(100 * state.stars[5] / state.total).toFixed(1)}%` : '—';
     $('stat-cost').textContent = format(state.cost);
-    renderRecords();
+    if (!busy) renderRecords();
   }
 
   function renderRecords() {
@@ -121,6 +122,7 @@
   }
 
   function showNextReveal() {
+    stopIntro();
     const result = queue.shift();
     if (!result) { $('reveal').close(); return; }
     const card = data.cards[result.id];
@@ -130,8 +132,44 @@
     $('reveal-image').alt = `${card.name}官方画像`;
     $('reveal-meta').textContent = `${metadata(card)}${result.reason ? ` · ${result.reason}` : ''}`;
     $('next-reveal').textContent = queue.length ? `下一位名将 · 还有 ${queue.length} 位` : '收入麾下';
+    $('next-reveal').disabled = true;
+    $('reveal').classList.add('playing-intro');
+    $('reveal').setAttribute('aria-labelledby', 'intro-label');
+    $('reveal-intro').hidden = false;
     if (!$('reveal').open) $('reveal').showModal();
-    $('reveal').getAnimations({ subtree: true }).forEach(animation => { animation.cancel(); animation.play(); });
+    const video = $('reveal-video');
+    let active = true;
+    const finish = () => {
+      if (!active) return;
+      stopIntro();
+      $('reveal-intro').hidden = true;
+      $('reveal').classList.remove('playing-intro');
+      $('reveal').setAttribute('aria-labelledby', 'reveal-name');
+      $('next-reveal').disabled = false;
+      $('reveal').getAnimations({ subtree: true }).forEach(animation => { animation.cancel(); animation.play(); });
+      $('next-reveal').focus({ preventScroll: true });
+    };
+    const timeout = setTimeout(finish, 10000);
+    stopIntro = () => {
+      active = false;
+      clearTimeout(timeout);
+      video.pause();
+      video.removeEventListener('ended', finish);
+      video.removeEventListener('error', finish);
+    };
+    video.addEventListener('ended', finish);
+    video.addEventListener('error', finish);
+    video.currentTime = 0;
+    video.play().catch(finish);
+  }
+
+  function revealResults() {
+    $('last-results').innerHTML = pendingResults.map((r, i) => {
+      const card = data.cards[r.id];
+      return `<article class="result-card rarity-${r.rarity}" style="--delay:${i * .07}s">${cardArt(card, r.isWish)}<h3>${escape(card.name)}</h3><p>${escape(metadata(card))}${r.reason ? `<br>${escape(r.reason)}` : ''}</p></article>`;
+    }).join('');
+    $('announce').textContent = `本次获得：${pendingResults.map(r => `${r.rarity}星${data.cards[r.id].name}${r.isWish ? '（心仪武将）' : ''}`).join('、')}。结果已记录。`;
+    pendingResults = [];
   }
 
   function recruit(count) {
@@ -142,14 +180,12 @@
       state = next;
       busy = true;
       save();
-      $('last-results').innerHTML = results.map((r, i) => {
-        const card = data.cards[r.id];
-        return `<article class="result-card rarity-${r.rarity}" style="--delay:${i * .07}s">${cardArt(card, r.isWish)}<h3>${escape(card.name)}</h3><p>${escape(metadata(card))}${r.reason ? `<br>${escape(r.reason)}` : ''}</p></article>`;
-      }).join('');
-      $('announce').textContent = `本次获得：${results.map(r => `${r.rarity}星${data.cards[r.id].name}${r.isWish ? '（心仪武将）' : ''}`).join('、')}。结果已记录。`;
+      pendingResults = results;
       queue = results.filter(r => r.rarity === 5);
-      if (queue.length && !prefs.fast && !matchMedia('(prefers-reduced-motion: reduce)').matches) showNextReveal();
-      else { queue = []; busy = false; }
+      if (queue.length && !prefs.fast && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
+        $('announce').textContent = '五星武将即将揭晓…';
+        showNextReveal();
+      } else { queue = []; busy = false; revealResults(); }
       update();
     } catch (e) {
       busy = false;
@@ -225,7 +261,12 @@
   $('skip-animation').addEventListener('change', () => { prefs.fast = $('skip-animation').checked; save(); });
   $('next-reveal').addEventListener('click', showNextReveal);
   $('skip-reveal').addEventListener('click', () => $('reveal').close());
-  $('reveal').addEventListener('close', () => { queue = []; busy = false; update(); });
+  $('reveal').addEventListener('close', () => {
+    stopIntro();
+    $('reveal-intro').hidden = true;
+    $('reveal').classList.remove('playing-intro');
+    queue = []; busy = false; revealResults(); update();
+  });
   document.querySelectorAll('[data-record]').forEach(button => button.addEventListener('click', () => { recordView = button.dataset.record; renderRecords(); }));
   $('restart-event').addEventListener('click', () => confirmAction('重新开始本轮活动', '本包次数恢复为 0，重新获得本轮免费与半价机会；累计消耗、收藏和历史记录保留。', () => {
     delete state.pools[pool.id]; delete state.pity[pool.id];
