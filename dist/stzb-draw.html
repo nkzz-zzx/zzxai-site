@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="率土之滨招募模拟：常驻与活动参考卡包、心愿武将、五星揭晓与抽取记录。">
+  <title>率土之滨 · 招募模拟 | 智能工具小站</title>
+  <link rel="stylesheet" href="./stzb-draw.css">
+  <script defer src="./stzb-draw-engine.js"></script>
+  <script defer src="./stzb-draw.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#recruit">跳到招募</a>
+  <div class="wrap">
+    <nav class="topbar" aria-label="站点导航"><a href="./index.html">← 智能工具小站</a><a href="./stzb.html">五星武将编年 ↗</a></nav>
+    <header class="intro"><div><p class="eyebrow"><span class="seal">率</span> 率土之滨 · 常规服</p><h1>一纸招贤，静候名将。</h1><p class="intro-note">选择卡包，许下心愿。让下一道金光，照见心仪之人。</p></div><div class="edition"><span>招募模拟</span><button id="open-method">参考阵容与概率说明 ↗</button></div></header>
+    <p class="scope-note">参考模拟 · 卡包按资料版本开放回放；部分阵容、逐将概率与心愿曲线采用近似设置。</p>
+    <main id="app" hidden>
+      <div class="recruit-layout">
+        <aside class="pool-sidebar" aria-label="选择卡包"><div class="section-label">01 <span>选择卡包</span></div><div class="pool-tabs" role="group" aria-label="卡包类型"><button data-category="regular" aria-pressed="true">常驻</button><button data-category="season" aria-pressed="false">赛季</button><button data-category="event" aria-pressed="false">活动</button></div><div id="pool-list"></div><p class="sidebar-note">活动卡包可重新开始一轮模拟。<br>所有消耗均为模拟数值。</p></aside>
+        <section id="recruit" class="recruit" aria-labelledby="pool-name">
+          <div class="stage" id="stage"><div class="stage-lines" aria-hidden="true"></div><img id="stage-portrait" class="stage-portrait" alt=""><div class="stage-shade"></div><div class="stage-copy"><p class="stage-kicker" id="pool-kicker"></p><h2 id="pool-name"></h2><p id="pool-summary"></p><button class="light-link" id="open-roster">查看卡包阵容 ↗</button></div><div class="stage-stamp" aria-hidden="true">招贤<br>纳士</div><p class="stage-credit">网易官方武将画像</p></div>
+          <div class="wish-panel"><button id="select-wish" class="wish-select"><span id="wish-avatar" class="wish-avatar" aria-hidden="true">愿</span><span><small id="wish-label">心愿武将</small><strong id="wish-name">选择心仪的五星武将</strong><span id="wish-subtitle">点击选择 →</span></span></button><div class="wish-meter"><div><span id="wish-progress-label">心愿积分</span><strong id="wish-points">0 / 24,000</strong></div><progress id="wish-progress" value="0" max="24000" aria-label="心愿积分"></progress><p id="wish-hint"></p></div></div>
+          <div class="recruit-actions"><div class="pity-info"><strong id="pity-text"></strong><span id="four-text"></span></div><div class="draw-buttons"><button id="draw-one" class="button secondary" disabled><span>招募一次</span><small id="one-cost"></small></button><button id="draw-five" class="button primary" disabled><span>招募五次</span><small id="five-cost"></small></button></div></div>
+          <div class="action-foot"><span id="pool-count"></span><label><input type="checkbox" id="skip-animation"> 快速揭晓</label><button id="restart-event" hidden>重开本轮活动 ↻</button></div>
+          <div id="last-results" class="results" aria-label="本次招募结果"><div class="awaiting"><span aria-hidden="true">✦</span><p>虚席以待，静候来仪。</p><small>招募结果将在这里展开</small></div></div>
+          <p id="announce" class="announce" role="status" aria-live="polite"></p>
+        </section>
+      </div>
+      <section class="record-section" aria-labelledby="record-title"><div class="record-heading"><div><p class="section-label">02 <span>招募手记</span></p><h2 id="record-title">每一次相逢，都有迹可循。</h2></div><button id="reset-all" class="text-button">清空模拟记录</button></div><div class="stats"><div><strong id="stat-draws">0</strong><span>累计招募</span></div><div><strong id="stat-fives">0</strong><span>五星武将</span></div><div><strong id="stat-rate">—</strong><span>本次模拟五星占比</span></div><div><strong id="stat-cost">0</strong><span>模拟消耗</span></div></div><div class="record-tabs" role="group" aria-label="记录视图"><button data-record="collection" aria-pressed="true">五星收藏 <span id="collection-count">0</span></button><button data-record="history" aria-pressed="false">最近记录</button></div><div id="records"></div><p id="storage-status" class="storage-status">记录仅保存在当前浏览器，最近记录保留 200 次。</p></section>
+    </main>
+    <div id="load-status" class="load-status" role="status">正在整理招募文书…</div>
+    <noscript><p>请启用 JavaScript 使用抽卡模拟。</p></noscript>
+    <footer><p>玩家制作的娱乐模拟，与游戏账号及实际招募结果无关。画像版权归网易及相关权利人所有。</p><a href="./stzb.html">查阅武将资料 →</a></footer>
+  </div>
+  <dialog id="picker" aria-labelledby="picker-title"><div class="dialog-head"><div><p class="eyebrow">心有所愿</p><h2 id="picker-title">选择心愿武将</h2></div><button class="close" data-close aria-label="关闭选择">×</button></div><p id="picker-note" class="dialog-note"></p><label class="sr-only" for="wish-search">搜索可选武将</label><input id="wish-search" class="search" type="search" placeholder="搜索武将名或阵营" autocomplete="off"><div id="wish-grid" class="mini-grid"></div></dialog>
+  <dialog id="roster-dialog" aria-labelledby="roster-title"><div class="dialog-head"><div><p class="eyebrow">卡包详情</p><h2 id="roster-title"></h2></div><button class="close" data-close aria-label="关闭卡包详情">×</button></div><p id="roster-note" class="dialog-note"></p><div id="roster-rules" class="rule-box"></div><div id="roster-grid" class="mini-grid"></div><div id="roster-sources" class="sources"></div></dialog>
+  <dialog id="method-dialog" aria-labelledby="method-title"><div class="dialog-head"><div><p class="eyebrow">关于这次模拟</p><h2 id="method-title">阵容与概率</h2></div><button class="close" data-close aria-label="关闭说明">×</button></div><div class="method-body"><p>资料整理截至 <strong>2026 年 10 月 10 日</strong>。每个卡包在详情中说明参考版本、名单依据和缺口；活动为历史版本回放，不代表游戏此刻正在开放。</p><h3>公开规则</h3><p>官网公示普通虎符卡包五星 5%、四星 30%、三星 65%，未注明是否包含保底。本页将其作为基础抽取参数，保底另计，因此综合出率可能高于公示值。常驻包按官方 30 次内必出五星规则模拟；阵营名将另有 5 次内四星以上保障。活动包独立按第 10 抽五星、免费及半价次数计算。</p><h3>心愿机制</h3><p>适用卡包每抽获得 10／20／150 心愿积分，达到上限后下一抽定向获得心愿。四个阵营包共用心愿与积分，只在目标所属卡包兑现。获得心愿后积分清零，更换心愿保留 50%。活动标准包中的“收藏目标”只用于标记，不提高概率。</p><h3>模拟参数与范围</h3><p>同星级武将暂按等权抽取。心愿在五星中的占比采用二次曲线递增，达到积分上限时直接兑现；公式和活动五星基础概率均为模拟参数，并非官方逐将概率。部分包使用官方展示名单或台服公示阵容作参考，未核实的低星名单使用星级占位卡，不虚构具体武将。</p><p>常驻包的保底按各包独立计算，四个阵营包共用计数；低星保底遇四星或五星重置。这些计数细节按模拟假设处理。每日刷新、开服新手规则、限时积分加成和跨赛季异常换将补偿未参与模拟。</p><p>招募中显示的五星占比包含保底与心愿，是本次模拟统计值；它不等于基础概率，也不用于预测游戏账号出卡。</p><div id="method-sources" class="sources"></div></div></dialog>
+  <dialog id="reveal" class="reveal" aria-labelledby="reveal-name"><button id="skip-reveal" class="skip-reveal">跳过动画 ×</button><div class="reveal-aura" aria-hidden="true"></div><div class="reveal-orbit" aria-hidden="true"></div><p id="reveal-kicker" class="reveal-kicker">金光乍现 · 名将来归</p><div class="reveal-card"><img id="reveal-image" alt=""><div class="reveal-shine" aria-hidden="true"></div></div><div class="reveal-stars" aria-label="五星">★★★★★</div><h2 id="reveal-name"></h2><p id="reveal-meta"></p><button id="next-reveal" class="button primary">收入麾下</button></dialog>
+  <dialog id="confirm-dialog" class="confirm-dialog" aria-labelledby="confirm-title"><h2 id="confirm-title"></h2><p id="confirm-message"></p><div class="confirm-actions"><button data-close class="button secondary">取消</button><button id="confirm-accept" class="button primary">确认</button></div></dialog>
+</body>
+</html>
