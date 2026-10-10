@@ -4,6 +4,7 @@
 ## 在线页面
 
 - [工具列表](https://zzxai.cn/)
+- [率土之滨 · 五星武将编年](https://zzxai.cn/stzb.html)：官方画像、常规服首次上架与重做回归记录，支持年份、阵营和名称筛选。
 - [工资与个税计算器](https://zzxai.cn/salary-calculator.html)
 - [Agent 学习路线](https://zzxai.cn/agent-roadmap.html)：十周学习计划，包含实践任务、验收标准和开源资料。
 

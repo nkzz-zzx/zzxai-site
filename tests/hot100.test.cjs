@@ -26,6 +26,6 @@ test('anchors and homepage entry resolve, publication copies stay identical', ()
   assert.match(page, /src="\.\/hot100-demos\.js"/);
   const index = fs.readFileSync(path.join(root, 'index.html'), 'utf8');
   assert.match(index, /href="\.\/hot100.html"/);
-  assert.match(index, /4 个工具/);
+  assert.match(index, /5 个工具/);
   for (const [, href] of index.matchAll(/href="\.\/([^"]+)"/g)) assert.ok(fs.existsSync(path.join(root, href)));
 });

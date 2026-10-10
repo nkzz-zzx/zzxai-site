@@ -1,0 +1,4264 @@
+{
+  "asOf": "2026-10-10",
+  "cards": [
+    {
+      "id": "100358",
+      "name": "张姬",
+      "country": "蜀",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2016-10-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2016/10/24/20399_649790.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100358.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100358.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100358.html",
+      "events": []
+    },
+    {
+      "id": "100372",
+      "name": "妲己",
+      "country": "群",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2017-01-28",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2017/01/24/20399_669858.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100372.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100372.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100372.html",
+      "events": []
+    },
+    {
+      "id": "100374",
+      "name": "妺喜",
+      "country": "群",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2020-01-24",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2020/01/18/20399_861153.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100374.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100374.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100374.html",
+      "events": []
+    },
+    {
+      "id": "100376",
+      "name": "褒姒",
+      "country": "群",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2019-02-04",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2019/01/31/20399_798224.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100376.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100376.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100376.html",
+      "events": []
+    },
+    {
+      "id": "100377",
+      "name": "骊姬",
+      "country": "群",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2018-02-16",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2018/02/12/20399_740874.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100377.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100377.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100377.html",
+      "events": []
+    },
+    {
+      "id": "100424",
+      "name": "小乔＆大乔",
+      "country": "吴",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2016-04-13",
+      "note": "维护已调整五星二乔；非首次新增公告。",
+      "sources": [
+        "https://stzb.163.com/notice/2016/04/12/20399_610619.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100424.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100424.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100424.html",
+      "events": []
+    },
+    {
+      "id": "100435",
+      "name": "夏侯渊",
+      "country": "魏",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2016-07-27",
+      "note": "维护从EX卡包移除已存在的五星魏夏侯渊；非首次投放。",
+      "sources": [
+        "https://stzb.163.com/notice/2016/07/26/20399_631962.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100435.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100435.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100435.html",
+      "events": []
+    },
+    {
+      "id": "100442",
+      "name": "黄忠",
+      "country": "蜀",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2015-11-18",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/news/2015/11/17/20395_581361.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100442.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100442.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100442.html",
+      "events": []
+    },
+    {
+      "id": "100443",
+      "name": "陈宫",
+      "country": "群",
+      "troop": "弓",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2017-02-10",
+      "status": "赛季批次推定",
+      "period": "",
+      "note": "按黄巾之乱批次与首开日推定；当日公告仅逐一列出朱儁、张宝、张梁。",
+      "sources": [
+        "https://stzb.163.com/news/2017/02/28/20395_674366.html",
+        "https://stzb.163.com/notice/2017/02/09/20399_671331.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100443.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100443.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100443.html",
+      "events": [
+        {
+          "id": "100443",
+          "date": "2025-04-02",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20250327/20395_1222891.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100449",
+      "name": "夏侯惇",
+      "country": "魏",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2016-09-22",
+      "status": "赛季批次推定",
+      "period": "",
+      "note": "按首批征服赛季日期及当期五将名单推定；区分9月21日结算与9月22日进入新赛季。",
+      "sources": [
+        "https://stzb.163.com/notice/2016/10/31/20399_651641.html",
+        "https://stzb.163.com/notice/2016/09/20/20399_643222.html",
+        "https://ios.9game.cn/ltzb/1235213.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100449.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100449.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100449.html",
+      "events": [
+        {
+          "id": "100449",
+          "date": "2026-04-15",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20260408/20395_1295144.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100450",
+      "name": "孙策",
+      "country": "吴",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2016-09-22",
+      "status": "赛季批次推定",
+      "period": "",
+      "note": "按首批征服赛季日期及当期五将名单推定；区分9月21日结算与9月22日进入新赛季。",
+      "sources": [
+        "https://stzb.163.com/notice/2016/10/31/20399_651641.html",
+        "https://stzb.163.com/notice/2016/09/20/20399_643222.html",
+        "https://ios.9game.cn/ltzb/1235213.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100450.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100450.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100450.html",
+      "events": [
+        {
+          "id": "100450",
+          "date": "2026-04-15",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20260408/20395_1295144.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100451",
+      "name": "关羽",
+      "country": "蜀",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2016-09-22",
+      "status": "赛季批次推定",
+      "period": "",
+      "note": "按首批征服赛季日期及当期五将名单推定；区分9月21日结算与9月22日进入新赛季。",
+      "sources": [
+        "https://stzb.163.com/notice/2016/10/31/20399_651641.html",
+        "https://stzb.163.com/notice/2016/09/20/20399_643222.html",
+        "https://ios.9game.cn/ltzb/1235213.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100451.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100451.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100451.html",
+      "events": [
+        {
+          "id": "100451",
+          "date": "2026-04-15",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20260408/20395_1295144.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100452",
+      "name": "木鹿大王",
+      "country": "群",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2016-09-22",
+      "status": "赛季批次推定",
+      "period": "",
+      "note": "按首批征服赛季日期及当期五将名单推定；区分9月21日结算与9月22日进入新赛季。",
+      "sources": [
+        "https://stzb.163.com/notice/2016/10/31/20399_651641.html",
+        "https://stzb.163.com/notice/2016/09/20/20399_643222.html",
+        "https://ios.9game.cn/ltzb/1235213.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100452.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100452.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100452.html",
+      "events": [
+        {
+          "id": "100452",
+          "date": "2021-09-29",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/notice/2021/09/24/20399_974364.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100472",
+      "name": "司马懿",
+      "country": "魏",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2016-01-13",
+      "note": "维护已调整五星司马懿“破凰”；非首次新增公告。",
+      "sources": [
+        "https://stzb.163.com/notice/2016/01/12/20399_592214.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100472.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100472.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100472.html",
+      "events": []
+    },
+    {
+      "id": "100474",
+      "name": "张宁",
+      "country": "群",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2015-12-16",
+      "status": "公告明确",
+      "period": "",
+      "note": "按正文维护日期；官网页面日期晚一天。",
+      "sources": [
+        "https://stzb.163.com/notice/2015/12/17/20399_586676.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100474.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100474.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100474.html",
+      "events": []
+    },
+    {
+      "id": "100475",
+      "name": "郝昭",
+      "country": "魏",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2015-12-30",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2015/12/29/20399_589670.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100475.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100475.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100475.html",
+      "events": []
+    },
+    {
+      "id": "100476",
+      "name": "郭嘉",
+      "country": "魏",
+      "troop": "骑",
+      "version": "S2限定",
+      "catalog": "官网图鉴",
+      "first": "2016-01-27",
+      "status": "赛季批次推定",
+      "period": "",
+      "note": "S2首批于1月27日开启；按S2初始限定批次推定，尚缺逐卡当日招募证据。",
+      "sources": [
+        "https://stzb.163.com/news/2016/02/04/20395_597429.html",
+        "https://stzb.163.com/notice/2016/05/10/20399_616646.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100476.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100476.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100476.html",
+      "events": []
+    },
+    {
+      "id": "100477",
+      "name": "庞统",
+      "country": "蜀",
+      "troop": "步",
+      "version": "S2限定",
+      "catalog": "官网图鉴",
+      "first": "2016-01-27",
+      "status": "赛季批次推定",
+      "period": "",
+      "note": "S2首批于1月27日开启；按S2初始限定批次推定，尚缺逐卡当日招募证据。",
+      "sources": [
+        "https://stzb.163.com/news/2016/02/04/20395_597429.html",
+        "https://stzb.163.com/notice/2016/05/10/20399_616646.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100477.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100477.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100477.html",
+      "events": []
+    },
+    {
+      "id": "100478",
+      "name": "陆逊",
+      "country": "吴",
+      "troop": "步",
+      "version": "S2限定",
+      "catalog": "官网图鉴",
+      "first": "2016-01-27",
+      "status": "赛季批次推定",
+      "period": "",
+      "note": "S2首批于1月27日开启；按S2初始限定批次推定，尚缺逐卡当日招募证据。",
+      "sources": [
+        "https://stzb.163.com/news/2016/02/04/20395_597429.html",
+        "https://stzb.163.com/notice/2016/05/10/20399_616646.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100478.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100478.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100478.html",
+      "events": []
+    },
+    {
+      "id": "100479",
+      "name": "吕布",
+      "country": "群",
+      "troop": "弓",
+      "version": "S2限定",
+      "catalog": "官网图鉴",
+      "first": "2016-01-27",
+      "status": "赛季批次推定",
+      "period": "",
+      "note": "S2首批于1月27日开启；按S2初始限定批次推定，尚缺逐卡当日招募证据。",
+      "sources": [
+        "https://stzb.163.com/news/2016/02/04/20395_597429.html",
+        "https://stzb.163.com/notice/2016/05/10/20399_616646.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100479.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100479.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100479.html",
+      "events": []
+    },
+    {
+      "id": "100480",
+      "name": "董卓",
+      "country": "汉",
+      "troop": "步",
+      "version": "S2限定",
+      "catalog": "官网图鉴",
+      "first": "2016-01-27",
+      "status": "赛季批次推定",
+      "period": "",
+      "note": "S2首批于1月27日开启；按S2初始限定批次推定，尚缺逐卡当日招募证据。",
+      "sources": [
+        "https://stzb.163.com/news/2016/02/04/20395_597429.html",
+        "https://stzb.163.com/notice/2016/05/10/20399_616646.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100480.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100480.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100480.html",
+      "events": []
+    },
+    {
+      "id": "100486",
+      "name": "潘凤",
+      "country": "汉",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2016-03-30",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2016/03/29/20399_607553.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100486.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100486.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100486.html",
+      "events": []
+    },
+    {
+      "id": "100494",
+      "name": "祝融夫人",
+      "country": "群",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2016-04-06",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2016/04/05/20399_609050.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100494.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100494.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100494.html",
+      "events": []
+    },
+    {
+      "id": "100495",
+      "name": "颜良＆文丑",
+      "country": "群",
+      "troop": "骑",
+      "version": "S3限定",
+      "catalog": "官网图鉴",
+      "first": "2016-05-26",
+      "status": "赛季批次推定",
+      "period": "",
+      "note": "按S3初始限定批次及S3首开日推定；非逐卡当天新增公告。",
+      "sources": [
+        "https://stzb.163.com/news/2016/05/26/20395_620062.html",
+        "https://stzb.163.com/notice/2016/06/07/20399_622308.html",
+        "https://stzb.163.com/notice/2016/07/12/20399_628891.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100495.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100495.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100495.html",
+      "events": []
+    },
+    {
+      "id": "100496",
+      "name": "诸葛亮",
+      "country": "蜀",
+      "troop": "弓",
+      "version": "S3限定",
+      "catalog": "官网图鉴",
+      "first": "2016-05-26",
+      "status": "赛季批次推定",
+      "period": "",
+      "note": "按S3初始限定批次及S3首开日推定；非逐卡当天新增公告。",
+      "sources": [
+        "https://stzb.163.com/news/2016/05/26/20395_620062.html",
+        "https://stzb.163.com/notice/2016/06/07/20399_622308.html",
+        "https://stzb.163.com/notice/2016/07/12/20399_628891.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100496.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100496.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100496.html",
+      "events": []
+    },
+    {
+      "id": "100497",
+      "name": "步皇后",
+      "country": "吴",
+      "troop": "步",
+      "version": "S3限定",
+      "catalog": "官网图鉴",
+      "first": "2016-05-26",
+      "status": "赛季批次推定",
+      "period": "",
+      "note": "按S3初始限定批次及S3首开日推定；非逐卡当天新增公告。",
+      "sources": [
+        "https://stzb.163.com/news/2016/05/26/20395_620062.html",
+        "https://stzb.163.com/notice/2016/06/07/20399_622308.html",
+        "https://stzb.163.com/notice/2016/07/12/20399_628891.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100497.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100497.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100497.html",
+      "events": []
+    },
+    {
+      "id": "100498",
+      "name": "曹纯",
+      "country": "魏",
+      "troop": "骑",
+      "version": "S3限定",
+      "catalog": "官网图鉴",
+      "first": "2016-05-26",
+      "status": "赛季批次推定",
+      "period": "",
+      "note": "按S3初始限定批次及S3首开日推定；非逐卡当天新增公告。",
+      "sources": [
+        "https://stzb.163.com/news/2016/05/26/20395_620062.html",
+        "https://stzb.163.com/notice/2016/06/07/20399_622308.html",
+        "https://stzb.163.com/notice/2016/07/12/20399_628891.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100498.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100498.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100498.html",
+      "events": []
+    },
+    {
+      "id": "100519",
+      "name": "兀突骨",
+      "country": "群",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2016-06-08",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2016/06/07/20399_622308.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100519.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100519.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100519.html",
+      "events": []
+    },
+    {
+      "id": "100522",
+      "name": "诸葛恪",
+      "country": "吴",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2016-07-27",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2016/07/26/20399_631962.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100522.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100522.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100522.html",
+      "events": [
+        {
+          "id": "100522",
+          "date": "2022-04-27",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/news/20220425/20395_1014498.html"
+          ]
+        },
+        {
+          "id": "100522",
+          "date": "2022-10-26",
+          "kind": "调整后重新上架",
+          "status": "公告明确",
+          "note": "2022年4月27日移除后，调整并加入阵营名将；沿用原卡。",
+          "sources": [
+            "https://stzb.163.com/notice/2022/10/25/20399_1048385.html",
+            "https://stzb.163.com/news/20221024/20395_1048127.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100524",
+      "name": "沙摩柯",
+      "country": "蜀",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2016-09-07",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2016/09/07/20399_640593.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100524.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100524.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100524.html",
+      "events": []
+    },
+    {
+      "id": "100526",
+      "name": "张机",
+      "country": "汉",
+      "troop": "弓",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2016-09-22",
+      "status": "赛季批次推定",
+      "period": "",
+      "note": "按首批征服赛季日期及当期五将名单推定；区分9月21日结算与9月22日进入新赛季。",
+      "sources": [
+        "https://stzb.163.com/notice/2016/10/31/20399_651641.html",
+        "https://stzb.163.com/notice/2016/09/20/20399_643222.html",
+        "https://ios.9game.cn/ltzb/1235213.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100526.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100526.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100526.html",
+      "events": [
+        {
+          "id": "100526",
+          "date": "2021-09-29",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/notice/2021/09/24/20399_974364.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100534",
+      "name": "徐庶",
+      "country": "蜀",
+      "troop": "骑",
+      "version": "SP／旧赛季限定",
+      "catalog": "官网图鉴",
+      "first": "2016-12-14",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2016/12/13/20399_661331.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100534.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100534.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100534.html",
+      "events": []
+    },
+    {
+      "id": "100553",
+      "name": "朱儁",
+      "country": "汉",
+      "troop": "弓",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2017-02-10",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2017/02/09/20399_671331.html",
+        "https://stzb.163.com/news/2017/02/10/20395_671532.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100553.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100553.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100553.html",
+      "events": [
+        {
+          "id": "100553",
+          "date": "2022-04-27",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20220425/20395_1014498.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100557",
+      "name": "张梁",
+      "country": "群",
+      "troop": "步",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2017-02-10",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2017/02/09/20399_671331.html",
+        "https://stzb.163.com/news/2017/02/10/20395_671532.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100557.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100557.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100557.html",
+      "events": [
+        {
+          "id": "100557",
+          "date": "2022-04-27",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20220425/20395_1014498.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100562",
+      "name": "张宝",
+      "country": "群",
+      "troop": "弓",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2017-02-10",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2017/02/09/20399_671331.html",
+        "https://stzb.163.com/news/2017/02/10/20395_671532.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100562.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100562.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100562.html",
+      "events": [
+        {
+          "id": "100562",
+          "date": "2022-04-27",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20220425/20395_1014498.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100574",
+      "name": "陆抗",
+      "country": "吴",
+      "troop": "步",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2017-05-25",
+      "status": "公告明确",
+      "period": "",
+      "note": "新征服赛季首批实际开放日；5月17日公告为规则启用。",
+      "sources": [
+        "https://stzb.163.com/news/2017/05/25/20395_691577.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100574.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100574.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100574.html",
+      "events": [
+        {
+          "id": "100574",
+          "date": "2023-04-26",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20230419/20395_1083800.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100582",
+      "name": "法正",
+      "country": "蜀",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2017-05-17",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2017/05/16/20399_689678.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100582.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100582.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100582.html",
+      "events": []
+    },
+    {
+      "id": "100585",
+      "name": "曹仁",
+      "country": "魏",
+      "troop": "步",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2017-09-20",
+      "note": "当期维护已调整五星SP曹仁；不能据此确认首次投放日。",
+      "sources": [
+        "https://stzb.163.com/notice/2017/09/19/20399_713671.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100585.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100585.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100585.html",
+      "events": [
+        {
+          "id": "100585",
+          "date": "2024-09-25",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20240918/20395_1181421.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100586",
+      "name": "庞德",
+      "country": "群",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100586.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100586.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100586.html",
+      "events": [
+        {
+          "id": "100586",
+          "date": "2024-09-25",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20240918/20395_1181421.html"
+          ]
+        },
+        {
+          "id": "100586",
+          "date": "2026-09-30",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://news.17173.com/content/09282026/194800850.shtml"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100589",
+      "name": "周泰",
+      "country": "吴",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2017-10-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/news/2017/10/22/20395_720193.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100589.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100589.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100589.html",
+      "events": []
+    },
+    {
+      "id": "100592",
+      "name": "董白",
+      "country": "群",
+      "troop": "弓",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "2018年1月批次；日待核",
+      "note": "群雄讨董新武将批次；1月22日攻略已介绍，首个可招募日待核。",
+      "sources": [
+        "https://shouyou.gamersky.com/gl/201801/1005660.shtml",
+        "https://stzb.163.com/notice/2018/01/15/20399_735459.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100592.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100592.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100592.html",
+      "events": [
+        {
+          "id": "100592",
+          "date": "2024-09-25",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20240918/20395_1181421.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100593",
+      "name": "张郃",
+      "country": "群",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "2018年1月批次；日待核",
+      "note": "群雄讨董新武将批次；1月22日攻略已介绍，首个可招募日待核。",
+      "sources": [
+        "https://shouyou.gamersky.com/gl/201801/1005660.shtml",
+        "https://stzb.163.com/notice/2018/01/15/20399_735459.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100593.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100593.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100593.html",
+      "events": []
+    },
+    {
+      "id": "100603",
+      "name": "卞夫人",
+      "country": "魏",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2018-04-25",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2018/04/24/20399_751055.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100603.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100603.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100603.html",
+      "events": []
+    },
+    {
+      "id": "100604",
+      "name": "李儒",
+      "country": "群",
+      "troop": "弓",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2019-06-12",
+      "status": "公告明确",
+      "period": "",
+      "note": "李儒此行为可保留的XP版；另有2018年赛季临时版。",
+      "sources": [
+        "https://stzb.163.com/notice/2019/06/12/20399_817566.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100604.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100604.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100604.html",
+      "events": []
+    },
+    {
+      "id": "100615",
+      "name": "马岱",
+      "country": "蜀",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2018-08-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2018/08/21/20399_771300.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100615.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100615.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100615.html",
+      "events": [
+        {
+          "id": "100615",
+          "date": "2024-04-30",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20240606/20395_1150559.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100616",
+      "name": "凌统",
+      "country": "吴",
+      "troop": "弓",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2018-08-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2018/08/21/20399_771300.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100616.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100616.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100616.html",
+      "events": [
+        {
+          "id": "100616",
+          "date": "2024-04-30",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20240606/20395_1150559.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100618",
+      "name": "贾诩",
+      "country": "魏",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2018-10-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2018/10/18/20399_780301.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100618.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100618.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100618.html",
+      "events": []
+    },
+    {
+      "id": "100619",
+      "name": "大乔",
+      "country": "吴",
+      "troop": "步",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2018-11-28",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2018/11/27/20399_787268.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100619.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100619.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100619.html",
+      "events": [
+        {
+          "id": "100619",
+          "date": "2025-11-26",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20251117/20395_1271355.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100620",
+      "name": "张绣",
+      "country": "群",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2018-11-28",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2018/11/27/20399_787268.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100620.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100620.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100620.html",
+      "events": [
+        {
+          "id": "100620",
+          "date": "2025-11-26",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20251117/20395_1271355.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100630",
+      "name": "皇甫嵩",
+      "country": "汉",
+      "troop": "步",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2019-03-06",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2019/03/05/20399_802475.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100630.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100630.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100630.html",
+      "events": [
+        {
+          "id": "100630",
+          "date": "2026-09-30",
+          "kind": "XP下放",
+          "status": "维护公告转载",
+          "note": "",
+          "sources": [
+            "https://news.17173.com/content/09282026/194800850.shtml"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100631",
+      "name": "严颜",
+      "country": "蜀",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2019-03-06",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2019/03/05/20399_802475.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100631.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100631.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100631.html",
+      "events": [
+        {
+          "id": "100631",
+          "date": "2026-09-30",
+          "kind": "XP下放",
+          "status": "维护公告转载",
+          "note": "",
+          "sources": [
+            "https://news.17173.com/content/09282026/194800850.shtml"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100634",
+      "name": "吕姬",
+      "country": "群",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2019-04-24",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2019/04/23/20399_810226.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100634.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100634.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100634.html",
+      "events": []
+    },
+    {
+      "id": "100645",
+      "name": "徐晃",
+      "country": "魏",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2019-06-12",
+      "status": "公告明确",
+      "period": "",
+      "note": "李儒此行为可保留的XP版；另有2018年赛季临时版。",
+      "sources": [
+        "https://stzb.163.com/notice/2019/06/12/20399_817566.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100645.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100645.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100645.html",
+      "events": []
+    },
+    {
+      "id": "100647",
+      "name": "华雄",
+      "country": "群",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2019-09-18",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2019/09/17/20399_833179.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100647.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100647.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100647.html",
+      "events": []
+    },
+    {
+      "id": "100648",
+      "name": "张昭",
+      "country": "吴",
+      "troop": "弓",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2019-09-18",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2019/09/17/20399_833179.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100648.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100648.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100648.html",
+      "events": []
+    },
+    {
+      "id": "100649",
+      "name": "魏延",
+      "country": "蜀",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2019-10-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2019/10/18/20399_841496.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100649.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100649.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100649.html",
+      "events": []
+    },
+    {
+      "id": "100652",
+      "name": "王朗",
+      "country": "魏",
+      "troop": "弓",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2020-01-08",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2020/01/07/20399_859063.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100652.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100652.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100652.html",
+      "events": []
+    },
+    {
+      "id": "100653",
+      "name": "关兴＆张苞",
+      "country": "蜀",
+      "troop": "步",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2020-01-08",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2020/01/07/20399_859063.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100653.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100653.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100653.html",
+      "events": []
+    },
+    {
+      "id": "100654",
+      "name": "孙鲁班",
+      "country": "吴",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2020-03-25",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2020/03/24/20399_871041.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100654.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100654.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100654.html",
+      "events": []
+    },
+    {
+      "id": "100655",
+      "name": "郭皇后",
+      "country": "魏",
+      "troop": "弓",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2020-05-20",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2020/05/19/20399_881854.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100655.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100655.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100655.html",
+      "events": [
+        {
+          "id": "100655",
+          "date": "2025-09-10",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20250904/20395_1257683.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100656",
+      "name": "高顺",
+      "country": "群",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2020-05-20",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2020/05/19/20399_881854.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100656.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100656.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100656.html",
+      "events": []
+    },
+    {
+      "id": "100670",
+      "name": "袁绍",
+      "country": "群",
+      "troop": "弓",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2020-09-16",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2020/09/15/20399_904895.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100670.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100670.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100670.html",
+      "events": [
+        {
+          "id": "100670",
+          "date": "2025-09-10",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20250904/20395_1257683.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100671",
+      "name": "蒋钦",
+      "country": "吴",
+      "troop": "弓",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2020-09-16",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2020/09/15/20399_904895.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100671.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100671.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100671.html",
+      "events": [
+        {
+          "id": "100671",
+          "date": "2025-09-10",
+          "kind": "XP下放",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/news/20250904/20395_1257683.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100672",
+      "name": "曹植",
+      "country": "魏",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2020-10-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/news/20201017/20395_910511.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100672.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100672.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100672.html",
+      "events": []
+    },
+    {
+      "id": "100675",
+      "name": "刘表",
+      "country": "汉",
+      "troop": "弓",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2020-12-23",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2020/12/22/20399_923253.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100675.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100675.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100675.html",
+      "events": []
+    },
+    {
+      "id": "100676",
+      "name": "王昭君",
+      "country": "汉",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2021-02-11",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2021/02/03/20399_930582.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100676.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100676.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100676.html",
+      "events": []
+    },
+    {
+      "id": "100677",
+      "name": "公孙瓒",
+      "country": "群",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2021-02-14",
+      "status": "公告明确",
+      "period": "",
+      "note": "按正文活动日期；官网链接和页面发布日期较晚。",
+      "sources": [
+        "https://stzb.163.com/notice/2021/02/22/20399_932921.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100677.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100677.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100677.html",
+      "events": []
+    },
+    {
+      "id": "100683",
+      "name": "曹彰",
+      "country": "魏",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2021-05-12",
+      "status": "公告明确",
+      "period": "",
+      "note": "早期预告曾写4月28日；4月28日维护仅列程普，5月12日维护明确新增曹彰。",
+      "sources": [
+        "https://stzb.163.com/notice/2021/05/11/20399_946826.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100683.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100683.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100683.html",
+      "events": []
+    },
+    {
+      "id": "100684",
+      "name": "程普",
+      "country": "吴",
+      "troop": "步",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2021-04-28",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2021/04/27/20399_944514.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100684.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100684.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100684.html",
+      "events": []
+    },
+    {
+      "id": "100685",
+      "name": "乐进",
+      "country": "魏",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2021-07-28",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2021/07/27/20399_962351.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100685.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100685.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100685.html",
+      "events": []
+    },
+    {
+      "id": "100687",
+      "name": "小乔",
+      "country": "吴",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2021-10-22",
+      "status": "常规服日期明确",
+      "period": "",
+      "note": "按常规全面开放日期；维护新增日期不等同实际可获取日期。",
+      "sources": [
+        "https://stzb.163.com/notice/2021/10/19/20399_980067.html",
+        "https://stzb.163.com/news/20211012/20395_977994.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100687.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100687.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100687.html",
+      "events": []
+    },
+    {
+      "id": "100689",
+      "name": "刘禅",
+      "country": "蜀",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2022-02-03",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2022/01/25/20399_999954.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100689.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100689.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100689.html",
+      "events": []
+    },
+    {
+      "id": "100690",
+      "name": "西施",
+      "country": "群",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2022-01-31",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2022/01/21/20399_999209.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100690.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100690.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100690.html",
+      "events": []
+    },
+    {
+      "id": "100691",
+      "name": "周仓",
+      "country": "蜀",
+      "troop": "步",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2022-03-30",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2022/03/29/20399_1010179.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100691.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100691.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100691.html",
+      "events": []
+    },
+    {
+      "id": "100692",
+      "name": "田丰",
+      "country": "群",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2022-03-30",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2022/03/29/20399_1010179.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100692.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100692.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100692.html",
+      "events": []
+    },
+    {
+      "id": "100693",
+      "name": "王允",
+      "country": "汉",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2022-06-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2022/06/20/20399_1024927.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100693.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100693.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100693.html",
+      "events": []
+    },
+    {
+      "id": "100701",
+      "name": "司马师",
+      "country": "晋",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2022-10-26",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/news/20221020/20395_1047557.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100701.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100701.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100701.html",
+      "events": []
+    },
+    {
+      "id": "100702",
+      "name": "司马昭",
+      "country": "晋",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2022-10-26",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/news/20221020/20395_1047557.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100702.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100702.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100702.html",
+      "events": []
+    },
+    {
+      "id": "100703",
+      "name": "司马炎",
+      "country": "晋",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2022-10-26",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/news/20221020/20395_1047557.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100703.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100703.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100703.html",
+      "events": []
+    },
+    {
+      "id": "100704",
+      "name": "文鸯",
+      "country": "晋",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2022-10-26",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/news/20221020/20395_1047557.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100704.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100704.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100704.html",
+      "events": []
+    },
+    {
+      "id": "100705",
+      "name": "杜预",
+      "country": "晋",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2022-10-26",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/news/20221020/20395_1047557.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100705.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100705.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100705.html",
+      "events": []
+    },
+    {
+      "id": "100706",
+      "name": "王元姬",
+      "country": "晋",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2022-10-26",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/news/20221020/20395_1047557.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100706.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100706.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100706.html",
+      "events": []
+    },
+    {
+      "id": "100707",
+      "name": "卫瓘",
+      "country": "晋",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2022-10-26",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/news/20221020/20395_1047557.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100707.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100707.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100707.html",
+      "events": []
+    },
+    {
+      "id": "100708",
+      "name": "贾充",
+      "country": "晋",
+      "troop": "步",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2023-02-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20230220/20399_1074112.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100708.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100708.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100708.html",
+      "events": []
+    },
+    {
+      "id": "100709",
+      "name": "羊祜",
+      "country": "晋",
+      "troop": "步",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2023-02-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20230220/20399_1074112.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100709.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100709.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100709.html",
+      "events": []
+    },
+    {
+      "id": "100741",
+      "name": "鲁肃",
+      "country": "吴",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2023-01-24",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2023/01/16/20399_1063625.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100741.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100741.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100741.html",
+      "events": []
+    },
+    {
+      "id": "100742",
+      "name": "阴丽华",
+      "country": "汉",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2023-01-21",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2023/01/16/20399_1063625.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100742.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100742.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100742.html",
+      "events": []
+    },
+    {
+      "id": "100769",
+      "name": "典韦",
+      "country": "魏",
+      "troop": "步",
+      "version": "全赛季新版",
+      "catalog": "官网图鉴",
+      "first": "2023-04-26",
+      "status": "公告明确",
+      "period": "",
+      "note": "全赛季新版典韦；旧XP典韦已于2022年下架，两版分行。",
+      "sources": [
+        "https://stzb.163.com/news/20230419/20395_1083800.html"
+      ],
+      "related": "H10",
+      "portrait": "./stzb-assets/portraits/100769.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100769.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100769.html",
+      "events": []
+    },
+    {
+      "id": "100770",
+      "name": "许劭",
+      "country": "汉",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2023-05-20",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20230516/20399_1088169.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100770.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100770.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100770.html",
+      "events": []
+    },
+    {
+      "id": "100771",
+      "name": "沮授",
+      "country": "群",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2023-07-26",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20230725/20399_1100585.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100771.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100771.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100771.html",
+      "events": []
+    },
+    {
+      "id": "100783",
+      "name": "黄盖",
+      "country": "吴",
+      "troop": "步",
+      "version": "全赛季新版",
+      "catalog": "官网图鉴",
+      "first": "2023-10-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "新版黄盖；旧SP黄盖在2023年4月26日下架。",
+      "sources": [
+        "https://stzb.163.com/news/20231011/20395_1114030.html"
+      ],
+      "related": "H09",
+      "portrait": "./stzb-assets/portraits/100783.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100783.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100783.html",
+      "events": []
+    },
+    {
+      "id": "100784",
+      "name": "周瑜",
+      "country": "吴",
+      "troop": "步",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2023-11-15",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20231113/20399_1119794.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100784.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100784.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100784.html",
+      "events": []
+    },
+    {
+      "id": "100785",
+      "name": "马腾",
+      "country": "群",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2024-02-12",
+      "status": "公告明确",
+      "period": "",
+      "note": "全赛季永久武将；不与2018年赛季临时马腾混同。",
+      "sources": [
+        "https://stzb.163.com/notice/20240205/20399_1137259.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100785.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100785.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100785.html",
+      "events": []
+    },
+    {
+      "id": "100786",
+      "name": "卫子夫",
+      "country": "汉",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2024-02-09",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20240205/20399_1137259.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100786.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100786.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100786.html",
+      "events": []
+    },
+    {
+      "id": "100787",
+      "name": "程昱",
+      "country": "魏",
+      "troop": "弓",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2024-03-27",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20240326/20399_1145429.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100787.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100787.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100787.html",
+      "events": []
+    },
+    {
+      "id": "100788",
+      "name": "丁奉",
+      "country": "吴",
+      "troop": "步",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2024-03-27",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20240326/20399_1145429.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100788.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100788.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100788.html",
+      "events": []
+    },
+    {
+      "id": "100789",
+      "name": "陆绩",
+      "country": "吴",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2024-05-20",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20240514/20399_1155132.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100789.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100789.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100789.html",
+      "events": []
+    },
+    {
+      "id": "100790",
+      "name": "袁术",
+      "country": "群",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2024-06-12",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20240611/20399_1160323.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100790.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100790.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100790.html",
+      "events": []
+    },
+    {
+      "id": "100791",
+      "name": "陆逊",
+      "country": "吴",
+      "troop": "弓",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2024-07-31",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20240730/20399_1170882.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100791.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100791.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100791.html",
+      "events": []
+    },
+    {
+      "id": "100792",
+      "name": "马良",
+      "country": "蜀",
+      "troop": "步",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2024-07-31",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20240730/20399_1170882.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100792.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100792.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100792.html",
+      "events": []
+    },
+    {
+      "id": "100793",
+      "name": "陈到",
+      "country": "蜀",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2024-10-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20241015/20399_1186955.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100793.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100793.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100793.html",
+      "events": []
+    },
+    {
+      "id": "100794",
+      "name": "荀彧",
+      "country": "汉",
+      "troop": "步",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2024-12-31",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20241230/20399_1203297.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100794.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100794.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100794.html",
+      "events": []
+    },
+    {
+      "id": "100795",
+      "name": "献帝",
+      "country": "汉",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2024-12-31",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20241230/20399_1203297.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100795.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100795.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100795.html",
+      "events": []
+    },
+    {
+      "id": "100796",
+      "name": "于禁",
+      "country": "魏",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2025-01-31",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20250121/20399_1208244.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100796.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100796.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100796.html",
+      "events": []
+    },
+    {
+      "id": "100797",
+      "name": "胡芳",
+      "country": "晋",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2025-01-28",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20250121/20399_1208244.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100797.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100797.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100797.html",
+      "events": []
+    },
+    {
+      "id": "100799",
+      "name": "马谡",
+      "country": "蜀",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2025-06-04",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20250603/20399_1238160.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100799.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100799.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100799.html",
+      "events": []
+    },
+    {
+      "id": "100800",
+      "name": "蒋琬",
+      "country": "蜀",
+      "troop": "步",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2025-06-04",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20250603/20399_1238160.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100800.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100800.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100800.html",
+      "events": []
+    },
+    {
+      "id": "100801",
+      "name": "裴秀",
+      "country": "晋",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2025-05-20",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20250513/20399_1233949.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100801.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100801.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100801.html",
+      "events": []
+    },
+    {
+      "id": "100802",
+      "name": "左慈",
+      "country": "群",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2025-08-06",
+      "status": "公告明确",
+      "period": "",
+      "note": "全新五星XP骑兵左慈。",
+      "sources": [
+        "https://stzb.163.com/notice/20250805/20399_1252022.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100802.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100802.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100802.html",
+      "events": []
+    },
+    {
+      "id": "100803",
+      "name": "刘备",
+      "country": "汉",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2025-10-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20251021/20399_1265995.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100803.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100803.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100803.html",
+      "events": []
+    },
+    {
+      "id": "100804",
+      "name": "曹操",
+      "country": "汉",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2025-10-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20251021/20399_1265995.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100804.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100804.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100804.html",
+      "events": []
+    },
+    {
+      "id": "100805",
+      "name": "孙坚",
+      "country": "汉",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2025-10-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20251021/20399_1265995.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100805.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100805.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100805.html",
+      "events": []
+    },
+    {
+      "id": "100806",
+      "name": "姜维",
+      "country": "蜀",
+      "troop": "骑",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2025-10-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20251021/20399_1265995.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100806.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100806.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100806.html",
+      "events": []
+    },
+    {
+      "id": "100807",
+      "name": "司马懿",
+      "country": "晋",
+      "troop": "步",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2025-10-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20251021/20399_1265995.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100807.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100807.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100807.html",
+      "events": []
+    },
+    {
+      "id": "100808",
+      "name": "孙权",
+      "country": "吴",
+      "troop": "弓",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2025-10-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20251021/20399_1265995.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100808.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100808.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100808.html",
+      "events": []
+    },
+    {
+      "id": "100810",
+      "name": "黄忠",
+      "country": "蜀",
+      "troop": "弓",
+      "version": "XP首发",
+      "catalog": "官网图鉴",
+      "first": "2026-01-07",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20260106/20399_1280339.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100810.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100810.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100810.html",
+      "events": []
+    },
+    {
+      "id": "100811",
+      "name": "司马徽",
+      "country": "群",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2026-02-17",
+      "status": "公告明确",
+      "period": "",
+      "note": "维护预告个别行误写2025；以2026新春活动正文及日期交叉核对。",
+      "sources": [
+        "https://stzb.163.com/news/20260210/20395_1286295.html",
+        "https://stzb.163.com/notice/20260210/20399_1286395.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100811.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100811.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100811.html",
+      "events": []
+    },
+    {
+      "id": "100812",
+      "name": "冯嫽",
+      "country": "汉",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2026-02-16",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20260210/20399_1286395.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100812.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100812.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100812.html",
+      "events": []
+    },
+    {
+      "id": "100814",
+      "name": "刘徽",
+      "country": "晋",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2026-05-20",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/20260519/20399_1300758.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100814.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100814.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100814.html",
+      "events": []
+    },
+    {
+      "id": "100815",
+      "name": "孟获",
+      "country": "群",
+      "troop": "步",
+      "version": "XP新版",
+      "catalog": "官网图鉴",
+      "first": "2026-07-08",
+      "status": "官方渠道转载",
+      "period": "",
+      "note": "网易小助理发布；全新XP孟获，与2016年旧版分行。",
+      "sources": [
+        "https://community-cn.honor.com/cngm/game/topicdetail/topicid-3739385973637120"
+      ],
+      "related": "H17",
+      "portrait": "./stzb-assets/portraits/100815.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100815.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100815.html",
+      "events": []
+    },
+    {
+      "id": "100840",
+      "name": "许褚",
+      "country": "魏",
+      "troop": "步",
+      "version": "全赛季新版",
+      "catalog": "官网图鉴",
+      "first": "2026-09-16",
+      "status": "维护公告转载",
+      "period": "",
+      "note": "全赛季新版许褚；旧版2023年4月26日下架。",
+      "sources": [
+        "https://news.17173.com/content/09162026/121221067.shtml"
+      ],
+      "related": "H04",
+      "portrait": "./stzb-assets/portraits/100840.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100840.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100840.html",
+      "events": []
+    },
+    {
+      "id": "102001",
+      "name": "赵云",
+      "country": "蜀",
+      "troop": "步",
+      "version": "SP",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2016-02-24",
+      "note": "维护已调整SP赵云；SP首批奖励日期待核。",
+      "sources": [
+        "https://stzb.163.com/notice/2016/02/23/20399_600186.html"
+      ],
+      "portrait": "./stzb-assets/portraits/102001.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100021.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/102001.html",
+      "events": []
+    },
+    {
+      "id": "102002",
+      "name": "夏侯渊",
+      "country": "魏",
+      "troop": "骑",
+      "version": "SP",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/102002.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100435.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/102002.html",
+      "events": []
+    },
+    {
+      "id": "102003",
+      "name": "太史慈",
+      "country": "吴",
+      "troop": "弓",
+      "version": "SP",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/102003.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100090.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/102003.html",
+      "events": []
+    },
+    {
+      "id": "102004",
+      "name": "卢植",
+      "country": "汉",
+      "troop": "骑",
+      "version": "SP",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2016-04-20",
+      "note": "维护已调整SP卢植；SP首批奖励日期待核。",
+      "sources": [
+        "https://stzb.163.com/notice/2016/04/19/20399_612251.html"
+      ],
+      "portrait": "./stzb-assets/portraits/102004.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100007.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/102004.html",
+      "events": []
+    },
+    {
+      "id": "102005",
+      "name": "甄洛",
+      "country": "群",
+      "troop": "弓",
+      "version": "SP",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/102005.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100015.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/102005.html",
+      "events": []
+    },
+    {
+      "id": "102011",
+      "name": "蔡文姬",
+      "country": "汉",
+      "troop": "步",
+      "version": "SP",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/102011.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100004.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/102011.html",
+      "events": []
+    },
+    {
+      "id": "102012",
+      "name": "姜维",
+      "country": "蜀",
+      "troop": "弓",
+      "version": "SP",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/102012.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100074.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/102012.html",
+      "events": []
+    },
+    {
+      "id": "102014",
+      "name": "张角",
+      "country": "群",
+      "troop": "骑",
+      "version": "SP",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/102014.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100008.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/102014.html",
+      "events": []
+    },
+    {
+      "id": "102015",
+      "name": "孙尚香",
+      "country": "蜀",
+      "troop": "弓",
+      "version": "SP",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/102015.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100036.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/102015.html",
+      "events": []
+    },
+    {
+      "id": "102016",
+      "name": "祝融夫人",
+      "country": "蜀",
+      "troop": "骑",
+      "version": "SP",
+      "catalog": "官网图鉴",
+      "first": "2020-04-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "新增入SP卡包，同时新势力商品活动开启。",
+      "sources": [
+        "https://stzb.163.com/notice/2020/04/21/20399_876876.html"
+      ],
+      "portrait": "./stzb-assets/portraits/102016.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100494.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/102016.html",
+      "events": []
+    },
+    {
+      "id": "102017",
+      "name": "周姬",
+      "country": "吴",
+      "troop": "步",
+      "version": "SP",
+      "catalog": "官网图鉴",
+      "first": "2020-04-22",
+      "status": "公告明确",
+      "period": "",
+      "note": "新增入SP卡包，同时新势力商品活动开启。",
+      "sources": [
+        "https://stzb.163.com/notice/2020/04/21/20399_876876.html"
+      ],
+      "portrait": "./stzb-assets/portraits/102017.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100032.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/102017.html",
+      "events": []
+    },
+    {
+      "id": "100002",
+      "name": "十常侍",
+      "country": "汉",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100002.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100002.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100002.html",
+      "events": []
+    },
+    {
+      "id": "100003",
+      "name": "吕布",
+      "country": "汉",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2016-02-24",
+      "note": "维护已调整五星汉吕布；首次日期待核。",
+      "sources": [
+        "https://stzb.163.com/notice/2016/02/23/20399_600186.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100003.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100003.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100003.html",
+      "events": []
+    },
+    {
+      "id": "100004",
+      "name": "蔡文姬",
+      "country": "汉",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2016-02-24",
+      "note": "维护已调整五星汉蔡文姬；首次日期待核。",
+      "sources": [
+        "https://stzb.163.com/notice/2016/02/23/20399_600186.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100004.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100004.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100004.html",
+      "events": []
+    },
+    {
+      "id": "100005",
+      "name": "貂蝉",
+      "country": "汉",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2015-11-11",
+      "note": "双十一红颜卡包已包含汉貂蝉；首次日期待核。",
+      "sources": [
+        "https://stzb.163.com/news/2015/11/11/20395_579954.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100005.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100005.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100005.html",
+      "events": []
+    },
+    {
+      "id": "100006",
+      "name": "袁绍",
+      "country": "汉",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2015-12-09",
+      "note": "维护已调整五星汉袁绍“四世三公”；首次日期待核。",
+      "sources": [
+        "https://stzb.163.com/notice/2015/12/08/20399_585252.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100006.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100006.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100006.html",
+      "events": []
+    },
+    {
+      "id": "100007",
+      "name": "卢植",
+      "country": "汉",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2016-04-20",
+      "note": "维护已调整五星汉卢植；首次日期待核。",
+      "sources": [
+        "https://stzb.163.com/notice/2016/04/19/20399_612251.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100007.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100007.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100007.html",
+      "events": []
+    },
+    {
+      "id": "100008",
+      "name": "张角",
+      "country": "群",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100008.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100008.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100008.html",
+      "events": []
+    },
+    {
+      "id": "100009",
+      "name": "董卓",
+      "country": "群",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2015-12-23",
+      "note": "维护已调整五星群董卓“逆谋”；首次日期待核。",
+      "sources": [
+        "https://stzb.163.com/notice/2015/12/21/20399_588077.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100009.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100009.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100009.html",
+      "events": []
+    },
+    {
+      "id": "100010",
+      "name": "吕布",
+      "country": "群",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100010.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100010.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100010.html",
+      "events": []
+    },
+    {
+      "id": "100013",
+      "name": "马超",
+      "country": "群",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100013.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100013.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100013.html",
+      "events": []
+    },
+    {
+      "id": "100015",
+      "name": "甄洛",
+      "country": "群",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2015-10-22",
+      "status": "公测公告可证",
+      "period": "",
+      "note": "公测更新公告已列明；按国服正式公测起点记入，不追溯此前测试。",
+      "sources": [
+        "https://stzb.163.com/notice/2015/10/19/20399_574993.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100015.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100015.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100015.html",
+      "events": []
+    },
+    {
+      "id": "100016",
+      "name": "刘备",
+      "country": "蜀",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100016.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100016.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100016.html",
+      "events": []
+    },
+    {
+      "id": "100017",
+      "name": "诸葛亮",
+      "country": "蜀",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2015-10-22",
+      "status": "公测公告可证",
+      "period": "",
+      "note": "公测更新公告已列明；按国服正式公测起点记入，不追溯此前测试。",
+      "sources": [
+        "https://stzb.163.com/notice/2015/10/19/20399_574993.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100017.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100017.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100017.html",
+      "events": []
+    },
+    {
+      "id": "100019",
+      "name": "马云禄",
+      "country": "蜀",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100019.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100019.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100019.html",
+      "events": []
+    },
+    {
+      "id": "100020",
+      "name": "黄月英",
+      "country": "蜀",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2015-10-22",
+      "status": "公测公告可证",
+      "period": "",
+      "note": "公测更新公告已列明；按国服正式公测起点记入，不追溯此前测试。",
+      "sources": [
+        "https://stzb.163.com/notice/2015/10/19/20399_574993.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100020.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100020.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100020.html",
+      "events": []
+    },
+    {
+      "id": "100021",
+      "name": "赵云",
+      "country": "蜀",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2015-11-04",
+      "note": "维护已调整五星蜀赵云；首次日期待核。",
+      "sources": [
+        "https://stzb.163.com/notice/2015/11/03/20399_578349.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100021.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100021.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100021.html",
+      "events": []
+    },
+    {
+      "id": "100022",
+      "name": "张飞",
+      "country": "蜀",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2015-10-22",
+      "status": "公测公告可证",
+      "period": "",
+      "note": "公测更新公告已列明；按国服正式公测起点记入，不追溯此前测试。",
+      "sources": [
+        "https://stzb.163.com/notice/2015/10/19/20399_574993.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100022.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100022.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100022.html",
+      "events": []
+    },
+    {
+      "id": "100023",
+      "name": "曹操",
+      "country": "魏",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100023.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100023.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100023.html",
+      "events": []
+    },
+    {
+      "id": "100024",
+      "name": "荀彧",
+      "country": "魏",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100024.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100024.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100024.html",
+      "events": []
+    },
+    {
+      "id": "100025",
+      "name": "曹丕",
+      "country": "魏",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100025.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100025.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100025.html",
+      "events": []
+    },
+    {
+      "id": "100026",
+      "name": "关羽",
+      "country": "魏",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100026.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100026.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100026.html",
+      "events": []
+    },
+    {
+      "id": "100027",
+      "name": "张辽",
+      "country": "魏",
+      "troop": "骑",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100027.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100027.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100027.html",
+      "events": []
+    },
+    {
+      "id": "100028",
+      "name": "王异",
+      "country": "魏",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100028.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100028.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100028.html",
+      "events": []
+    },
+    {
+      "id": "100029",
+      "name": "张春华",
+      "country": "魏",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100029.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100029.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100029.html",
+      "events": []
+    },
+    {
+      "id": "100030",
+      "name": "孙权",
+      "country": "吴",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100030.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100030.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100030.html",
+      "events": []
+    },
+    {
+      "id": "100031",
+      "name": "周瑜",
+      "country": "吴",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2015-10-22",
+      "status": "公测公告可证",
+      "period": "",
+      "note": "公测更新公告已列明；按国服正式公测起点记入，不追溯此前测试。",
+      "sources": [
+        "https://stzb.163.com/notice/2015/10/19/20399_574993.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100031.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100031.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100031.html",
+      "events": []
+    },
+    {
+      "id": "100032",
+      "name": "周姬",
+      "country": "吴",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2016-01-20",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2016/01/19/20399_594015.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100032.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100032.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100032.html",
+      "events": []
+    },
+    {
+      "id": "100033",
+      "name": "孙坚",
+      "country": "吴",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2016-04-20",
+      "note": "维护已重做五星吴孙坚主战法；首次日期待核。",
+      "sources": [
+        "https://stzb.163.com/notice/2016/04/19/20399_612251.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100033.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100033.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100033.html",
+      "events": [
+        {
+          "id": "100033",
+          "date": "2016-04-20",
+          "kind": "原卡战法重做",
+          "status": "公告明确",
+          "note": "公告明确“遗志”重新设计；无重新上架安排。",
+          "sources": [
+            "https://stzb.163.com/notice/2016/04/19/20399_612251.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100034",
+      "name": "甘宁",
+      "country": "吴",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2015-10-22",
+      "status": "公测公告可证",
+      "period": "",
+      "note": "公测更新公告已列明；按国服正式公测起点记入，不追溯此前测试。",
+      "sources": [
+        "https://stzb.163.com/notice/2015/10/19/20399_574993.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100034.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100034.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100034.html",
+      "events": []
+    },
+    {
+      "id": "100035",
+      "name": "吕蒙",
+      "country": "吴",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2015-10-28",
+      "note": "维护已调整五星吕蒙；首次日期待核。",
+      "sources": [
+        "https://stzb.163.com/notice/2015/10/27/20399_576835.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100035.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100035.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100035.html",
+      "events": []
+    },
+    {
+      "id": "100036",
+      "name": "孙尚香",
+      "country": "吴",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2015-11-04",
+      "note": "维护已调整五星吴孙尚香；首次日期待核。",
+      "sources": [
+        "https://stzb.163.com/notice/2015/11/03/20399_578349.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100036.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100036.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100036.html",
+      "events": []
+    },
+    {
+      "id": "100037",
+      "name": "何太后",
+      "country": "汉",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2015-10-22",
+      "status": "公测公告可证",
+      "period": "",
+      "note": "公测更新公告已列明；按国服正式公测起点记入，不追溯此前测试。",
+      "sources": [
+        "https://stzb.163.com/notice/2015/10/19/20399_574993.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100037.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100037.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100037.html",
+      "events": []
+    },
+    {
+      "id": "100072",
+      "name": "关银屏",
+      "country": "蜀",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100072.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100072.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100072.html",
+      "events": []
+    },
+    {
+      "id": "100074",
+      "name": "姜维",
+      "country": "蜀",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100074.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100074.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100074.html",
+      "events": [
+        {
+          "id": "100074",
+          "date": "2022-10-26",
+          "kind": "原卡战法重做",
+          "status": "公告明确",
+          "note": "姜维调整后加入阵营名将；无此前下架证据，不记作再次首发。",
+          "sources": [
+            "https://stzb.163.com/news/20221024/20395_1048127.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100090",
+      "name": "太史慈",
+      "country": "吴",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100090.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100090.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100090.html",
+      "events": []
+    },
+    {
+      "id": "100101",
+      "name": "灵帝",
+      "country": "汉",
+      "troop": "弓",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2015-10-22",
+      "status": "公测公告可证",
+      "period": "",
+      "note": "公测更新公告已列明；按国服正式公测起点记入，不追溯此前测试。",
+      "sources": [
+        "https://stzb.163.com/notice/2015/10/19/20399_574993.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100101.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100101.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100101.html",
+      "events": []
+    },
+    {
+      "id": "100310",
+      "name": "邓艾",
+      "country": "魏",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "2015-11-18",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/news/2015/11/17/20395_581361.html"
+      ],
+      "portrait": "./stzb-assets/portraits/100310.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100310.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100310.html",
+      "events": [
+        {
+          "id": "100310",
+          "date": "2022-04-27",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/news/20220425/20395_1014498.html"
+          ]
+        },
+        {
+          "id": "100310",
+          "date": "2022-10-26",
+          "kind": "调整后重新上架",
+          "status": "公告明确",
+          "note": "2022年4月27日移除后，调整并加入阵营名将；沿用原卡。",
+          "sources": [
+            "https://stzb.163.com/notice/2022/10/25/20399_1048385.html",
+            "https://stzb.163.com/news/20221024/20395_1048127.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "100337",
+      "name": "貂蝉",
+      "country": "群",
+      "troop": "步",
+      "version": "常规版",
+      "catalog": "官网图鉴",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10"
+      ],
+      "portrait": "./stzb-assets/portraits/100337.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100337.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100337.html",
+      "events": []
+    },
+    {
+      "id": "H01",
+      "name": "华佗",
+      "country": "汉",
+      "troop": "步",
+      "version": "旧版",
+      "catalog": "历史公告补录",
+      "first": "2016-04-27",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2016/04/27/20399_614136.html"
+      ],
+      "portrait": "./stzb-assets/portraits/H01.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100369.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100369.html",
+      "events": [
+        {
+          "id": "H01",
+          "date": "2025-09-10",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/news/20250904/20395_1257683.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H02",
+      "name": "贾诩",
+      "country": "群",
+      "troop": "步",
+      "version": "旧版",
+      "catalog": "历史公告补录",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2016-01-13",
+      "note": "维护已调整五星贾诩“算无遗策”；非首次新增公告。",
+      "sources": [
+        "https://stzb.163.com/notice/2016/01/12/20399_592214.html"
+      ],
+      "portrait": "./stzb-assets/portraits/H02.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100011.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100011.html",
+      "events": [
+        {
+          "id": "H02",
+          "date": "2025-11-26",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/news/20251117/20395_1271355.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H04",
+      "name": "许褚",
+      "country": "魏",
+      "troop": "步",
+      "version": "旧版",
+      "catalog": "历史公告补录",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2016-06-29",
+      "note": "维护已调整五星许褚；首次日期待核。",
+      "sources": [
+        "https://stzb.163.com/notice/2016/06/28/20399_626056.html"
+      ],
+      "related": "100840",
+      "portrait": "./stzb-assets/portraits/H04.jpg",
+      "portraitSource": "https://stzb.res.netease.com/pc/qt/20170323200251/data/watermark/card_100473.jpg",
+      "officialPage": "https://stzb.163.com/herolist/100473.html",
+      "events": [
+        {
+          "id": "H04",
+          "date": "2023-04-26",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/news/20230419/20395_1083800.html"
+          ]
+        },
+        {
+          "id": "H04",
+          "date": "2026-09-16",
+          "kind": "同名新版上架",
+          "status": "维护公告转载",
+          "note": "另出新卡：魏·许褚·步（全赛季新版）；不等同旧卡原地重做。",
+          "sources": [
+            "https://news.17173.com/content/09162026/121221067.shtml"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H05",
+      "name": "张郃",
+      "country": "魏",
+      "troop": "步",
+      "version": "常规旧版",
+      "catalog": "历史公告补录",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2016-05-11",
+      "note": "维护列有五星魏张郃；与SP张郃、群骑张郃区分。",
+      "sources": [
+        "https://stzb.163.com/notice/2016/05/10/20399_616646.html"
+      ],
+      "portrait": "./stzb-assets/portraits/H05.jpg",
+      "portraitSource": "https://stzb.res.netease.com/pc/qt/20170323200251/data/watermark/card_100083.jpg",
+      "officialPage": "https://stzb.163.com/herolist/100083.html",
+      "events": [
+        {
+          "id": "H05",
+          "date": "2024-09-25",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/news/20240918/20395_1181421.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H06",
+      "name": "张郃",
+      "country": "魏",
+      "troop": "骑",
+      "version": "SP旧版",
+      "catalog": "历史公告补录",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://stzb.163.com/news/20240918/20395_1181421.html"
+      ],
+      "portrait": "./stzb-assets/portraits/H06.jpg",
+      "portraitSource": "https://stzb.res.netease.com/pc/qt/20170323200251/data/watermark/card_102013.jpg",
+      "officialPage": "https://stzb.163.com/herolist/102013.html",
+      "events": [
+        {
+          "id": "H06",
+          "date": "2024-09-25",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/news/20240918/20395_1181421.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H07",
+      "name": "荀彧＆荀攸",
+      "country": "魏",
+      "troop": "步",
+      "version": "组合旧版",
+      "catalog": "历史公告补录",
+      "first": "2016-06-29",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2016/06/28/20399_626056.html"
+      ],
+      "portrait": "./stzb-assets/portraits/H07.jpg",
+      "portraitSource": "https://stzb.res.netease.com/pc/qt/20170323200251/data/watermark/card_100437.jpg",
+      "officialPage": "https://stzb.163.com/herolist/100437.html",
+      "events": [
+        {
+          "id": "H07",
+          "date": "2021-09-29",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/notice/2021/09/24/20399_974364.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H08",
+      "name": "荀攸",
+      "country": "魏",
+      "troop": "步",
+      "version": "SP旧版",
+      "catalog": "历史公告补录",
+      "first": "2017-07-12",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2017/07/11/20399_699753.html"
+      ],
+      "portrait": "./stzb-assets/portraits/H08.jpg",
+      "portraitSource": "https://stzb.res.netease.com/pc/qt/20170323200251/data/watermark/card_100583.jpg",
+      "officialPage": "https://stzb.163.com/herolist/100583.html",
+      "events": [
+        {
+          "id": "H08",
+          "date": "2024-04-30",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/news/20240606/20395_1150559.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H09",
+      "name": "黄盖",
+      "country": "吴",
+      "troop": "步",
+      "version": "SP旧版",
+      "catalog": "历史公告补录",
+      "first": "",
+      "status": "待核实",
+      "period": "首发日期待核实",
+      "note": "已收录卡片身份，尚未找到能确认首次可获取日期的历史公告。",
+      "sources": [
+        "https://stzb.163.com/news/20230419/20395_1083800.html",
+        "https://stzb.163.com/news/20231011/20395_1114030.html"
+      ],
+      "related": "100783",
+      "portrait": "./stzb-assets/portraits/H09.jpg",
+      "portraitSource": "https://stzb.res.netease.com/pc/qt/20170323200251/data/watermark/card_100587.jpg",
+      "officialPage": "https://stzb.163.com/herolist/100587.html",
+      "events": [
+        {
+          "id": "H09",
+          "date": "2023-04-26",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/news/20230419/20395_1083800.html"
+          ]
+        },
+        {
+          "id": "H09",
+          "date": "2023-10-22",
+          "kind": "同名新版上架",
+          "status": "公告明确",
+          "note": "另出新卡：吴·黄盖·步（全赛季新版）；不等同旧卡原地重做。",
+          "sources": [
+            "https://stzb.163.com/news/20231011/20395_1114030.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H10",
+      "name": "典韦",
+      "country": "魏",
+      "troop": "步",
+      "version": "XP旧版",
+      "catalog": "历史公告补录",
+      "first": "2017-05-25",
+      "status": "公告明确",
+      "period": "",
+      "note": "新征服赛季首批实际开放日；5月17日公告为规则启用。",
+      "sources": [
+        "https://stzb.163.com/news/2017/05/25/20395_691577.html"
+      ],
+      "related": "100769",
+      "portrait": "./stzb-assets/portraits/H10.jpg",
+      "portraitSource": "https://stzb.res.netease.com/pc/qt/20170323200251/data/watermark/card_100575.jpg",
+      "officialPage": "https://stzb.163.com/herolist/100575.html",
+      "events": [
+        {
+          "id": "H10",
+          "date": "2022-04-27",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/news/20220425/20395_1014498.html"
+          ]
+        },
+        {
+          "id": "H10",
+          "date": "2023-04-26",
+          "kind": "同名新版上架",
+          "status": "公告明确",
+          "note": "另出新卡：魏·典韦·步（全赛季新版）；不等同旧卡原地重做。",
+          "sources": [
+            "https://stzb.163.com/news/20230419/20395_1083800.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H11",
+      "name": "司马懿",
+      "country": "汉",
+      "troop": "弓",
+      "version": "SP旧版",
+      "catalog": "历史公告补录",
+      "first": "2017-12-20",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2017/12/19/20399_730440.html"
+      ],
+      "portrait": "./stzb-assets/portraits/H11.jpg",
+      "portraitSource": "https://stzb.res.netease.com/pc/qt/20170323200251/data/watermark/card_100590.jpg",
+      "officialPage": "https://stzb.163.com/herolist/100590.html",
+      "events": [
+        {
+          "id": "H11",
+          "date": "2023-04-26",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/news/20230419/20395_1083800.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H12",
+      "name": "钟会",
+      "country": "魏",
+      "troop": "弓",
+      "version": "常规旧版",
+      "catalog": "历史公告补录",
+      "first": "2017-12-31",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2017/12/28/20399_732415.html"
+      ],
+      "portrait": "./stzb-assets/portraits/H12.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100591.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100591.html",
+      "events": [
+        {
+          "id": "H12",
+          "date": "2026-04-15",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/news/20260408/20395_1295144.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H13",
+      "name": "钟会",
+      "country": "晋",
+      "troop": "弓",
+      "version": "SP旧版",
+      "catalog": "历史公告补录",
+      "first": "2022-10-26",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/news/20221020/20395_1047557.html"
+      ],
+      "portrait": "./stzb-assets/portraits/H13.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100591.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100731.html",
+      "events": [
+        {
+          "id": "H13",
+          "date": "2026-04-15",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/news/20260408/20395_1295144.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H14",
+      "name": "轲比能",
+      "country": "群",
+      "troop": "骑",
+      "version": "XP旧版",
+      "catalog": "历史公告补录",
+      "first": "2017-02-10",
+      "status": "赛季批次推定",
+      "period": "",
+      "note": "按黄巾之乱批次与首开日推定；当日公告仅逐一列出朱儁、张宝、张梁。",
+      "sources": [
+        "https://stzb.163.com/news/2017/02/28/20395_674366.html",
+        "https://stzb.163.com/notice/2017/02/09/20399_671331.html"
+      ],
+      "portrait": "./stzb-assets/portraits/H14.jpg",
+      "portraitSource": "https://stzb.res.netease.com/pc/qt/20170323200251/data/watermark/card_100550.jpg",
+      "officialPage": "https://stzb.163.com/herolist/100550.html",
+      "events": [
+        {
+          "id": "H14",
+          "date": "2024-04-30",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/news/20240606/20395_1150559.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H15",
+      "name": "于吉",
+      "country": "群",
+      "troop": "弓",
+      "version": "XP旧版",
+      "catalog": "历史公告补录",
+      "first": "2019-06-12",
+      "status": "公告明确",
+      "period": "",
+      "note": "李儒此行为可保留的XP版；另有2018年赛季临时版。",
+      "sources": [
+        "https://stzb.163.com/notice/2019/06/12/20399_817566.html"
+      ],
+      "portrait": "./stzb-assets/portraits/H15.jpg",
+      "portraitSource": "https://stzb.res.netease.com/pc/qt/20170323200251/data/watermark/card_100646.jpg",
+      "officialPage": "https://stzb.163.com/herolist/100646.html",
+      "events": [
+        {
+          "id": "H15",
+          "date": "2024-04-30",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/news/20240606/20395_1150559.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H16",
+      "name": "夏侯霸",
+      "country": "蜀",
+      "troop": "步",
+      "version": "XP旧版",
+      "catalog": "历史公告补录",
+      "first": "2020-12-23",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2020/12/22/20399_923253.html"
+      ],
+      "portrait": "./stzb-assets/portraits/H16.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100674.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100674.html",
+      "events": [
+        {
+          "id": "H16",
+          "date": "2025-11-26",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/news/20251117/20395_1271355.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "H17",
+      "name": "孟获",
+      "country": "群",
+      "troop": "步",
+      "version": "旧版",
+      "catalog": "历史公告补录",
+      "first": "2016-04-06",
+      "status": "公告明确",
+      "period": "",
+      "note": "",
+      "sources": [
+        "https://stzb.163.com/notice/2016/04/05/20399_609050.html"
+      ],
+      "related": "100815",
+      "portrait": "./stzb-assets/portraits/H17.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100488.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100488.html",
+      "events": [
+        {
+          "id": "H17",
+          "date": "2025-04-02",
+          "kind": "下架",
+          "status": "公告明确",
+          "note": "从全赛季卡包移除；已持有的旧卡可继续使用。",
+          "sources": [
+            "https://stzb.163.com/news/20250327/20395_1222891.html"
+          ]
+        },
+        {
+          "id": "H17",
+          "date": "2026-07-08",
+          "kind": "同名新版上架",
+          "status": "官方渠道转载",
+          "note": "另出新卡：群·孟获·步（XP新版）；不等同旧卡原地重做。",
+          "sources": [
+            "https://community-cn.honor.com/cngm/game/topicdetail/topicid-3739385973637120"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T01",
+      "name": "李儒",
+      "country": "群",
+      "troop": "弓",
+      "version": "赛季临时版",
+      "catalog": "赛季临时武将",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2018-12-05",
+      "note": "曾为赛季商店临时五星；2018年12月5日移出商店，首次加入商店日期待核。",
+      "sources": [
+        "https://stzb.163.com/notice/2018/12/04/20399_788298.html"
+      ],
+      "portrait": "./stzb-assets/portraits/T01.jpg",
+      "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100604.jpg?gameid=g10",
+      "officialPage": "https://stzb.163.com/herolist/100604.html",
+      "events": [
+        {
+          "id": "T01",
+          "date": "2018-12-05",
+          "kind": "临时武将移出商店",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/notice/2018/12/04/20399_788298.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T02",
+      "name": "臧霸",
+      "country": "群",
+      "troop": "步",
+      "version": "赛季临时版",
+      "catalog": "赛季临时武将",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2018-12-05",
+      "note": "曾为赛季商店临时五星；2018年12月5日移出商店，首次加入商店日期待核。",
+      "sources": [
+        "https://stzb.163.com/notice/2018/12/04/20399_788298.html"
+      ],
+      "portrait": "./stzb-assets/portraits/T02.jpg",
+      "portraitSource": "https://stzb.res.netease.com/pc/qt/20170323200251/data/watermark/card_100607.jpg",
+      "officialPage": "https://stzb.163.com/herolist/100607.html",
+      "events": [
+        {
+          "id": "T02",
+          "date": "2018-12-05",
+          "kind": "临时武将移出商店",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/notice/2018/12/04/20399_788298.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T03",
+      "name": "李典",
+      "country": "群",
+      "troop": "骑",
+      "version": "赛季临时版",
+      "catalog": "赛季临时武将",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2019-10-09",
+      "note": "曾为赛季商店临时五星；2019年10月9日移出商店，首次加入商店日期待核。",
+      "sources": [
+        "https://stzb.163.com/notice/2019/10/08/20399_836223.html"
+      ],
+      "portrait": "./stzb-assets/portraits/T03.jpg",
+      "portraitSource": "https://stzb.res.netease.com/pc/qt/20170323200251/data/watermark/card_100608.jpg",
+      "officialPage": "https://stzb.163.com/herolist/100608.html",
+      "events": [
+        {
+          "id": "T03",
+          "date": "2019-10-09",
+          "kind": "临时武将移出商店",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/notice/2019/10/08/20399_836223.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T04",
+      "name": "高览",
+      "country": "群",
+      "troop": "步",
+      "version": "赛季临时版",
+      "catalog": "赛季临时武将",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2019-10-09",
+      "note": "曾为赛季商店临时五星；2019年10月9日移出商店，首次加入商店日期待核。",
+      "sources": [
+        "https://stzb.163.com/notice/2019/10/08/20399_836223.html"
+      ],
+      "portrait": "./stzb-assets/portraits/T04.jpg",
+      "portraitSource": "https://stzb.res.netease.com/pc/qt/20170323200251/data/watermark/card_100606.jpg",
+      "officialPage": "https://stzb.163.com/herolist/100606.html",
+      "events": [
+        {
+          "id": "T04",
+          "date": "2019-10-09",
+          "kind": "临时武将移出商店",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/notice/2019/10/08/20399_836223.html"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "T05",
+      "name": "马腾",
+      "country": "群",
+      "troop": "骑",
+      "version": "赛季临时版",
+      "catalog": "赛季临时武将",
+      "first": "",
+      "status": "待核实",
+      "period": "不晚于2019-10-09",
+      "note": "曾为赛季商店临时五星；2019年10月9日移出商店，首次加入商店日期待核。",
+      "sources": [
+        "https://stzb.163.com/notice/2019/10/08/20399_836223.html"
+      ],
+      "portrait": "./stzb-assets/portraits/T05.jpg",
+      "portraitSource": "https://stzb.res.netease.com/pc/qt/20170323200251/data/watermark/card_100605.jpg",
+      "officialPage": "https://stzb.163.com/herolist/100605.html",
+      "events": [
+        {
+          "id": "T05",
+          "date": "2019-10-09",
+          "kind": "临时武将移出商店",
+          "status": "公告明确",
+          "note": "",
+          "sources": [
+            "https://stzb.163.com/notice/2019/10/08/20399_836223.html"
+          ]
+        }
+      ]
+    }
+  ]
+}
