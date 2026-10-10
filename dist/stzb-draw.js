@@ -7,7 +7,7 @@
   const format = n => n.toLocaleString('zh-CN');
   let data, state, pool, category = 'regular', recordView = 'collection', busy = false, queue = [];
   let pendingConfirmation = null;
-  let pendingResults = [], stopIntro = () => {};
+  let pendingResults = [], stopIntro = () => {}, drawButton;
   let storageWorks = true;
   let prefs = { poolId: 'dongwu', fast: false };
 
@@ -34,6 +34,7 @@
   }
 
   function renderPool() {
+    clearReveal();
     $('pool-name').textContent = pool.name;
     $('pool-kicker').textContent = pool.kicker;
     $('pool-summary').textContent = pool.summary;
@@ -71,6 +72,7 @@
     $('stat-fives').textContent = format(state.stars[5]);
     $('stat-rate').textContent = state.total ? `${(100 * state.stars[5] / state.total).toFixed(1)}%` : '—';
     $('stat-cost').textContent = format(state.cost);
+    document.querySelectorAll('[data-pool], [data-category], [data-record], #select-wish, #restart-event, #reset-all, #open-method').forEach(button => { button.disabled = busy; });
     if (!busy) renderRecords();
   }
 
@@ -121,22 +123,43 @@
     $('confirm-dialog').showModal();
   }
 
+  function clearReveal() {
+    stopIntro();
+    $('reveal').hidden = true;
+    $('stage-content').inert = false;
+    $('stage').classList.remove('revealing');
+  }
+
+  function finishRecruitment() {
+    const returnFocus = $('reveal').contains(document.activeElement);
+    stopIntro();
+    queue = [];
+    busy = false;
+    $('skip-reveal').hidden = true;
+    $('next-reveal').hidden = true;
+    revealResults();
+    update();
+    if (returnFocus) drawButton?.focus({ preventScroll: true });
+  }
+
   function showNextReveal() {
     stopIntro();
     const result = queue.shift();
-    if (!result) { $('reveal').close(); return; }
+    if (!result) return;
     const card = data.cards[result.id];
-    $('reveal-kicker').textContent = result.isWish ? '心有所愿 · 终得相逢' : '金光乍现 · 名将来归';
-    $('reveal-name').textContent = card.name;
     $('reveal-image').src = card.portrait;
-    $('reveal-image').alt = `${card.name}官方画像`;
-    $('reveal-meta').textContent = `${metadata(card)}${result.reason ? ` · ${result.reason}` : ''}`;
-    $('next-reveal').textContent = queue.length ? `下一位名将 · 还有 ${queue.length} 位` : '收入麾下';
-    $('next-reveal').disabled = true;
+    $('reveal-image').alt = `五星${card.name} · ${metadata(card)}${result.isWish ? ' · 心仪武将' : ''}`;
+    $('next-reveal').setAttribute('aria-label', `下一位五星武将，还有 ${queue.length} 位`);
+    $('next-reveal').hidden = true;
+    $('skip-reveal').hidden = false;
     $('reveal').classList.add('playing-intro');
-    $('reveal').setAttribute('aria-labelledby', 'intro-label');
+    $('reveal').setAttribute('aria-label', '五星武将即将揭晓');
     $('reveal-intro').hidden = false;
-    if (!$('reveal').open) $('reveal').showModal();
+    $('reveal').hidden = false;
+    $('stage-content').inert = true;
+    $('stage').classList.add('revealing');
+    $('stage').scrollIntoView({ block: 'nearest' });
+    $('skip-reveal').focus({ preventScroll: true });
     const video = $('reveal-video');
     let active = true;
     const finish = () => {
@@ -144,10 +167,12 @@
       stopIntro();
       $('reveal-intro').hidden = true;
       $('reveal').classList.remove('playing-intro');
-      $('reveal').setAttribute('aria-labelledby', 'reveal-name');
-      $('next-reveal').disabled = false;
+      $('reveal').setAttribute('aria-label', '五星武将画像');
       $('reveal').getAnimations({ subtree: true }).forEach(animation => { animation.cancel(); animation.play(); });
-      $('next-reveal').focus({ preventScroll: true });
+      if (queue.length) {
+        $('next-reveal').hidden = false;
+        $('next-reveal').focus({ preventScroll: true });
+      } else finishRecruitment();
     };
     const timeout = setTimeout(finish, 10000);
     stopIntro = () => {
@@ -175,6 +200,8 @@
   function recruit(count) {
     if (busy) return;
     try {
+      clearReveal();
+      drawButton = $(count === 1 ? 'draw-one' : 'draw-five');
       const next = structuredClone(state);
       const results = engine.draw(next, pool, data.cards, count);
       state = next;
@@ -260,19 +287,20 @@
   $('draw-five').addEventListener('click', () => recruit(5));
   $('skip-animation').addEventListener('change', () => { prefs.fast = $('skip-animation').checked; save(); });
   $('next-reveal').addEventListener('click', showNextReveal);
-  $('skip-reveal').addEventListener('click', () => $('reveal').close());
-  $('reveal').addEventListener('close', () => {
-    stopIntro();
-    $('reveal-intro').hidden = true;
-    $('reveal').classList.remove('playing-intro');
-    queue = []; busy = false; revealResults(); update();
+  $('skip-reveal').addEventListener('click', () => { finishRecruitment(); clearReveal(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && busy && !document.querySelector('dialog[open]')) {
+      finishRecruitment(); clearReveal();
+    }
   });
   document.querySelectorAll('[data-record]').forEach(button => button.addEventListener('click', () => { recordView = button.dataset.record; renderRecords(); }));
   $('restart-event').addEventListener('click', () => confirmAction('重新开始本轮活动', '本包次数恢复为 0，重新获得本轮免费与半价机会；累计消耗、收藏和历史记录保留。', () => {
+    clearReveal();
     delete state.pools[pool.id]; delete state.pity[pool.id];
     update(); save(); $('announce').textContent = '新一轮活动已开启。';
   }));
   $('reset-all').addEventListener('click', () => confirmAction('清空模拟记录', '将清空全部卡包的招募次数、心愿积分、收藏与历史记录。', () => {
+    clearReveal();
     state = engine.createState(); update(); save();
     $('last-results').innerHTML = '<div class="awaiting"><span aria-hidden="true">✦</span><p>新的招募手记，等待落笔。</p></div>';
     $('announce').textContent = '模拟记录已清空。';
