@@ -37,7 +37,11 @@
       "portrait": "./stzb-assets/portraits/100372.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100372.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100372.html",
-      "events": []
+      "events": [],
+      "limited": "红颜限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/2017/01/24/20399_669858.html"
+      ]
     },
     {
       "id": "100374",
@@ -56,7 +60,11 @@
       "portrait": "./stzb-assets/portraits/100374.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100374.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100374.html",
-      "events": []
+      "events": [],
+      "limited": "红颜限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/2020/01/18/20399_861153.html"
+      ]
     },
     {
       "id": "100376",
@@ -75,7 +83,11 @@
       "portrait": "./stzb-assets/portraits/100376.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100376.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100376.html",
-      "events": []
+      "events": [],
+      "limited": "红颜限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/2019/01/31/20399_798224.html"
+      ]
     },
     {
       "id": "100377",
@@ -94,7 +106,11 @@
       "portrait": "./stzb-assets/portraits/100377.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100377.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100377.html",
-      "events": []
+      "events": [],
+      "limited": "红颜限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/2018/02/12/20399_740874.html"
+      ]
     },
     {
       "id": "100424",
@@ -387,7 +403,11 @@
       "portrait": "./stzb-assets/portraits/100476.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100476.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100476.html",
-      "events": []
+      "events": [],
+      "limited": "S2限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/20260519/20399_1300758.html"
+      ]
     },
     {
       "id": "100477",
@@ -407,7 +427,11 @@
       "portrait": "./stzb-assets/portraits/100477.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100477.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100477.html",
-      "events": []
+      "events": [],
+      "limited": "S2限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/20260519/20399_1300758.html"
+      ]
     },
     {
       "id": "100478",
@@ -427,7 +451,11 @@
       "portrait": "./stzb-assets/portraits/100478.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100478.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100478.html",
-      "events": []
+      "events": [],
+      "limited": "S2限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/20260519/20399_1300758.html"
+      ]
     },
     {
       "id": "100479",
@@ -447,7 +475,11 @@
       "portrait": "./stzb-assets/portraits/100479.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100479.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100479.html",
-      "events": []
+      "events": [],
+      "limited": "S2限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/20260519/20399_1300758.html"
+      ]
     },
     {
       "id": "100480",
@@ -467,7 +499,11 @@
       "portrait": "./stzb-assets/portraits/100480.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100480.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100480.html",
-      "events": []
+      "events": [],
+      "limited": "S2限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/20260519/20399_1300758.html"
+      ]
     },
     {
       "id": "100486",
@@ -526,7 +562,11 @@
       "portrait": "./stzb-assets/portraits/100495.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100495.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100495.html",
-      "events": []
+      "events": [],
+      "limited": "S3限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/20260519/20399_1300758.html"
+      ]
     },
     {
       "id": "100496",
@@ -547,7 +587,11 @@
       "portrait": "./stzb-assets/portraits/100496.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100496.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100496.html",
-      "events": []
+      "events": [],
+      "limited": "S3限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/20260519/20399_1300758.html"
+      ]
     },
     {
       "id": "100497",
@@ -568,7 +612,11 @@
       "portrait": "./stzb-assets/portraits/100497.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100497.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100497.html",
-      "events": []
+      "events": [],
+      "limited": "S3限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/20260519/20399_1300758.html"
+      ]
     },
     {
       "id": "100498",
@@ -589,7 +637,11 @@
       "portrait": "./stzb-assets/portraits/100498.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100498.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100498.html",
-      "events": []
+      "events": [],
+      "limited": "S3限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/20260519/20399_1300758.html"
+      ]
     },
     {
       "id": "100519",
@@ -1556,7 +1608,11 @@
       "portrait": "./stzb-assets/portraits/100676.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100676.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100676.html",
-      "events": []
+      "events": [],
+      "limited": "红颜限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/2021/02/03/20399_930582.html"
+      ]
     },
     {
       "id": "100677",
@@ -1690,7 +1746,11 @@
       "portrait": "./stzb-assets/portraits/100690.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100690.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100690.html",
-      "events": []
+      "events": [],
+      "limited": "红颜限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/2022/01/21/20399_999209.html"
+      ]
     },
     {
       "id": "100691",
@@ -1956,7 +2016,11 @@
       "portrait": "./stzb-assets/portraits/100742.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100742.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100742.html",
-      "events": []
+      "events": [],
+      "limited": "红颜限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/2023/01/16/20399_1063625.html"
+      ]
     },
     {
       "id": "100769",
@@ -1995,7 +2059,12 @@
       "portrait": "./stzb-assets/portraits/100770.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100770.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100770.html",
-      "events": []
+      "events": [],
+      "limited": "诸子限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/20230516/20399_1088169.html",
+        "https://stzb.163.com/notice/20260519/20399_1300758.html"
+      ]
     },
     {
       "id": "100771",
@@ -2091,7 +2160,11 @@
       "portrait": "./stzb-assets/portraits/100786.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100786.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100786.html",
-      "events": []
+      "events": [],
+      "limited": "红颜限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/20240205/20399_1137259.html"
+      ]
     },
     {
       "id": "100787",
@@ -2148,7 +2221,12 @@
       "portrait": "./stzb-assets/portraits/100789.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100789.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100789.html",
-      "events": []
+      "events": [],
+      "limited": "诸子限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/20240514/20399_1155132.html",
+        "https://stzb.163.com/notice/20260519/20399_1300758.html"
+      ]
     },
     {
       "id": "100790",
@@ -2300,7 +2378,11 @@
       "portrait": "./stzb-assets/portraits/100797.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100797.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100797.html",
-      "events": []
+      "events": [],
+      "limited": "红颜限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/20250121/20399_1208244.html"
+      ]
     },
     {
       "id": "100799",
@@ -2357,7 +2439,12 @@
       "portrait": "./stzb-assets/portraits/100801.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100801.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100801.html",
-      "events": []
+      "events": [],
+      "limited": "诸子限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/20250513/20399_1233949.html",
+        "https://stzb.163.com/notice/20260519/20399_1300758.html"
+      ]
     },
     {
       "id": "100802",
@@ -2548,7 +2635,11 @@
       "portrait": "./stzb-assets/portraits/100812.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100812.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100812.html",
-      "events": []
+      "events": [],
+      "limited": "红颜限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/20260210/20399_1286395.html"
+      ]
     },
     {
       "id": "100814",
@@ -2567,7 +2658,11 @@
       "portrait": "./stzb-assets/portraits/100814.jpg",
       "portraitSource": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100814.jpg?gameid=g10",
       "officialPage": "https://stzb.163.com/herolist/100814.html",
-      "events": []
+      "events": [],
+      "limited": "诸子限定",
+      "limitedSources": [
+        "https://stzb.163.com/notice/20260519/20399_1300758.html"
+      ]
     },
     {
       "id": "100815",
