@@ -19,9 +19,9 @@
     $('storage-status').textContent = storageWorks ? '记录仅保存在当前浏览器，最近记录保留 200 次。' : '浏览器未允许保存；记录暂存于本页，关闭或刷新后会丢失。';
   }
 
-  const metadata = card => [card.country, card.troop && `${card.troop}兵`, card.variant].filter(Boolean).join(' · ') || '名单待核实 · 星级占位';
+  const metadata = card => [card.country, card.troop && `${card.troop}兵`, card.variant].filter(Boolean).join(' · ') || `${card.rarity}星武将`;
   function cardArt(card, target = false) {
-    return `<div class="result-art">${card.portrait ? `<img src="${escape(card.portrait)}" alt="${escape(card.name)}官方画像" loading="lazy">` : `<div class="generic-art"><span>${card.rarity === 4 ? '将' : '士'}</span><small>星级占位</small></div>`}<span class="card-stars" aria-label="${card.rarity}星">${'★'.repeat(card.rarity)}</span>${target ? '<span class="target-tag">心仪武将</span>' : ''}</div>`;
+    return `<div class="result-art">${card.portrait ? `<img src="${escape(card.portrait)}" alt="${escape(card.name)}官方画像" loading="lazy">` : `<div class="generic-art"><span>${card.rarity === 4 ? '将' : '士'}</span></div>`}<span class="card-stars" aria-label="${card.rarity}星">${'★'.repeat(card.rarity)}</span>${target ? '<span class="target-tag">心仪武将</span>' : ''}</div>`;
   }
 
   function eligible() {
@@ -57,14 +57,13 @@
     $('wish-progress').max = pool.wishCap || 1;
     $('wish-progress').value = wish.points;
     const inPool = pool.roster[5].includes(wish.id);
-    $('wish-hint').textContent = !pool.wishCap ? '此标准活动包仅追踪收藏目标，不增加概率。' : !wish.id ? '先选择心愿武将；积分达到上限后，下一抽必得。' : !inPool ? '积分跨阵营累积；需切换至目标所属卡包才能获得。' : wish.points >= pool.wishCap ? '心愿已满，下一抽必定获得目标武将。' : `三星 +10 · 四星 +20 · 五星 +150${pool.wishGroup === 'factions' ? '；四阵营共享积分' : ''}`;
+    $('wish-hint').textContent = !pool.wishCap ? '选择收藏目标，记录获取次数。' : !wish.id ? '先选择心愿武将；积分达到上限后，下一抽必得。' : !inPool ? '积分跨阵营累积；需切换至目标所属卡包才能获得。' : wish.points >= pool.wishCap ? '心愿已满，下一抽必定获得目标武将。' : `三星 +10 · 四星 +20 · 五星 +150${pool.wishGroup === 'factions' ? '；四阵营共享积分' : ''}`;
     $('pity-text').textContent = pool.maxDraws ? `本轮第 ${pool.guaranteedAt} 抽必得五星` : `距离五星保底 ${Math.max(1, pool.fivePity - pity.noFive)} 抽`;
-    $('four-text').textContent = pool.fourPity ? `四星以上还需 ${Math.max(1, pool.fourPity - pity.threeStreak)} 抽` : pool.maxDraws ? '每次均为四星或五星' : '三星／四星为模拟补充阵容';
-    if (pool.id === 'kaiguo') $('four-text').textContent = '心愿积分独立累计';
+    $('four-text').textContent = pool.fourPity ? `四星以上还需 ${Math.max(1, pool.fourPity - pity.threeStreak)} 抽` : pool.maxDraws ? '每次均为四星或五星' : '心愿积分独立累计';
     for (const [id, n] of [['one', 1], ['five', 5]]) {
       const unavailable = pool.maxDraws && stats.draws + n > pool.maxDraws;
       $(`draw-${id}`).disabled = busy || Boolean(unavailable);
-      $(`${id}-cost`).textContent = unavailable ? '本轮次数不足' : (() => { const amount = engine.costFor(pool, stats.draws, n); return amount === 0 ? '本轮免费' : `${format(amount)} 模拟${pool.currency || '虎符'}`; })();
+      $(`${id}-cost`).textContent = unavailable ? '本轮次数不足' : (() => { const amount = engine.costFor(pool, stats.draws, n); return amount === 0 ? '本轮免费' : `${format(amount)} ${pool.currency || '虎符'}`; })();
     }
     $('pool-count').textContent = pool.maxDraws ? `本轮已招募 ${stats.draws} / ${pool.maxDraws} 次 · 五星 ${stats.fives} 张` : `此包已招募 ${format(stats.draws)} 次 · 五星 ${format(stats.fives)} 张`;
     $('restart-event').hidden = !pool.maxDraws;
@@ -107,7 +106,7 @@
   function openRoster() {
     $('roster-title').textContent = pool.name;
     $('roster-note').textContent = pool.rosterNote;
-    $('roster-rules').innerHTML = `${escape(pool.ruleNote)}<br>五星 ${pool.rates[5] * 100}% · 四星 ${pool.rates[4] * 100}%${pool.rates[3] ? ` · 三星 ${pool.rates[3] * 100}%` : ''}（${pool.category === 'event' ? '演示参数，非官方活动概率' : '以公示值为基础的模拟参数，保底另计'}）<br>同星级等权；心愿提升曲线为模拟设定。${pool.wishCap ? `心愿积分上限 ${format(pool.wishCap)}。` : '收藏目标不改变概率。'}`;
+    $('roster-rules').innerHTML = `${escape(pool.ruleNote)}<br>基础概率：五星 ${pool.rates[5] * 100}% · 四星 ${pool.rates[4] * 100}%${pool.rates[3] ? ` · 三星 ${pool.rates[3] * 100}%` : ''}（保底另计）<br>同星级等权抽取。${pool.wishCap ? `心愿积分上限 ${format(pool.wishCap)}。` : '收藏目标用于记录获取次数。'}`;
     $('roster-grid').innerHTML = [5, 4, 3].flatMap(r => pool.roster[r] || []).map(id => {
       const c = data.cards[id];
       return `<article class="mini-card rarity-${c.rarity}">${cardArt(c)}<h3>${escape(c.name)}</h3><p>${escape(metadata(c))}</p></article>`;
@@ -263,7 +262,7 @@
   });
   $('select-wish').addEventListener('click', () => {
     $('picker-title').textContent = pool.wishCap ? '选择心愿武将' : '选择收藏目标';
-    $('picker-note').textContent = pool.wishCap ? `${pool.wishGroup === 'factions' ? '四阵营共用一个心愿。' : ''}更换后保留 50% 积分；本页使用二次曲线近似心愿概率提升。` : '此活动包无已核实的官方心愿机制。选择只记录目标命中，不改变抽取概率。';
+    $('picker-note').textContent = pool.wishCap ? `${pool.wishGroup === 'factions' ? '四阵营共用一个心愿。' : ''}更换后保留 50% 积分。` : '选择收藏目标，记录获取次数。';
     $('wish-search').value = ''; renderPicker(); $('picker').showModal();
   });
   $('wish-search').addEventListener('input', renderPicker);
@@ -295,10 +294,10 @@
     delete state.pools[pool.id]; delete state.pity[pool.id];
     update(); save(); $('announce').textContent = '新一轮活动已开启。';
   }));
-  $('reset-all').addEventListener('click', () => confirmAction('清空模拟记录', '将清空全部卡包的招募次数、心愿积分、收藏与历史记录。', () => {
+  $('reset-all').addEventListener('click', () => confirmAction('清空招募记录', '将清空全部卡包的招募次数、心愿积分、收藏与历史记录。', () => {
     clearReveal();
     state = engine.createState(); update(); save();
     $('last-results').innerHTML = '<div class="awaiting"><span aria-hidden="true">✦</span><p>新的招募手记，等待落笔。</p></div>';
-    $('announce').textContent = '模拟记录已清空。';
+    $('announce').textContent = '招募记录已清空。';
   }));
 })();
