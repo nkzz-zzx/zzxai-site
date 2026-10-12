@@ -146,11 +146,11 @@
   function showNextReveal() {
     stopIntro();
     const result = queue.shift();
-    if (!result) return;
+    if (!result) return finishRecruitment();
     const card = data.cards[result.id];
     $('reveal-image').src = card.portrait;
     $('reveal-image').alt = `五星${card.name} · ${metadata(card)}${result.isWish ? ' · 心仪武将' : ''}`;
-    $('next-reveal').setAttribute('aria-label', `下一位五星武将，还有 ${queue.length} 位`);
+    $('next-reveal').setAttribute('aria-label', queue.length ? `下一位五星武将，还有 ${queue.length} 位` : '查看本次招募结果');
     $('next-reveal').hidden = true;
     $('skip-reveal').hidden = false;
     $('reveal').classList.add('playing-intro');
@@ -170,10 +170,8 @@
       $('reveal').classList.remove('playing-intro');
       $('reveal').setAttribute('aria-label', '五星武将画像');
       $('reveal').getAnimations({ subtree: true }).forEach(animation => { animation.cancel(); animation.play(); });
-      if (queue.length) {
-        $('next-reveal').hidden = false;
-        $('next-reveal').focus({ preventScroll: true });
-      } else finishRecruitment();
+      $('next-reveal').hidden = false;
+      $('next-reveal').focus({ preventScroll: true });
     };
     const timeout = setTimeout(finish, 10000);
     stopIntro = () => {
