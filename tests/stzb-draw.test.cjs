@@ -44,6 +44,37 @@ test('published 30 draw guarantee and simulated shared counters survive faction 
   assert.equal(s.pity.factions.noFive, 0);
 });
 
+test('supplemental low-star rosters draw real same-rarity cards and retain legacy records', () => {
+  const regular = data.pools.filter(p => p.category === 'regular');
+  for (const p of data.pools.filter(p => p.borrowedRarities)) {
+    for (const rarity of p.borrowedRarities) {
+      const expected = [...new Set(regular.flatMap(p => p.roster[rarity]))];
+      assert.deepEqual(p.roster[rarity], expected);
+      for (const [index, id] of expected.entries()) {
+        const rolls = [rarity === 3 ? .99 : .2, (index + .5) / expected.length];
+        const result = draw(engine.createState(), p, 1, () => rolls.shift())[0];
+        assert.equal(result.id, id);
+        assert.equal(result.rarity, rarity);
+        assert(data.cards[id].portrait);
+      }
+    }
+  }
+  const p = pool('ex-1');
+  const legacyPool = { ...p, roster: { ...p.roster, 3: ['rarity-3'], 4: ['rarity-4'] } };
+  const legacy = engine.createState();
+  engine.chooseWish(legacy, p, p.roster[5][0], p.roster[5]);
+  draw(legacy, legacyPool, 1, () => .99);
+  draw(legacy, legacyPool, 1, () => .2);
+  draw(legacy, pool('dongwu'), 1, () => .01);
+  const restored = engine.restore(JSON.parse(JSON.stringify(legacy)), data.pools, data.cards);
+  assert.deepEqual(restored, legacy, 'old placeholders retain totals, collection, wishes and history');
+  assert(!draw(restored, p)[0].id.startsWith('rarity-'), 'new draws use real cards');
+  assert.deepEqual(engine.restore(JSON.parse(JSON.stringify(restored)), data.pools, data.cards), restored);
+  const invalid = structuredClone(legacy);
+  invalid.history[1].poolId = 'dongwu';
+  assert.deepEqual(engine.restore(invalid, data.pools, data.cards), engine.createState(), 'placeholder compatibility is limited to supplemented pools');
+});
+
 test('wish becomes due on the following draw, resets on acquisition and retains half on switching', () => {
   const s = engine.createState(), p = pool('ex-1');
   const first = p.roster[5][0], second = p.roster[5][1];

@@ -59,7 +59,7 @@
     const inPool = pool.roster[5].includes(wish.id);
     $('wish-hint').textContent = !pool.wishCap ? '此标准活动包仅追踪收藏目标，不增加概率。' : !wish.id ? '先选择心愿武将；积分达到上限后，下一抽必得。' : !inPool ? '积分跨阵营累积；需切换至目标所属卡包才能获得。' : wish.points >= pool.wishCap ? '心愿已满，下一抽必定获得目标武将。' : `三星 +10 · 四星 +20 · 五星 +150${pool.wishGroup === 'factions' ? '；四阵营共享积分' : ''}`;
     $('pity-text').textContent = pool.maxDraws ? `本轮第 ${pool.guaranteedAt} 抽必得五星` : `距离五星保底 ${Math.max(1, pool.fivePity - pity.noFive)} 抽`;
-    $('four-text').textContent = pool.fourPity ? `四星以上还需 ${Math.max(1, pool.fourPity - pity.threeStreak)} 抽` : pool.maxDraws ? '每次均为四星或五星' : '三星／四星使用星级占位';
+    $('four-text').textContent = pool.fourPity ? `四星以上还需 ${Math.max(1, pool.fourPity - pity.threeStreak)} 抽` : pool.maxDraws ? '每次均为四星或五星' : '三星／四星为模拟补充阵容';
     if (pool.id === 'kaiguo') $('four-text').textContent = '心愿积分独立累计';
     for (const [id, n] of [['one', 1], ['five', 5]]) {
       const unavailable = pool.maxDraws && stats.draws + n > pool.maxDraws;

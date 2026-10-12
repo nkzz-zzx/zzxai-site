@@ -3,6 +3,7 @@ const fs = require('node:fs');
 const path = require('node:path');
 const { chromium } = require('playwright');
 const data = require('../stzb-draw-assets/pools.json');
+const engine = require('../stzb-draw-engine.js');
 const url = process.env.STZB_DRAW_URL || 'http://127.0.0.1:8777/stzb-draw.html';
 const previewDir = process.env.STZB_DRAW_PREVIEWS;
 
@@ -248,6 +249,44 @@ const previewDir = process.env.STZB_DRAW_PREVIEWS;
     await failed.route('**/stzb-draw-assets/pools.json',route=>route.fulfill({status:503,body:'unavailable'}));
     await failed.goto(url);await failed.locator('#load-status a').waitFor();
     assert.equal(await failed.locator('#app').isVisible(),false);await failed.close();
+    const supplemented=await browser.newPage({viewport:{width:844,height:390}});
+    const season=data.pools.find(p=>p.id==='ex-1');
+    const legacy=engine.createState();
+    engine.chooseWish(legacy,season,season.roster[5][0],season.roster[5]);
+    engine.draw(legacy,{...season,roster:{...season.roster,3:['rarity-3'],4:['rarity-4']}},data.cards,1,()=>.99);
+    await supplemented.addInitScript(state=>{
+      localStorage.setItem('stzb-draw-v1',JSON.stringify({dataVersion:1,state,prefs:{poolId:'ex-1',fast:true}}));
+    },legacy);
+    await supplemented.goto(url);await supplemented.locator('#app').waitFor();
+    assert.deepEqual(await supplemented.evaluate(()=>JSON.parse(localStorage.getItem('stzb-draw-v1')).state),legacy);
+    await supplemented.locator('#open-roster').click();
+    assert.match(await supplemented.locator('#roster-note').innerText(),/模拟补充阵容/);
+    assert.equal(await supplemented.locator('#roster-grid .rarity-3 img').count(),26);
+    assert.equal(await supplemented.locator('#roster-grid .rarity-4 img').count(),61);
+    assert.equal(await supplemented.locator('#roster-grid .generic-art').count(),0);
+    await supplemented.keyboard.press('Escape');
+    for (const [rarity,roll] of [[3,.99],[4,.2]]) {
+      await supplemented.evaluate(roll=>{Math.random=()=>roll;},roll);
+      await supplemented.locator('#draw-one').click();
+      assert.equal(await supplemented.locator(`#last-results .rarity-${rarity} img`).count(),1);
+      assert.equal(await supplemented.locator('#last-results .generic-art').count(),0);
+    }
+    await supplemented.locator('[data-record="history"]').click();
+    assert.equal(await supplemented.locator('.history-list li').count(),3);
+    assert.match(await supplemented.locator('.history-list').innerText(),/三星武将/);
+    await supplemented.locator('[data-category="event"]').click();
+    await supplemented.locator('[data-pool="hongyan"]').click();
+    await supplemented.evaluate(()=>{
+      const rolls=[.2,0,.2,.2,.2,.4,.2,.6,.2,.8];
+      Math.random=()=>rolls.shift()??.2;
+    });
+    await supplemented.locator('#draw-five').click();
+    assert.equal(await supplemented.locator('#last-results .rarity-4 img').count(),5);
+    assert.equal(await supplemented.locator('#last-results .generic-art').count(),0);
+    assert.equal(new Set(await supplemented.locator('#last-results h3').allTextContents()).size,5);
+    await supplemented.waitForFunction(()=>[...document.querySelectorAll('#last-results img')].every(img=>img.complete&&img.naturalWidth>0));
+    if (previewDir) await supplemented.screenshot({path:path.join(previewDir,'draw-borrowed-four-star-landscape.png'),fullPage:true,animations:'disabled'});
+    await supplemented.close();
     const mixed=await browser.newPage({viewport:{width:667,height:375}});
     await mixed.goto(url);await mixed.locator('#app').waitFor();
     await mixed.evaluate(()=>{

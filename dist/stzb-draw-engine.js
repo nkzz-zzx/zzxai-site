@@ -107,7 +107,7 @@
     for (const p of Object.values(raw.pity)) if (!p || ![p.threeStreak, p.noFive].every(number)) return createState();
     for (const w of Object.values(raw.wishes)) if (!w || ![w.points, w.hits].every(number) || (w.id !== '' && cards[w.id]?.rarity !== 5)) return createState();
     if (Object.entries(raw.collection).some(([id, n]) => !cards[id] || !number(n))) return createState();
-    if (raw.history.some(h => !h || !cards[h.id] || cards[h.id].rarity !== h.rarity || !pools.some(p => p.id === h.poolId && p.roster[h.rarity]?.includes(h.id)) || !number(h.number) || !number(h.poolNumber))) return createState();
+    if (raw.history.some(h => !h || !cards[h.id] || cards[h.id].rarity !== h.rarity || !pools.some(p => p.id === h.poolId && (p.roster[h.rarity]?.includes(h.id) || (p.borrowedRarities?.includes(h.rarity) && h.id === `rarity-${h.rarity}`))) || !number(h.number) || !number(h.poolNumber))) return createState();
     return raw;
   }
 
