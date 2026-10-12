@@ -25,7 +25,7 @@ test('22 sourced pools have unique, valid rosters, local portraits and deploymen
     if (c.rarity === 5) assert(c.portrait && c.portraitSource);
     if (c.portrait) assert(fs.existsSync(path.join(__dirname, '..', c.portrait)));
   }
-  for (const file of ['index.html','stzb.html','stzb-draw.html','stzb-draw.css','stzb-draw.js','stzb-draw-engine.js','stzb-draw-assets/pools.json']) {
+  for (const file of ['index.html','stzb.html','stzb-draw.html','stzb-draw.css','stzb-draw.js','stzb-draw-engine.js','stzb-draw-assets/pools.json','stzb-draw-assets/recruit-intro-landscape.mp4']) {
     assert(fs.readFileSync(path.join(__dirname,'..',file)).equals(fs.readFileSync(path.join(__dirname,'..','dist',file))), file);
   }
 });

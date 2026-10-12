@@ -82,7 +82,11 @@ const previewDir = process.env.STZB_DRAW_PREVIEWS;
     assert.equal(await page.locator('#last-results').isVisible(), false, 'batch does not reveal five-star portraits early');
     assert.equal(await page.locator('#next-reveal').isVisible(), false);
     await page.locator('#reveal-image').waitFor();
-    assert(await page.locator('#reveal-video').evaluate(v => v.ended && v.duration > 3), 'actual video finished before portrait');
+    assert(await page.locator('#reveal-video').evaluate(v => v.ended && v.duration > 3 && v.videoWidth > v.videoHeight), 'actual landscape video finished before portrait');
+    await page.waitForFunction(() => {
+      const opacity = Number(getComputedStyle(document.getElementById('reveal-intro')).opacity);
+      return opacity > 0 && opacity < 1;
+    }, null, { timeout: 1000 });
     assert.match(await page.locator('#next-reveal').getAttribute('aria-label'), /还有 4 位/);
     await page.locator('#next-reveal').click();
     assert.equal(await page.locator('#reveal-image').isVisible(), false, 'next general starts with video again');
@@ -90,6 +94,7 @@ const previewDir = process.env.STZB_DRAW_PREVIEWS;
     assert.match(await page.locator('#next-reveal').getAttribute('aria-label'), /还有 3 位/);
     assert(await page.locator('#reveal-image').evaluate(img => img.complete && img.naturalWidth > 0));
     await page.waitForTimeout(1700);
+    assert.equal(await page.locator('#reveal-intro').evaluate(el => getComputedStyle(el).opacity), '0', 'effect fades fully into the held portrait');
     await shot('draw-five-star');
     const animationBounds = await page.locator('#reveal').boundingBox();
     for (let i=2; i<5; i++) {
@@ -288,7 +293,7 @@ const previewDir = process.env.STZB_DRAW_PREVIEWS;
     await mixed.close();
     for (const failure of ['network', 'playback', 'stall']) {
       const unavailable=await browser.newPage();
-      if (failure==='network') await unavailable.route('**/recruit-intro.mp4',route=>route.fulfill({status:503,body:'unavailable'}));
+      if (failure==='network') await unavailable.route('**/recruit-intro-landscape.mp4',route=>route.fulfill({status:503,body:'unavailable'}));
       else if (failure==='playback') await unavailable.addInitScript(()=>{HTMLMediaElement.prototype.play=()=>Promise.reject(new Error('playback denied'));});
       else await unavailable.addInitScript(()=>{HTMLMediaElement.prototype.play=()=>new Promise(()=>{});});
       await unavailable.goto(url);await unavailable.locator('#app').waitFor();

@@ -166,10 +166,8 @@
     const finish = () => {
       if (!active) return;
       stopIntro();
-      $('reveal-intro').hidden = true;
       $('reveal').classList.remove('playing-intro');
       $('reveal').setAttribute('aria-label', '五星武将画像');
-      $('reveal').getAnimations({ subtree: true }).forEach(animation => { animation.cancel(); animation.play(); });
       $('next-reveal').hidden = false;
       $('next-reveal').focus({ preventScroll: true });
     };
