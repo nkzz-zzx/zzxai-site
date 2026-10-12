@@ -72,7 +72,7 @@
     $('stat-fives').textContent = format(state.stars[5]);
     $('stat-rate').textContent = state.total ? `${(100 * state.stars[5] / state.total).toFixed(1)}%` : '—';
     $('stat-cost').textContent = format(state.cost);
-    document.querySelectorAll('[data-pool], [data-category], [data-record], #select-wish, #restart-event, #reset-all, #open-method').forEach(button => { button.disabled = busy; });
+    document.querySelectorAll('[data-pool], [data-category], [data-record], #select-wish, #restart-event, #reset-all, #open-method, #open-roster').forEach(button => { button.disabled = busy; });
     if (!busy) renderRecords();
   }
 
@@ -126,18 +126,19 @@
   function clearReveal() {
     stopIntro();
     $('reveal').hidden = true;
-    $('stage-content').inert = false;
-    $('stage').classList.remove('revealing');
+    $('last-results').inert = false;
+    $('result-stage').classList.remove('revealing');
   }
 
   function finishRecruitment() {
     const returnFocus = $('reveal').contains(document.activeElement);
-    stopIntro();
+    clearReveal();
     queue = [];
     busy = false;
     $('skip-reveal').hidden = true;
     $('next-reveal').hidden = true;
-    revealResults();
+    $('announce').textContent = `本次获得：${pendingResults.map(r => `${r.rarity}星${data.cards[r.id].name}${r.isWish ? '（心仪武将）' : ''}`).join('、')}。结果已记录。`;
+    pendingResults = [];
     update();
     if (returnFocus) drawButton?.focus({ preventScroll: true });
   }
@@ -156,9 +157,9 @@
     $('reveal').setAttribute('aria-label', '五星武将即将揭晓');
     $('reveal-intro').hidden = false;
     $('reveal').hidden = false;
-    $('stage-content').inert = true;
-    $('stage').classList.add('revealing');
-    $('stage').scrollIntoView({ block: 'nearest' });
+    $('last-results').inert = true;
+    $('result-stage').classList.add('revealing');
+    $('result-stage').scrollIntoView({ block: 'nearest' });
     $('skip-reveal').focus({ preventScroll: true });
     const video = $('reveal-video');
     let active = true;
@@ -188,13 +189,11 @@
     video.play().catch(finish);
   }
 
-  function revealResults() {
+  function renderResults() {
     $('last-results').innerHTML = pendingResults.map((r, i) => {
       const card = data.cards[r.id];
       return `<article class="result-card rarity-${r.rarity}" style="--delay:${i * .07}s">${cardArt(card, r.isWish)}<h3>${escape(card.name)}</h3><p>${escape(metadata(card))}${r.reason ? `<br>${escape(r.reason)}` : ''}</p></article>`;
     }).join('');
-    $('announce').textContent = `本次获得：${pendingResults.map(r => `${r.rarity}星${data.cards[r.id].name}${r.isWish ? '（心仪武将）' : ''}`).join('、')}。结果已记录。`;
-    pendingResults = [];
   }
 
   function recruit(count) {
@@ -208,12 +207,13 @@
       busy = true;
       save();
       pendingResults = results;
+      renderResults();
       queue = results.filter(r => r.rarity === 5);
       if (queue.length && !prefs.fast && !matchMedia('(prefers-reduced-motion: reduce)').matches) {
         $('announce').textContent = '五星武将即将揭晓…';
         showNextReveal();
-      } else { queue = []; busy = false; revealResults(); }
-      update();
+        update();
+      } else finishRecruitment();
     } catch (e) {
       busy = false;
       $('announce').textContent = `本次未能招募：${e.message}`;
@@ -287,10 +287,10 @@
   $('draw-five').addEventListener('click', () => recruit(5));
   $('skip-animation').addEventListener('change', () => { prefs.fast = $('skip-animation').checked; save(); });
   $('next-reveal').addEventListener('click', showNextReveal);
-  $('skip-reveal').addEventListener('click', () => { finishRecruitment(); clearReveal(); });
+  $('skip-reveal').addEventListener('click', finishRecruitment);
   document.addEventListener('keydown', e => {
     if (e.key === 'Escape' && busy && !document.querySelector('dialog[open]')) {
-      finishRecruitment(); clearReveal();
+      finishRecruitment();
     }
   });
   document.querySelectorAll('[data-record]').forEach(button => button.addEventListener('click', () => { recordView = button.dataset.record; renderRecords(); }));
