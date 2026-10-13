@@ -71,3 +71,5 @@ ACCOUNT_URL=http://127.0.0.1:8011/account.html CHROME_PATH=/usr/bin/chromium nod
 验证：`ACCOUNT_URL=http://127.0.0.1:8014/account.html node tests/account.compare.browser.cjs`，并运行已有 `tests/account.browser.cjs` 验证单链接回归。
 
 战法未拥有且持有官方 research_hero 对应的具体武将 ID 时标记“可拆”；兑换战法不标记。双账号分别判断，战法差异仅按拥有状态判断。
+
+账号查询每次等待最多 22 秒，浏览器超时或接口返回超时标识时自动重试一次；双账号分别重试，成功的一边不重复请求。其他错误不重试。重试后仍失败保留上次结果。
