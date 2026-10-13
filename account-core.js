@@ -59,7 +59,7 @@ export function heroLabel(item) {
 export function compareCollections(catalog,left,right,kind) {
   const owned=items=>{const map=new Map();for(const item of items){if(!map.has(item.id))map.set(item.id,[]);map.get(item.id).push(item);}return map;};
   const a=owned(left),b=owned(right),definitions=new Map(catalog.map(item=>[item.id,item]));
-  const signature=copies=>JSON.stringify(copies.map(item=>kind==='heroes'?[item.red]:[item.progress]).sort((x,y)=>JSON.stringify(x).localeCompare(JSON.stringify(y))));
+  const signature=copies=>JSON.stringify(copies.length?[Math.max(...copies.map(item=>Math.min(5,item.rarity,item.red)))]:[]);
   const rows=[...new Set([...a.keys(),...b.keys()])].map(id=>{
     const leftCopies=a.get(id)||[],rightCopies=b.get(id)||[];
     const definition=definitions.get(id)||{},actual=leftCopies[0]||rightCopies[0];
