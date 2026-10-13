@@ -1,4 +1,4 @@
-import {parseAccountLink,importAccount,mergeCatalog,classifyServer,compareCollections,canDismantle,heroSortOrder,treasureLabel} from './account-core.js?v=20261013-red-stars-v1';
+import {parseAccountLink,importAccount,mergeCatalog,classifyServer,compareCollections,canDismantle,heroSortOrder,treasureLabel} from './account-core.js?v=20261013-five-cols-v1';
 const $=id=>document.getElementById(id);
 let catalog,account=null,tab='heroes',busy=false,comparison=null,differencesOnly=false;
 const skillOrder=['主动','被动','追击','指挥'];
@@ -21,7 +21,7 @@ function heroArt(item){
  }
  portraitNodes.set(cacheKey,art);return art;
 }
-if('serviceWorker' in navigator)navigator.serviceWorker.register('./account-portrait-sw.js?v=20261013-red-stars-v1',{scope:'./account.html',updateViaCache:'none'}).catch(()=>{});
+if('serviceWorker' in navigator)navigator.serviceWorker.register('./account-portrait-sw.js?v=20261013-five-cols-v1',{scope:'./account.html',updateViaCache:'none'}).catch(()=>{});
 function redStars(red){
  const stars=node('span',undefined,'red-stars');stars.setAttribute('role','img');stars.setAttribute('aria-label',red==null?'红度未知':`${red} 红`);
  for(let i=0;i<5;i++){const star=node('span','★',red==null?'star unknown-star':i<red?'star red-star':'star');star.setAttribute('aria-hidden','true');stars.append(star);}
@@ -62,8 +62,9 @@ function render(){
   if(tab==='heroes'){article.classList.add('hero-entry');const copies=item.owned?item.copies:[{red:null}],stars=node('div',undefined,'hero-stars');for(const copy of copies)stars.append(redStars(copy.red));article.style.setProperty('--red-rows',copies.length);article.append(stars,heroArt(item));}
   article.append(node('h3',item.name));
   if(tab==='heroes'){
-   article.append(node('p',`${item.country||'未分类'} · ${item.troop||'未分类'} · ${item.rarity||'?'} 星${item.version?' · '+item.version:''}`));
-   if(item.owned&&item.copies.length>1)article.append(node('p',`重复卡 ${item.copies.length} 张`));
+   article.append(node('p',`${item.country||'未分类'} · ${item.troop||'未分类'} · ${item.rarity||'?'} 星${item.version?' · '+item.version:''}`,'hero-meta'));
+   const version=item.season&&item.season!=='N'?item.season:item.version&&item.version!=='常规'?item.version:'';article.append(node('span',[version,item.troop].filter(Boolean).join(' · '),'hero-compact-meta'));article.title=[item.name,item.country,item.troop,`${item.rarity}星`,version].filter(Boolean).join(' · ');
+   if(item.owned&&item.copies.length>1)article.append(node('p',`重复卡 ${item.copies.length} 张`,'hero-copy-count'));
   }else if(tab==='gear'){
    article.classList.add('gear-entry');
    const label=treasureLabel(item);if(label)article.append(node('span',label,'badge treasure-grade'));
@@ -131,7 +132,7 @@ for(const id of ['search','ownership','country','rarity','season','skill-type','
 function selectTab(next){tab=next;for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).setAttribute('aria-selected',String(tab===kind));$(id).tabIndex=tab===kind?0:-1;}render();}
 for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).addEventListener('click',()=>selectTab(kind));$(id).addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();const tabs=comparison?['heroes','skills']:['heroes','skills','gear'];const next=event.key==='Home'?tabs[0]:event.key==='End'?tabs.at(-1):tabs[(tabs.indexOf(kind)+(event.key==='ArrowLeft'?tabs.length-1:1))%tabs.length];selectTab(next);$(next+'-tab').focus();}});}
 selectTab('heroes');setBusy(true);
-try{const response=await fetch('./account-assets/catalog.json?v=20261013-red-stars-v1');if(!response.ok)throw new Error('目录下载失败');catalog=await response.json();render();message('输入商品链接，或导入藏宝阁详情 JSON。');setBusy(false);}catch{message('图鉴目录载入失败，请刷新重试',true);}
+try{const response=await fetch('./account-assets/catalog.json?v=20261013-five-cols-v1');if(!response.ok)throw new Error('目录下载失败');catalog=await response.json();render();message('输入商品链接，或导入藏宝阁详情 JSON。');setBusy(false);}catch{message('图鉴目录载入失败，请刷新重试',true);}
 
 function showComparison(left,right){
  comparison={left,right};account=left;differencesOnly=false;
