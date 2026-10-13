@@ -1,4 +1,4 @@
-import {parseAccountLink,importAccount,mergeCatalog,classifyServer,compareCollections,canDismantle} from './account-core.js?v=20261013-retry-v1';
+import {parseAccountLink,importAccount,mergeCatalog,classifyServer,compareCollections,canDismantle} from './account-core.js?v=20261013-mobile-v1';
 const $=id=>document.getElementById(id);
 let catalog,account=null,tab='heroes',busy=false,comparison=null,differencesOnly=false;
 const skillOrder=['主动','被动','追击','指挥'];
@@ -8,7 +8,7 @@ function setBusy(value){busy=value;$('query-button').disabled=value;$('import-fi
 function render(){
  if(!catalog)return;
  if(comparison){renderComparison();return;}
- $('results').classList.remove('comparing');
+ $('results').classList.remove('comparing');$('results').dataset.kind=tab;
  const kind={heroes:'武将',skills:'战法',gear:'宝物'}[tab],owned=account?.[tab]||[];
  const all=tab==='gear'?owned.map(item=>({...item,owned:true})):mergeCatalog(catalog[tab],owned,tab);
  $('catalog-note').textContent=tab==='gear'?(!account?'查询后查看账号宝物':account.gear==null?'当前数据未包含宝物，请重新查询或导入完整详情 JSON':`共 ${owned.length} 件宝物`):`${catalog[tab].length} 种${kind} · 更新于 ${catalog.asOf}${!account?' · 查询后查看拥有状态':''}`;
@@ -37,7 +37,7 @@ function render(){
   if(tab==='skills'&&item.type!==previousType){previousType=item.type;fragment.append(node('h2',`${item.type||'未分类'} · ${groupCounts.get(item.type)} 种`,'skill-group-heading'));}
   const article=node('article',undefined,`entry ${!account?'unknown':item.owned?'owned':'missing'}`);
   article.append(node('span',!account?'等待查询':item.owned?'已拥有':'未拥有','badge'));
-  if(tab==='heroes'||tab==='gear'){
+  if(tab==='heroes'){
    article.classList.add(tab==='heroes'?'hero-entry':'gear-entry');
    const src=tab==='heroes'?item.portrait:catalog.gearImages?.[item.iconId||item.gearId];
    const art=node('div',undefined,tab==='heroes'?'hero-art':'gear-art');
@@ -50,6 +50,7 @@ function render(){
    article.append(node('p',`${item.country||'未分类'} · ${item.troop||'未分类'} · ${item.rarity||'?'} 星${item.version?' · '+item.version:''}`));
    if(item.owned){article.append(node('p',item.copies.map(c=>`${c.red} 红${c.awakened?' · 已觉醒':''}`).join(' / '),'red'));if(item.copies.length>1)article.append(node('p',`重复卡 ${item.copies.length} 张`));}
   }else if(tab==='gear'){
+   article.classList.add('gear-entry');
    article.append(node('p',`${{1:'精品',2:'罕俦',3:'稀世'}[item.phase]||'品质未知'} · 等级 ${item.level}${item.advance?' · 进阶 '+item.advance:''}`));
    if(item.equippedTo)article.append(node('p',`装备：${item.equippedTo}`));
    if(item.bound||item.defective)article.append(node('p',[item.bound?'已绑定':'',item.defective?'残次':''].filter(Boolean).join(' · ')));
@@ -130,6 +131,7 @@ function showComparison(left,right){
  selectTab(tab==='gear'?'heroes':tab);message('两个账号已载入，默认展示任一账号拥有的武将和战法。');
 }
 function renderComparison(){
+ $('results').dataset.kind=tab;
  const rows=compareCollections(catalog[tab],comparison.left[tab],comparison.right[tab],tab);
  const search=$('search').value.trim().toLowerCase();
  const filtered=rows.filter(row=>(!differencesOnly||row.different)&&(!search||row.label.toLowerCase().includes(search))&&(tab!=='heroes'||(($('country').value==='all'||row.country===$('country').value)&&($('rarity').value==='all'||String(row.rarity)===$('rarity').value)&&($('season').value==='all'||row.season===$('season').value)))&&(tab!=='skills'||$('skill-type').value==='all'||row.type===$('skill-type').value));

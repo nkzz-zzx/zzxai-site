@@ -9,3 +9,33 @@
 .second-label{display:block;margin:16px 0 8px}.comparison-summary{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:20px}.comparison-account{background:#f8fafc;border:1px solid var(--line);border-radius:12px;padding:16px;min-width:0}.comparison-account h3{margin:0 0 8px;font-size:17px}.comparison-account p{font-size:13px;margin:4px 0;overflow-wrap:anywhere}.comparing.grid{display:block}.comparison-table{width:100%;border-collapse:collapse;font-size:14px;table-layout:fixed}.comparison-table th,.comparison-table td{text-align:left;border-bottom:1px solid var(--line);padding:12px 10px;overflow-wrap:anywhere;vertical-align:top}.comparison-table thead th{background:#eff6ff;color:#1e3a8a}.comparison-table th:first-child{width:44%}.comparison-row th{font-weight:600}.comparison-row.different{background:#fffbeb}.compare-missing{color:#94a3b8}.compare-owned{color:#172033}.comparison-group th{background:#f1f5f9;color:#1e3a8a}.comparison-table small{display:block;color:#64748b}#differences-only[aria-pressed=true]{background:#1d4ed8;color:white}@media(max-width:600px){.comparison-account{padding:12px}.comparison-summary{gap:8px}.comparison-table{font-size:12px}.comparison-table th,.comparison-table td{padding:10px 6px}}
 
 .badge.dismantle{background:#e7f5ed;color:#17683c;margin:0 0 .5rem .4rem}
+
+/* Dense collection layout, with smaller controls and artwork on phones. */
+.grid[data-kind=skills]{grid-template-columns:repeat(auto-fill,minmax(120px,1fr));gap:8px}
+.grid[data-kind=skills] .entry{padding:10px}
+.grid[data-kind=skills] .entry h3{font-size:15px;margin:5px 0 0}
+.grid[data-kind=skills] .badge.dismantle{margin:5px 0 0}
+@media(max-width:600px){
+ body{font-size:13px;line-height:1.45}
+ .wrap{width:calc(100% - 16px)}
+ header{padding:12px 0 16px}.home{font-size:12px}.eyebrow{margin:10px 0 4px;font-size:10px}h1{font-size:23px}header p:last-child{font-size:12px;margin-top:5px}
+ main{padding:10px 0}.panel{padding:10px;border-radius:12px;margin-bottom:10px;box-shadow:none}
+ label{font-size:11px}input,select{padding:7px 8px;border-radius:7px;font-size:12px;min-height:34px}
+ input[type=url],input[type=search]{font-size:16px}
+ button,.file-button{padding:7px 10px;border-radius:7px;font-size:12px;min-height:34px}
+ .query-row{flex-direction:row;gap:6px;margin-top:5px}.query-row button{padding:7px 9px}.second-label{margin:9px 0 5px}
+ .import-row{gap:8px;margin-top:8px;font-size:11px}.file-button{padding:5px 8px;min-height:28px}#message{font-size:12px;margin-top:8px}
+ .account-head{flex-direction:row;align-items:center;gap:6px}.account-title{gap:6px}h2{font-size:16px}.account-type{padding:2px 6px;font-size:11px;border-radius:5px}#export-button{font-size:11px;padding:6px 8px}
+ #account-server,#account-summary{margin:7px 0;font-size:12px}#account-time{font-size:10px;margin:6px 0}
+ .stats{grid-template-columns:repeat(3,minmax(0,1fr));gap:5px}.stat{padding:6px 8px;border-radius:7px}.stat strong{font-size:18px;line-height:1.2}.stat span{font-size:10px}
+ .tabs{position:sticky;top:0;z-index:5;gap:5px;background:white;padding:7px 0;border-bottom:1px solid var(--line)}.tabs button{flex:1;min-width:0;padding:6px 8px}
+ .muted,#result-count{font-size:10px;margin:7px 0}.filters{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:6px}.filters label{min-width:0}.filters label:first-child{grid-column:1/-1}.filters input,.filters select{margin-top:3px}
+ #differences-only{margin-top:7px}
+ .grid{gap:6px;grid-template-columns:repeat(2,minmax(0,1fr))}.entry{padding:7px;border-radius:7px}.entry h3{font-size:13px;margin:5px 0 3px}.entry p{font-size:10px;margin:3px 0}.badge{font-size:10px;padding:1px 4px;border-radius:3px}
+ .hero-art{float:right;width:40px;height:50px;aspect-ratio:auto;margin:0 0 4px 5px;border-radius:4px}.hero-entry{display:flow-root}.hero-entry h3{margin-top:5px}.art-placeholder{font-size:9px}.hero-entry p{clear:both}
+ .grid[data-kind=skills]{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.grid[data-kind=skills] .entry{padding:5px 3px}.grid[data-kind=skills] .entry h3{font-size:12px;line-height:1.4;margin:4px 0 0}.grid[data-kind=skills] .badge{font-size:9px;padding:1px 3px}.grid[data-kind=skills] .badge.dismantle{margin:4px 0 0}
+ .skill-group-heading{font-size:13px;margin:8px 0 0;padding-bottom:5px}
+ .grid[data-kind=gear]{grid-template-columns:repeat(2,minmax(0,1fr))}.gear-entry h3{margin-top:5px}details{margin-top:5px}summary,.skill-desc{font-size:10px}
+ .comparison-summary{gap:6px;margin-top:9px}.comparison-account{padding:7px;border-radius:7px}.comparison-account h3{font-size:12px;margin:0 0 4px}.comparison-account p{font-size:10px;margin:3px 0}
+ .comparison-table{font-size:11px;line-height:1.4}.comparison-table th,.comparison-table td{padding:6px 4px}.comparison-table th:first-child{width:46%}.comparison-table .badge.dismantle{margin:3px 0 0}.comparing.grid[data-kind=skills]{display:block}
+}
