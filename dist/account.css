@@ -41,3 +41,6 @@
 }
 
 .account-type.unverified{background:#f1f5f9;color:#64748b}
+
+.hero-stars{position:absolute;top:16px;right:16px;display:flex;flex-direction:column;gap:2px;z-index:2}.red-stars{display:flex;gap:1px;white-space:nowrap;line-height:1.1;font-size:12px;color:#c39224}.red-star{color:#dc2626}.unknown-star{color:#cbd5e1}.hero-entry .hero-art{margin-top:calc(var(--red-rows,1)*14px + 6px)}.comparison-table .red-stars{margin:2px 0 4px}
+@media(max-width:600px){.hero-stars{top:7px;right:7px}.red-stars{font-size:10px}.hero-entry .hero-art{margin-top:calc(var(--red-rows,1)*12px + 4px)}.comparison-table .red-stars{font-size:10px;gap:0}}

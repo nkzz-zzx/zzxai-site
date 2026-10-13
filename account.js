@@ -1,4 +1,4 @@
-import {parseAccountLink,importAccount,mergeCatalog,classifyServer,compareCollections,canDismantle,heroSortOrder,treasureLabel} from './account-core.js?v=20261013-servers-v2';
+import {parseAccountLink,importAccount,mergeCatalog,classifyServer,compareCollections,canDismantle,heroSortOrder,treasureLabel} from './account-core.js?v=20261013-red-stars-v1';
 const $=id=>document.getElementById(id);
 let catalog,account=null,tab='heroes',busy=false,comparison=null,differencesOnly=false;
 const skillOrder=['主动','被动','追击','指挥'];
@@ -21,7 +21,12 @@ function heroArt(item){
  }
  portraitNodes.set(cacheKey,art);return art;
 }
-if('serviceWorker' in navigator)navigator.serviceWorker.register('./account-portrait-sw.js?v=20261013-servers-v2',{scope:'./account.html',updateViaCache:'none'}).catch(()=>{});
+if('serviceWorker' in navigator)navigator.serviceWorker.register('./account-portrait-sw.js?v=20261013-red-stars-v1',{scope:'./account.html',updateViaCache:'none'}).catch(()=>{});
+function redStars(red){
+ const stars=node('span',undefined,'red-stars');stars.setAttribute('role','img');stars.setAttribute('aria-label',red==null?'红度未知':`${red} 红`);
+ for(let i=0;i<5;i++){const star=node('span','★',red==null?'star unknown-star':i<red?'star red-star':'star');star.setAttribute('aria-hidden','true');stars.append(star);}
+ return stars;
+}
 function render(){
  if(!catalog)return;
  if(comparison){renderComparison();return;}
@@ -42,7 +47,7 @@ function render(){
   if(tab==='gear'&&$('gear-quality').value!=='all'&&String(item.phase)!==$('gear-quality').value)return false;
   return true;
  });
- results.sort((a,b)=>(tab==='heroes'?heroSortOrder(a)-heroSortOrder(b):0)||(tab==='skills'?((skillOrder.includes(a.type)?skillOrder.indexOf(a.type):4)-(skillOrder.includes(b.type)?skillOrder.indexOf(b.type):4)):0)||Number(b.owned)-Number(a.owned)||(b.phase||b.rarity||0)-(a.phase||a.rarity||0)||a.name.localeCompare(b.name,'zh-CN'));
+ results.sort((a,b)=>(tab==='heroes'?(heroSortOrder(a)-heroSortOrder(b)||(b.rarity||0)-(a.rarity||0)):0)||(tab==='skills'?((skillOrder.includes(a.type)?skillOrder.indexOf(a.type):4)-(skillOrder.includes(b.type)?skillOrder.indexOf(b.type):4)):0)||Number(b.owned)-Number(a.owned)||(b.phase||b.rarity||0)-(a.phase||a.rarity||0)||a.name.localeCompare(b.name,'zh-CN'));
  $('result-count').textContent=`显示 ${results.length} / ${all.length} 项${account&&tab!=='gear'?` · 已拥有 ${all.filter(x=>x.owned).length} 种${kind} · 目录内未拥有 ${all.filter(x=>!x.owned).length} 种`:''}`;
  $('results').replaceChildren();$('results').setAttribute('aria-labelledby',tab+'-tab');$('empty').hidden=results.length!==0;
  $('empty').textContent=tab==='gear'&&!account?'输入藏宝阁链接，查看账号宝物。':tab==='gear'&&account.gear==null?'请重新查询账号，获取宝物信息。':tab==='gear'&&owned.length===0?'该账号没有宝物。':'没有符合条件的条目，试试其他筛选条件。';
@@ -54,11 +59,11 @@ function render(){
   if(tab==='skills'&&item.type!==previousType){previousType=item.type;fragment.append(node('h2',`${item.type||'未分类'} · ${groupCounts.get(item.type)} 种`,'skill-group-heading'));}
   const article=node('article',undefined,`entry ${!account?'unknown':item.owned?'owned':'missing'}`);
   if(tab!=='gear')article.append(node('span',!account?'等待查询':item.owned?'已拥有':'未拥有','badge'));
-  if(tab==='heroes'){article.classList.add('hero-entry');article.append(heroArt(item));}
+  if(tab==='heroes'){article.classList.add('hero-entry');const copies=item.owned?item.copies:[{red:null}],stars=node('div',undefined,'hero-stars');for(const copy of copies)stars.append(redStars(copy.red));article.style.setProperty('--red-rows',copies.length);article.append(stars,heroArt(item));}
   article.append(node('h3',item.name));
   if(tab==='heroes'){
    article.append(node('p',`${item.country||'未分类'} · ${item.troop||'未分类'} · ${item.rarity||'?'} 星${item.version?' · '+item.version:''}`));
-   if(item.owned){article.append(node('p',item.copies.map(c=>`${c.red} 红${c.awakened?' · 已觉醒':''}`).join(' / '),'red'));if(item.copies.length>1)article.append(node('p',`重复卡 ${item.copies.length} 张`));}
+   if(item.owned&&item.copies.length>1)article.append(node('p',`重复卡 ${item.copies.length} 张`));
   }else if(tab==='gear'){
    article.classList.add('gear-entry');
    const label=treasureLabel(item);if(label)article.append(node('span',label,'badge treasure-grade'));
@@ -126,7 +131,7 @@ for(const id of ['search','ownership','country','rarity','season','skill-type','
 function selectTab(next){tab=next;for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).setAttribute('aria-selected',String(tab===kind));$(id).tabIndex=tab===kind?0:-1;}render();}
 for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).addEventListener('click',()=>selectTab(kind));$(id).addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();const tabs=comparison?['heroes','skills']:['heroes','skills','gear'];const next=event.key==='Home'?tabs[0]:event.key==='End'?tabs.at(-1):tabs[(tabs.indexOf(kind)+(event.key==='ArrowLeft'?tabs.length-1:1))%tabs.length];selectTab(next);$(next+'-tab').focus();}});}
 selectTab('heroes');setBusy(true);
-try{const response=await fetch('./account-assets/catalog.json?v=20261013-servers-v2');if(!response.ok)throw new Error('目录下载失败');catalog=await response.json();render();message('输入商品链接，或导入藏宝阁详情 JSON。');setBusy(false);}catch{message('图鉴目录载入失败，请刷新重试',true);}
+try{const response=await fetch('./account-assets/catalog.json?v=20261013-red-stars-v1');if(!response.ok)throw new Error('目录下载失败');catalog=await response.json();render();message('输入商品链接，或导入藏宝阁详情 JSON。');setBusy(false);}catch{message('图鉴目录载入失败，请刷新重试',true);}
 
 function showComparison(left,right){
  comparison={left,right};account=left;differencesOnly=false;
@@ -143,7 +148,7 @@ function renderComparison(){
  const rows=compareCollections(catalog[tab],comparison.left[tab],comparison.right[tab],tab);
  const search=$('search').value.trim().toLowerCase();
  const filtered=rows.filter(row=>(!differencesOnly||row.different)&&(!search||row.label.toLowerCase().includes(search))&&(tab!=='heroes'||(($('country').value==='all'||row.country===$('country').value)&&($('rarity').value==='all'||String(row.rarity)===$('rarity').value)&&($('season').value==='all'||row.season===$('season').value)))&&(tab!=='skills'||$('skill-type').value==='all'||row.type===$('skill-type').value));
- filtered.sort((a,b)=>(tab==='heroes'?heroSortOrder(a)-heroSortOrder(b):0)||(tab==='skills'?(skillOrder.indexOf(a.type)-skillOrder.indexOf(b.type)):0)||a.label.localeCompare(b.label,'zh-CN'));
+ filtered.sort((a,b)=>(tab==='heroes'?(heroSortOrder(a)-heroSortOrder(b)||(b.rarity||0)-(a.rarity||0)):0)||(tab==='skills'?(skillOrder.indexOf(a.type)-skillOrder.indexOf(b.type)):0)||a.label.localeCompare(b.label,'zh-CN'));
  $('country-filter').hidden=tab!=='heroes';$('season-filter').hidden=tab!=='heroes';$('rarity-filter').hidden=tab!=='heroes';$('type-filter').hidden=tab!=='skills';$('ownership-filter').hidden=true;$('gear-quality-filter').hidden=true;
  $('search').placeholder=tab==='heroes'?'搜索武将名称、兵种或版本':'搜索战法名称';
  $('catalog-note').textContent=tab==='heroes'?'同名武将按版本、兵种和阵营区分。':'战法按类别展示。';
@@ -154,7 +159,7 @@ function renderComparison(){
  for(const row of filtered){
   if(tab==='skills'&&previousType!==row.type){previousType=row.type;const group=node('tr',undefined,'comparison-group'),th=node('th',row.type||'未分类');th.colSpan=3;th.scope='rowgroup';group.append(th);body.append(group);}
   const tr=node('tr',undefined,row.different?'comparison-row different':'comparison-row');tr.dataset.id=row.id;const name=node('th',row.label);name.scope='row';tr.append(name);
-  for(const [side,copies] of [[comparison.left,row.left],[comparison.right,row.right]]){const cell=node('td',undefined,copies.length?'compare-owned':'compare-missing');if(!copies.length){cell.append(node('div','未拥有'));if(tab==='skills'&&canDismantle(row,side.heroes))cell.append(node('span','可拆','badge dismantle'));}else if(tab==='heroes'){for(const copy of [...copies].sort((a,b)=>b.red-a.red))cell.append(node('div',`${copy.red} 红${copy.awakened?' · 已觉醒':''}`));if(copies.length>1)cell.append(node('small',`${copies.length} 张`));}else{cell.textContent='已拥有';}tr.append(cell);}
+  for(const [side,copies] of [[comparison.left,row.left],[comparison.right,row.right]]){const cell=node('td',undefined,copies.length?'compare-owned':'compare-missing');if(!copies.length){cell.append(node('div','未拥有'));if(tab==='skills'&&canDismantle(row,side.heroes))cell.append(node('span','可拆','badge dismantle'));}else if(tab==='heroes'){for(const copy of [...copies].sort((a,b)=>b.red-a.red))cell.append(redStars(copy.red));if(copies.length>1)cell.append(node('small',`${copies.length} 张`));}else{cell.textContent='已拥有';}tr.append(cell);}
   body.append(tr);
  }
  table.append(body);$('results').classList.add('comparing');$('results').append(table);
