@@ -64,8 +64,14 @@ export function compareCollections(catalog,left,right,kind) {
     const leftCopies=a.get(id)||[],rightCopies=b.get(id)||[];
     const definition=definitions.get(id)||{},actual=leftCopies[0]||rightCopies[0];
     const item={...definition,...actual,season:actual.season||definition.season||'',left:leftCopies,right:rightCopies};
-    return {...item,label:kind==='heroes'?heroLabel(item):item.name,different:signature(leftCopies)!==signature(rightCopies)};
+    return {...item,label:kind==='heroes'?heroLabel(item):item.name,different:kind==='skills'?!!leftCopies.length!==!!rightCopies.length:signature(leftCopies)!==signature(rightCopies)};
   });
   const labels=new Map();for(const row of rows)labels.set(row.label,(labels.get(row.label)||0)+1);
   return rows.map(row=>({...row,label:labels.get(row.label)>1?`${row.label}（${row.id}）`:row.label}));
+}
+
+export function canDismantle(skill, heroes) {
+  if (skill.acquisition !== "武将拆解" || !Array.isArray(skill.researchHeroIds)) return false;
+  const owned = new Set(heroes.map(hero => String(hero.id)));
+  return skill.researchHeroIds.some(id => owned.has(String(id)));
 }

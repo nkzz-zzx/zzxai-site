@@ -65,7 +65,7 @@ for skill in config['display_skill']:
     acquisition = exchange[0] if exchange else '武将拆解' if research else ''
     skills.append(dict(id=str(skill['skill_id']), name=skill['name'], type=types.get(skill['skill_type'], '未分类'),
                        grade=skill.get('skill_quality_level', ''), acquisition=acquisition,
-                       researchHeroes=[all_hero_names[key] for key in research if key in all_hero_names]))
+                       researchHeroIds=research, researchHeroes=[all_hero_names[key] for key in research if key in all_hero_names]))
 # Retain verified data for released heroes and researchable skills.
 supplements = json.loads((ROOT / 'account-assets/supplements.json').read_text())
 for kind, records in [('heroes', heroes), ('skills', {s['id']: s for s in skills})]:

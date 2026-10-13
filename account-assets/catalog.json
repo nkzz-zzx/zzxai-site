@@ -4259,6 +4259,9 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100338"
+      ],
       "researchHeroes": []
     },
     {
@@ -4267,6 +4270,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100760",
+        "100759"
+      ],
       "researchHeroes": []
     },
     {
@@ -4275,6 +4282,10 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100062",
+        "100421"
+      ],
       "researchHeroes": [
         "群·马腾·骑·常规",
         "魏·徐晃·骑·常规"
@@ -4286,6 +4297,10 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100269",
+        "100265"
+      ],
       "researchHeroes": []
     },
     {
@@ -4294,6 +4309,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100751",
+        "100755"
+      ],
       "researchHeroes": []
     },
     {
@@ -4302,6 +4321,10 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100145",
+        "100351"
+      ],
       "researchHeroes": [
         "魏·夏侯渊·弓·常规",
         "群·张任·弓·常规"
@@ -4313,6 +4336,9 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100241"
+      ],
       "researchHeroes": []
     },
     {
@@ -4321,6 +4347,10 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100756",
+        "100764"
+      ],
       "researchHeroes": []
     },
     {
@@ -4329,6 +4359,9 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100268"
+      ],
       "researchHeroes": [
         "群·张绣·骑·常规"
       ]
@@ -4339,6 +4372,10 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100068",
+        "100439"
+      ],
       "researchHeroes": [
         "蜀·张飞·步·常规",
         "吴·黄盖·步·常规"
@@ -4350,6 +4387,10 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100378",
+        "100139"
+      ],
       "researchHeroes": [
         "汉·伏寿·弓·常规",
         "蜀·马岱·骑·常规"
@@ -4361,6 +4402,10 @@
       "type": "追击",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "110463",
+        "100745"
+      ],
       "researchHeroes": [
         "晋·侍卫·骑·常规"
       ]
@@ -4371,6 +4416,11 @@
       "type": "追击",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100049",
+        "100087",
+        "100331"
+      ],
       "researchHeroes": [
         "群·华雄·步·常规",
         "吴·徐盛·弓·常规",
@@ -4383,6 +4433,9 @@
       "type": "追击",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100721"
+      ],
       "researchHeroes": []
     },
     {
@@ -4391,6 +4444,9 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100050"
+      ],
       "researchHeroes": [
         "群·张辽·骑·常规"
       ]
@@ -4401,6 +4457,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100079",
+        "100089"
+      ],
       "researchHeroes": [
         "魏·夏侯惇·骑·常规",
         "吴·孙策·骑·常规"
@@ -4412,6 +4472,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100095",
+        "100643"
+      ],
       "researchHeroes": [
         "吴·大乔·弓·常规",
         "魏·文钦·骑·常规"
@@ -4423,6 +4487,9 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100599"
+      ],
       "researchHeroes": []
     },
     {
@@ -4431,6 +4498,9 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100600"
+      ],
       "researchHeroes": []
     },
     {
@@ -4439,6 +4509,10 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100038",
+        "100163"
+      ],
       "researchHeroes": [
         "汉·王美人·骑·常规",
         "吴·鲁肃·弓·常规"
@@ -4450,6 +4524,9 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100146"
+      ],
       "researchHeroes": []
     },
     {
@@ -4458,6 +4535,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100753",
+        "100757"
+      ],
       "researchHeroes": []
     },
     {
@@ -4466,6 +4547,10 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100039",
+        "100092"
+      ],
       "researchHeroes": [
         "汉·皇甫嵩·骑·常规",
         "吴·陆逊·步·常规"
@@ -4477,6 +4562,9 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100595"
+      ],
       "researchHeroes": []
     },
     {
@@ -4485,6 +4573,10 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100057",
+        "100069"
+      ],
       "researchHeroes": [
         "群·田丰·骑·常规",
         "蜀·庞统·步·常规"
@@ -4496,6 +4588,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100722",
+        "100104"
+      ],
       "researchHeroes": []
     },
     {
@@ -4504,6 +4600,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100761",
+        "100765"
+      ],
       "researchHeroes": []
     },
     {
@@ -4512,6 +4612,10 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100149",
+        "100162"
+      ],
       "researchHeroes": [
         "魏·程昱·步·常规",
         "吴·程普·骑·常规"
@@ -4523,6 +4627,10 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100078",
+        "100150"
+      ],
       "researchHeroes": [
         "魏·郭嘉·骑·常规",
         "魏·荀攸·步·常规"
@@ -4534,6 +4642,10 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100076",
+        "100140"
+      ],
       "researchHeroes": [
         "魏·卞夫人·骑·常规",
         "蜀·马超·骑·常规"
@@ -4545,6 +4657,9 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100724"
+      ],
       "researchHeroes": []
     },
     {
@@ -4553,6 +4668,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100752",
+        "100762"
+      ],
       "researchHeroes": []
     },
     {
@@ -4561,6 +4680,10 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100430",
+        "100110"
+      ],
       "researchHeroes": [
         "群·张宝·弓·常规",
         "群·李儒·弓·常规"
@@ -4572,6 +4695,9 @@
       "type": "追击",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100285"
+      ],
       "researchHeroes": []
     },
     {
@@ -4580,6 +4706,11 @@
       "type": "追击",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100046",
+        "100116",
+        "102010"
+      ],
       "researchHeroes": [
         "群·董姬·骑·常规",
         "群·袁术·步·常规",
@@ -4592,6 +4723,9 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100724"
+      ],
       "researchHeroes": []
     },
     {
@@ -4600,6 +4734,10 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100758",
+        "100766"
+      ],
       "researchHeroes": []
     },
     {
@@ -4608,6 +4746,10 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100048",
+        "100471"
+      ],
       "researchHeroes": [
         "群·邹氏·步·常规",
         "汉·曹节·骑·常规"
@@ -4619,6 +4761,12 @@
       "type": "被动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100044",
+        "100081",
+        "100064",
+        "102007"
+      ],
       "researchHeroes": [
         "汉·刘备·步·常规",
         "魏·典韦·步·常规",
@@ -4632,6 +4780,10 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100722",
+        "100104"
+      ],
       "researchHeroes": []
     },
     {
@@ -4640,6 +4792,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100747",
+        "100768"
+      ],
       "researchHeroes": []
     },
     {
@@ -4648,6 +4804,9 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100398"
+      ],
       "researchHeroes": [
         "蜀·关兴＆张苞·步·常规"
       ]
@@ -4658,6 +4817,10 @@
       "type": "被动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100760",
+        "100759"
+      ],
       "researchHeroes": []
     },
     {
@@ -4666,6 +4829,10 @@
       "type": "被动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100751",
+        "100755"
+      ],
       "researchHeroes": []
     },
     {
@@ -4674,6 +4841,10 @@
       "type": "被动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100756",
+        "100764"
+      ],
       "researchHeroes": []
     },
     {
@@ -4682,6 +4853,9 @@
       "type": "被动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100595"
+      ],
       "researchHeroes": []
     },
     {
@@ -4690,6 +4864,10 @@
       "type": "被动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100753",
+        "100757"
+      ],
       "researchHeroes": []
     },
     {
@@ -4698,6 +4876,10 @@
       "type": "被动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100600",
+        "100126"
+      ],
       "researchHeroes": []
     },
     {
@@ -4706,6 +4888,11 @@
       "type": "被动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100041",
+        "100123",
+        "102009"
+      ],
       "researchHeroes": [
         "汉·张奂·步·常规",
         "群·张郃·步·常规",
@@ -4718,6 +4905,10 @@
       "type": "指挥",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100414",
+        "100228"
+      ],
       "researchHeroes": []
     },
     {
@@ -4726,6 +4917,10 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100746",
+        "100750"
+      ],
       "researchHeroes": []
     },
     {
@@ -4734,6 +4929,7 @@
       "type": "被动",
       "grade": "D",
       "acquisition": "",
+      "researchHeroIds": [],
       "researchHeroes": []
     },
     {
@@ -4742,6 +4938,9 @@
       "type": "指挥",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100241"
+      ],
       "researchHeroes": []
     },
     {
@@ -4750,6 +4949,10 @@
       "type": "指挥",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "110463",
+        "100745"
+      ],
       "researchHeroes": [
         "晋·侍卫·骑·常规"
       ]
@@ -4760,6 +4963,10 @@
       "type": "被动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100052",
+        "100115"
+      ],
       "researchHeroes": [
         "群·管亥·骑·常规",
         "群·高顺·骑·常规"
@@ -4771,6 +4978,10 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100758",
+        "100766"
+      ],
       "researchHeroes": []
     },
     {
@@ -4779,6 +4990,10 @@
       "type": "被动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100767",
+        "100748"
+      ],
       "researchHeroes": []
     },
     {
@@ -4787,6 +5002,10 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100747",
+        "100768"
+      ],
       "researchHeroes": []
     },
     {
@@ -4795,6 +5014,10 @@
       "type": "指挥",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100027",
+        "100101"
+      ],
       "researchHeroes": [
         "魏·张辽·骑·常规",
         "汉·灵帝·弓·常规"
@@ -4806,6 +5029,10 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100767",
+        "100748"
+      ],
       "researchHeroes": []
     },
     {
@@ -4814,6 +5041,10 @@
       "type": "被动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100058",
+        "100059"
+      ],
       "researchHeroes": [
         "群·颜良·骑·常规",
         "群·文丑·步·常规"
@@ -4825,6 +5056,10 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100746",
+        "100750"
+      ],
       "researchHeroes": []
     },
     {
@@ -4833,6 +5068,10 @@
       "type": "指挥",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100006",
+        "102012"
+      ],
       "researchHeroes": [
         "汉·袁绍·步·常规",
         "蜀·姜维·弓·SP"
@@ -4844,6 +5083,9 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100136"
+      ],
       "researchHeroes": []
     },
     {
@@ -4852,6 +5094,10 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100752",
+        "100762"
+      ],
       "researchHeroes": []
     },
     {
@@ -4860,6 +5106,10 @@
       "type": "指挥",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100026",
+        "100337"
+      ],
       "researchHeroes": [
         "魏·关羽·骑·常规",
         "群·貂蝉·步·常规"
@@ -4871,6 +5121,9 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100147"
+      ],
       "researchHeroes": []
     },
     {
@@ -4879,6 +5132,10 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100761",
+        "100765"
+      ],
       "researchHeroes": []
     },
     {
@@ -4887,6 +5144,11 @@
       "type": "指挥",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100016",
+        "100020",
+        "100035"
+      ],
       "researchHeroes": [
         "蜀·刘备·步·常规",
         "蜀·黄月英·步·常规",
@@ -4899,6 +5161,9 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100136"
+      ],
       "researchHeroes": []
     },
     {
@@ -4907,6 +5172,10 @@
       "type": "追击",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100269",
+        "100265"
+      ],
       "researchHeroes": []
     },
     {
@@ -4915,6 +5184,9 @@
       "type": "追击",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100147"
+      ],
       "researchHeroes": []
     },
     {
@@ -4923,6 +5195,10 @@
       "type": "追击",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100043",
+        "100159"
+      ],
       "researchHeroes": [
         "汉·孙坚·骑·常规",
         "吴·蒋钦·弓·常规"
@@ -4934,6 +5210,10 @@
       "type": "指挥",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100094",
+        "100334"
+      ],
       "researchHeroes": [
         "吴·小乔·弓·常规",
         "蜀·黄权·步·常规"
@@ -4945,6 +5225,10 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100023",
+        "100072"
+      ],
       "researchHeroes": [
         "魏·曹操·骑·常规",
         "蜀·关银屏·步·常规"
@@ -4956,6 +5240,10 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100077",
+        "100093"
+      ],
       "researchHeroes": [
         "魏·丁夫人·步·常规",
         "吴·徐夫人·弓·常规"
@@ -4967,6 +5255,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100518",
+        "100514"
+      ],
       "researchHeroes": []
     },
     {
@@ -4975,6 +5267,9 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100285"
+      ],
       "researchHeroes": []
     },
     {
@@ -4983,6 +5278,10 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100030",
+        "100037"
+      ],
       "researchHeroes": [
         "吴·孙权·弓·常规",
         "汉·何太后·弓·常规"
@@ -4994,6 +5293,9 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100329"
+      ],
       "researchHeroes": [
         "蜀·敬哀皇后·步·常规"
       ]
@@ -5004,6 +5306,9 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100599"
+      ],
       "researchHeroes": []
     },
     {
@@ -5012,6 +5317,12 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100091",
+        "100129",
+        "102006",
+        "102008"
+      ],
       "researchHeroes": [
         "吴·吴夫人·骑·常规",
         "蜀·关平·弓·常规",
@@ -5025,6 +5336,10 @@
       "type": "指挥",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "102014",
+        "102015"
+      ],
       "researchHeroes": [
         "群·张角·骑·SP",
         "蜀·孙尚香·弓·SP"
@@ -5036,6 +5351,9 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100338"
+      ],
       "researchHeroes": []
     },
     {
@@ -5044,6 +5362,10 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100088",
+        "100245"
+      ],
       "researchHeroes": [
         "吴·孙坚·骑·常规",
         "吴·董袭·步·常规"
@@ -5055,6 +5377,9 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100137"
+      ],
       "researchHeroes": []
     },
     {
@@ -5063,6 +5388,10 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100379",
+        "100047"
+      ],
       "researchHeroes": [
         "汉·杜氏·步·常规",
         "群·严氏·骑·常规"
@@ -5074,6 +5403,9 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100146"
+      ],
       "researchHeroes": []
     },
     {
@@ -5082,6 +5414,10 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100131",
+        "100156"
+      ],
       "researchHeroes": [
         "群·赵云·骑·常规",
         "吴·韩当·弓·常规"
@@ -5093,6 +5429,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100518",
+        "100514"
+      ],
       "researchHeroes": []
     },
     {
@@ -5101,6 +5441,10 @@
       "type": "指挥",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100033",
+        "100592"
+      ],
       "researchHeroes": [
         "吴·孙坚·步·常规",
         "群·董白·弓·常规"
@@ -5112,6 +5456,10 @@
       "type": "追击",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100414",
+        "100228"
+      ],
       "researchHeroes": []
     },
     {
@@ -5120,6 +5468,10 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100085",
+        "100426"
+      ],
       "researchHeroes": [
         "魏·曹仁·骑·常规",
         "吴·凌统·弓·常规"
@@ -5131,6 +5483,9 @@
       "type": "指挥",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100721"
+      ],
       "researchHeroes": []
     },
     {
@@ -5139,6 +5494,10 @@
       "type": "指挥",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100040",
+        "100157"
+      ],
       "researchHeroes": [
         "汉·朱儁·弓·常规",
         "吴·甘宁·弓·常规"
@@ -5150,6 +5509,12 @@
       "type": "指挥",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100009",
+        "100013",
+        "100435",
+        "102002"
+      ],
       "researchHeroes": [
         "群·董卓·骑·常规",
         "群·马超·骑·常规",
@@ -5163,6 +5528,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100516",
+        "100515"
+      ],
       "researchHeroes": []
     },
     {
@@ -5171,6 +5540,11 @@
       "type": "主动",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100002",
+        "100025",
+        "100029"
+      ],
       "researchHeroes": [
         "汉·十常侍·弓·常规",
         "魏·曹丕·弓·常规",
@@ -5183,6 +5557,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100516",
+        "100515"
+      ],
       "researchHeroes": []
     },
     {
@@ -5191,6 +5569,10 @@
       "type": "主动",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100005",
+        "100028"
+      ],
       "researchHeroes": [
         "汉·貂蝉·弓·常规",
         "魏·王异·弓·常规"
@@ -5202,6 +5584,9 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100137"
+      ],
       "researchHeroes": []
     },
     {
@@ -5210,6 +5595,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100053",
+        "100065"
+      ],
       "researchHeroes": [
         "群·徐荣·步·常规",
         "蜀·关羽·步·常规"
@@ -5221,6 +5610,9 @@
       "type": "指挥",
       "grade": "A",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100541"
+      ],
       "researchHeroes": [
         "孙子兵法·军争"
       ]
@@ -5231,6 +5623,9 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100542"
+      ],
       "researchHeroes": [
         "孙子兵法·九变"
       ]
@@ -5241,6 +5636,9 @@
       "type": "指挥",
       "grade": "S",
       "acquisition": "典藏兑换",
+      "researchHeroIds": [
+        "110509"
+      ],
       "researchHeroes": [
         "正始之变"
       ]
@@ -5251,6 +5649,9 @@
       "type": "指挥",
       "grade": "A",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100544"
+      ],
       "researchHeroes": [
         "孙子兵法·地形"
       ]
@@ -5261,6 +5662,9 @@
       "type": "指挥",
       "grade": "A",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100632"
+      ],
       "researchHeroes": [
         "孙子兵法·谋攻"
       ]
@@ -5271,6 +5675,10 @@
       "type": "被动",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100783",
+        "100785"
+      ],
       "researchHeroes": [
         "吴·黄盖·步·常规",
         "群·马腾·骑·常规"
@@ -5282,6 +5690,9 @@
       "type": "被动",
       "grade": "A",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100401"
+      ],
       "researchHeroes": [
         "孙子兵法·始计"
       ]
@@ -5292,6 +5703,10 @@
       "type": "指挥",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100787",
+        "100788"
+      ],
       "researchHeroes": [
         "魏·程昱·弓·XP",
         "吴·丁奉·步·XP"
@@ -5303,6 +5718,10 @@
       "type": "被动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100790",
+        "100793"
+      ],
       "researchHeroes": [
         "群·袁术·步·常规",
         "蜀·陈到·步·常规"
@@ -5314,6 +5733,9 @@
       "type": "主动",
       "grade": "S",
       "acquisition": "典藏兑换",
+      "researchHeroIds": [
+        "110510"
+      ],
       "researchHeroes": [
         "火烧连营"
       ]
@@ -5324,6 +5746,10 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100791",
+        "100792"
+      ],
       "researchHeroes": [
         "吴·陆逊·弓·XP",
         "蜀·马良·步·XP"
@@ -5335,6 +5761,10 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100794",
+        "100795"
+      ],
       "researchHeroes": [
         "汉·荀彧·步·XP",
         "汉·献帝·骑·XP"
@@ -5346,6 +5776,10 @@
       "type": "被动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100796",
+        "100811"
+      ],
       "researchHeroes": [
         "魏·于禁·步·常规",
         "群·司马徽·步·常规"
@@ -5357,6 +5791,9 @@
       "type": "被动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100490"
+      ],
       "researchHeroes": [
         "群·带来洞主·弓·常规"
       ]
@@ -5367,6 +5804,10 @@
       "type": "被动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100001",
+        "100084"
+      ],
       "researchHeroes": [
         "汉·献帝·弓·常规",
         "魏·庞德·骑·常规"
@@ -5378,6 +5819,9 @@
       "type": "被动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100134"
+      ],
       "researchHeroes": [
         "蜀·严颜·弓·常规"
       ]
@@ -5388,6 +5832,10 @@
       "type": "指挥",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "102011",
+        "100031"
+      ],
       "researchHeroes": [
         "汉·蔡文姬·步·SP",
         "吴·周瑜·弓·常规"
@@ -5399,6 +5847,10 @@
       "type": "被动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100051",
+        "100086"
+      ],
       "researchHeroes": [
         "群·张梁·步·常规",
         "吴·周泰·步·常规"
@@ -5410,6 +5862,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100042",
+        "100148"
+      ],
       "researchHeroes": [
         "汉·曹操·骑·常规",
         "魏·曹彰·骑·常规"
@@ -5421,6 +5877,10 @@
       "type": "被动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100063",
+        "100067"
+      ],
       "researchHeroes": [
         "蜀·甘皇后·步·常规",
         "蜀·徐庶·骑·常规"
@@ -5432,6 +5892,7 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "",
+      "researchHeroIds": [],
       "researchHeroes": []
     },
     {
@@ -5440,6 +5901,7 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "",
+      "researchHeroIds": [],
       "researchHeroes": []
     },
     {
@@ -5448,6 +5910,10 @@
       "type": "被动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100003",
+        "100019"
+      ],
       "researchHeroes": [
         "汉·吕布·骑·常规",
         "蜀·马云禄·骑·常规"
@@ -5459,6 +5925,12 @@
       "type": "被动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100007",
+        "100021",
+        "102001",
+        "102004"
+      ],
       "researchHeroes": [
         "汉·卢植·骑·常规",
         "蜀·赵云·步·常规",
@@ -5472,6 +5944,10 @@
       "type": "被动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100017",
+        "100472"
+      ],
       "researchHeroes": [
         "蜀·诸葛亮·步·常规",
         "魏·司马懿·步·常规"
@@ -5483,6 +5959,10 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100034",
+        "100522"
+      ],
       "researchHeroes": [
         "吴·甘宁·步·常规",
         "吴·诸葛恪·弓·常规"
@@ -5494,6 +5974,9 @@
       "type": "主动",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100022"
+      ],
       "researchHeroes": [
         "蜀·张飞·骑·常规"
       ]
@@ -5504,6 +5987,11 @@
       "type": "追击",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100090",
+        "100358",
+        "102003"
+      ],
       "researchHeroes": [
         "吴·太史慈·弓·常规",
         "蜀·张姬·弓·常规",
@@ -5516,6 +6004,11 @@
       "type": "追击",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100015",
+        "100024",
+        "102005"
+      ],
       "researchHeroes": [
         "群·甄洛·弓·常规",
         "魏·荀彧·骑·常规",
@@ -5528,6 +6021,9 @@
       "type": "指挥",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100126"
+      ],
       "researchHeroes": []
     },
     {
@@ -5536,6 +6032,9 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100347"
+      ],
       "researchHeroes": [
         "群·程银·骑·S2"
       ]
@@ -5546,6 +6045,9 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100763"
+      ],
       "researchHeroes": []
     },
     {
@@ -5554,6 +6056,9 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100744"
+      ],
       "researchHeroes": []
     },
     {
@@ -5562,6 +6067,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100243",
+        "100045"
+      ],
       "researchHeroes": [
         "吴·孙桓·弓·常规",
         "汉·鲍信·弓·常规"
@@ -5573,6 +6082,11 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100354",
+        "100642",
+        "100644"
+      ],
       "researchHeroes": [
         "汉·司马徽·步·常规",
         "蜀·关索·骑·常规",
@@ -5585,6 +6099,11 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100310",
+        "100687",
+        "100693"
+      ],
       "researchHeroes": [
         "魏·邓艾·步·常规",
         "吴·小乔·弓·常规",
@@ -5597,6 +6116,10 @@
       "type": "指挥",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100442",
+        "100519"
+      ],
       "researchHeroes": [
         "蜀·黄忠·步·常规",
         "群·兀突骨·步·常规"
@@ -5608,6 +6131,10 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100769",
+        "100789"
+      ],
       "researchHeroes": [
         "魏·典韦·步·常规",
         "吴·陆绩·弓·常规"
@@ -5619,6 +6146,10 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100355",
+        "100641"
+      ],
       "researchHeroes": [
         "汉·蔡夫人·步·常规",
         "吴·朱然·步·常规"
@@ -5630,6 +6161,11 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100424",
+        "100534",
+        "100374"
+      ],
       "researchHeroes": [
         "吴·小乔＆大乔·步·常规",
         "蜀·徐庶·骑·SP",
@@ -5642,6 +6178,10 @@
       "type": "指挥",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "102017",
+        "100474"
+      ],
       "researchHeroes": [
         "吴·周姬·步·SP",
         "群·张宁·步·常规"
@@ -5653,6 +6193,10 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100340",
+        "100520"
+      ],
       "researchHeroes": [
         "群·于吉·弓·常规",
         "群·花鬘·弓·常规"
@@ -5664,6 +6208,10 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100066",
+        "100525"
+      ],
       "researchHeroes": [
         "蜀·魏延·步·常规",
         "蜀·赵统＆赵广·骑·常规"
@@ -5675,6 +6223,10 @@
       "type": "指挥",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100475",
+        "100589"
+      ],
       "researchHeroes": [
         "魏·郝昭·步·常规",
         "吴·周泰·步·常规"
@@ -5686,6 +6238,9 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100343"
+      ],
       "researchHeroes": [
         "群·李堪·骑·S2"
       ]
@@ -5696,6 +6251,9 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100352"
+      ],
       "researchHeroes": [
         "群·梁兴·骑·S2"
       ]
@@ -5706,6 +6264,9 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100348"
+      ],
       "researchHeroes": [
         "群·成宜·骑·S2"
       ]
@@ -5716,6 +6277,9 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100345"
+      ],
       "researchHeroes": [
         "群·杨秋·骑·S2"
       ]
@@ -5726,6 +6290,10 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100479",
+        "100480"
+      ],
       "researchHeroes": [
         "群·吕布·弓·S2",
         "汉·董卓·步·S2"
@@ -5737,6 +6305,11 @@
       "type": "主动",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100476",
+        "100477",
+        "100478"
+      ],
       "researchHeroes": [
         "魏·郭嘉·骑·S2",
         "蜀·庞统·步·S2",
@@ -5749,6 +6322,9 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100483"
+      ],
       "researchHeroes": [
         "群·麴义·步·S2"
       ]
@@ -5759,6 +6335,11 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100420",
+        "100481",
+        "100482"
+      ],
       "researchHeroes": [
         "魏·夏侯渊·骑·S2",
         "吴·丁奉·骑·S2",
@@ -5771,6 +6352,11 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100060",
+        "100071",
+        "100484"
+      ],
       "researchHeroes": [
         "群·吕姬·骑·S2",
         "蜀·马姬·骑·S2",
@@ -5783,6 +6369,9 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100486"
+      ],
       "researchHeroes": [
         "汉·潘凤·骑·常规"
       ]
@@ -5793,6 +6382,10 @@
       "type": "追击",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100487",
+        "100521"
+      ],
       "researchHeroes": [
         "群·张鲁·弓·常规",
         "魏·文聘·骑·常规"
@@ -5804,6 +6397,9 @@
       "type": "被动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100524"
+      ],
       "researchHeroes": [
         "蜀·沙摩柯·弓·常规"
       ]
@@ -5814,6 +6410,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100489",
+        "100491"
+      ],
       "researchHeroes": [
         "群·孟优·骑·常规",
         "群·金环三结·步·常规"
@@ -5825,6 +6425,9 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100493"
+      ],
       "researchHeroes": []
     },
     {
@@ -5833,6 +6436,10 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "102016",
+        "100770"
+      ],
       "researchHeroes": [
         "蜀·祝融夫人·骑·SP",
         "汉·许劭·弓·常规"
@@ -5844,6 +6451,11 @@
       "type": "被动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100372",
+        "100377",
+        "100655"
+      ],
       "researchHeroes": [
         "群·妲己·步·常规",
         "群·骊姬·弓·常规",
@@ -5856,6 +6468,11 @@
       "type": "主动",
       "grade": "D",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100326",
+        "100523",
+        "100570"
+      ],
       "researchHeroes": [
         "蜀·夏侯月姬·骑·常规",
         "吴·全琮·步·常规",
@@ -5868,6 +6485,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100508",
+        "100499"
+      ],
       "researchHeroes": [
         "群·严白虎·步·S3",
         "群·蒯良＆蒯越·步·S3"
@@ -5879,6 +6500,9 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100507"
+      ],
       "researchHeroes": [
         "群·楼班·骑·S3"
       ]
@@ -5889,6 +6513,10 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100496",
+        "100497"
+      ],
       "researchHeroes": [
         "蜀·诸葛亮·弓·S3",
         "吴·步皇后·步·S3"
@@ -5900,6 +6528,10 @@
       "type": "指挥",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100495",
+        "100498"
+      ],
       "researchHeroes": [
         "群·颜良＆文丑·骑·S3",
         "魏·曹纯·骑·S3"
@@ -5911,6 +6543,10 @@
       "type": "指挥",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100501",
+        "100502"
+      ],
       "researchHeroes": [
         "蜀·陈到·步·S3",
         "魏·曹植·弓·S3"
@@ -5922,6 +6558,10 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100503",
+        "100505"
+      ],
       "researchHeroes": [
         "魏·戏志才·步·S3",
         "吴·张昭·弓·S3"
@@ -5933,6 +6573,10 @@
       "type": "主动",
       "grade": "C",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100500",
+        "100504"
+      ],
       "researchHeroes": [
         "群·审配·步·S3",
         "吴·潘璋·步·S3"
@@ -5944,6 +6588,10 @@
       "type": "被动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100452",
+        "100526"
+      ],
       "researchHeroes": [
         "群·木鹿大王·骑·常规",
         "汉·张机·弓·常规"
@@ -5955,6 +6603,11 @@
       "type": "被动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100449",
+        "100450",
+        "100451"
+      ],
       "researchHeroes": [
         "魏·夏侯惇·骑·常规",
         "吴·孙策·骑·常规",
@@ -5967,6 +6620,11 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100314",
+        "100528",
+        "100531"
+      ],
       "researchHeroes": [
         "魏·辛宪英·步·XP",
         "吴·吾粲·步·XP",
@@ -5979,6 +6637,10 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100359",
+        "100529"
+      ],
       "researchHeroes": [
         "汉·袁姬·弓·XP",
         "群·步度根·骑·XP"
@@ -5990,6 +6652,11 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100532",
+        "100527",
+        "100530"
+      ],
       "researchHeroes": [
         "蜀·蜀三相·步·XP",
         "吴·诸葛瑾·弓·XP",
@@ -6002,6 +6669,9 @@
       "type": "指挥",
       "grade": "S",
       "acquisition": "典藏兑换",
+      "researchHeroIds": [
+        "110500"
+      ],
       "researchHeroes": [
         "桃园结义"
       ]
@@ -6012,6 +6682,9 @@
       "type": "追击",
       "grade": "B",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100535"
+      ],
       "researchHeroes": [
         "孙子兵法·作战"
       ]
@@ -6022,6 +6695,9 @@
       "type": "被动",
       "grade": "B",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100536"
+      ],
       "researchHeroes": [
         "六韬·豹韬"
       ]
@@ -6032,6 +6708,9 @@
       "type": "被动",
       "grade": "B",
       "acquisition": "典藏兑换",
+      "researchHeroIds": [
+        "110501"
+      ],
       "researchHeroes": [
         "枭雄"
       ]
@@ -6042,6 +6721,9 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "典藏兑换",
+      "researchHeroIds": [
+        "110502"
+      ],
       "researchHeroes": [
         "凤仪亭"
       ]
@@ -6052,6 +6734,11 @@
       "type": "指挥",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100553",
+        "100557",
+        "100562"
+      ],
       "researchHeroes": [
         "汉·朱儁·弓·SP",
         "群·张梁·步·SP",
@@ -6064,6 +6751,10 @@
       "type": "主动",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100443",
+        "100801"
+      ],
       "researchHeroes": [
         "群·陈宫·弓·常规",
         "晋·裴秀·步·常规"
@@ -6075,6 +6766,9 @@
       "type": "指挥",
       "grade": "C",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100545"
+      ],
       "researchHeroes": [
         "孙子兵法·九地"
       ]
@@ -6085,6 +6779,9 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100540"
+      ],
       "researchHeroes": [
         "孙子兵法·虚实"
       ]
@@ -6095,6 +6792,9 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "典藏兑换",
+      "researchHeroIds": [
+        "110503"
+      ],
       "researchHeroes": [
         "汜水关"
       ]
@@ -6105,6 +6805,9 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100539"
+      ],
       "researchHeroes": [
         "孙子兵法·兵势"
       ]
@@ -6115,6 +6818,9 @@
       "type": "指挥",
       "grade": "A",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100538"
+      ],
       "researchHeroes": [
         "孙子兵法·军形"
       ]
@@ -6125,6 +6831,9 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100546"
+      ],
       "researchHeroes": [
         "孙子兵法·火攻"
       ]
@@ -6135,6 +6844,9 @@
       "type": "指挥",
       "grade": "A",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100547"
+      ],
       "researchHeroes": [
         "孙子兵法·用间"
       ]
@@ -6145,6 +6857,9 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100548"
+      ],
       "researchHeroes": [
         "六韬·虎韬"
       ]
@@ -6155,6 +6870,9 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100405"
+      ],
       "researchHeroes": [
         "六韬·龙韬"
       ]
@@ -6165,6 +6883,9 @@
       "type": "被动",
       "grade": "B",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100403"
+      ],
       "researchHeroes": [
         "六韬·文韬"
       ]
@@ -6175,6 +6896,9 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100406"
+      ],
       "researchHeroes": [
         "六韬·犬韬"
       ]
@@ -6185,6 +6909,9 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100543"
+      ],
       "researchHeroes": [
         "孙子兵法·行军"
       ]
@@ -6195,6 +6922,9 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "典籍兑换",
+      "researchHeroIds": [
+        "100578"
+      ],
       "researchHeroes": [
         "吴子·论将"
       ]
@@ -6205,6 +6935,10 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100582",
+        "100797"
+      ],
       "researchHeroes": [
         "蜀·法正·骑·常规",
         "晋·胡芳·步·常规"
@@ -6216,6 +6950,10 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100574",
+        "100786"
+      ],
       "researchHeroes": [
         "吴·陆抗·步·常规",
         "汉·卫子夫·步·常规"
@@ -6227,6 +6965,9 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "典藏兑换",
+      "researchHeroIds": [
+        "110504"
+      ],
       "researchHeroes": [
         "人中吕布"
       ]
@@ -6237,6 +6978,9 @@
       "type": "追击",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100585"
+      ],
       "researchHeroes": [
         "魏·曹仁·步·SP"
       ]
@@ -6247,6 +6991,9 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "典藏兑换",
+      "researchHeroIds": [
+        "110505"
+      ],
       "researchHeroes": [
         "鼎足江东"
       ]
@@ -6257,6 +7004,9 @@
       "type": "主动",
       "grade": "S",
       "acquisition": "典藏兑换",
+      "researchHeroIds": [
+        "100601"
+      ],
       "researchHeroes": [
         "河内世泽"
       ]
@@ -6267,6 +7017,10 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100593",
+        "100814"
+      ],
       "researchHeroes": [
         "群·张郃·骑·常规",
         "晋·刘徽·弓·常规"
@@ -6278,6 +7032,11 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100603",
+        "100376",
+        "100634"
+      ],
       "researchHeroes": [
         "魏·卞夫人·骑·常规",
         "群·褒姒·骑·常规",
@@ -6290,6 +7049,9 @@
       "type": "指挥",
       "grade": "A",
       "acquisition": "典藏兑换",
+      "researchHeroIds": [
+        "110506"
+      ],
       "researchHeroes": [
         "单骑救主"
       ]
@@ -6300,6 +7062,10 @@
       "type": "被动",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100616",
+        "100615"
+      ],
       "researchHeroes": [
         "吴·凌统·弓·常规",
         "蜀·马岱·骑·常规"
@@ -6311,6 +7077,10 @@
       "type": "指挥",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100618",
+        "100649"
+      ],
       "researchHeroes": [
         "魏·贾诩·弓·常规",
         "蜀·魏延·步·常规"
@@ -6322,6 +7092,10 @@
       "type": "主动",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100619",
+        "100620"
+      ],
       "researchHeroes": [
         "吴·大乔·步·常规",
         "群·张绣·骑·常规"
@@ -6333,6 +7107,9 @@
       "type": "主动",
       "grade": "S",
       "acquisition": "典藏兑换",
+      "researchHeroIds": [
+        "110507"
+      ],
       "researchHeroes": [
         "当阳桥"
       ]
@@ -6343,6 +7120,10 @@
       "type": "被动",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100630",
+        "100631"
+      ],
       "researchHeroes": [
         "汉·皇甫嵩·步·常规",
         "蜀·严颜·骑·常规"
@@ -6354,6 +7135,11 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100635",
+        "100636",
+        "100637"
+      ],
       "researchHeroes": [
         "群·丘力居·骑·常规",
         "群·迷当大王·步·常规",
@@ -6366,6 +7152,11 @@
       "type": "追击",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100638",
+        "100639",
+        "100640"
+      ],
       "researchHeroes": [
         "群·越吉·骑·常规",
         "群·彻里吉·步·常规",
@@ -6378,6 +7169,10 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100604",
+        "100645"
+      ],
       "researchHeroes": [
         "群·李儒·弓·常规",
         "魏·徐晃·骑·常规"
@@ -6389,6 +7184,9 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "典藏兑换",
+      "researchHeroIds": [
+        "110508"
+      ],
       "researchHeroes": [
         "威震逍遥"
       ]
@@ -6399,6 +7197,10 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100647",
+        "100648"
+      ],
       "researchHeroes": [
         "群·华雄·骑·常规",
         "吴·张昭·弓·常规"
@@ -6410,6 +7212,10 @@
       "type": "指挥",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100653",
+        "100652"
+      ],
       "researchHeroes": [
         "蜀·关兴＆张苞·步·XP",
         "魏·王朗·弓·XP"
@@ -6421,6 +7227,10 @@
       "type": "主动",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100654",
+        "100672"
+      ],
       "researchHeroes": [
         "吴·孙鲁班·弓·常规",
         "魏·曹植·骑·常规"
@@ -6432,6 +7242,9 @@
       "type": "被动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100656"
+      ],
       "researchHeroes": [
         "群·高顺·骑·常规"
       ]
@@ -6442,6 +7255,10 @@
       "type": "被动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100670",
+        "100671"
+      ],
       "researchHeroes": [
         "群·袁绍·弓·常规",
         "吴·蒋钦·弓·常规"
@@ -6453,6 +7270,9 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100675"
+      ],
       "researchHeroes": [
         "汉·刘表·弓·XP"
       ]
@@ -6463,6 +7283,11 @@
       "type": "被动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100676",
+        "100677",
+        "100685"
+      ],
       "researchHeroes": [
         "汉·王昭君·骑·常规",
         "群·公孙瓒·骑·常规",
@@ -6475,6 +7300,10 @@
       "type": "指挥",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100684",
+        "100683"
+      ],
       "researchHeroes": [
         "吴·程普·步·XP",
         "魏·曹彰·骑·常规"
@@ -6486,6 +7315,11 @@
       "type": "指挥",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100689",
+        "100690",
+        "100812"
+      ],
       "researchHeroes": [
         "蜀·刘禅·步·常规",
         "群·西施·弓·常规",
@@ -6498,6 +7332,10 @@
       "type": "指挥",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100691",
+        "100692"
+      ],
       "researchHeroes": [
         "蜀·周仓·步·XP",
         "群·田丰·骑·常规"
@@ -6509,6 +7347,11 @@
       "type": "追击",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100694",
+        "100695",
+        "100700"
+      ],
       "researchHeroes": [
         "汉·张邈·骑·常规",
         "汉·刘岱·骑·常规",
@@ -6521,6 +7364,10 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100698",
+        "100699"
+      ],
       "researchHeroes": [
         "蜀·简雍·步·常规",
         "魏·华歆·弓·常规"
@@ -6532,6 +7379,10 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100696",
+        "100697"
+      ],
       "researchHeroes": [
         "汉·孔融·弓·常规",
         "汉·陶谦·弓·常规"
@@ -6543,6 +7394,11 @@
       "type": "主动",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100701",
+        "100702",
+        "100703"
+      ],
       "researchHeroes": [
         "晋·司马师·骑·常规",
         "晋·司马昭·骑·常规",
@@ -6555,6 +7411,10 @@
       "type": "追击",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100704",
+        "100705"
+      ],
       "researchHeroes": [
         "晋·文鸯·骑·常规",
         "晋·杜预·弓·常规"
@@ -6566,6 +7426,10 @@
       "type": "被动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100706",
+        "100707"
+      ],
       "researchHeroes": [
         "晋·王元姬·弓·常规",
         "晋·卫瓘·步·常规"
@@ -6577,6 +7441,11 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100708",
+        "100709",
+        "100784"
+      ],
       "researchHeroes": [
         "晋·贾充·步·XP",
         "晋·羊祜·步·XP",
@@ -6589,6 +7458,11 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100713",
+        "100714",
+        "100772"
+      ],
       "researchHeroes": [
         "晋·山涛·弓·常规",
         "晋·向秀·步·常规",
@@ -6601,6 +7475,11 @@
       "type": "指挥",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100710",
+        "100711",
+        "100712"
+      ],
       "researchHeroes": [
         "魏·嵇康·步·常规",
         "晋·刘伶·步·常规",
@@ -6613,6 +7492,10 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100715",
+        "100716"
+      ],
       "researchHeroes": [
         "晋·阮咸·步·常规",
         "晋·王戎·骑·常规"
@@ -6624,6 +7507,11 @@
       "type": "主动",
       "grade": "B",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100717",
+        "100718",
+        "100719"
+      ],
       "researchHeroes": [
         "晋·司马攸·弓·常规",
         "晋·文虎·弓·常规",
@@ -6636,6 +7524,11 @@
       "type": "指挥",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100741",
+        "100742",
+        "100771"
+      ],
       "researchHeroes": [
         "吴·鲁肃·步·常规",
         "汉·阴丽华·弓·常规",
@@ -6648,6 +7541,10 @@
       "type": "指挥",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100799",
+        "100800"
+      ],
       "researchHeroes": [
         "蜀·马谡·骑·XP",
         "蜀·蒋琬·步·XP"
@@ -6659,6 +7556,10 @@
       "type": "被动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100802",
+        "100810"
+      ],
       "researchHeroes": [
         "群·左慈·骑·XP",
         "蜀·黄忠·弓·XP"
@@ -6670,6 +7571,11 @@
       "type": "被动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100803",
+        "100804",
+        "100805"
+      ],
       "researchHeroes": [
         "汉·刘备·步·常规",
         "汉·曹操·骑·常规",
@@ -6682,6 +7588,11 @@
       "type": "指挥",
       "grade": "S",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100807",
+        "100808",
+        "100806"
+      ],
       "researchHeroes": [
         "晋·司马懿·步·XP",
         "吴·孙权·弓·XP",
@@ -6694,6 +7605,9 @@
       "type": "指挥",
       "grade": "S",
       "acquisition": "典藏兑换",
+      "researchHeroIds": [
+        "110511"
+      ],
       "researchHeroes": [
         "定军山"
       ]
@@ -6704,6 +7618,9 @@
       "type": "指挥",
       "grade": "S",
       "acquisition": "典藏兑换",
+      "researchHeroIds": [
+        "110512"
+      ],
       "researchHeroes": [
         "七擒七纵"
       ],
@@ -6717,6 +7634,9 @@
       "type": "被动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100815"
+      ],
       "researchHeroes": [
         "群·孟获·步·XP"
       ],
@@ -6729,6 +7649,9 @@
       "type": "主动",
       "grade": "A",
       "acquisition": "武将拆解",
+      "researchHeroIds": [
+        "100840"
+      ],
       "researchHeroes": [
         "魏·许褚·步·常规"
       ],

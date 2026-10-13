@@ -1,4 +1,4 @@
-import {parseAccountLink,importAccount,mergeCatalog,classifyServer,compareCollections} from './account-core.js?v=20261013-compare-v1';
+import {parseAccountLink,importAccount,mergeCatalog,classifyServer,compareCollections,canDismantle} from './account-core.js?v=20261013-dismantle-v1';
 const $=id=>document.getElementById(id);
 let catalog,account=null,tab='heroes',busy=false,comparison=null,differencesOnly=false;
 const skillOrder=['主动','被动','追击','指挥'];
@@ -55,11 +55,8 @@ function render(){
    if(item.bound||item.defective)article.append(node('p',[item.bound?'已绑定':'',item.defective?'残次':''].filter(Boolean).join(' · ')));
    for(const [label,effects] of [['宝物效果',item.effects],['附加词条',item.features]]){if(effects?.length){const details=node('details');details.open=true;details.append(node('summary',label));for(const effect of effects)details.append(node('div',`${effect.name}：${effect.description}`,'skill-desc'));article.append(details);}}
    if(item.conditions?.length){const details=node('details');details.append(node('summary','装备条件'),node('div',item.conditions.join('；'),'skill-desc'));article.append(details);}
-  }else{
-   article.append(node('p',`${item.type||'未分类'}${item.grade?' · '+item.grade+' 级':''}`));
-   if(item.owned)article.append(node('p',`研究进度：${item.progress===null?'未知':item.progress+'%'}`));
-   if(item.acquisition){article.append(node('p',item.acquisition));if(item.acquisitionText || item.researchHeroes?.length){const details=node('details');details.append(node('summary','获取方式'),node('div',item.acquisitionText||item.researchHeroes.join('、'),'skill-desc'));article.append(details);}}
-   if(item.description){const details=node('details');details.append(node('summary','战法说明'),node('div',item.description,'skill-desc'));article.append(details);}
+  }else if(account&&!item.owned&&canDismantle(item,account.heroes)){
+   article.append(node('span','可拆','badge dismantle'));
   }
   fragment.append(article);
  }
@@ -134,7 +131,7 @@ function renderComparison(){
  for(const row of filtered){
   if(tab==='skills'&&previousType!==row.type){previousType=row.type;const group=node('tr',undefined,'comparison-group'),th=node('th',row.type||'未分类');th.colSpan=3;th.scope='rowgroup';group.append(th);body.append(group);}
   const tr=node('tr',undefined,row.different?'comparison-row different':'comparison-row');tr.dataset.id=row.id;const name=node('th',row.label);name.scope='row';tr.append(name);
-  for(const copies of [row.left,row.right]){const cell=node('td',undefined,copies.length?'compare-owned':'compare-missing');if(!copies.length)cell.textContent='未拥有';else if(tab==='heroes'){for(const copy of [...copies].sort((a,b)=>b.red-a.red))cell.append(node('div',`${copy.red} 红${copy.awakened?' · 已觉醒':''}`));if(copies.length>1)cell.append(node('small',`${copies.length} 张`));}else{for(const copy of copies)cell.append(node('div',`已拥有 · ${copy.progress===null?'进度未知':copy.progress+'%'}`));}tr.append(cell);}
+  for(const [side,copies] of [[comparison.left,row.left],[comparison.right,row.right]]){const cell=node('td',undefined,copies.length?'compare-owned':'compare-missing');if(!copies.length){cell.append(node('div','未拥有'));if(tab==='skills'&&canDismantle(row,side.heroes))cell.append(node('span','可拆','badge dismantle'));}else if(tab==='heroes'){for(const copy of [...copies].sort((a,b)=>b.red-a.red))cell.append(node('div',`${copy.red} 红${copy.awakened?' · 已觉醒':''}`));if(copies.length>1)cell.append(node('small',`${copies.length} 张`));}else{cell.textContent='已拥有';}tr.append(cell);}
   body.append(tr);
  }
  table.append(body);$('results').classList.add('comparing');$('results').append(table);
