@@ -1,0 +1,47 @@
+{
+  "reviewedAt": "2026-10-13",
+  "heroes": [
+    {
+      "id": "100815",
+      "name": "孟获",
+      "country": "群",
+      "troop": "步",
+      "rarity": 5,
+      "source": "https://stbj.163.com/timeline/m2026070717545717064757801BO",
+      "sourceTitle": "7月8日例行更新预告"
+    },
+    {
+      "id": "100840",
+      "name": "许褚",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 5,
+      "source": "https://stbj.163.com/timeline/m2026091515521583480842601Hb",
+      "sourceTitle": "9月16日例行更新预告"
+    }
+  ],
+  "skills": [
+    {
+      "id": "200298",
+      "name": "七擒七纵",
+      "acquisition": "典藏兑换",
+      "source": "https://stbj.163.com/timeline/m2026071018113270578561601C8",
+      "sourceTitle": "2026暑期重磅更新预告",
+      "acquisitionText": "消耗5星群孟获XP、任意4星蜀阵营武将及任意4星群阵营武将游历获得。"
+    },
+    {
+      "id": "200299",
+      "name": "恃强淬锋",
+      "acquisition": "武将拆解",
+      "source": "https://stbj.163.com/timeline/m2026070717545717064757801BO",
+      "sourceTitle": "7月8日例行更新预告"
+    },
+    {
+      "id": "200301",
+      "name": "未雨绸缪",
+      "acquisition": "武将拆解",
+      "source": "https://stbj.163.com/timeline/m2026091515521583480842601Hb",
+      "sourceTitle": "9月16日例行更新预告"
+    }
+  ]
+}

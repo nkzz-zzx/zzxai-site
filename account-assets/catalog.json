@@ -1,0 +1,6542 @@
+{
+  "asOf": "2026-10-13",
+  "sourceLabel": "藏宝阁官方游戏配置 + 官方更新公告 + 本站历史武将图鉴",
+  "sources": [
+    "https://cbg-stzb.res.netease.com/js/game_auto_config.js",
+    "./stzb-assets/timeline.json",
+    "./account-assets/supplements.json"
+  ],
+  "scope": "官方藏宝阁四、五星武将（补充已记录的旧版与临时版）及可研究战法；不含自带战法、外观或百家词条。",
+  "complete": {
+    "heroes": true,
+    "skills": true
+  },
+  "heroes": [
+    {
+      "id": "100003",
+      "name": "吕布",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100003",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100003.jpg"
+    },
+    {
+      "id": "100005",
+      "name": "貂蝉",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100005",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100005.jpg"
+    },
+    {
+      "id": "100006",
+      "name": "袁绍",
+      "country": "汉",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100006",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100006.jpg"
+    },
+    {
+      "id": "100007",
+      "name": "卢植",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100007",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100007.jpg"
+    },
+    {
+      "id": "100008",
+      "name": "张角",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100008",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100008.jpg"
+    },
+    {
+      "id": "100009",
+      "name": "董卓",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100009",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100009.jpg"
+    },
+    {
+      "id": "100015",
+      "name": "甄洛",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100015",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100015.jpg"
+    },
+    {
+      "id": "100016",
+      "name": "刘备",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100016",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100016.jpg"
+    },
+    {
+      "id": "100017",
+      "name": "诸葛亮",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100017",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100017.jpg"
+    },
+    {
+      "id": "100019",
+      "name": "马云禄",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100019",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100019.jpg"
+    },
+    {
+      "id": "100020",
+      "name": "黄月英",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100020",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100020.jpg"
+    },
+    {
+      "id": "100023",
+      "name": "曹操",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100023",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100023.jpg"
+    },
+    {
+      "id": "100024",
+      "name": "荀彧",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100024",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100024.jpg"
+    },
+    {
+      "id": "100025",
+      "name": "曹丕",
+      "country": "魏",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100025",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100025.jpg"
+    },
+    {
+      "id": "100029",
+      "name": "张春华",
+      "country": "魏",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100029",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100029.jpg"
+    },
+    {
+      "id": "100030",
+      "name": "孙权",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100030",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100030.jpg"
+    },
+    {
+      "id": "100031",
+      "name": "周瑜",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100031",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100031.jpg"
+    },
+    {
+      "id": "100032",
+      "name": "周姬",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100032",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100032.jpg"
+    },
+    {
+      "id": "100033",
+      "name": "孙坚",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100033",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100033.jpg"
+    },
+    {
+      "id": "100036",
+      "name": "孙尚香",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100036",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100036.jpg"
+    },
+    {
+      "id": "100037",
+      "name": "何太后",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100037",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100037.jpg"
+    },
+    {
+      "id": "100074",
+      "name": "姜维",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100074",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100074.jpg"
+    },
+    {
+      "id": "100101",
+      "name": "灵帝",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100101",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100101.jpg"
+    },
+    {
+      "id": "100026",
+      "name": "关羽",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100026",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100026.jpg"
+    },
+    {
+      "id": "100004",
+      "name": "蔡文姬",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100004",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100004.jpg"
+    },
+    {
+      "id": "100013",
+      "name": "马超",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100013",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100013.jpg"
+    },
+    {
+      "id": "100021",
+      "name": "赵云",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100021",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100021.jpg"
+    },
+    {
+      "id": "100022",
+      "name": "张飞",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100022",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100022.jpg"
+    },
+    {
+      "id": "100027",
+      "name": "张辽",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100027",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100027.jpg"
+    },
+    {
+      "id": "100028",
+      "name": "王异",
+      "country": "魏",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100028",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100028.jpg"
+    },
+    {
+      "id": "100034",
+      "name": "甘宁",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100034",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100034.jpg"
+    },
+    {
+      "id": "100035",
+      "name": "吕蒙",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100035",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100035.jpg"
+    },
+    {
+      "id": "100337",
+      "name": "貂蝉",
+      "country": "群",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100337",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100337.jpg"
+    },
+    {
+      "id": "100002",
+      "name": "十常侍",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100002",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100002.jpg"
+    },
+    {
+      "id": "100001",
+      "name": "献帝",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100001",
+      "version": "常规"
+    },
+    {
+      "id": "100038",
+      "name": "王美人",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100038",
+      "version": "常规"
+    },
+    {
+      "id": "100039",
+      "name": "皇甫嵩",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100039",
+      "version": "常规"
+    },
+    {
+      "id": "100040",
+      "name": "朱儁",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100040",
+      "version": "常规"
+    },
+    {
+      "id": "100041",
+      "name": "张奂",
+      "country": "汉",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100041",
+      "version": "常规"
+    },
+    {
+      "id": "100046",
+      "name": "董姬",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100046",
+      "version": "常规"
+    },
+    {
+      "id": "100047",
+      "name": "严氏",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100047",
+      "version": "常规"
+    },
+    {
+      "id": "100048",
+      "name": "邹氏",
+      "country": "群",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100048",
+      "version": "常规"
+    },
+    {
+      "id": "100049",
+      "name": "华雄",
+      "country": "群",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100049",
+      "version": "常规"
+    },
+    {
+      "id": "100050",
+      "name": "张辽",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100050",
+      "version": "常规"
+    },
+    {
+      "id": "100052",
+      "name": "管亥",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100052",
+      "version": "常规"
+    },
+    {
+      "id": "100053",
+      "name": "徐荣",
+      "country": "群",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100053",
+      "version": "常规"
+    },
+    {
+      "id": "100057",
+      "name": "田丰",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100057",
+      "version": "常规"
+    },
+    {
+      "id": "100058",
+      "name": "颜良",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100058",
+      "version": "常规"
+    },
+    {
+      "id": "100059",
+      "name": "文丑",
+      "country": "群",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100059",
+      "version": "常规"
+    },
+    {
+      "id": "100063",
+      "name": "甘皇后",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100063",
+      "version": "常规"
+    },
+    {
+      "id": "100064",
+      "name": "麋夫人",
+      "country": "蜀",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100064",
+      "version": "常规"
+    },
+    {
+      "id": "100065",
+      "name": "关羽",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100065",
+      "version": "常规"
+    },
+    {
+      "id": "100066",
+      "name": "魏延",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100066",
+      "version": "常规"
+    },
+    {
+      "id": "100067",
+      "name": "徐庶",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100067",
+      "version": "常规"
+    },
+    {
+      "id": "100068",
+      "name": "张飞",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100068",
+      "version": "常规"
+    },
+    {
+      "id": "100069",
+      "name": "庞统",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100069",
+      "version": "常规"
+    },
+    {
+      "id": "100072",
+      "name": "关银屏",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100072",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100072.jpg"
+    },
+    {
+      "id": "100076",
+      "name": "卞夫人",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100076",
+      "version": "常规"
+    },
+    {
+      "id": "100077",
+      "name": "丁夫人",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100077",
+      "version": "常规"
+    },
+    {
+      "id": "100078",
+      "name": "郭嘉",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100078",
+      "version": "常规"
+    },
+    {
+      "id": "100079",
+      "name": "夏侯惇",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100079",
+      "version": "常规"
+    },
+    {
+      "id": "100081",
+      "name": "典韦",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100081",
+      "version": "常规"
+    },
+    {
+      "id": "100085",
+      "name": "曹仁",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100085",
+      "version": "常规"
+    },
+    {
+      "id": "100086",
+      "name": "周泰",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100086",
+      "version": "常规"
+    },
+    {
+      "id": "100087",
+      "name": "徐盛",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100087",
+      "version": "常规"
+    },
+    {
+      "id": "100088",
+      "name": "孙坚",
+      "country": "吴",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100088",
+      "version": "常规"
+    },
+    {
+      "id": "100089",
+      "name": "孙策",
+      "country": "吴",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100089",
+      "version": "常规"
+    },
+    {
+      "id": "100090",
+      "name": "太史慈",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100090",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100090.jpg"
+    },
+    {
+      "id": "100091",
+      "name": "吴夫人",
+      "country": "吴",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100091",
+      "version": "常规"
+    },
+    {
+      "id": "100094",
+      "name": "小乔",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100094",
+      "version": "常规"
+    },
+    {
+      "id": "100095",
+      "name": "大乔",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100095",
+      "version": "常规"
+    },
+    {
+      "id": "100110",
+      "name": "李儒",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100110",
+      "version": "常规"
+    },
+    {
+      "id": "100115",
+      "name": "高顺",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100115",
+      "version": "常规"
+    },
+    {
+      "id": "100116",
+      "name": "袁术",
+      "country": "群",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100116",
+      "version": "常规"
+    },
+    {
+      "id": "100129",
+      "name": "关平",
+      "country": "蜀",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100129",
+      "version": "常规"
+    },
+    {
+      "id": "100131",
+      "name": "赵云",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100131",
+      "version": "常规"
+    },
+    {
+      "id": "100140",
+      "name": "马超",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100140",
+      "version": "常规"
+    },
+    {
+      "id": "100145",
+      "name": "夏侯渊",
+      "country": "魏",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100145",
+      "version": "常规"
+    },
+    {
+      "id": "100148",
+      "name": "曹彰",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100148",
+      "version": "常规"
+    },
+    {
+      "id": "100149",
+      "name": "程昱",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100149",
+      "version": "常规"
+    },
+    {
+      "id": "100150",
+      "name": "荀攸",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100150",
+      "version": "常规"
+    },
+    {
+      "id": "100157",
+      "name": "甘宁",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100157",
+      "version": "常规"
+    },
+    {
+      "id": "100162",
+      "name": "程普",
+      "country": "吴",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100162",
+      "version": "常规"
+    },
+    {
+      "id": "100163",
+      "name": "鲁肃",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100163",
+      "version": "常规"
+    },
+    {
+      "id": "100268",
+      "name": "张绣",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100268",
+      "version": "常规"
+    },
+    {
+      "id": "100329",
+      "name": "敬哀皇后",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100329",
+      "version": "常规"
+    },
+    {
+      "id": "100398",
+      "name": "关兴＆张苞",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100398",
+      "version": "常规"
+    },
+    {
+      "id": "100042",
+      "name": "曹操",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100042",
+      "version": "常规"
+    },
+    {
+      "id": "100043",
+      "name": "孙坚",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100043",
+      "version": "常规"
+    },
+    {
+      "id": "100044",
+      "name": "刘备",
+      "country": "汉",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100044",
+      "version": "常规"
+    },
+    {
+      "id": "100421",
+      "name": "徐晃",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100421",
+      "version": "常规"
+    },
+    {
+      "id": "100426",
+      "name": "凌统",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100426",
+      "version": "常规"
+    },
+    {
+      "id": "100439",
+      "name": "黄盖",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100439",
+      "version": "常规"
+    },
+    {
+      "id": "100062",
+      "name": "马腾",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100062",
+      "version": "常规"
+    },
+    {
+      "id": "100084",
+      "name": "庞德",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100084",
+      "version": "常规"
+    },
+    {
+      "id": "100092",
+      "name": "陆逊",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100092",
+      "version": "常规"
+    },
+    {
+      "id": "100093",
+      "name": "徐夫人",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100093",
+      "version": "常规"
+    },
+    {
+      "id": "100378",
+      "name": "伏寿",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100378",
+      "version": "常规"
+    },
+    {
+      "id": "100379",
+      "name": "杜氏",
+      "country": "汉",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100379",
+      "version": "常规"
+    },
+    {
+      "id": "100351",
+      "name": "张任",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100351",
+      "version": "常规"
+    },
+    {
+      "id": "100471",
+      "name": "曹节",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100471",
+      "version": "常规"
+    },
+    {
+      "id": "100071",
+      "name": "马姬",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "S2",
+      "iconId": "100071",
+      "version": "S2"
+    },
+    {
+      "id": "100060",
+      "name": "吕姬",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "S2",
+      "iconId": "100060",
+      "version": "S2"
+    },
+    {
+      "id": "100051",
+      "name": "张梁",
+      "country": "群",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100051",
+      "version": "常规"
+    },
+    {
+      "id": "100123",
+      "name": "张郃",
+      "country": "群",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100123",
+      "version": "常规"
+    },
+    {
+      "id": "100134",
+      "name": "严颜",
+      "country": "蜀",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100134",
+      "version": "常规"
+    },
+    {
+      "id": "100139",
+      "name": "马岱",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100139",
+      "version": "常规"
+    },
+    {
+      "id": "100156",
+      "name": "韩当",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100156",
+      "version": "常规"
+    },
+    {
+      "id": "100159",
+      "name": "蒋钦",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100159",
+      "version": "常规"
+    },
+    {
+      "id": "100243",
+      "name": "孙桓",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100243",
+      "version": "常规"
+    },
+    {
+      "id": "100245",
+      "name": "董袭",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100245",
+      "version": "常规"
+    },
+    {
+      "id": "100342",
+      "name": "张横",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "S2",
+      "iconId": "100342",
+      "version": "S2"
+    },
+    {
+      "id": "100343",
+      "name": "李堪",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "S2",
+      "iconId": "100343",
+      "version": "S2"
+    },
+    {
+      "id": "100344",
+      "name": "马玩",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "S2",
+      "iconId": "100344",
+      "version": "S2"
+    },
+    {
+      "id": "100345",
+      "name": "杨秋",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "S2",
+      "iconId": "100345",
+      "version": "S2"
+    },
+    {
+      "id": "100346",
+      "name": "侯选",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "S2",
+      "iconId": "100346",
+      "version": "S2"
+    },
+    {
+      "id": "100347",
+      "name": "程银",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "S2",
+      "iconId": "100347",
+      "version": "S2"
+    },
+    {
+      "id": "100348",
+      "name": "成宜",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "S2",
+      "iconId": "100348",
+      "version": "S2"
+    },
+    {
+      "id": "100424",
+      "name": "小乔＆大乔",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100424",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100424.jpg"
+    },
+    {
+      "id": "100310",
+      "name": "邓艾",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100310",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100310.jpg"
+    },
+    {
+      "id": "100472",
+      "name": "司马懿",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100472",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100472.jpg"
+    },
+    {
+      "id": "100331",
+      "name": "霍弋",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100331",
+      "version": "常规"
+    },
+    {
+      "id": "100334",
+      "name": "黄权",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100334",
+      "version": "常规"
+    },
+    {
+      "id": "100340",
+      "name": "于吉",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100340",
+      "version": "常规"
+    },
+    {
+      "id": "100354",
+      "name": "司马徽",
+      "country": "汉",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100354",
+      "version": "常规"
+    },
+    {
+      "id": "100355",
+      "name": "蔡夫人",
+      "country": "汉",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100355",
+      "version": "常规"
+    },
+    {
+      "id": "100420",
+      "name": "夏侯渊",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "S2",
+      "iconId": "100420",
+      "version": "S2"
+    },
+    {
+      "id": "100430",
+      "name": "张宝",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100430",
+      "version": "常规"
+    },
+    {
+      "id": "100045",
+      "name": "鲍信",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100045",
+      "version": "常规"
+    },
+    {
+      "id": "100352",
+      "name": "梁兴",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "S2",
+      "iconId": "100352",
+      "version": "S2"
+    },
+    {
+      "id": "100435",
+      "name": "夏侯渊",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100435",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100435.jpg"
+    },
+    {
+      "id": "100442",
+      "name": "黄忠",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100442",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100442.jpg"
+    },
+    {
+      "id": "100358",
+      "name": "张姬",
+      "country": "蜀",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100358",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100358.jpg"
+    },
+    {
+      "id": "100372",
+      "name": "妲己",
+      "country": "群",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100372",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100372.jpg"
+    },
+    {
+      "id": "100377",
+      "name": "骊姬",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100377",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100377.jpg"
+    },
+    {
+      "id": "100376",
+      "name": "褒姒",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100376",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100376.jpg"
+    },
+    {
+      "id": "100374",
+      "name": "妺喜",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100374",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100374.jpg"
+    },
+    {
+      "id": "100474",
+      "name": "张宁",
+      "country": "群",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100474",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100474.jpg"
+    },
+    {
+      "id": "100475",
+      "name": "郝昭",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100475",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100475.jpg"
+    },
+    {
+      "id": "100476",
+      "name": "郭嘉",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "S2",
+      "iconId": "100476",
+      "version": "S2",
+      "portrait": "./stzb-assets/portraits/100476.jpg"
+    },
+    {
+      "id": "100477",
+      "name": "庞统",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "season": "S2",
+      "iconId": "100477",
+      "version": "S2",
+      "portrait": "./stzb-assets/portraits/100477.jpg"
+    },
+    {
+      "id": "100478",
+      "name": "陆逊",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 5,
+      "season": "S2",
+      "iconId": "100478",
+      "version": "S2",
+      "portrait": "./stzb-assets/portraits/100478.jpg"
+    },
+    {
+      "id": "100479",
+      "name": "吕布",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "S2",
+      "iconId": "100479",
+      "version": "S2",
+      "portrait": "./stzb-assets/portraits/100479.jpg"
+    },
+    {
+      "id": "100480",
+      "name": "董卓",
+      "country": "汉",
+      "troop": "步",
+      "rarity": 5,
+      "season": "S2",
+      "iconId": "100480",
+      "version": "S2",
+      "portrait": "./stzb-assets/portraits/100480.jpg"
+    },
+    {
+      "id": "100481",
+      "name": "丁奉",
+      "country": "吴",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "S2",
+      "iconId": "100481",
+      "version": "S2"
+    },
+    {
+      "id": "100482",
+      "name": "韩遂",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "S2",
+      "iconId": "100127",
+      "version": "S2"
+    },
+    {
+      "id": "100483",
+      "name": "麴义",
+      "country": "群",
+      "troop": "步",
+      "rarity": 4,
+      "season": "S2",
+      "iconId": "100122",
+      "version": "S2"
+    },
+    {
+      "id": "100484",
+      "name": "公孙瓒",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "S2",
+      "iconId": "100114",
+      "version": "S2"
+    },
+    {
+      "id": "100486",
+      "name": "潘凤",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100486",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100486.jpg"
+    },
+    {
+      "id": "100487",
+      "name": "张鲁",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100487",
+      "version": "常规"
+    },
+    {
+      "id": "100489",
+      "name": "孟优",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100489",
+      "version": "常规"
+    },
+    {
+      "id": "100490",
+      "name": "带来洞主",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100490",
+      "version": "常规"
+    },
+    {
+      "id": "100491",
+      "name": "金环三结",
+      "country": "群",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100491",
+      "version": "常规"
+    },
+    {
+      "id": "100494",
+      "name": "祝融夫人",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100494",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100494.jpg"
+    },
+    {
+      "id": "100326",
+      "name": "夏侯月姬",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100326",
+      "version": "常规"
+    },
+    {
+      "id": "100519",
+      "name": "兀突骨",
+      "country": "群",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100519",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100519.jpg"
+    },
+    {
+      "id": "100520",
+      "name": "花鬘",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100520",
+      "version": "常规"
+    },
+    {
+      "id": "100521",
+      "name": "文聘",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100521",
+      "version": "常规"
+    },
+    {
+      "id": "100522",
+      "name": "诸葛恪",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100522",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100522.jpg"
+    },
+    {
+      "id": "100523",
+      "name": "全琮",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100523",
+      "version": "常规"
+    },
+    {
+      "id": "100524",
+      "name": "沙摩柯",
+      "country": "蜀",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100524",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100524.jpg"
+    },
+    {
+      "id": "100525",
+      "name": "赵统＆赵广",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100525",
+      "version": "常规"
+    },
+    {
+      "id": "100534",
+      "name": "徐庶",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "SP",
+      "iconId": "100534",
+      "version": "SP",
+      "portrait": "./stzb-assets/portraits/100534.jpg"
+    },
+    {
+      "id": "100582",
+      "name": "法正",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100582",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100582.jpg"
+    },
+    {
+      "id": "100589",
+      "name": "周泰",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100589",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100589.jpg"
+    },
+    {
+      "id": "100603",
+      "name": "卞夫人",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100603",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100603.jpg"
+    },
+    {
+      "id": "102001",
+      "name": "赵云",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "season": "SP",
+      "iconId": "100021",
+      "version": "SP",
+      "portrait": "./stzb-assets/portraits/102001.jpg"
+    },
+    {
+      "id": "102002",
+      "name": "夏侯渊",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "SP",
+      "iconId": "100435",
+      "version": "SP",
+      "portrait": "./stzb-assets/portraits/102002.jpg"
+    },
+    {
+      "id": "102003",
+      "name": "太史慈",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "SP",
+      "iconId": "100090",
+      "version": "SP",
+      "portrait": "./stzb-assets/portraits/102003.jpg"
+    },
+    {
+      "id": "102004",
+      "name": "卢植",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "SP",
+      "iconId": "100007",
+      "version": "SP",
+      "portrait": "./stzb-assets/portraits/102004.jpg"
+    },
+    {
+      "id": "102005",
+      "name": "甄洛",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "SP",
+      "iconId": "100015",
+      "version": "SP",
+      "portrait": "./stzb-assets/portraits/102005.jpg"
+    },
+    {
+      "id": "102006",
+      "name": "关平",
+      "country": "蜀",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "SP",
+      "iconId": "100129",
+      "version": "SP"
+    },
+    {
+      "id": "102007",
+      "name": "典韦",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 4,
+      "season": "SP",
+      "iconId": "100081",
+      "version": "SP"
+    },
+    {
+      "id": "102008",
+      "name": "吴夫人",
+      "country": "吴",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "SP",
+      "iconId": "100091",
+      "version": "SP"
+    },
+    {
+      "id": "102009",
+      "name": "张奂",
+      "country": "汉",
+      "troop": "步",
+      "rarity": 4,
+      "season": "SP",
+      "iconId": "100041",
+      "version": "SP"
+    },
+    {
+      "id": "102010",
+      "name": "袁术",
+      "country": "群",
+      "troop": "步",
+      "rarity": 4,
+      "season": "SP",
+      "iconId": "100116",
+      "version": "SP"
+    },
+    {
+      "id": "100495",
+      "name": "颜良＆文丑",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "S3",
+      "iconId": "100495",
+      "version": "S3",
+      "portrait": "./stzb-assets/portraits/100495.jpg"
+    },
+    {
+      "id": "100496",
+      "name": "诸葛亮",
+      "country": "蜀",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "S3",
+      "iconId": "100496",
+      "version": "S3",
+      "portrait": "./stzb-assets/portraits/100496.jpg"
+    },
+    {
+      "id": "100497",
+      "name": "步皇后",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 5,
+      "season": "S3",
+      "iconId": "100497",
+      "version": "S3",
+      "portrait": "./stzb-assets/portraits/100497.jpg"
+    },
+    {
+      "id": "100498",
+      "name": "曹纯",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "S3",
+      "iconId": "100498",
+      "version": "S3",
+      "portrait": "./stzb-assets/portraits/100498.jpg"
+    },
+    {
+      "id": "100499",
+      "name": "蒯良＆蒯越",
+      "country": "群",
+      "troop": "步",
+      "rarity": 4,
+      "season": "S3",
+      "iconId": "100097",
+      "version": "S3"
+    },
+    {
+      "id": "100500",
+      "name": "审配",
+      "country": "群",
+      "troop": "步",
+      "rarity": 4,
+      "season": "S3",
+      "iconId": "100186",
+      "version": "S3"
+    },
+    {
+      "id": "100501",
+      "name": "陈到",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 4,
+      "season": "S3",
+      "iconId": "100133",
+      "version": "S3"
+    },
+    {
+      "id": "100502",
+      "name": "曹植",
+      "country": "魏",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "S3",
+      "iconId": "100502",
+      "version": "S3"
+    },
+    {
+      "id": "100503",
+      "name": "戏志才",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 4,
+      "season": "S3",
+      "iconId": "100503",
+      "version": "S3"
+    },
+    {
+      "id": "100504",
+      "name": "潘璋",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 4,
+      "season": "S3",
+      "iconId": "100246",
+      "version": "S3"
+    },
+    {
+      "id": "100505",
+      "name": "张昭",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "S3",
+      "iconId": "100161",
+      "version": "S3"
+    },
+    {
+      "id": "100506",
+      "name": "刘豹",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "S3",
+      "iconId": "100506",
+      "version": "S3"
+    },
+    {
+      "id": "100507",
+      "name": "楼班",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "S3",
+      "iconId": "100507",
+      "version": "S3"
+    },
+    {
+      "id": "100508",
+      "name": "严白虎",
+      "country": "群",
+      "troop": "步",
+      "rarity": 4,
+      "season": "S3",
+      "iconId": "100508",
+      "version": "S3"
+    },
+    {
+      "id": "102011",
+      "name": "蔡文姬",
+      "country": "汉",
+      "troop": "步",
+      "rarity": 5,
+      "season": "SP",
+      "iconId": "100004",
+      "version": "SP",
+      "portrait": "./stzb-assets/portraits/102011.jpg"
+    },
+    {
+      "id": "102012",
+      "name": "姜维",
+      "country": "蜀",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "SP",
+      "iconId": "100074",
+      "version": "SP",
+      "portrait": "./stzb-assets/portraits/102012.jpg"
+    },
+    {
+      "id": "100449",
+      "name": "夏侯惇",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100449",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100449.jpg"
+    },
+    {
+      "id": "100451",
+      "name": "关羽",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100451",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100451.jpg"
+    },
+    {
+      "id": "100450",
+      "name": "孙策",
+      "country": "吴",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100450",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100450.jpg"
+    },
+    {
+      "id": "100452",
+      "name": "木鹿大王",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100452",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100452.jpg"
+    },
+    {
+      "id": "100526",
+      "name": "张机",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100526",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100526.jpg"
+    },
+    {
+      "id": "100527",
+      "name": "诸葛瑾",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "XP",
+      "iconId": "100164",
+      "version": "XP"
+    },
+    {
+      "id": "100528",
+      "name": "吾粲",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 4,
+      "season": "XP",
+      "iconId": "100528",
+      "version": "XP"
+    },
+    {
+      "id": "100529",
+      "name": "步度根",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "XP",
+      "iconId": "100529",
+      "version": "XP"
+    },
+    {
+      "id": "100530",
+      "name": "刘表",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "XP",
+      "iconId": "100107",
+      "version": "XP"
+    },
+    {
+      "id": "100359",
+      "name": "袁姬",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "XP",
+      "iconId": "100359",
+      "version": "XP"
+    },
+    {
+      "id": "100531",
+      "name": "于禁",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "XP",
+      "iconId": "100143",
+      "version": "XP"
+    },
+    {
+      "id": "100314",
+      "name": "辛宪英",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 4,
+      "season": "XP",
+      "iconId": "100314",
+      "version": "XP"
+    },
+    {
+      "id": "100532",
+      "name": "蜀三相",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 4,
+      "season": "XP",
+      "iconId": "100532",
+      "version": "XP"
+    },
+    {
+      "id": "102014",
+      "name": "张角",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "SP",
+      "iconId": "100008",
+      "version": "SP",
+      "portrait": "./stzb-assets/portraits/102014.jpg"
+    },
+    {
+      "id": "102015",
+      "name": "孙尚香",
+      "country": "蜀",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "SP",
+      "iconId": "100036",
+      "version": "SP",
+      "portrait": "./stzb-assets/portraits/102015.jpg"
+    },
+    {
+      "id": "102016",
+      "name": "祝融夫人",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "SP",
+      "iconId": "100494",
+      "version": "SP",
+      "portrait": "./stzb-assets/portraits/102016.jpg"
+    },
+    {
+      "id": "102017",
+      "name": "周姬",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 5,
+      "season": "SP",
+      "iconId": "100032",
+      "version": "SP",
+      "portrait": "./stzb-assets/portraits/102017.jpg"
+    },
+    {
+      "id": "100443",
+      "name": "陈宫",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100443",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100443.jpg"
+    },
+    {
+      "id": "100553",
+      "name": "朱儁",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "SP",
+      "iconId": "100553",
+      "version": "SP",
+      "portrait": "./stzb-assets/portraits/100553.jpg"
+    },
+    {
+      "id": "100557",
+      "name": "张梁",
+      "country": "群",
+      "troop": "步",
+      "rarity": 5,
+      "season": "SP",
+      "iconId": "100557",
+      "version": "SP",
+      "portrait": "./stzb-assets/portraits/100557.jpg"
+    },
+    {
+      "id": "100562",
+      "name": "张宝",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "SP",
+      "iconId": "100562",
+      "version": "SP",
+      "portrait": "./stzb-assets/portraits/100562.jpg"
+    },
+    {
+      "id": "100570",
+      "name": "何进",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100098",
+      "version": "常规"
+    },
+    {
+      "id": "100574",
+      "name": "陆抗",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100574",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100574.jpg"
+    },
+    {
+      "id": "100585",
+      "name": "曹仁",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 5,
+      "season": "SP",
+      "iconId": "100585",
+      "version": "SP",
+      "portrait": "./stzb-assets/portraits/100585.jpg"
+    },
+    {
+      "id": "100592",
+      "name": "董白",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100592",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100592.jpg"
+    },
+    {
+      "id": "100593",
+      "name": "张郃",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100593",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100593.jpg"
+    },
+    {
+      "id": "100604",
+      "name": "李儒",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100604",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/T01.jpg"
+    },
+    {
+      "id": "100615",
+      "name": "马岱",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100615",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100615.jpg"
+    },
+    {
+      "id": "100616",
+      "name": "凌统",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100616",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100616.jpg"
+    },
+    {
+      "id": "100618",
+      "name": "贾诩",
+      "country": "魏",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100618",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100618.jpg"
+    },
+    {
+      "id": "100619",
+      "name": "大乔",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100619",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100619.jpg"
+    },
+    {
+      "id": "100620",
+      "name": "张绣",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100620",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100620.jpg"
+    },
+    {
+      "id": "100630",
+      "name": "皇甫嵩",
+      "country": "汉",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100630",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100630.jpg"
+    },
+    {
+      "id": "100631",
+      "name": "严颜",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100631",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100631.jpg"
+    },
+    {
+      "id": "100634",
+      "name": "吕姬",
+      "country": "群",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100634",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100634.jpg"
+    },
+    {
+      "id": "100635",
+      "name": "丘力居",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100635",
+      "version": "常规"
+    },
+    {
+      "id": "100636",
+      "name": "迷当大王",
+      "country": "群",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100636",
+      "version": "常规"
+    },
+    {
+      "id": "100637",
+      "name": "俄何烧戈",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100637",
+      "version": "常规"
+    },
+    {
+      "id": "100638",
+      "name": "越吉",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100638",
+      "version": "常规"
+    },
+    {
+      "id": "100639",
+      "name": "彻里吉",
+      "country": "群",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100639",
+      "version": "常规"
+    },
+    {
+      "id": "100640",
+      "name": "朵思大王",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100640",
+      "version": "常规"
+    },
+    {
+      "id": "100641",
+      "name": "朱然",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100641",
+      "version": "常规"
+    },
+    {
+      "id": "100642",
+      "name": "关索",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100642",
+      "version": "常规"
+    },
+    {
+      "id": "100643",
+      "name": "文钦",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100643",
+      "version": "常规"
+    },
+    {
+      "id": "100644",
+      "name": "王双",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100644",
+      "version": "常规"
+    },
+    {
+      "id": "100645",
+      "name": "徐晃",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100645",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100645.jpg"
+    },
+    {
+      "id": "100647",
+      "name": "华雄",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100647",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100647.jpg"
+    },
+    {
+      "id": "100648",
+      "name": "张昭",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100648",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100648.jpg"
+    },
+    {
+      "id": "100649",
+      "name": "魏延",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100649",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100649.jpg"
+    },
+    {
+      "id": "100653",
+      "name": "关兴＆张苞",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100653",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100653.jpg"
+    },
+    {
+      "id": "100652",
+      "name": "王朗",
+      "country": "魏",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100652",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100652.jpg"
+    },
+    {
+      "id": "100654",
+      "name": "孙鲁班",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100654",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100654.jpg"
+    },
+    {
+      "id": "100655",
+      "name": "郭皇后",
+      "country": "魏",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100655",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100655.jpg"
+    },
+    {
+      "id": "100656",
+      "name": "高顺",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100656",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100656.jpg"
+    },
+    {
+      "id": "100670",
+      "name": "袁绍",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100670",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100670.jpg"
+    },
+    {
+      "id": "100671",
+      "name": "蒋钦",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100671",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100671.jpg"
+    },
+    {
+      "id": "100672",
+      "name": "曹植",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100672",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100672.jpg"
+    },
+    {
+      "id": "100675",
+      "name": "刘表",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100675",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100675.jpg"
+    },
+    {
+      "id": "100676",
+      "name": "王昭君",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100676",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100676.jpg"
+    },
+    {
+      "id": "100677",
+      "name": "公孙瓒",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100677",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100677.jpg"
+    },
+    {
+      "id": "100683",
+      "name": "曹彰",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100683",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100683.jpg"
+    },
+    {
+      "id": "100684",
+      "name": "程普",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100684",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100684.jpg"
+    },
+    {
+      "id": "100685",
+      "name": "乐进",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100685",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100685.jpg"
+    },
+    {
+      "id": "100687",
+      "name": "小乔",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100687",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100687.jpg"
+    },
+    {
+      "id": "100689",
+      "name": "刘禅",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100689",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100689.jpg"
+    },
+    {
+      "id": "100690",
+      "name": "西施",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100690",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100690.jpg"
+    },
+    {
+      "id": "100691",
+      "name": "周仓",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100691",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100691.jpg"
+    },
+    {
+      "id": "100692",
+      "name": "田丰",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100692",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100692.jpg"
+    },
+    {
+      "id": "100693",
+      "name": "王允",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100693",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100693.jpg"
+    },
+    {
+      "id": "100694",
+      "name": "张邈",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100694",
+      "version": "常规"
+    },
+    {
+      "id": "100695",
+      "name": "刘岱",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100695",
+      "version": "常规"
+    },
+    {
+      "id": "100696",
+      "name": "孔融",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100696",
+      "version": "常规"
+    },
+    {
+      "id": "100697",
+      "name": "陶谦",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100697",
+      "version": "常规"
+    },
+    {
+      "id": "100698",
+      "name": "简雍",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100698",
+      "version": "常规"
+    },
+    {
+      "id": "100699",
+      "name": "华歆",
+      "country": "魏",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100699",
+      "version": "常规"
+    },
+    {
+      "id": "100700",
+      "name": "朱治",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100700",
+      "version": "常规"
+    },
+    {
+      "id": "100701",
+      "name": "司马师",
+      "country": "晋",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100701",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100701.jpg"
+    },
+    {
+      "id": "100702",
+      "name": "司马昭",
+      "country": "晋",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100702",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100702.jpg"
+    },
+    {
+      "id": "100703",
+      "name": "司马炎",
+      "country": "晋",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100703",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100703.jpg"
+    },
+    {
+      "id": "100704",
+      "name": "文鸯",
+      "country": "晋",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100704",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100704.jpg"
+    },
+    {
+      "id": "100705",
+      "name": "杜预",
+      "country": "晋",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100705",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100705.jpg"
+    },
+    {
+      "id": "100706",
+      "name": "王元姬",
+      "country": "晋",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100706",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100706.jpg"
+    },
+    {
+      "id": "100707",
+      "name": "卫瓘",
+      "country": "晋",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100707",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100707.jpg"
+    },
+    {
+      "id": "100708",
+      "name": "贾充",
+      "country": "晋",
+      "troop": "步",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100708",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100708.jpg"
+    },
+    {
+      "id": "100709",
+      "name": "羊祜",
+      "country": "晋",
+      "troop": "步",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100709",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100709.jpg"
+    },
+    {
+      "id": "100710",
+      "name": "嵇康",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100710",
+      "version": "常规"
+    },
+    {
+      "id": "100711",
+      "name": "刘伶",
+      "country": "晋",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100711",
+      "version": "常规"
+    },
+    {
+      "id": "100712",
+      "name": "阮籍",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100712",
+      "version": "常规"
+    },
+    {
+      "id": "100713",
+      "name": "山涛",
+      "country": "晋",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100713",
+      "version": "常规"
+    },
+    {
+      "id": "100714",
+      "name": "向秀",
+      "country": "晋",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100714",
+      "version": "常规"
+    },
+    {
+      "id": "100715",
+      "name": "阮咸",
+      "country": "晋",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100715",
+      "version": "常规"
+    },
+    {
+      "id": "100716",
+      "name": "王戎",
+      "country": "晋",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100716",
+      "version": "常规"
+    },
+    {
+      "id": "100717",
+      "name": "司马攸",
+      "country": "晋",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100717",
+      "version": "常规"
+    },
+    {
+      "id": "100718",
+      "name": "文虎",
+      "country": "晋",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100718",
+      "version": "常规"
+    },
+    {
+      "id": "100741",
+      "name": "鲁肃",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100741",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100741.jpg"
+    },
+    {
+      "id": "100742",
+      "name": "阴丽华",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100742",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100742.jpg"
+    },
+    {
+      "id": "100769",
+      "name": "典韦",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100769",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100769.jpg"
+    },
+    {
+      "id": "100770",
+      "name": "许劭",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100770",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100770.jpg"
+    },
+    {
+      "id": "100719",
+      "name": "曹爽",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100719",
+      "version": "常规"
+    },
+    {
+      "id": "100771",
+      "name": "沮授",
+      "country": "群",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100771",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100771.jpg"
+    },
+    {
+      "id": "100772",
+      "name": "许攸",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "100772",
+      "version": "常规"
+    },
+    {
+      "id": "100783",
+      "name": "黄盖",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100783",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100783.jpg"
+    },
+    {
+      "id": "100784",
+      "name": "周瑜",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100784",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100784.jpg"
+    },
+    {
+      "id": "100785",
+      "name": "马腾",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100785",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100785.jpg"
+    },
+    {
+      "id": "100786",
+      "name": "卫子夫",
+      "country": "汉",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100786",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100786.jpg"
+    },
+    {
+      "id": "100787",
+      "name": "程昱",
+      "country": "魏",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100787",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100787.jpg"
+    },
+    {
+      "id": "100788",
+      "name": "丁奉",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100788",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100788.jpg"
+    },
+    {
+      "id": "100789",
+      "name": "陆绩",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100789",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100789.jpg"
+    },
+    {
+      "id": "100790",
+      "name": "袁术",
+      "country": "群",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100790",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100790.jpg"
+    },
+    {
+      "id": "100791",
+      "name": "陆逊",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100791",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100791.jpg"
+    },
+    {
+      "id": "100792",
+      "name": "马良",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100792",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100792.jpg"
+    },
+    {
+      "id": "100793",
+      "name": "陈到",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100793",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100793.jpg"
+    },
+    {
+      "id": "100794",
+      "name": "荀彧",
+      "country": "汉",
+      "troop": "步",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100794",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100794.jpg"
+    },
+    {
+      "id": "100795",
+      "name": "献帝",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100795",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100795.jpg"
+    },
+    {
+      "id": "100796",
+      "name": "于禁",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100796",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100796.jpg"
+    },
+    {
+      "id": "100797",
+      "name": "胡芳",
+      "country": "晋",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100797",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100797.jpg"
+    },
+    {
+      "id": "100799",
+      "name": "马谡",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100799",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100799.jpg"
+    },
+    {
+      "id": "100800",
+      "name": "蒋琬",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100800",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100800.jpg"
+    },
+    {
+      "id": "100801",
+      "name": "裴秀",
+      "country": "晋",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100801",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100801.jpg"
+    },
+    {
+      "id": "100802",
+      "name": "左慈",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100802",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100802.jpg"
+    },
+    {
+      "id": "100803",
+      "name": "刘备",
+      "country": "汉",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100803",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100803.jpg"
+    },
+    {
+      "id": "100804",
+      "name": "曹操",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100804",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100804.jpg"
+    },
+    {
+      "id": "100805",
+      "name": "孙坚",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100805",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100805.jpg"
+    },
+    {
+      "id": "100806",
+      "name": "姜维",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100806",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100806.jpg"
+    },
+    {
+      "id": "100807",
+      "name": "司马懿",
+      "country": "晋",
+      "troop": "步",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100807",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100807.jpg"
+    },
+    {
+      "id": "100808",
+      "name": "孙权",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100808",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100808.jpg"
+    },
+    {
+      "id": "100810",
+      "name": "黄忠",
+      "country": "蜀",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100810",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100810.jpg"
+    },
+    {
+      "id": "110311",
+      "name": "侍卫",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110312",
+      "name": "侍卫",
+      "country": "汉",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110313",
+      "name": "侍卫",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110321",
+      "name": "侍卫",
+      "country": "魏",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110322",
+      "name": "侍卫",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110323",
+      "name": "侍卫",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110331",
+      "name": "侍卫",
+      "country": "蜀",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110332",
+      "name": "侍卫",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110333",
+      "name": "侍卫",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110341",
+      "name": "侍卫",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110342",
+      "name": "侍卫",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110343",
+      "name": "侍卫",
+      "country": "吴",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110351",
+      "name": "侍卫",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110352",
+      "name": "侍卫",
+      "country": "群",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110353",
+      "name": "侍卫",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110411",
+      "name": "侍卫",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "110412",
+      "name": "侍卫",
+      "country": "汉",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "110413",
+      "name": "侍卫",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "110421",
+      "name": "侍卫",
+      "country": "魏",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "110422",
+      "name": "侍卫",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "110423",
+      "name": "侍卫",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "110431",
+      "name": "侍卫",
+      "country": "蜀",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "110432",
+      "name": "侍卫",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "110433",
+      "name": "侍卫",
+      "country": "蜀",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "110441",
+      "name": "侍卫",
+      "country": "吴",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "110442",
+      "name": "侍卫",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "110443",
+      "name": "侍卫",
+      "country": "吴",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "110451",
+      "name": "侍卫",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "110452",
+      "name": "侍卫",
+      "country": "群",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "110453",
+      "name": "侍卫",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "110361",
+      "name": "侍卫",
+      "country": "晋",
+      "troop": "弓",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110362",
+      "name": "侍卫",
+      "country": "晋",
+      "troop": "步",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110363",
+      "name": "侍卫",
+      "country": "晋",
+      "troop": "骑",
+      "rarity": 4,
+      "season": "N",
+      "iconId": "110311",
+      "version": "常规"
+    },
+    {
+      "id": "110461",
+      "name": "侍卫",
+      "country": "晋",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "110462",
+      "name": "侍卫",
+      "country": "晋",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "110463",
+      "name": "侍卫",
+      "country": "晋",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "110411",
+      "version": "常规"
+    },
+    {
+      "id": "140001",
+      "name": "朱士行",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "140001",
+      "version": "常规"
+    },
+    {
+      "id": "140002",
+      "name": "张恭",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "140002",
+      "version": "常规"
+    },
+    {
+      "id": "100811",
+      "name": "司马徽",
+      "country": "群",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100811",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100811.jpg"
+    },
+    {
+      "id": "140003",
+      "name": "麦子",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100927",
+      "version": "常规"
+    },
+    {
+      "id": "100812",
+      "name": "冯嫽",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100812",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100812.jpg"
+    },
+    {
+      "id": "140004",
+      "name": "九色鹿",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "140004",
+      "version": "常规"
+    },
+    {
+      "id": "140005",
+      "name": "陶渊明",
+      "country": "晋",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "140005",
+      "version": "常规"
+    },
+    {
+      "id": "100814",
+      "name": "刘徽",
+      "country": "晋",
+      "troop": "弓",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100814",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100814.jpg"
+    },
+    {
+      "id": "100815",
+      "name": "孟获",
+      "country": "群",
+      "troop": "步",
+      "rarity": 5,
+      "season": "XP",
+      "iconId": "100815",
+      "version": "XP",
+      "portrait": "./stzb-assets/portraits/100815.jpg",
+      "source": "https://stbj.163.com/timeline/m2026070717545717064757801BO",
+      "sourceTitle": "7月8日例行更新预告"
+    },
+    {
+      "id": "100840",
+      "name": "许褚",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 5,
+      "season": "N",
+      "iconId": "100840",
+      "version": "常规",
+      "portrait": "./stzb-assets/portraits/100840.jpg",
+      "source": "https://stbj.163.com/timeline/m2026091515521583480842601Hb",
+      "sourceTitle": "9月16日例行更新预告"
+    },
+    {
+      "id": "100586",
+      "name": "庞德",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "version": "XP首发",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/100586.jpg"
+    },
+    {
+      "id": "100010",
+      "name": "吕布",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "version": "常规版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/100010.jpg"
+    },
+    {
+      "id": "100369",
+      "name": "华佗",
+      "country": "汉",
+      "troop": "步",
+      "rarity": 5,
+      "version": "旧版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/H01.jpg"
+    },
+    {
+      "id": "100011",
+      "name": "贾诩",
+      "country": "群",
+      "troop": "步",
+      "rarity": 5,
+      "version": "旧版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/H02.jpg"
+    },
+    {
+      "id": "100473",
+      "name": "许褚",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 5,
+      "version": "旧版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/H04.jpg"
+    },
+    {
+      "id": "100083",
+      "name": "张郃",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 5,
+      "version": "常规旧版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/H05.jpg"
+    },
+    {
+      "id": "102013",
+      "name": "张郃",
+      "country": "魏",
+      "troop": "骑",
+      "rarity": 5,
+      "version": "SP旧版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/H06.jpg"
+    },
+    {
+      "id": "100437",
+      "name": "荀彧＆荀攸",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 5,
+      "version": "组合旧版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/H07.jpg"
+    },
+    {
+      "id": "100583",
+      "name": "荀攸",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 5,
+      "version": "SP旧版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/H08.jpg"
+    },
+    {
+      "id": "100587",
+      "name": "黄盖",
+      "country": "吴",
+      "troop": "步",
+      "rarity": 5,
+      "version": "SP旧版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/H09.jpg"
+    },
+    {
+      "id": "100575",
+      "name": "典韦",
+      "country": "魏",
+      "troop": "步",
+      "rarity": 5,
+      "version": "XP旧版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/H10.jpg"
+    },
+    {
+      "id": "100590",
+      "name": "司马懿",
+      "country": "汉",
+      "troop": "弓",
+      "rarity": 5,
+      "version": "SP旧版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/H11.jpg"
+    },
+    {
+      "id": "100591",
+      "name": "钟会",
+      "country": "魏",
+      "troop": "弓",
+      "rarity": 5,
+      "version": "常规旧版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/H12.jpg"
+    },
+    {
+      "id": "100731",
+      "name": "钟会",
+      "country": "晋",
+      "troop": "弓",
+      "rarity": 5,
+      "version": "SP旧版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/H13.jpg"
+    },
+    {
+      "id": "100550",
+      "name": "轲比能",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "version": "XP旧版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/H14.jpg"
+    },
+    {
+      "id": "100646",
+      "name": "于吉",
+      "country": "群",
+      "troop": "弓",
+      "rarity": 5,
+      "version": "XP旧版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/H15.jpg"
+    },
+    {
+      "id": "100674",
+      "name": "夏侯霸",
+      "country": "蜀",
+      "troop": "步",
+      "rarity": 5,
+      "version": "XP旧版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/H16.jpg"
+    },
+    {
+      "id": "100488",
+      "name": "孟获",
+      "country": "群",
+      "troop": "步",
+      "rarity": 5,
+      "version": "旧版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/H17.jpg"
+    },
+    {
+      "id": "100607",
+      "name": "臧霸",
+      "country": "群",
+      "troop": "步",
+      "rarity": 5,
+      "version": "赛季临时版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/T02.jpg"
+    },
+    {
+      "id": "100608",
+      "name": "李典",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "version": "赛季临时版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/T03.jpg"
+    },
+    {
+      "id": "100606",
+      "name": "高览",
+      "country": "群",
+      "troop": "步",
+      "rarity": 5,
+      "version": "赛季临时版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/T04.jpg"
+    },
+    {
+      "id": "100605",
+      "name": "马腾",
+      "country": "群",
+      "troop": "骑",
+      "rarity": 5,
+      "version": "赛季临时版",
+      "season": "",
+      "portrait": "./stzb-assets/portraits/T05.jpg"
+    }
+  ],
+  "skills": [
+    {
+      "id": "200097",
+      "name": "突进",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200098",
+      "name": "凿穿",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200099",
+      "name": "车悬",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·马腾·骑·常规",
+        "魏·徐晃·骑·常规"
+      ]
+    },
+    {
+      "id": "200100",
+      "name": "飞虹",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200101",
+      "name": "齐射",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200102",
+      "name": "箭岚",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·夏侯渊·弓·常规",
+        "群·张任·弓·常规"
+      ]
+    },
+    {
+      "id": "200103",
+      "name": "强攻",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200104",
+      "name": "乱击",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200105",
+      "name": "枪阵",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·张绣·骑·常规"
+      ]
+    },
+    {
+      "id": "200106",
+      "name": "斩铁",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·张飞·步·常规",
+        "吴·黄盖·步·常规"
+      ]
+    },
+    {
+      "id": "200107",
+      "name": "破魂",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·伏寿·弓·常规",
+        "蜀·马岱·骑·常规"
+      ]
+    },
+    {
+      "id": "200108",
+      "name": "重伤",
+      "type": "追击",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "晋·侍卫·骑·常规"
+      ]
+    },
+    {
+      "id": "200109",
+      "name": "破甲",
+      "type": "追击",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·华雄·步·常规",
+        "吴·徐盛·弓·常规",
+        "蜀·霍弋·步·常规"
+      ]
+    },
+    {
+      "id": "200110",
+      "name": "浴血",
+      "type": "追击",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200111",
+      "name": "冲锋",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·张辽·骑·常规"
+      ]
+    },
+    {
+      "id": "200112",
+      "name": "死士突击",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·夏侯惇·骑·常规",
+        "吴·孙策·骑·常规"
+      ]
+    },
+    {
+      "id": "200113",
+      "name": "窃兵",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·大乔·弓·常规",
+        "魏·文钦·骑·常规"
+      ]
+    },
+    {
+      "id": "200114",
+      "name": "伏兵",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200115",
+      "name": "夹攻",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200116",
+      "name": "声东击西",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·王美人·骑·常规",
+        "吴·鲁肃·弓·常规"
+      ]
+    },
+    {
+      "id": "200117",
+      "name": "火箭",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200118",
+      "name": "火辎",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200119",
+      "name": "焰焚箕轸",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·皇甫嵩·骑·常规",
+        "吴·陆逊·步·常规"
+      ]
+    },
+    {
+      "id": "200121",
+      "name": "溃堤",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200122",
+      "name": "水淹七军",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·田丰·骑·常规",
+        "蜀·庞统·步·常规"
+      ]
+    },
+    {
+      "id": "200123",
+      "name": "落石",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200124",
+      "name": "绝道",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200125",
+      "name": "危崖困军",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·程昱·步·常规",
+        "吴·程普·骑·常规"
+      ]
+    },
+    {
+      "id": "200126",
+      "name": "落雷",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·郭嘉·骑·常规",
+        "魏·荀攸·步·常规"
+      ]
+    },
+    {
+      "id": "200127",
+      "name": "迷阵",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·卞夫人·骑·常规",
+        "蜀·马超·骑·常规"
+      ]
+    },
+    {
+      "id": "200128",
+      "name": "狼烟",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200129",
+      "name": "毒泉",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200130",
+      "name": "楚歌四起",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·张宝·弓·常规",
+        "群·李儒·弓·常规"
+      ]
+    },
+    {
+      "id": "200131",
+      "name": "驱逐",
+      "type": "追击",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200132",
+      "name": "攻心",
+      "type": "追击",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·董姬·骑·常规",
+        "群·袁术·步·常规",
+        "群·袁术·步·SP"
+      ]
+    },
+    {
+      "id": "200133",
+      "name": "收拢",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200134",
+      "name": "休整",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200135",
+      "name": "养精蓄锐",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·邹氏·步·常规",
+        "汉·曹节·骑·常规"
+      ]
+    },
+    {
+      "id": "200136",
+      "name": "青囊秘要",
+      "type": "被动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·刘备·步·常规",
+        "魏·典韦·步·常规",
+        "蜀·麋夫人·弓·常规",
+        "魏·典韦·步·SP"
+      ]
+    },
+    {
+      "id": "200137",
+      "name": "急救",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200138",
+      "name": "包扎",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200139",
+      "name": "增援",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·关兴＆张苞·步·常规"
+      ]
+    },
+    {
+      "id": "200178",
+      "name": "坚守突击",
+      "type": "被动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200179",
+      "name": "疾风突击",
+      "type": "被动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200180",
+      "name": "速战坚守",
+      "type": "被动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200181",
+      "name": "运筹帷幄",
+      "type": "被动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200182",
+      "name": "文韬武略",
+      "type": "被动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200183",
+      "name": "成竹在胸",
+      "type": "被动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200184",
+      "name": "百战精兵",
+      "type": "被动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·张奂·步·常规",
+        "群·张郃·步·常规",
+        "汉·张奂·步·SP"
+      ]
+    },
+    {
+      "id": "200185",
+      "name": "援军之策",
+      "type": "指挥",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200186",
+      "name": "援军秘策",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200187",
+      "name": "冲车",
+      "type": "被动",
+      "grade": "D",
+      "acquisition": "",
+      "researchHeroes": []
+    },
+    {
+      "id": "200188",
+      "name": "毁墙",
+      "type": "指挥",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200189",
+      "name": "投石轰击",
+      "type": "指挥",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "晋·侍卫·骑·常规"
+      ]
+    },
+    {
+      "id": "200190",
+      "name": "远攻强化",
+      "type": "被动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·管亥·骑·常规",
+        "群·高顺·骑·常规"
+      ]
+    },
+    {
+      "id": "200191",
+      "name": "坚守",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200192",
+      "name": "铁壁",
+      "type": "被动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200193",
+      "name": "固阵",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200194",
+      "name": "避其锋芒",
+      "type": "指挥",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·张辽·骑·常规",
+        "汉·灵帝·弓·常规"
+      ]
+    },
+    {
+      "id": "200195",
+      "name": "奋起",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200196",
+      "name": "激昂",
+      "type": "被动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·颜良·骑·常规",
+        "群·文丑·步·常规"
+      ]
+    },
+    {
+      "id": "200197",
+      "name": "犒劳",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200198",
+      "name": "大赏三军",
+      "type": "指挥",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·袁绍·步·常规",
+        "蜀·姜维·弓·SP"
+      ]
+    },
+    {
+      "id": "200199",
+      "name": "威压",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200200",
+      "name": "乱阵",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200201",
+      "name": "无心恋战",
+      "type": "指挥",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·关羽·骑·常规",
+        "群·貂蝉·步·常规"
+      ]
+    },
+    {
+      "id": "200202",
+      "name": "假途",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200203",
+      "name": "劫粮",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200204",
+      "name": "神兵天降",
+      "type": "指挥",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·刘备·步·常规",
+        "蜀·黄月英·步·常规",
+        "吴·吕蒙·弓·常规"
+      ]
+    },
+    {
+      "id": "200205",
+      "name": "洞察",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200206",
+      "name": "追击",
+      "type": "追击",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200207",
+      "name": "攻其要害",
+      "type": "追击",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200208",
+      "name": "温酒斩将",
+      "type": "追击",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·孙坚·骑·常规",
+        "吴·蒋钦·弓·常规"
+      ]
+    },
+    {
+      "id": "200209",
+      "name": "远攻之策",
+      "type": "指挥",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·小乔·弓·常规",
+        "蜀·黄权·步·常规"
+      ]
+    },
+    {
+      "id": "200210",
+      "name": "远攻秘策",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·曹操·骑·常规",
+        "蜀·关银屏·步·常规"
+      ]
+    },
+    {
+      "id": "200212",
+      "name": "诱敌",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·丁夫人·步·常规",
+        "吴·徐夫人·弓·常规"
+      ]
+    },
+    {
+      "id": "200213",
+      "name": "反计",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200214",
+      "name": "规避",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200215",
+      "name": "空城",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·孙权·弓·常规",
+        "汉·何太后·弓·常规"
+      ]
+    },
+    {
+      "id": "200217",
+      "name": "安抚军心",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·敬哀皇后·步·常规"
+      ]
+    },
+    {
+      "id": "200218",
+      "name": "看破",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200219",
+      "name": "了如指掌",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·吴夫人·骑·常规",
+        "蜀·关平·弓·常规",
+        "蜀·关平·弓·SP",
+        "吴·吴夫人·骑·SP"
+      ]
+    },
+    {
+      "id": "200220",
+      "name": "反计之策",
+      "type": "指挥",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·张角·骑·SP",
+        "蜀·孙尚香·弓·SP"
+      ]
+    },
+    {
+      "id": "200221",
+      "name": "反击",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200222",
+      "name": "反击之策",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·孙坚·骑·常规",
+        "吴·董袭·步·常规"
+      ]
+    },
+    {
+      "id": "200223",
+      "name": "连战",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200224",
+      "name": "穷追猛打",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·杜氏·步·常规",
+        "群·严氏·骑·常规"
+      ]
+    },
+    {
+      "id": "200225",
+      "name": "横扫",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200226",
+      "name": "长兵方阵",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·赵云·骑·常规",
+        "吴·韩当·弓·常规"
+      ]
+    },
+    {
+      "id": "200227",
+      "name": "佯攻",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200228",
+      "name": "战必断金",
+      "type": "指挥",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·孙坚·步·常规",
+        "群·董白·弓·常规"
+      ]
+    },
+    {
+      "id": "200229",
+      "name": "奇袭",
+      "type": "追击",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200230",
+      "name": "措手不及",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·曹仁·骑·常规",
+        "吴·凌统·弓·常规"
+      ]
+    },
+    {
+      "id": "200231",
+      "name": "先驱",
+      "type": "指挥",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200232",
+      "name": "长驱直入",
+      "type": "指挥",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·朱儁·弓·常规",
+        "吴·甘宁·弓·常规"
+      ]
+    },
+    {
+      "id": "200233",
+      "name": "先驱突击",
+      "type": "指挥",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·董卓·骑·常规",
+        "群·马超·骑·常规",
+        "魏·夏侯渊·骑·常规",
+        "魏·夏侯渊·骑·SP"
+      ]
+    },
+    {
+      "id": "200234",
+      "name": "陷阱",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200235",
+      "name": "浑水摸鱼",
+      "type": "主动",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·十常侍·弓·常规",
+        "魏·曹丕·弓·常规",
+        "魏·张春华·弓·常规"
+      ]
+    },
+    {
+      "id": "200236",
+      "name": "疑兵",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200237",
+      "name": "妖术",
+      "type": "主动",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·貂蝉·弓·常规",
+        "魏·王异·弓·常规"
+      ]
+    },
+    {
+      "id": "200238",
+      "name": "援护",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200239",
+      "name": "移花接木",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·徐荣·步·常规",
+        "蜀·关羽·步·常规"
+      ]
+    },
+    {
+      "id": "200241",
+      "name": "悬权而动",
+      "type": "指挥",
+      "grade": "A",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "孙子兵法·军争"
+      ]
+    },
+    {
+      "id": "200243",
+      "name": "九变之利",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "孙子兵法·九变"
+      ]
+    },
+    {
+      "id": "200244",
+      "name": "正始之变",
+      "type": "指挥",
+      "grade": "S",
+      "acquisition": "典藏兑换",
+      "researchHeroes": [
+        "正始之变"
+      ]
+    },
+    {
+      "id": "200248",
+      "name": "计险远近",
+      "type": "指挥",
+      "grade": "A",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "孙子兵法·地形"
+      ]
+    },
+    {
+      "id": "200249",
+      "name": "知己知彼",
+      "type": "指挥",
+      "grade": "A",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "孙子兵法·谋攻"
+      ]
+    },
+    {
+      "id": "200252",
+      "name": "百战无怯",
+      "type": "被动",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·黄盖·步·常规",
+        "群·马腾·骑·常规"
+      ]
+    },
+    {
+      "id": "200253",
+      "name": "兵者诡道",
+      "type": "被动",
+      "grade": "A",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "孙子兵法·始计"
+      ]
+    },
+    {
+      "id": "200259",
+      "name": "乘间击隙",
+      "type": "指挥",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·程昱·弓·XP",
+        "吴·丁奉·步·XP"
+      ]
+    },
+    {
+      "id": "200261",
+      "name": "胜敌益强",
+      "type": "被动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·袁术·步·常规",
+        "蜀·陈到·步·常规"
+      ]
+    },
+    {
+      "id": "200263",
+      "name": "火烧连营",
+      "type": "主动",
+      "grade": "S",
+      "acquisition": "典藏兑换",
+      "researchHeroes": [
+        "火烧连营"
+      ]
+    },
+    {
+      "id": "200267",
+      "name": "敛众定气",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·陆逊·弓·XP",
+        "蜀·马良·步·XP"
+      ]
+    },
+    {
+      "id": "200271",
+      "name": "袭屯夺气",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·荀彧·步·XP",
+        "汉·献帝·骑·XP"
+      ]
+    },
+    {
+      "id": "200274",
+      "name": "以诱待来",
+      "type": "被动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·于禁·步·常规",
+        "群·司马徽·步·常规"
+      ]
+    },
+    {
+      "id": "200619",
+      "name": "强攻兵法",
+      "type": "被动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·带来洞主·弓·常规"
+      ]
+    },
+    {
+      "id": "200620",
+      "name": "坚守兵法",
+      "type": "被动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·献帝·弓·常规",
+        "魏·庞德·骑·常规"
+      ]
+    },
+    {
+      "id": "200621",
+      "name": "速战兵法",
+      "type": "被动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·严颜·弓·常规"
+      ]
+    },
+    {
+      "id": "200622",
+      "name": "不攻",
+      "type": "指挥",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·蔡文姬·步·SP",
+        "吴·周瑜·弓·常规"
+      ]
+    },
+    {
+      "id": "200632",
+      "name": "回马",
+      "type": "被动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·张梁·步·常规",
+        "吴·周泰·步·常规"
+      ]
+    },
+    {
+      "id": "200635",
+      "name": "奔袭",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·曹操·骑·常规",
+        "魏·曹彰·骑·常规"
+      ]
+    },
+    {
+      "id": "200636",
+      "name": "远攻奇略",
+      "type": "被动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·甘皇后·步·常规",
+        "蜀·徐庶·骑·常规"
+      ]
+    },
+    {
+      "id": "200638",
+      "name": "突击",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "",
+      "researchHeroes": []
+    },
+    {
+      "id": "200639",
+      "name": "谋攻",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "",
+      "researchHeroes": []
+    },
+    {
+      "id": "200643",
+      "name": "愈战愈勇",
+      "type": "被动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·吕布·骑·常规",
+        "蜀·马云禄·骑·常规"
+      ]
+    },
+    {
+      "id": "200644",
+      "name": "步步为营",
+      "type": "被动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·卢植·骑·常规",
+        "蜀·赵云·步·常规",
+        "蜀·赵云·步·SP",
+        "汉·卢植·骑·SP"
+      ]
+    },
+    {
+      "id": "200645",
+      "name": "深谋远虑",
+      "type": "被动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·诸葛亮·步·常规",
+        "魏·司马懿·步·常规"
+      ]
+    },
+    {
+      "id": "200646",
+      "name": "疾风迅雷",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·甘宁·步·常规",
+        "吴·诸葛恪·弓·常规"
+      ]
+    },
+    {
+      "id": "200647",
+      "name": "一骑当千",
+      "type": "主动",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·张飞·骑·常规"
+      ]
+    },
+    {
+      "id": "200658",
+      "name": "钝兵挫锐",
+      "type": "追击",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·太史慈·弓·常规",
+        "蜀·张姬·弓·常规",
+        "吴·太史慈·弓·SP"
+      ]
+    },
+    {
+      "id": "200659",
+      "name": "怯心夺志",
+      "type": "追击",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·甄洛·弓·常规",
+        "魏·荀彧·骑·常规",
+        "群·甄洛·弓·SP"
+      ]
+    },
+    {
+      "id": "200663",
+      "name": "云梯",
+      "type": "指挥",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200665",
+      "name": "抢攻",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·程银·骑·S2"
+      ]
+    },
+    {
+      "id": "200666",
+      "name": "游击",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200670",
+      "name": "谨言",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200671",
+      "name": "设伏",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·孙桓·弓·常规",
+        "汉·鲍信·弓·常规"
+      ]
+    },
+    {
+      "id": "200672",
+      "name": "雀伏",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·司马徽·步·常规",
+        "蜀·关索·骑·常规",
+        "魏·王双·步·常规"
+      ]
+    },
+    {
+      "id": "200673",
+      "name": "掎角之势",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·邓艾·步·常规",
+        "吴·小乔·弓·常规",
+        "汉·王允·弓·常规"
+      ]
+    },
+    {
+      "id": "200674",
+      "name": "一夫当关",
+      "type": "指挥",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·黄忠·步·常规",
+        "群·兀突骨·步·常规"
+      ]
+    },
+    {
+      "id": "200676",
+      "name": "雄兵破敌",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·典韦·步·常规",
+        "吴·陆绩·弓·常规"
+      ]
+    },
+    {
+      "id": "200683",
+      "name": "伐谋",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·蔡夫人·步·常规",
+        "吴·朱然·步·常规"
+      ]
+    },
+    {
+      "id": "200684",
+      "name": "道行险阻",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·小乔＆大乔·步·常规",
+        "蜀·徐庶·骑·SP",
+        "群·妺喜·骑·常规"
+      ]
+    },
+    {
+      "id": "200687",
+      "name": "始计",
+      "type": "指挥",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·周姬·步·SP",
+        "群·张宁·步·常规"
+      ]
+    },
+    {
+      "id": "200688",
+      "name": "合流",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·于吉·弓·常规",
+        "群·花鬘·弓·常规"
+      ]
+    },
+    {
+      "id": "200690",
+      "name": "闪击",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·魏延·步·常规",
+        "蜀·赵统＆赵广·骑·常规"
+      ]
+    },
+    {
+      "id": "200691",
+      "name": "白刃",
+      "type": "指挥",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·郝昭·步·常规",
+        "吴·周泰·步·常规"
+      ]
+    },
+    {
+      "id": "200695",
+      "name": "拒盾",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·李堪·骑·S2"
+      ]
+    },
+    {
+      "id": "200696",
+      "name": "迫近",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·梁兴·骑·S2"
+      ]
+    },
+    {
+      "id": "200697",
+      "name": "退避",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·成宜·骑·S2"
+      ]
+    },
+    {
+      "id": "200698",
+      "name": "截断",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·杨秋·骑·S2"
+      ]
+    },
+    {
+      "id": "200714",
+      "name": "万箭齐发",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·吕布·弓·S2",
+        "汉·董卓·步·S2"
+      ]
+    },
+    {
+      "id": "200715",
+      "name": "十面埋伏",
+      "type": "主动",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·郭嘉·骑·S2",
+        "蜀·庞统·步·S2",
+        "吴·陆逊·步·S2"
+      ]
+    },
+    {
+      "id": "200716",
+      "name": "方圆",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·麴义·步·S2"
+      ]
+    },
+    {
+      "id": "200717",
+      "name": "鹤翼",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·夏侯渊·骑·S2",
+        "吴·丁奉·骑·S2",
+        "群·韩遂·骑·S2"
+      ]
+    },
+    {
+      "id": "200718",
+      "name": "锋矢",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·吕姬·骑·S2",
+        "蜀·马姬·骑·S2",
+        "汉·公孙瓒·骑·S2"
+      ]
+    },
+    {
+      "id": "200721",
+      "name": "折戟强攻",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·潘凤·骑·常规"
+      ]
+    },
+    {
+      "id": "200722",
+      "name": "火积",
+      "type": "追击",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·张鲁·弓·常规",
+        "魏·文聘·骑·常规"
+      ]
+    },
+    {
+      "id": "200724",
+      "name": "健卒不殆",
+      "type": "被动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·沙摩柯·弓·常规"
+      ]
+    },
+    {
+      "id": "200728",
+      "name": "临危",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·孟优·骑·常规",
+        "群·金环三结·步·常规"
+      ]
+    },
+    {
+      "id": "200729",
+      "name": "顽抗",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": []
+    },
+    {
+      "id": "200731",
+      "name": "全军突击",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·祝融夫人·骑·SP",
+        "汉·许劭·弓·常规"
+      ]
+    },
+    {
+      "id": "200734",
+      "name": "擅兵不寡",
+      "type": "被动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·妲己·步·常规",
+        "群·骊姬·弓·常规",
+        "魏·郭皇后·弓·常规"
+      ]
+    },
+    {
+      "id": "200735",
+      "name": "索敌",
+      "type": "主动",
+      "grade": "D",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·夏侯月姬·骑·常规",
+        "吴·全琮·步·常规",
+        "汉·何进·骑·常规"
+      ]
+    },
+    {
+      "id": "200747",
+      "name": "近攻",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·严白虎·步·S3",
+        "群·蒯良＆蒯越·步·S3"
+      ]
+    },
+    {
+      "id": "200748",
+      "name": "远射",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·楼班·骑·S3"
+      ]
+    },
+    {
+      "id": "200754",
+      "name": "胜兵求战",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·诸葛亮·弓·S3",
+        "吴·步皇后·步·S3"
+      ]
+    },
+    {
+      "id": "200755",
+      "name": "攻其不备",
+      "type": "指挥",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·颜良＆文丑·骑·S3",
+        "魏·曹纯·骑·S3"
+      ]
+    },
+    {
+      "id": "200757",
+      "name": "重整旗鼓",
+      "type": "指挥",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·陈到·步·S3",
+        "魏·曹植·弓·S3"
+      ]
+    },
+    {
+      "id": "200758",
+      "name": "连环",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·戏志才·步·S3",
+        "吴·张昭·弓·S3"
+      ]
+    },
+    {
+      "id": "200759",
+      "name": "觑隙",
+      "type": "主动",
+      "grade": "C",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·审配·步·S3",
+        "吴·潘璋·步·S3"
+      ]
+    },
+    {
+      "id": "200766",
+      "name": "兵无常势",
+      "type": "被动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·木鹿大王·骑·常规",
+        "汉·张机·弓·常规"
+      ]
+    },
+    {
+      "id": "200767",
+      "name": "谋定后动",
+      "type": "被动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·夏侯惇·骑·常规",
+        "吴·孙策·骑·常规",
+        "蜀·关羽·骑·常规"
+      ]
+    },
+    {
+      "id": "200781",
+      "name": "衡轭",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·辛宪英·步·XP",
+        "吴·吾粲·步·XP",
+        "魏·于禁·骑·XP"
+      ]
+    },
+    {
+      "id": "200782",
+      "name": "疏数",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·袁姬·弓·XP",
+        "群·步度根·骑·XP"
+      ]
+    },
+    {
+      "id": "200783",
+      "name": "鱼鳞",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·蜀三相·步·XP",
+        "吴·诸葛瑾·弓·XP",
+        "汉·刘表·弓·XP"
+      ]
+    },
+    {
+      "id": "200784",
+      "name": "桃园结义",
+      "type": "指挥",
+      "grade": "S",
+      "acquisition": "典藏兑换",
+      "researchHeroes": [
+        "桃园结义"
+      ]
+    },
+    {
+      "id": "200786",
+      "name": "掠敌之利",
+      "type": "追击",
+      "grade": "B",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "孙子兵法·作战"
+      ]
+    },
+    {
+      "id": "200787",
+      "name": "分险",
+      "type": "被动",
+      "grade": "B",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "六韬·豹韬"
+      ]
+    },
+    {
+      "id": "200788",
+      "name": "枭雄",
+      "type": "被动",
+      "grade": "B",
+      "acquisition": "典藏兑换",
+      "researchHeroes": [
+        "枭雄"
+      ]
+    },
+    {
+      "id": "200789",
+      "name": "凤仪亭",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "典藏兑换",
+      "researchHeroes": [
+        "凤仪亭"
+      ]
+    },
+    {
+      "id": "200800",
+      "name": "众谋不懈",
+      "type": "指挥",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·朱儁·弓·SP",
+        "群·张梁·步·SP",
+        "群·张宝·弓·SP"
+      ]
+    },
+    {
+      "id": "200801",
+      "name": "利兵谋胜",
+      "type": "主动",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·陈宫·弓·常规",
+        "晋·裴秀·步·常规"
+      ]
+    },
+    {
+      "id": "200812",
+      "name": "兵贵神速",
+      "type": "指挥",
+      "grade": "C",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "孙子兵法·九地"
+      ]
+    },
+    {
+      "id": "200813",
+      "name": "形兵之极",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "孙子兵法·虚实"
+      ]
+    },
+    {
+      "id": "200814",
+      "name": "汜水关",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "典藏兑换",
+      "researchHeroes": [
+        "汜水关"
+      ]
+    },
+    {
+      "id": "200815",
+      "name": "奇正之势",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "孙子兵法·兵势"
+      ]
+    },
+    {
+      "id": "200816",
+      "name": "磐阵善守",
+      "type": "指挥",
+      "grade": "A",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "孙子兵法·军形"
+      ]
+    },
+    {
+      "id": "200817",
+      "name": "极火佐攻",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "孙子兵法·火攻"
+      ]
+    },
+    {
+      "id": "200818",
+      "name": "反间",
+      "type": "指挥",
+      "grade": "A",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "孙子兵法·用间"
+      ]
+    },
+    {
+      "id": "200819",
+      "name": "疾战",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "六韬·虎韬"
+      ]
+    },
+    {
+      "id": "200821",
+      "name": "励军",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "六韬·龙韬"
+      ]
+    },
+    {
+      "id": "200822",
+      "name": "合众",
+      "type": "被动",
+      "grade": "B",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "六韬·文韬"
+      ]
+    },
+    {
+      "id": "200823",
+      "name": "武锋",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "六韬·犬韬"
+      ]
+    },
+    {
+      "id": "200826",
+      "name": "绝水遏敌",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "孙子兵法·行军"
+      ]
+    },
+    {
+      "id": "200827",
+      "name": "并进",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "典籍兑换",
+      "researchHeroes": [
+        "吴子·论将"
+      ]
+    },
+    {
+      "id": "200829",
+      "name": "兼弱攻昧",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·法正·骑·常规",
+        "晋·胡芳·步·常规"
+      ]
+    },
+    {
+      "id": "200833",
+      "name": "铁戟金戈",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·陆抗·步·常规",
+        "汉·卫子夫·步·常规"
+      ]
+    },
+    {
+      "id": "200834",
+      "name": "人中吕布",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "典藏兑换",
+      "researchHeroes": [
+        "人中吕布"
+      ]
+    },
+    {
+      "id": "200839",
+      "name": "疾击其后",
+      "type": "追击",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·曹仁·步·SP"
+      ]
+    },
+    {
+      "id": "200844",
+      "name": "鼎足江东",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "典藏兑换",
+      "researchHeroes": [
+        "鼎足江东"
+      ]
+    },
+    {
+      "id": "200847",
+      "name": "河内世泽",
+      "type": "主动",
+      "grade": "S",
+      "acquisition": "典藏兑换",
+      "researchHeroes": [
+        "河内世泽"
+      ]
+    },
+    {
+      "id": "200850",
+      "name": "风声鹤唳",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·张郃·骑·常规",
+        "晋·刘徽·弓·常规"
+      ]
+    },
+    {
+      "id": "200853",
+      "name": "美人计",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·卞夫人·骑·常规",
+        "群·褒姒·骑·常规",
+        "群·吕姬·步·常规"
+      ]
+    },
+    {
+      "id": "200862",
+      "name": "单骑救主",
+      "type": "指挥",
+      "grade": "A",
+      "acquisition": "典藏兑换",
+      "researchHeroes": [
+        "单骑救主"
+      ]
+    },
+    {
+      "id": "200863",
+      "name": "击势",
+      "type": "被动",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·凌统·弓·常规",
+        "蜀·马岱·骑·常规"
+      ]
+    },
+    {
+      "id": "200883",
+      "name": "鸟云山兵",
+      "type": "指挥",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·贾诩·弓·常规",
+        "蜀·魏延·步·常规"
+      ]
+    },
+    {
+      "id": "200886",
+      "name": "三军之众",
+      "type": "主动",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·大乔·步·常规",
+        "群·张绣·骑·常规"
+      ]
+    },
+    {
+      "id": "200888",
+      "name": "当阳桥",
+      "type": "主动",
+      "grade": "S",
+      "acquisition": "典藏兑换",
+      "researchHeroes": [
+        "当阳桥"
+      ]
+    },
+    {
+      "id": "200900",
+      "name": "垒实迎击",
+      "type": "被动",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·皇甫嵩·步·常规",
+        "蜀·严颜·骑·常规"
+      ]
+    },
+    {
+      "id": "200913",
+      "name": "叫阵",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·丘力居·骑·常规",
+        "群·迷当大王·步·常规",
+        "群·俄何烧戈·骑·常规"
+      ]
+    },
+    {
+      "id": "200914",
+      "name": "文伐",
+      "type": "追击",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·越吉·骑·常规",
+        "群·彻里吉·步·常规",
+        "群·朵思大王·弓·常规"
+      ]
+    },
+    {
+      "id": "200917",
+      "name": "翕处还张",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·李儒·弓·常规",
+        "魏·徐晃·骑·常规"
+      ]
+    },
+    {
+      "id": "200926",
+      "name": "威震逍遥",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "典藏兑换",
+      "researchHeroes": [
+        "威震逍遥"
+      ]
+    },
+    {
+      "id": "200929",
+      "name": "飒沓如星",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·华雄·骑·常规",
+        "吴·张昭·弓·常规"
+      ]
+    },
+    {
+      "id": "200935",
+      "name": "以直报怨",
+      "type": "指挥",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·关兴＆张苞·步·XP",
+        "魏·王朗·弓·XP"
+      ]
+    },
+    {
+      "id": "200938",
+      "name": "三术奇谋",
+      "type": "主动",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·孙鲁班·弓·常规",
+        "魏·曹植·骑·常规"
+      ]
+    },
+    {
+      "id": "200941",
+      "name": "甚陷不惧",
+      "type": "被动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·高顺·骑·常规"
+      ]
+    },
+    {
+      "id": "200949",
+      "name": "势无虚动",
+      "type": "被动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·袁绍·弓·常规",
+        "吴·蒋钦·弓·常规"
+      ]
+    },
+    {
+      "id": "200953",
+      "name": "筹策绝道",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·刘表·弓·XP"
+      ]
+    },
+    {
+      "id": "200956",
+      "name": "三军齐出",
+      "type": "被动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·王昭君·骑·常规",
+        "群·公孙瓒·骑·常规",
+        "魏·乐进·步·常规"
+      ]
+    },
+    {
+      "id": "200959",
+      "name": "久战熟谋",
+      "type": "指挥",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·程普·步·XP",
+        "魏·曹彰·骑·常规"
+      ]
+    },
+    {
+      "id": "200964",
+      "name": "合纵连横",
+      "type": "指挥",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·刘禅·步·常规",
+        "群·西施·弓·常规",
+        "汉·冯嫽·骑·常规"
+      ]
+    },
+    {
+      "id": "200967",
+      "name": "勠力同心",
+      "type": "指挥",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·周仓·步·XP",
+        "群·田丰·骑·常规"
+      ]
+    },
+    {
+      "id": "200976",
+      "name": "扬威",
+      "type": "追击",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·张邈·骑·常规",
+        "汉·刘岱·骑·常规",
+        "吴·朱治·弓·常规"
+      ]
+    },
+    {
+      "id": "200977",
+      "name": "奇术折冲",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·简雍·步·常规",
+        "魏·华歆·弓·常规"
+      ]
+    },
+    {
+      "id": "200978",
+      "name": "破胆",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·孔融·弓·常规",
+        "汉·陶谦·弓·常规"
+      ]
+    },
+    {
+      "id": "200979",
+      "name": "及锋而试",
+      "type": "主动",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "晋·司马师·骑·常规",
+        "晋·司马昭·骑·常规",
+        "晋·司马炎·步·常规"
+      ]
+    },
+    {
+      "id": "200980",
+      "name": "乘胜追击",
+      "type": "追击",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "晋·文鸯·骑·常规",
+        "晋·杜预·弓·常规"
+      ]
+    },
+    {
+      "id": "200981",
+      "name": "胜负先征",
+      "type": "被动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "晋·王元姬·弓·常规",
+        "晋·卫瓘·步·常规"
+      ]
+    },
+    {
+      "id": "200982",
+      "name": "望风而降",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "晋·贾充·步·XP",
+        "晋·羊祜·步·XP",
+        "吴·周瑜·步·XP"
+      ]
+    },
+    {
+      "id": "200992",
+      "name": "激水之疾",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "晋·山涛·弓·常规",
+        "晋·向秀·步·常规",
+        "群·许攸·骑·常规"
+      ]
+    },
+    {
+      "id": "200994",
+      "name": "共饮避世",
+      "type": "指挥",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·嵇康·步·常规",
+        "晋·刘伶·步·常规",
+        "魏·阮籍·步·常规"
+      ]
+    },
+    {
+      "id": "200995",
+      "name": "蓄盈待竭",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "晋·阮咸·步·常规",
+        "晋·王戎·骑·常规"
+      ]
+    },
+    {
+      "id": "200996",
+      "name": "亡命一搏",
+      "type": "主动",
+      "grade": "B",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "晋·司马攸·弓·常规",
+        "晋·文虎·弓·常规",
+        "魏·曹爽·骑·常规"
+      ]
+    },
+    {
+      "id": "201008",
+      "name": "诱敌深入",
+      "type": "指挥",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "吴·鲁肃·步·常规",
+        "汉·阴丽华·弓·常规",
+        "群·沮授·步·常规"
+      ]
+    },
+    {
+      "id": "200276",
+      "name": "除恶务尽",
+      "type": "指挥",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "蜀·马谡·骑·XP",
+        "蜀·蒋琬·步·XP"
+      ]
+    },
+    {
+      "id": "200280",
+      "name": "令无空悬",
+      "type": "被动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·左慈·骑·XP",
+        "蜀·黄忠·弓·XP"
+      ]
+    },
+    {
+      "id": "200289",
+      "name": "先声夺人",
+      "type": "被动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "汉·刘备·步·常规",
+        "汉·曹操·骑·常规",
+        "汉·孙坚·弓·常规"
+      ]
+    },
+    {
+      "id": "200291",
+      "name": "避锐治气",
+      "type": "指挥",
+      "grade": "S",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "晋·司马懿·步·XP",
+        "吴·孙权·弓·XP",
+        "蜀·姜维·骑·XP"
+      ]
+    },
+    {
+      "id": "200293",
+      "name": "定军山",
+      "type": "指挥",
+      "grade": "S",
+      "acquisition": "典藏兑换",
+      "researchHeroes": [
+        "定军山"
+      ]
+    },
+    {
+      "id": "200298",
+      "name": "七擒七纵",
+      "type": "指挥",
+      "grade": "S",
+      "acquisition": "典藏兑换",
+      "researchHeroes": [
+        "七擒七纵"
+      ],
+      "source": "https://stbj.163.com/timeline/m2026071018113270578561601C8",
+      "sourceTitle": "2026暑期重磅更新预告",
+      "acquisitionText": "消耗5星群孟获XP、任意4星蜀阵营武将及任意4星群阵营武将游历获得。"
+    },
+    {
+      "id": "200299",
+      "name": "恃强淬锋",
+      "type": "被动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "群·孟获·步·XP"
+      ],
+      "source": "https://stbj.163.com/timeline/m2026070717545717064757801BO",
+      "sourceTitle": "7月8日例行更新预告"
+    },
+    {
+      "id": "200301",
+      "name": "未雨绸缪",
+      "type": "主动",
+      "grade": "A",
+      "acquisition": "武将拆解",
+      "researchHeroes": [
+        "魏·许褚·步·常规"
+      ],
+      "source": "https://stbj.163.com/timeline/m2026091515521583480842601Hb",
+      "sourceTitle": "9月16日例行更新预告"
+    }
+  ]
+}

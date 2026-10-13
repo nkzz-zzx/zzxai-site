@@ -4,6 +4,7 @@
 ## 在线页面
 
 - [工具列表](https://zzxai.cn/)
+- 藏宝阁账号图鉴（`account.html`）：输入商品链接，查看武将红度、战法研究进度及未拥有项。自动查询需要 EdgeOne Pages 边缘函数，详见 [部署与数据说明](ACCOUNT-DEPLOYMENT.md)。
 - [率土之滨 · 招募模拟](https://zzxai.cn/stzb-draw.html)：22 个常驻、赛季及活动卡包，含心愿武将、五星动画与本地记录。
 - [率土之滨 · 五星武将编年](https://zzxai.cn/stzb.html)：官方画像、常规服首次上架与重做回归记录，支持年份、阵营、名称、当前 XP 身份、赛季及活动限定、首发截止日期组合筛选。
 - [工资与个税计算器](https://zzxai.cn/salary-calculator.html)
@@ -15,7 +16,7 @@
 
 站点使用纯静态 HTML。根目录保留页面源文件，`dist/` 为 EdgeOne 的发布目录。
 修改页面时，同步更新根目录及 `dist/` 中的对应文件，再提交到 `main` 分支。
-EdgeOne 已关联本仓库，`main` 推送会自动部署到 `zzxai.cn`；无需安装依赖或编译命令。
+EdgeOne 已关联本仓库，`main` 推送会自动部署到 `zzxai.cn`；静态页面无需安装依赖或编译命令。藏宝阁账号图鉴的自动查询另需部署根目录 `edge-functions/` 中的边缘函数。
 
 本地预览：运行 `python3 -m http.server 8000 --directory dist`，打开 `http://localhost:8000`。
 
