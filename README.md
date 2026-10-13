@@ -4,7 +4,7 @@
 ## 在线页面
 
 - [工具列表](https://zzxai.cn/)
-- 藏宝阁账号图鉴（`account.html`）：输入商品链接，查看武将红度、战法研究进度及未拥有项。自动查询需要 EdgeOne Pages 边缘函数，详见 [部署与数据说明](ACCOUNT-DEPLOYMENT.md)。
+- 藏宝阁账号图鉴（`account.html`）：输入商品链接，查看武将红度、战法研究进度、宝物及未拥有项。自动查询需要 EdgeOne Pages 边缘函数，详见 [部署与数据说明](ACCOUNT-DEPLOYMENT.md)。
 - [率土之滨 · 招募模拟](https://zzxai.cn/stzb-draw.html)：22 个常驻、赛季及活动卡包，含心愿武将、五星动画与本地记录。
 - [率土之滨 · 五星武将编年](https://zzxai.cn/stzb.html)：官方画像、常规服首次上架与重做回归记录，支持年份、阵营、名称、当前 XP 身份、赛季及活动限定、首发截止日期组合筛选。
 - [工资与个税计算器](https://zzxai.cn/salary-calculator.html)

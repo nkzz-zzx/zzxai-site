@@ -6,16 +6,26 @@ function message(text,error=false){$('message').textContent=text;$('message').cl
 function setBusy(value){busy=value;$('query-button').disabled=value;$('import-file').disabled=value;$('query-form').setAttribute('aria-busy',String(value));}
 function render(){
  if(!catalog)return;
- const kind=tab==='heroes'?'武将':'战法',owned=account?.[tab]||[];
- const all=mergeCatalog(catalog[tab],owned,tab);
- $('catalog-note').textContent=`${catalog[tab].length} 种${kind} · 更新于 ${catalog.asOf}${!account?' · 查询后查看拥有状态':''}`;
+ const kind={heroes:'武将',skills:'战法',gear:'宝物'}[tab],owned=account?.[tab]||[];
+ const all=tab==='gear'?owned.map(item=>({...item,owned:true})):mergeCatalog(catalog[tab],owned,tab);
+ $('catalog-note').textContent=tab==='gear'?(!account?'查询后查看账号宝物':account.gear==null?'当前数据未包含宝物，请重新查询或导入完整详情 JSON':`共 ${owned.length} 件宝物`):`${catalog[tab].length} 种${kind} · 更新于 ${catalog.asOf}${!account?' · 查询后查看拥有状态':''}`;
  $('country-filter').hidden=tab!=='heroes';$('rarity-filter').hidden=tab!=='heroes';$('type-filter').hidden=tab!=='skills';
- $('ownership').disabled=!account;
+ $('ownership').disabled=!account;$('ownership-filter').hidden=tab==='gear';$('gear-quality-filter').hidden=tab!=='gear';
  const search=$('search').value.trim().toLowerCase();
- const results=all.filter(item=>(!search||[item.name,item.country,item.troop,item.type].join(' ').toLowerCase().includes(search))&&(!account||$('ownership').value==='all'||($('ownership').value==='owned'?item.owned:!item.owned))&&(tab!=='heroes'||(($('country').value==='all'||item.country===$('country').value)&&($('rarity').value==='all'||String(item.rarity)===$('rarity').value)))&&(tab!=='skills'||$('skill-type').value==='all'||item.type===$('skill-type').value));
- results.sort((a,b)=>Number(b.owned)-Number(a.owned)||(b.rarity||0)-(a.rarity||0)||a.name.localeCompare(b.name,'zh-CN'));
- $('result-count').textContent=`显示 ${results.length} / ${all.length} 项${account?` · 已拥有 ${all.filter(x=>x.owned).length} 种${kind} · 目录内未拥有 ${all.filter(x=>!x.owned).length} 种`:''}`;
- $('results').replaceChildren();$('results').setAttribute('aria-labelledby',tab==='heroes'?'heroes-tab':'skills-tab');$('empty').hidden=results.length!==0;
+ const results=all.filter(item=>{
+  const haystack=[item.name,item.country,item.troop,item.type,...(item.features||[]).map(e=>e.name),...(item.effects||[]).map(e=>e.name)].join(' ').toLowerCase();
+  if(search&&!haystack.includes(search))return false;
+  if(tab!=='gear'&&account&&$('ownership').value!=='all'&&($('ownership').value==='owned'?!item.owned:item.owned))return false;
+  if(tab==='heroes'&&(($('country').value!=='all'&&item.country!==$('country').value)||($('rarity').value!=='all'&&String(item.rarity)!==$('rarity').value)))return false;
+  if(tab==='skills'&&$('skill-type').value!=='all'&&item.type!==$('skill-type').value)return false;
+  if(tab==='gear'&&$('gear-quality').value!=='all'&&String(item.phase)!==$('gear-quality').value)return false;
+  return true;
+ });
+ results.sort((a,b)=>Number(b.owned)-Number(a.owned)||(b.phase||b.rarity||0)-(a.phase||a.rarity||0)||a.name.localeCompare(b.name,'zh-CN'));
+ $('result-count').textContent=`显示 ${results.length} / ${all.length} 项${account&&tab!=='gear'?` · 已拥有 ${all.filter(x=>x.owned).length} 种${kind} · 目录内未拥有 ${all.filter(x=>!x.owned).length} 种`:''}`;
+ $('results').replaceChildren();$('results').setAttribute('aria-labelledby',tab+'-tab');$('empty').hidden=results.length!==0;
+ $('empty').textContent=tab==='gear'&&!account?'输入藏宝阁链接，查看账号宝物。':tab==='gear'&&account.gear==null?'请重新查询账号，获取宝物信息。':tab==='gear'&&owned.length===0?'该账号没有宝物。':'没有符合条件的条目，试试其他筛选条件。';
+ if(tab==='gear'&&(!account||account.gear==null))$('result-count').textContent='尚未载入宝物清单';
  const fragment=document.createDocumentFragment();
  for(const item of results){
   const article=node('article',undefined,`entry ${!account?'unknown':item.owned?'owned':'missing'}`);
@@ -25,6 +35,12 @@ function render(){
   if(tab==='heroes'){
    article.append(node('p',`${item.country||'未分类'} · ${item.troop||'未分类'} · ${item.rarity||'?'} 星${item.version?' · '+item.version:''}`));
    if(item.owned){article.append(node('p',item.copies.map(c=>`${c.red} 红${c.awakened?' · 已觉醒':''}`).join(' / '),'red'));if(item.copies.length>1)article.append(node('p',`重复卡 ${item.copies.length} 张`));}
+  }else if(tab==='gear'){
+   article.append(node('p',`${{1:'精品',2:'罕俦',3:'稀世'}[item.phase]||'品质未知'} · 等级 ${item.level}${item.advance?' · 进阶 '+item.advance:''}`));
+   if(item.equippedTo)article.append(node('p',`装备：${item.equippedTo}`));
+   if(item.bound||item.defective)article.append(node('p',[item.bound?'已绑定':'',item.defective?'残次':''].filter(Boolean).join(' · ')));
+   for(const [label,effects] of [['宝物效果',item.effects],['附加词条',item.features]]){if(effects?.length){const details=node('details');details.open=true;details.append(node('summary',label));for(const effect of effects)details.append(node('div',`${effect.name}：${effect.description}`,'skill-desc'));article.append(details);}}
+   if(item.conditions?.length){const details=node('details');details.append(node('summary','装备条件'),node('div',item.conditions.join('；'),'skill-desc'));article.append(details);}
   }else{
    article.append(node('p',`${item.type||'未分类'}${item.grade?' · '+item.grade+' 级':''}`));
    if(item.owned)article.append(node('p',`研究进度：${item.progress===null?'未知':item.progress+'%'}`));
@@ -40,7 +56,7 @@ function showAccount(data){
  $('account-server').textContent=data.metadata.server;
  $('account-summary').textContent=data.metadata.summary;
  $('account-time').textContent=`${data.metadata.sold?'原展示价格':'展示价格'}：${Number.isFinite(data.metadata.price)?data.metadata.price.toLocaleString()+' 元':'未知'} · 查询时间（北京时间）：${new Date(data.metadata.fetchedAt).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai'})}${data.metadata.sold?' · 以下为交易后仍可查询的快照':''}`;
- const stats=[['五星卡片',data.heroes.filter(h=>h.rarity===5).length],['武将卡片',data.heroes.length],['战法条目',data.skills.length],['研究完成',data.skills.filter(s=>s.progress===100).length]];
+ const stats=[['宝物数量',Array.isArray(data.gear)?data.gear.length:'—'],['稀世宝物',Array.isArray(data.gear)?data.gear.filter(g=>g.phase===3).length:'—'],['五星卡片',data.heroes.filter(h=>h.rarity===5).length],['武将卡片',data.heroes.length],['战法条目',data.skills.length],['研究完成',data.skills.filter(s=>s.progress===100).length]];
  $('stats').replaceChildren(...stats.map(([title,value])=>{const el=node('div',undefined,'stat');el.append(node('strong',String(value)),node('span',title));return el;}));
  render();message('账号数据已载入。');
 }
@@ -64,8 +80,8 @@ $('import-file').addEventListener('change',async event=>{
 $('export-button').addEventListener('click',()=>{
  if(!account)return;const blob=new Blob([JSON.stringify({format:'zzxai-account-v1',account},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=node('a');a.href=url;a.download='藏宝阁账号清单.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 });
-for(const id of ['search','ownership','country','rarity','skill-type'])$(id).addEventListener('input',render);
-function selectTab(next){tab=next;for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills']]){$(id).setAttribute('aria-selected',String(tab===kind));$(id).tabIndex=tab===kind?0:-1;}render();}
-for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills']]){$(id).addEventListener('click',()=>selectTab(kind));$(id).addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();const next=event.key==='Home'?'heroes':event.key==='End'?'skills':kind==='heroes'?'skills':'heroes';selectTab(next);$(next+'-tab').focus();}});}
+for(const id of ['search','ownership','country','rarity','skill-type','gear-quality'])$(id).addEventListener('input',render);
+function selectTab(next){tab=next;for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).setAttribute('aria-selected',String(tab===kind));$(id).tabIndex=tab===kind?0:-1;}render();}
+for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).addEventListener('click',()=>selectTab(kind));$(id).addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();const next=event.key==='Home'?'heroes':event.key==='End'?'gear':['heroes','skills','gear'][(['heroes','skills','gear'].indexOf(kind)+(event.key==='ArrowLeft'?2:1))%3];selectTab(next);$(next+'-tab').focus();}});}
 selectTab('heroes');setBusy(true);
 try{const response=await fetch('./account-assets/catalog.json');if(!response.ok)throw new Error('目录下载失败');catalog=await response.json();render();message('输入商品链接，或导入藏宝阁详情 JSON。');setBusy(false);}catch{message('图鉴目录载入失败，请刷新重试',true);}
