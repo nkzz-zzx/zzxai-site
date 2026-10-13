@@ -21,7 +21,7 @@ export function normalizeAccount(raw) {
     const heroId=String(g.heroId || '');
     const hero=heroes.find(h=>h.id===heroId);
     const effects=rows=>Array.isArray(rows)?rows.filter(Array.isArray).map(row=>({name:String(row[0] || ''),description:String(row[1] || '')})):[];
-    return {id:`${g.gear_id}-${index}`,gearId:String(g.gear_id),name:String(g.name || '未知宝物'),phase:Number(g.phase || 0),level:Number(g.level || 0),advance:Number(g.advance || 0),bound:!!g.is_bind,defective:!!g.is_defective,heroId,equippedTo:hero?[hero.country,hero.name,hero.troop].join('·'):heroId?`武将 ID ${heroId}`:'',conditions:Array.isArray(g.equip_condition)?g.equip_condition.map(String):[],effects:effects(g.skillInfo),features:effects(g.feature)};
+    return {id:`${g.gear_id}-${index}`,gearId:String(g.gear_id),iconId:String(g.show_gear_id ?? g.gear_id),name:String(g.name || '未知宝物'),phase:Number(g.phase || 0),level:Number(g.level || 0),advance:Number(g.advance || 0),bound:!!g.is_bind,defective:!!g.is_defective,heroId,equippedTo:hero?[hero.country,hero.name,hero.troop].join('·'):heroId?`武将 ID ${heroId}`:'',conditions:Array.isArray(g.equip_condition)?g.equip_condition.map(String):[],effects:effects(g.skillInfo),features:effects(g.feature)};
   }) : null;
   return { metadata:{ status:equip.status_desc || '未知', sold:/买家取走|已售|交易成功/.test(equip.status_desc || ''), price:Number(equip.price)/100, server:[equip.area_name,equip.server_name].filter(Boolean).join(' · '), summary:equip.desc_sumup_short || '', order:equip.game_ordersn || '', fetchedAt:new Date().toISOString() }, heroes, skills, gear };
 }

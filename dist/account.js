@@ -35,7 +35,14 @@ function render(){
   if(tab==='skills'&&item.type!==previousType){previousType=item.type;fragment.append(node('h2',`${item.type||'未分类'} · ${groupCounts.get(item.type)} 种`,'skill-group-heading'));}
   const article=node('article',undefined,`entry ${!account?'unknown':item.owned?'owned':'missing'}`);
   article.append(node('span',!account?'等待查询':item.owned?'已拥有':'未拥有','badge'));
-  if(tab==='heroes'&&item.portrait){const img=node('img',undefined,'portrait');img.src=item.portrait;img.alt='';img.loading='lazy';img.addEventListener('error',()=>img.remove());article.append(img);}
+  if(tab==='heroes'||tab==='gear'){
+   article.classList.add(tab==='heroes'?'hero-entry':'gear-entry');
+   const src=tab==='heroes'?item.portrait:catalog.gearImages?.[item.iconId||item.gearId];
+   const art=node('div',undefined,tab==='heroes'?'hero-art':'gear-art');
+   const fallback=node('span',tab==='heroes'?'暂无立绘':'暂无图片','art-placeholder');art.append(fallback);
+   if(src){const img=node('img',undefined,'entry-art');img.src=src;img.alt=`${item.name}${tab==='heroes'?'立绘':'宝物图片'}`;img.loading='lazy';img.decoding='async';img.addEventListener('load',()=>fallback.hidden=true);img.addEventListener('error',()=>img.remove());art.append(img);}
+   article.append(art);
+  }
   article.append(node('h3',item.name));
   if(tab==='heroes'){
    article.append(node('p',`${item.country||'未分类'} · ${item.troop||'未分类'} · ${item.rarity||'?'} 星${item.version?' · '+item.version:''}`));

@@ -47,6 +47,13 @@ for hero in timeline['cards']:
     heroes[key]['portrait'] = hero['portrait']
     if '旧版' in hero.get('version', ''):
         heroes[key]['version'] = hero['version']
+# Reuse downloaded official art on every catalog refresh.
+for key, hero in heroes.items():
+    art_key=hero.get('iconId',key)
+    local=ROOT / 'account-assets/portraits' / (str(art_key)+'.jpg')
+    if not hero.get('portrait') and local.is_file():
+        hero['portrait']='./account-assets/portraits/'+local.name
+gear_images={str(gear['gear_id']):'./account-assets/gear-images/'+str(gear['gear_id'])+'.jpg' for gear in config.get('gear',[]) if (ROOT/'account-assets/gear-images'/(str(gear['gear_id'])+'.jpg')).is_file()}
 exchange_heroes = {str(hero['hero_id']): '典藏兑换' for hero in config.get('dian_cang', [])}
 exchange_heroes.update({str(hero['hero_id']): '典籍兑换' for hero in config.get('dian_ji', [])})
 all_hero_names = {key: '·'.join(filter(None, [hero.get('country'), hero['name'], hero.get('troop'), hero.get('version')])) for key, hero in heroes.items()}
@@ -76,7 +83,7 @@ if len(heroes) < 350 or len(skills) < 200 or len({s['id'] for s in skills}) != l
 catalog = dict(asOf=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).date().isoformat(), sourceLabel='藏宝阁官方游戏配置 + 官方更新公告 + 本站历史武将图鉴',
                sources=[SOURCE, './stzb-assets/timeline.json', './account-assets/supplements.json'],
                scope='官方藏宝阁四、五星武将（补充已记录的旧版与临时版）及可研究战法；不含自带战法、外观或百家词条。',
-               complete=dict(heroes=True, skills=True), heroes=list(heroes.values()), skills=skills)
+               complete=dict(heroes=True, skills=True), heroes=list(heroes.values()), skills=skills, gearImages=gear_images)
 path = ROOT / 'account-assets/catalog.json'
 path.parent.mkdir(exist_ok=True)
 content = json.dumps(catalog, ensure_ascii=False, indent=2) + '\n'
