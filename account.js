@@ -1,4 +1,4 @@
-import {parseAccountLink,importAccount,mergeCatalog,classifyServer,compareCollections,canDismantle,heroSortOrder,treasureLabel} from './account-core.js?v=20261013-five-cols-v1';
+import {parseAccountLink,importAccount,mergeCatalog,classifyServer,compareCollections,canDismantle,heroSortOrder,treasureLabel} from './account-core.js?v=20261013-hero-groups-v1';
 const $=id=>document.getElementById(id);
 let catalog,account=null,tab='heroes',busy=false,comparison=null,differencesOnly=false;
 const skillOrder=['主动','被动','追击','指挥'];
@@ -21,7 +21,7 @@ function heroArt(item){
  }
  portraitNodes.set(cacheKey,art);return art;
 }
-if('serviceWorker' in navigator)navigator.serviceWorker.register('./account-portrait-sw.js?v=20261013-five-cols-v1',{scope:'./account.html',updateViaCache:'none'}).catch(()=>{});
+if('serviceWorker' in navigator)navigator.serviceWorker.register('./account-portrait-sw.js?v=20261013-hero-groups-v1',{scope:'./account.html',updateViaCache:'none'}).catch(()=>{});
 function redStars(red){
  const stars=node('span',undefined,'red-stars');stars.setAttribute('role','img');stars.setAttribute('aria-label',red==null?'红度未知':`${red} 红`);
  for(let i=0;i<5;i++){const star=node('span','★',red==null?'star unknown-star':i<red?'star red-star':'star');star.setAttribute('aria-hidden','true');stars.append(star);}
@@ -54,12 +54,13 @@ function render(){
  if(tab==='gear'&&(!account||account.gear==null))$('result-count').textContent='尚未载入宝物清单';
  const fragment=document.createDocumentFragment();
  const groupCounts=new Map();for(const item of results)groupCounts.set(item.type,(groupCounts.get(item.type)||0)+1);
- let previousType=null;
+ let previousType=null,previousHeroGroup=null;
  for(const item of results){
+  if(tab==='heroes'){const group=heroSortOrder(item);if(group!==previousHeroGroup){previousHeroGroup=group;fragment.append(node('h2',['S2','S3','XP','其他'][group],'hero-group-heading'));}}
   if(tab==='skills'&&item.type!==previousType){previousType=item.type;fragment.append(node('h2',`${item.type||'未分类'} · ${groupCounts.get(item.type)} 种`,'skill-group-heading'));}
   const article=node('article',undefined,`entry ${!account?'unknown':item.owned?'owned':'missing'}`);
   if(tab!=='gear')article.append(node('span',!account?'等待查询':item.owned?'已拥有':'未拥有','badge'));
-  if(tab==='heroes'){article.classList.add('hero-entry');const copies=item.owned?item.copies:[{red:null}],stars=node('div',undefined,'hero-stars');for(const copy of copies)stars.append(redStars(copy.red));article.style.setProperty('--red-rows',copies.length);article.append(stars,heroArt(item));}
+  if(tab==='heroes'){article.classList.add('hero-entry');const copies=item.owned?item.copies:[{red:null}],stars=node('div',undefined,'hero-stars');for(const copy of copies)stars.append(redStars(copy.red));const visual=node('div',undefined,'hero-visual');visual.append(heroArt(item),stars);article.append(visual);}
   article.append(node('h3',item.name));
   if(tab==='heroes'){
    article.append(node('p',`${item.country||'未分类'} · ${item.troop||'未分类'} · ${item.rarity||'?'} 星${item.version?' · '+item.version:''}`,'hero-meta'));
@@ -132,7 +133,7 @@ for(const id of ['search','ownership','country','rarity','season','skill-type','
 function selectTab(next){tab=next;for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).setAttribute('aria-selected',String(tab===kind));$(id).tabIndex=tab===kind?0:-1;}render();}
 for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).addEventListener('click',()=>selectTab(kind));$(id).addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();const tabs=comparison?['heroes','skills']:['heroes','skills','gear'];const next=event.key==='Home'?tabs[0]:event.key==='End'?tabs.at(-1):tabs[(tabs.indexOf(kind)+(event.key==='ArrowLeft'?tabs.length-1:1))%tabs.length];selectTab(next);$(next+'-tab').focus();}});}
 selectTab('heroes');setBusy(true);
-try{const response=await fetch('./account-assets/catalog.json?v=20261013-five-cols-v1');if(!response.ok)throw new Error('目录下载失败');catalog=await response.json();render();message('输入商品链接，或导入藏宝阁详情 JSON。');setBusy(false);}catch{message('图鉴目录载入失败，请刷新重试',true);}
+try{const response=await fetch('./account-assets/catalog.json?v=20261013-hero-groups-v1');if(!response.ok)throw new Error('目录下载失败');catalog=await response.json();render();message('输入商品链接，或导入藏宝阁详情 JSON。');setBusy(false);}catch{message('图鉴目录载入失败，请刷新重试',true);}
 
 function showComparison(left,right){
  comparison={left,right};account=left;differencesOnly=false;
@@ -156,8 +157,9 @@ function renderComparison(){
  $('result-count').textContent=`显示 ${filtered.length} / ${rows.length} 项 · 共 ${rows.filter(row=>row.different).length} 项差异`;
  $('results').replaceChildren();$('results').setAttribute('aria-labelledby',tab+'-tab');$('empty').hidden=filtered.length!==0;$('empty').textContent=differencesOnly?'当前筛选下没有差异。':'没有符合条件的条目。';
  const table=node('table',undefined,'comparison-table');const head=node('thead'),header=node('tr');
- for(const label of [tab==='heroes'?'武将':'战法','账号 A','账号 B']){const th=node('th',label);th.scope='col';header.append(th);}head.append(header);table.append(head);const body=node('tbody');let previousType=null;
+ for(const label of [tab==='heroes'?'武将':'战法','账号 A','账号 B']){const th=node('th',label);th.scope='col';header.append(th);}head.append(header);table.append(head);const body=node('tbody');let previousType=null,previousHeroGroup=null;
  for(const row of filtered){
+  if(tab==='heroes'){const group=heroSortOrder(row);if(group!==previousHeroGroup){previousHeroGroup=group;const mark=node('tr',undefined,'comparison-group hero-comparison-group'),th=node('th',['S2','S3','XP','其他'][group]);th.colSpan=3;th.scope='rowgroup';mark.append(th);body.append(mark);}}
   if(tab==='skills'&&previousType!==row.type){previousType=row.type;const group=node('tr',undefined,'comparison-group'),th=node('th',row.type||'未分类');th.colSpan=3;th.scope='rowgroup';group.append(th);body.append(group);}
   const tr=node('tr',undefined,row.different?'comparison-row different':'comparison-row');tr.dataset.id=row.id;const name=node('th',row.label);name.scope='row';tr.append(name);
   for(const [side,copies] of [[comparison.left,row.left],[comparison.right,row.right]]){const cell=node('td',undefined,copies.length?'compare-owned':'compare-missing');if(!copies.length){cell.append(node('div','未拥有'));if(tab==='skills'&&canDismantle(row,side.heroes))cell.append(node('span','可拆','badge dismantle'));}else if(tab==='heroes'){for(const copy of [...copies].sort((a,b)=>b.red-a.red))cell.append(redStars(copy.red));if(copies.length>1)cell.append(node('small',`${copies.length} 张`));}else{cell.textContent='已拥有';}tr.append(cell);}
