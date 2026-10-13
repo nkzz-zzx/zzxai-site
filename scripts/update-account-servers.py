@@ -1,27 +1,80 @@
-"""Refresh the public season/server mapping; no account or authentication data is stored."""
+"""Cross-check public classifications against CBG's current servers; never infer a missing type."""
+import argparse
+import concurrent.futures
 import datetime
 import json
 import pathlib
 import re
 import urllib.request
 ROOT=pathlib.Path(__file__).resolve().parents[1]
-SOURCE='https://www.stzb163.online/api/kaiqu/timeline?limit=80'
-with urllib.request.urlopen(SOURCE,timeout=25) as response:raw=json.load(response)
-if raw.get('code') not in [0,200] or not isinstance(raw.get('data',{}).get('seasons'),list):raise ValueError('Unexpected season table; existing file retained')
-rows={}
-for season in raw['data']['seasons']:
-    if season.get('type') not in ['试师','征服']:continue
-    for server in season.get('servers',[]):
-        key=str(server.get('server_num','')).upper().strip()
-        if not re.fullmatch(r'X\d+',key):raise ValueError('Invalid server number')
-        row=dict(serverNum=key,type=season['type'],season=season.get('name',''),openedAt=season.get('open_time',''))
-        if key not in rows or row['openedAt']>rows[key]['openedAt']:rows[key]=row
-if not rows or not any(row['type']=='试师' for row in rows.values()):raise ValueError('Empty or incomplete season table; existing file retained')
-# Preserve explicitly verified corrections when the public table lags newer servers.
-for row in json.loads((ROOT/'account-assets/server-overrides.json').read_text()).get('servers',[]):
-    if not re.fullmatch(r'X\d+',row['serverNum']) or row['type'] not in ['试师','征服']:raise ValueError('Invalid server correction')
-    rows[row['serverNum']]={k:v for k,v in row.items() if k!='evidence'}
-text='// Generated from the public season/server table. Refresh with scripts/update-account-servers.py.\n'
-text+='export const serverTable = '+json.dumps(dict(source=SOURCE,updatedAt=datetime.datetime.now(datetime.timezone.utc).isoformat(),servers=list(rows.values())),ensure_ascii=False,indent=2)+';\n'
-for path in [ROOT/'account-server-types.js',ROOT/'dist/account-server-types.js']:path.write_text(text)
-print('Server mapping refreshed:',len(rows),'servers;',sum(row['type']=='试师' for row in rows.values()),'trial servers')
+TIMELINE='https://www.stzb163.online/api/kaiqu/timeline?limit=80'
+SEASONS='https://www.stzb163.online/api/kaiqu/seasons'
+OFFICIAL='https://cbg-stzb.res.netease.com/js/game_compete_server_list.js'
+
+def load(url,path):
+    if path:return path.read_text()
+    with urllib.request.urlopen(url,timeout=25) as response:return response.read(2000000).decode('utf-8')
+
+def public_rows(raw,key,source):
+    if raw.get('code') not in [0,200] or not isinstance(raw.get('data',{}).get(key),list):raise ValueError('Unexpected public season response')
+    rows={}
+    for season in raw['data'][key]:
+        if season.get('type') not in ['试师','征服']:continue
+        for server in season.get('servers',[]):
+            num=str(server.get('server_num','')).upper().strip()
+            if not re.fullmatch(r'X\d+',num):raise ValueError('Invalid server number')
+            row=dict(serverNum=num,type=season['type'],season=season.get('name',''),openedAt=season.get('open_time',''),sources=[source])
+            if num not in rows or row['openedAt']>rows[num]['openedAt']:rows[num]=row
+    if not rows:raise ValueError('Empty public table; existing mapping retained')
+    return rows
+
+def main():
+    parser=argparse.ArgumentParser()
+    for name in ['timeline','seasons','official']:parser.add_argument('--'+name+'-file',type=pathlib.Path)
+    parser.add_argument('--output-dir',type=pathlib.Path)
+    args=parser.parse_args()
+    with concurrent.futures.ThreadPoolExecutor(max_workers=3) as pool:
+        jobs=[pool.submit(load,url,path) for url,path in [(TIMELINE,args.timeline_file),(SEASONS,args.seasons_file),(OFFICIAL,args.official_file)]]
+        timeline,seasons,official=[job.result() for job in jobs]
+    a=public_rows(json.loads(timeline),'seasons',TIMELINE)
+    b=public_rows(json.loads(seasons),'list',SEASONS)
+    match=re.search(r'var\s+server_data\s*=\s*',official)
+    if not match:raise ValueError('Unexpected official server list')
+    data,_=json.JSONDecoder().raw_decode(official,match.end())
+    active={}
+    for area in data.values():
+        for server in area.get('servers',[]):
+            match=re.match(r'^(X\d+)\s+(.+?)(?:[（(]|$)',server.get('server_name',''))
+            if match:active[match[1]]=dict(serverNum=match[1],season=match[2].strip())
+    if not active:raise ValueError('Official server list is empty')
+    rows={};conflicts=[]
+    for num in a.keys()|b.keys():
+        left,right=a.get(num),b.get(num)
+        if left and right and any(left[k]!=right[k] for k in ['type','season','openedAt']):
+            conflicts.append(dict(serverNum=num,reason='公开接口分类或批次不一致'));continue
+        row=dict(left or right)
+        row['sources']=list(dict.fromkeys((left or {}).get('sources',[])+(right or {}).get('sources',[])))
+        if num in active and active[num]['season']!=row['season']:
+            conflicts.append(dict(serverNum=num,reason='公开批次剧本与官方当前区服不一致'));continue
+        rows[num]=row
+    for correction in json.loads((ROOT/'account-assets/server-overrides.json').read_text()).get('servers',[]):
+        num=correction['serverNum']
+        if not re.fullmatch(r'X\d+',num) or correction['type'] not in ['试师','征服']:raise ValueError('Invalid verified correction')
+        if num in active and active[num]['season']!=correction['season']:
+            conflicts.append(dict(serverNum=num,reason='游戏内确认的批次与官方当前区服不一致'));rows.pop(num,None);continue
+        rows[num]={k:v for k,v in correction.items() if k!='evidence'}
+        rows[num]['sources']=['游戏内确认：'+correction['evidence']]
+    checked=datetime.datetime.now(datetime.timezone.utc).isoformat()
+    missing=[active[num] for num in sorted(active,key=lambda n:int(n[1:])) if num not in rows]
+    last=max(row.get('openedAt','') for row in list(a.values())+list(b.values()))
+    audit=dict(checkedAt=checked,sources=[TIMELINE,SEASONS,OFFICIAL],sourceLastOpenedAt=last,officialCurrentServerCount=len(active),coveredCurrentServerCount=len(active)-len(missing),unverifiedCurrentServerCount=len(missing),conflicts=conflicts,unverifiedServers=missing)
+    table=dict(source=TIMELINE,sources=[TIMELINE,SEASONS],updatedAt=checked,sourceLastOpenedAt=last,coverage={k:audit[k] for k in ['officialCurrentServerCount','coveredCurrentServerCount','unverifiedCurrentServerCount']},servers=sorted(rows.values(),key=lambda r:int(r['serverNum'][1:])))
+    text='// Generated by scripts/update-account-servers.py; unlisted servers have no confirmed classification.\nexport const serverTable = '+json.dumps(table,ensure_ascii=False,indent=2)+';\n'
+    targets=[args.output_dir] if args.output_dir else [ROOT,ROOT/'dist']
+    for target in targets:
+        target.mkdir(parents=True,exist_ok=True)
+        (target/'account-server-types.js').write_text(text)
+        folder=target/'account-assets';folder.mkdir(exist_ok=True)
+        (folder/'server-audit.json').write_text(json.dumps(audit,ensure_ascii=False,indent=2)+'\n')
+    print(f'Official current servers: {len(active)}; confirmed: {len(active)-len(missing)}; unverified: {len(missing)}; conflicts: {len(conflicts)}; public source last opening: {last}')
+if __name__=='__main__':main()

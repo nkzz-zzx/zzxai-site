@@ -1,0 +1,391 @@
+{
+  "checkedAt": "2026-10-13T13:25:13.900885+00:00",
+  "sources": [
+    "https://www.stzb163.online/api/kaiqu/timeline?limit=80",
+    "https://www.stzb163.online/api/kaiqu/seasons",
+    "https://cbg-stzb.res.netease.com/js/game_compete_server_list.js"
+  ],
+  "sourceLastOpenedAt": "2026-09-17T03:00:00.000Z",
+  "officialCurrentServerCount": 137,
+  "coveredCurrentServerCount": 43,
+  "unverifiedCurrentServerCount": 94,
+  "conflicts": [],
+  "unverifiedServers": [
+    {
+      "serverNum": "X5962",
+      "season": "金印紫绶"
+    },
+    {
+      "serverNum": "X5963",
+      "season": "金印紫绶"
+    },
+    {
+      "serverNum": "X5964",
+      "season": "金印紫绶"
+    },
+    {
+      "serverNum": "X5965",
+      "season": "金印紫绶"
+    },
+    {
+      "serverNum": "X5966",
+      "season": "决战夷陵"
+    },
+    {
+      "serverNum": "X5967",
+      "season": "决战夷陵"
+    },
+    {
+      "serverNum": "X5968",
+      "season": "决战夷陵"
+    },
+    {
+      "serverNum": "X5969",
+      "season": "决战夷陵"
+    },
+    {
+      "serverNum": "X5970",
+      "season": "金印紫绶"
+    },
+    {
+      "serverNum": "X5971",
+      "season": "金印紫绶"
+    },
+    {
+      "serverNum": "X5972",
+      "season": "金印紫绶"
+    },
+    {
+      "serverNum": "X5973",
+      "season": "金印紫绶"
+    },
+    {
+      "serverNum": "X5974",
+      "season": "金印紫绶"
+    },
+    {
+      "serverNum": "X6017",
+      "season": "兵合车错"
+    },
+    {
+      "serverNum": "X6018",
+      "season": "决胜中原"
+    },
+    {
+      "serverNum": "X6019",
+      "season": "决胜中原"
+    },
+    {
+      "serverNum": "X6020",
+      "season": "决胜中原"
+    },
+    {
+      "serverNum": "X6021",
+      "season": "决胜中原"
+    },
+    {
+      "serverNum": "X6022",
+      "season": "群雄逐鹿"
+    },
+    {
+      "serverNum": "X6023",
+      "season": "群雄逐鹿"
+    },
+    {
+      "serverNum": "X6024",
+      "season": "群雄逐鹿"
+    },
+    {
+      "serverNum": "X6025",
+      "season": "群雄逐鹿"
+    },
+    {
+      "serverNum": "X6026",
+      "season": "群雄逐鹿"
+    },
+    {
+      "serverNum": "X6027",
+      "season": "铁城雄兵"
+    },
+    {
+      "serverNum": "X6028",
+      "season": "铁城雄兵"
+    },
+    {
+      "serverNum": "X6029",
+      "season": "铁城雄兵"
+    },
+    {
+      "serverNum": "X6030",
+      "season": "铁城雄兵"
+    },
+    {
+      "serverNum": "X6031",
+      "season": "铁城雄兵"
+    },
+    {
+      "serverNum": "X6032",
+      "season": "铁城雄兵"
+    },
+    {
+      "serverNum": "X6033",
+      "season": "龙兴之地"
+    },
+    {
+      "serverNum": "X6034",
+      "season": "龙兴之地"
+    },
+    {
+      "serverNum": "X6035",
+      "season": "龙兴之地"
+    },
+    {
+      "serverNum": "X6036",
+      "season": "龙兴之地"
+    },
+    {
+      "serverNum": "X6037",
+      "season": "龙兴之地"
+    },
+    {
+      "serverNum": "X6038",
+      "season": "北伐兴汉"
+    },
+    {
+      "serverNum": "X6039",
+      "season": "北伐兴汉"
+    },
+    {
+      "serverNum": "X6040",
+      "season": "北伐兴汉"
+    },
+    {
+      "serverNum": "X6041",
+      "season": "北伐兴汉"
+    },
+    {
+      "serverNum": "X6042",
+      "season": "北伐兴汉"
+    },
+    {
+      "serverNum": "X6043",
+      "season": "建安风云"
+    },
+    {
+      "serverNum": "X6044",
+      "season": "建安风云"
+    },
+    {
+      "serverNum": "X6045",
+      "season": "建安风云"
+    },
+    {
+      "serverNum": "X6046",
+      "season": "建安风云"
+    },
+    {
+      "serverNum": "X6047",
+      "season": "建安风云"
+    },
+    {
+      "serverNum": "X6048",
+      "season": "太师乱汉"
+    },
+    {
+      "serverNum": "X6049",
+      "season": "太师乱汉"
+    },
+    {
+      "serverNum": "X6050",
+      "season": "太师乱汉"
+    },
+    {
+      "serverNum": "X6051",
+      "season": "四序天象"
+    },
+    {
+      "serverNum": "X6052",
+      "season": "四序天象"
+    },
+    {
+      "serverNum": "X6053",
+      "season": "四序天象"
+    },
+    {
+      "serverNum": "X6054",
+      "season": "四序天象"
+    },
+    {
+      "serverNum": "X6055",
+      "season": "四序天象"
+    },
+    {
+      "serverNum": "X6056",
+      "season": "百业争鸣"
+    },
+    {
+      "serverNum": "X6057",
+      "season": "百业争鸣"
+    },
+    {
+      "serverNum": "X6058",
+      "season": "百业争鸣"
+    },
+    {
+      "serverNum": "X6059",
+      "season": "百业争鸣"
+    },
+    {
+      "serverNum": "X6060",
+      "season": "赤壁鏖兵"
+    },
+    {
+      "serverNum": "X6061",
+      "season": "金印紫绶"
+    },
+    {
+      "serverNum": "X6062",
+      "season": "金印紫绶"
+    },
+    {
+      "serverNum": "X6063",
+      "season": "金印紫绶"
+    },
+    {
+      "serverNum": "X6064",
+      "season": "金印紫绶"
+    },
+    {
+      "serverNum": "X6065",
+      "season": "金印紫绶"
+    },
+    {
+      "serverNum": "X6066",
+      "season": "金印紫绶"
+    },
+    {
+      "serverNum": "X6067",
+      "season": "龙兴之地"
+    },
+    {
+      "serverNum": "X6068",
+      "season": "龙兴之地"
+    },
+    {
+      "serverNum": "X6069",
+      "season": "龙兴之地"
+    },
+    {
+      "serverNum": "X6070",
+      "season": "龙兴之地"
+    },
+    {
+      "serverNum": "X6071",
+      "season": "北伐兴汉"
+    },
+    {
+      "serverNum": "X6072",
+      "season": "北伐兴汉"
+    },
+    {
+      "serverNum": "X6073",
+      "season": "北伐兴汉"
+    },
+    {
+      "serverNum": "X6074",
+      "season": "北伐兴汉"
+    },
+    {
+      "serverNum": "X6075",
+      "season": "赤壁鏖兵"
+    },
+    {
+      "serverNum": "X6076",
+      "season": "赤壁鏖兵"
+    },
+    {
+      "serverNum": "X6077",
+      "season": "兵合车错"
+    },
+    {
+      "serverNum": "X6078",
+      "season": "兵合车错"
+    },
+    {
+      "serverNum": "X6079",
+      "season": "兵合车错"
+    },
+    {
+      "serverNum": "X6081",
+      "season": "兵合车错"
+    },
+    {
+      "serverNum": "X6082",
+      "season": "龙兴之地"
+    },
+    {
+      "serverNum": "X6083",
+      "season": "群雄逐鹿"
+    },
+    {
+      "serverNum": "X6084",
+      "season": "群雄逐鹿"
+    },
+    {
+      "serverNum": "X6085",
+      "season": "群雄逐鹿"
+    },
+    {
+      "serverNum": "X6086",
+      "season": "群雄逐鹿"
+    },
+    {
+      "serverNum": "X6087",
+      "season": "八阵图"
+    },
+    {
+      "serverNum": "X6088",
+      "season": "八阵图"
+    },
+    {
+      "serverNum": "X6089",
+      "season": "八阵图"
+    },
+    {
+      "serverNum": "X6090",
+      "season": "八阵图"
+    },
+    {
+      "serverNum": "X6091",
+      "season": "八阵图"
+    },
+    {
+      "serverNum": "X6092",
+      "season": "决战夷陵"
+    },
+    {
+      "serverNum": "X6093",
+      "season": "决战夷陵"
+    },
+    {
+      "serverNum": "X6094",
+      "season": "决战夷陵"
+    },
+    {
+      "serverNum": "X6095",
+      "season": "决战夷陵"
+    },
+    {
+      "serverNum": "X6096",
+      "season": "决战夷陵"
+    },
+    {
+      "serverNum": "X6097",
+      "season": "决战夷陵"
+    },
+    {
+      "serverNum": "X6098",
+      "season": "决战夷陵"
+    }
+  ]
+}

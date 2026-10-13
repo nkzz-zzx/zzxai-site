@@ -39,3 +39,5 @@
  .comparison-summary{gap:6px;margin-top:9px}.comparison-account{padding:7px;border-radius:7px}.comparison-account h3{font-size:12px;margin:0 0 4px}.comparison-account p{font-size:10px;margin:3px 0}
  .comparison-table{font-size:11px;line-height:1.4}.comparison-table th,.comparison-table td{padding:6px 4px}.comparison-table th:first-child{width:46%}.comparison-table .badge.dismantle{margin:3px 0 0}.comparing.grid[data-kind=skills]{display:block}
 }
+
+.account-type.unverified{background:#f1f5f9;color:#64748b}

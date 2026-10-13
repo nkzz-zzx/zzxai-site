@@ -62,7 +62,13 @@ ACCOUNT_URL=http://127.0.0.1:8011/account.html CHROME_PATH=/usr/bin/chromium nod
 
 ## 试师与征服标记
 
-使用公开平台区服开区对照表，按藏宝阁 `server_name` 中的 X 区服编号精确匹配，而不是按副本名称、商品链接的 serverid=1 或游戏内部服务器 ID 推断。匹配试师区服显示“试师”，其他区服按需求默认显示“征服”。数据来自 `https://www.stzb163.online/api/kaiqu/timeline?limit=80`，保存为 `account-server-types.js` 并同步 `dist/`，用 `python3 scripts/update-account-servers.py` 刷新。对照表是第三方公开记录，有覆盖范围和更新时间限制；未匹配默认征服不等于官方确认。查询、原始 JSON 导入、旧清单导入及导出都使用同一规则。示例账号 X5992 按公开表归为试师。
+按藏宝阁 `server_name` 的 X 区服编号精确匹配；不按剧本名、藏宝阁的“征服赛季”大区名称或商品 serverid 推断。已收录显示试师/征服，未收录、数据源冲突或当前剧本不符显示“待核实”；导入旧数据时也重新分类。
+
+`python3 scripts/update-account-servers.py` 同时读取第三方时间线和完整赛季表，交叉核对类型、剧本和开区时间，并与官方 `https://cbg-stzb.res.netease.com/js/game_compete_server_list.js` 核对当前区服名单。两套第三方接口同属一个平台，不是两份独立官方分类证据；官方名单的大区名称也不能用于区分试师。每行保留来源，游戏内确认的纠正存于 `account-assets/server-overrides.json`。
+
+生成 `account-server-types.js` 及 `account-assets/server-audit.json` 并同步 `dist/`。审计保存公开来源最新批次时间、官方当前区服数量、覆盖数量、未核实列表及冲突。2026-10-13 核对时，官方137个区服中43个有分类记录（含游戏内确认的X6080），94个待核实；公开来源最新批次仍为2026-09-17。检查时间不代表来源已更新到当天。未核实区服不能默认标记征服。
+
+离线核对可使用 `--timeline-file`、`--seasons-file`、`--official-file`，配合 `--output-dir` 输出独立审计结果。
 
 ## 双链接账号对比
 

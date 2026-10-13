@@ -1,4 +1,4 @@
-import {serverTable} from './account-server-types.js?v=20261013-fixes-v1';
+import {serverTable} from './account-server-types.js?v=20261013-servers-v2';
 export function parseAccountLink(input) {
   let url;
   try { url = new URL(input.trim()); } catch { throw new Error('请输入完整的藏宝阁商品链接'); }
@@ -11,7 +11,7 @@ export function classifyServer(serverName) {
   const match=String(serverName || '').match(/(?:^|[^A-Za-z0-9])X\s*(\d+)(?!\d)/i);
   const serverNum=match?'X'+match[1].replace(/^0+(?=\d)/,''):'';
   const entry=serverTable.servers.find(row=>row.serverNum===serverNum);
-  return {serverNum,accountType:entry?.type==='试师'?'试师':'征服',serverTypeTableUpdatedAt:serverTable.updatedAt};
+  return {serverNum,accountType:entry?.type||'待核实',accountTypeConfirmed:!!entry,serverTypeTableUpdatedAt:serverTable.updatedAt};
 }
 const countries = { 1:'汉', 2:'魏', 3:'蜀', 4:'吴', 5:'群', 6:'晋' };
 const troops = { 1:'弓', 2:'步', 3:'骑' };
