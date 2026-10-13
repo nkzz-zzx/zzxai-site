@@ -17,6 +17,10 @@ for season in raw['data']['seasons']:
         row=dict(serverNum=key,type=season['type'],season=season.get('name',''),openedAt=season.get('open_time',''))
         if key not in rows or row['openedAt']>rows[key]['openedAt']:rows[key]=row
 if not rows or not any(row['type']=='试师' for row in rows.values()):raise ValueError('Empty or incomplete season table; existing file retained')
+# Preserve explicitly verified corrections when the public table lags newer servers.
+for row in json.loads((ROOT/'account-assets/server-overrides.json').read_text()).get('servers',[]):
+    if not re.fullmatch(r'X\d+',row['serverNum']) or row['type'] not in ['试师','征服']:raise ValueError('Invalid server correction')
+    rows[row['serverNum']]={k:v for k,v in row.items() if k!='evidence'}
 text='// Generated from the public season/server table. Refresh with scripts/update-account-servers.py.\n'
 text+='export const serverTable = '+json.dumps(dict(source=SOURCE,updatedAt=datetime.datetime.now(datetime.timezone.utc).isoformat(),servers=list(rows.values())),ensure_ascii=False,indent=2)+';\n'
 for path in [ROOT/'account-server-types.js',ROOT/'dist/account-server-types.js']:path.write_text(text)

@@ -1,4 +1,4 @@
-import {serverTable} from './account-server-types.js';
+import {serverTable} from './account-server-types.js?v=20261013-fixes-v1';
 export function parseAccountLink(input) {
   let url;
   try { url = new URL(input.trim()); } catch { throw new Error('请输入完整的藏宝阁商品链接'); }
@@ -28,7 +28,7 @@ export function normalizeAccount(raw) {
     const heroId=String(g.heroId || '');
     const hero=heroes.find(h=>h.id===heroId);
     const effects=rows=>Array.isArray(rows)?rows.filter(Array.isArray).map(row=>({name:String(row[0] || ''),description:String(row[1] || '')})):[];
-    return {id:`${g.gear_id}-${index}`,gearId:String(g.gear_id),iconId:String(g.show_gear_id ?? g.gear_id),name:String(g.name || '未知宝物'),phase:Number(g.phase || 0),level:Number(g.level || 0),advance:Number(g.advance || 0),bound:!!g.is_bind,defective:!!g.is_defective,heroId,equippedTo:hero?[hero.country,hero.name,hero.troop].join('·'):heroId?`武将 ID ${heroId}`:'',conditions:Array.isArray(g.equip_condition)?g.equip_condition.map(String):[],effects:effects(g.skillInfo),features:effects(g.feature)};
+    return {id:`${g.gear_id}-${index}`,gearId:String(g.gear_id),iconId:String(g.show_gear_id ?? g.gear_id),name:String(g.name || '未知宝物'),phase:Number(g.phase || 0),level:Number(g.level || 0),advance:Number(g.advance || 0),bound:!!g.is_bind,defective:!!g.is_defective,heroId,equippedTo:hero?[hero.country,hero.name,hero.troop].join('·'):heroId?`武将 ID ${heroId}`:'',conditions:Array.isArray(g.equip_condition)?g.equip_condition.map(String):[],effects:effects(g.skillInfo),levelType:Number(g.level_type ?? 0),features:effects(g.feature).map((feature,index)=>({...feature,extreme:!!g.feature[index][2]}))};
   }) : null;
   return { metadata:{ ...classifyServer(equip.server_name), status:equip.status_desc || '未知', sold:/买家取走|已售|交易成功/.test(equip.status_desc || ''), price:Number(equip.price)/100, server:[equip.area_name,equip.server_name].filter(Boolean).join(' · '), summary:equip.desc_sumup_short || '', order:equip.game_ordersn || '', fetchedAt:new Date().toISOString() }, heroes, skills, gear };
 }
@@ -78,5 +78,12 @@ export function canDismantle(skill, heroes) {
 
 export function heroSortOrder(item) {
  const version=item.season && item.season!=='N'?item.season:item.version;
- return {S2:0,S3:1,XP:2}[version] ?? 3;
+ return {S2:0,S3:1,XP:2}[String(version||'').match(/^(S2|S3|XP)/)?.[0]] ?? 3;
+}
+
+export function treasureLabel(item) {
+ if (item.levelType == null) return '';
+ if (item.levelType === 2 && item.advance === 1) return '红武';
+ const extreme=!!item.features?.[0]?.extreme;
+ return item.levelType === 2 ? extreme?'粉极':'粉武' : extreme?'蓝极':'蓝武';
 }

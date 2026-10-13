@@ -1,7 +1,7 @@
 // Generated from the public season/server table. Refresh with scripts/update-account-servers.py.
 export const serverTable = {
   "source": "https://www.stzb163.online/api/kaiqu/timeline?limit=80",
-  "updatedAt": "2026-10-13T11:46:33.227806+00:00",
+  "updatedAt": "2026-10-13T13:06:05.839082+00:00",
   "servers": [
     {
       "serverNum": "X6014",
@@ -254,6 +254,11 @@ export const serverTable = {
       "type": "征服",
       "season": "群雄讨董",
       "openedAt": "2026-09-03T03:00:00.000Z"
+    },
+    {
+      "serverNum": "X6080",
+      "type": "试师",
+      "season": "兵合车错"
     }
   ]
 };

@@ -1,5 +1,6 @@
 """Refresh the public account catalog from CBG's official configuration (no account data)."""
 import argparse
+import hashlib
 import datetime
 import json
 import pathlib
@@ -80,6 +81,12 @@ for kind, records in [('heroes', heroes), ('skills', {s['id']: s for s in skills
         skills = list(records.values())
 if len(heroes) < 350 or len(skills) < 200 or len({s['id'] for s in skills}) != len(skills):
     raise SystemExit('Unexpected catalog size or duplicate skill IDs; existing catalog retained')
+# Keep generated small portraits on subsequent catalog refreshes.
+for hero in heroes.values():
+    portrait=ROOT/hero.get('portrait','')
+    if portrait.is_file():
+        name='v1-'+hashlib.sha256(portrait.read_bytes()).hexdigest()[:16]+'.webp'
+        if (ROOT/'account-assets/portrait-thumbs'/name).is_file():hero['thumbnail']='./account-assets/portrait-thumbs/'+name
 catalog = dict(asOf=datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).date().isoformat(), sourceLabel='藏宝阁官方游戏配置 + 官方更新公告 + 本站历史武将图鉴',
                sources=[SOURCE, './stzb-assets/timeline.json', './account-assets/supplements.json'],
                scope='官方藏宝阁四、五星武将（补充已记录的旧版与临时版）及可研究战法；不含自带战法、外观或百家词条。',

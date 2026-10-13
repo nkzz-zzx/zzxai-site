@@ -17,7 +17,7 @@ const upstreamFetch=async(url,options)=>new Promise((resolve,reject)=>{
 (async()=>{
  const {default:handler}=await import('../edge-functions/api/account.js');
  global.fetch=upstreamFetch;
- const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml','.mp4':'video/mp4','.pdf':'application/pdf'};
+ const mime={'.html':'text/html; charset=utf-8','.js':'text/javascript; charset=utf-8','.mjs':'text/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.webp':'image/webp','.jpg':'image/jpeg','.png':'image/png','.svg':'image/svg+xml','.mp4':'video/mp4','.pdf':'application/pdf'};
  http.createServer(async(req,res)=>{
   try{
    const url=new URL(req.url,`http://127.0.0.1:${port}`);
