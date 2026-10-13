@@ -51,3 +51,21 @@ export function importAccount(raw) {
   if(gear !== null && (!Array.isArray(gear) || gear.some(g=>!g || typeof g.id!=='string' || typeof g.name!=='string' || !Number.isFinite(g.phase) || !Number.isFinite(g.level) || !Number.isFinite(g.advance) || !Array.isArray(g.effects) || !Array.isArray(g.features) || !Array.isArray(g.conditions) || [...g.effects,...g.features].some(e=>!e || typeof e.name!=='string' || typeof e.description!=='string')))) throw new Error('宝物清单格式不正确');
   return {...data,metadata:{...data.metadata,...classifyServer(data.metadata.serverNum || data.metadata.server)},gear};
 }
+
+export function heroLabel(item) {
+  const version=item.season && item.season!=='N'?item.season:item.version && item.version!=='常规'?item.version:'';
+  return [item.name,version,item.troop,item.country,`${item.rarity}星`].filter(Boolean).join(' · ');
+}
+export function compareCollections(catalog,left,right,kind) {
+  const owned=items=>{const map=new Map();for(const item of items){if(!map.has(item.id))map.set(item.id,[]);map.get(item.id).push(item);}return map;};
+  const a=owned(left),b=owned(right),definitions=new Map(catalog.map(item=>[item.id,item]));
+  const signature=copies=>JSON.stringify(copies.map(item=>kind==='heroes'?[item.red,!!item.awakened]:[item.progress]).sort((x,y)=>JSON.stringify(x).localeCompare(JSON.stringify(y))));
+  const rows=[...new Set([...a.keys(),...b.keys()])].map(id=>{
+    const leftCopies=a.get(id)||[],rightCopies=b.get(id)||[];
+    const definition=definitions.get(id)||{},actual=leftCopies[0]||rightCopies[0];
+    const item={...definition,...actual,season:actual.season||definition.season||'',left:leftCopies,right:rightCopies};
+    return {...item,label:kind==='heroes'?heroLabel(item):item.name,different:signature(leftCopies)!==signature(rightCopies)};
+  });
+  const labels=new Map();for(const row of rows)labels.set(row.label,(labels.get(row.label)||0)+1);
+  return rows.map(row=>({...row,label:labels.get(row.label)>1?`${row.label}（${row.id}）`:row.label}));
+}

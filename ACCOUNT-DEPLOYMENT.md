@@ -63,3 +63,9 @@ ACCOUNT_URL=http://127.0.0.1:8011/account.html CHROME_PATH=/usr/bin/chromium nod
 ## 试师与征服标记
 
 使用公开平台区服开区对照表，按藏宝阁 `server_name` 中的 X 区服编号精确匹配，而不是按副本名称、商品链接的 serverid=1 或游戏内部服务器 ID 推断。匹配试师区服显示“试师”，其他区服按需求默认显示“征服”。数据来自 `https://www.stzb163.online/api/kaiqu/timeline?limit=80`，保存为 `account-server-types.js` 并同步 `dist/`，用 `python3 scripts/update-account-servers.py` 刷新。对照表是第三方公开记录，有覆盖范围和更新时间限制；未匹配默认征服不等于官方确认。查询、原始 JSON 导入、旧清单导入及导出都使用同一规则。示例账号 X5992 按公开表归为试师。
+
+## 双链接账号对比
+
+第二个链接留空时使用原有单账号图鉴（含武将立绘、宝物及筛选）；填写第二个链接后，两个请求均成功才显示文字对比。武将、战法只取两边已拥有条目的并集，不包含双方都未拥有的目录项。武将按真实 ID 匹配，名称同时显示版本、兵种、阵营和星级；重复卡分别保留。默认展示全部，点击“只看差异”后，筛选拥有状态、武将重复卡数量/红度/觉醒或战法研究进度不同的项。各筛选与搜索可叠加使用。对比结果支持导出和重新导入；其中一个请求失败时保留上次成功结果。
+
+验证：`ACCOUNT_URL=http://127.0.0.1:8014/account.html node tests/account.compare.browser.cjs`，并运行已有 `tests/account.browser.cjs` 验证单链接回归。

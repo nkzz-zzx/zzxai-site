@@ -1,12 +1,14 @@
-import {parseAccountLink,importAccount,mergeCatalog,classifyServer} from './account-core.js';
+import {parseAccountLink,importAccount,mergeCatalog,classifyServer,compareCollections} from './account-core.js?v=20261013-compare-v1';
 const $=id=>document.getElementById(id);
-let catalog,account=null,tab='heroes',busy=false;
+let catalog,account=null,tab='heroes',busy=false,comparison=null,differencesOnly=false;
 const skillOrder=['主动','被动','追击','指挥'];
 const node=(tag,text,cls)=>{const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(cls)el.className=cls;return el;};
 function message(text,error=false){$('message').textContent=text;$('message').classList.toggle('error',error);}
 function setBusy(value){busy=value;$('query-button').disabled=value;$('import-file').disabled=value;$('query-form').setAttribute('aria-busy',String(value));}
 function render(){
  if(!catalog)return;
+ if(comparison){renderComparison();return;}
+ $('results').classList.remove('comparing');
  const kind={heroes:'武将',skills:'战法',gear:'宝物'}[tab],owned=account?.[tab]||[];
  const all=tab==='gear'?owned.map(item=>({...item,owned:true})):mergeCatalog(catalog[tab],owned,tab);
  $('catalog-note').textContent=tab==='gear'?(!account?'查询后查看账号宝物':account.gear==null?'当前数据未包含宝物，请重新查询或导入完整详情 JSON':`共 ${owned.length} 件宝物`):`${catalog[tab].length} 种${kind} · 更新于 ${catalog.asOf}${!account?' · 查询后查看拥有状态':''}`;
@@ -65,6 +67,8 @@ function render(){
 }
 function showAccount(data){
  data={...data,metadata:{...data.metadata,...classifyServer(data.metadata.serverNum || data.metadata.server)}};
+ comparison=null;differencesOnly=false;$('comparison-summary').hidden=true;$('differences-only').hidden=true;$('gear-tab').hidden=false;$('export-button').textContent='导出清单 JSON';
+ for(const id of ['account-type','account-server','account-summary','account-time','stats'])$(id).hidden=false;
  account=data;$('account-info').hidden=false;$('account-status').textContent=data.metadata.sold?'账号已售出':`账号状态：${data.metadata.status}`;
  $('account-type').textContent=data.metadata.accountType;$('account-type').classList.toggle('trial',data.metadata.accountType==='试师');
  $('account-server').textContent=data.metadata.server;
@@ -74,28 +78,65 @@ function showAccount(data){
  $('stats').replaceChildren(...stats.map(([title,value])=>{const el=node('div',undefined,'stat');el.append(node('strong',String(value)),node('span',title));return el;}));
  render();message('账号数据已载入。');
 }
+async function fetchAccount(url,signal){
+ const response=await fetch(`/api/account?url=${encodeURIComponent(url.trim())}`,{signal});
+ let data;try{data=await response.json();}catch{throw new Error('查询服务暂不可用，请稍后重试或导入详情 JSON');}
+ if(!response.ok)throw new Error(data.error||'查询失败');
+ return importAccount({format:'zzxai-account-v1',account:data});
+}
+$('compare-url').addEventListener('input',()=>{$('query-button').textContent=$('compare-url').value.trim()?'对比账号':'查询账号';});
 $('query-form').addEventListener('submit',async event=>{
  event.preventDefault();if(busy||!catalog)return;
- try{parseAccountLink($('account-url').value);}catch(e){message(e.message,true);return;}
- setBusy(true);message('正在获取藏宝阁详情…');
+ const links=[$('account-url').value.trim(),$('compare-url').value.trim()].filter(Boolean);
+ try{for(const link of links)parseAccountLink(link);}catch(e){message(e.message,true);return;}
+ setBusy(true);message(links.length===2?'正在获取两个账号…':'正在获取藏宝阁详情…');
  const controller=new AbortController(),timer=setTimeout(()=>controller.abort(),22000);
  try{
-  const response=await fetch(`/api/account?url=${encodeURIComponent($('account-url').value.trim())}`,{signal:controller.signal});
-  let data;try{data=await response.json();}catch{throw new Error('查询服务暂不可用，请稍后重试或导入详情 JSON');}
-  if(!response.ok)throw new Error(data.error||'查询失败');
-  if(!data.metadata||!Array.isArray(data.heroes)||!Array.isArray(data.skills))throw new Error('查询服务返回的数据不完整');
-  showAccount(data);
- }catch(e){message(`${e.name==='AbortError'?'查询超时，请稍后重试':e.message}${account?'。仍显示上一次成功查询的账号。':''}`,true);}finally{clearTimeout(timer);setBusy(false);}
+  const data=await Promise.all(links.map((link,index)=>fetchAccount(link,controller.signal).catch(e=>{if(e.name==='AbortError')throw e;throw new Error(`${links.length===2?'账号 '+(index===0?'A':'B')+'：':''}${e.message}`);})));
+  if(data.length===2)showComparison(data[0],data[1]);else showAccount(data[0]);
+ }catch(e){controller.abort();message(`${controller.signal.aborted&&e.name==='AbortError'?'查询超时，请稍后重试':e.message}${account?'。仍显示上一次成功查询的账号。':''}`,true);}finally{clearTimeout(timer);setBusy(false);}
 });
 $('import-file').addEventListener('change',async event=>{
  const file=event.target.files[0];if(!file||busy)return;
- try{if(file.size>5000000)throw new Error('请选择小于 5 MB 的详情 JSON');const raw=JSON.parse(await file.text());showAccount(importAccount(raw));}catch(e){message(`导入失败：${e.message}`,true);}finally{event.target.value='';}
+ try{if(file.size>5000000)throw new Error('请选择小于 5 MB 的详情 JSON');const raw=JSON.parse(await file.text());if(raw.format==='zzxai-comparison-v1')showComparison(importAccount({format:'zzxai-account-v1',account:raw.left}),importAccount({format:'zzxai-account-v1',account:raw.right}));else showAccount(importAccount(raw));}catch(e){message(`导入失败：${e.message}`,true);}finally{event.target.value='';}
 });
 $('export-button').addEventListener('click',()=>{
- if(!account)return;const blob=new Blob([JSON.stringify({format:'zzxai-account-v1',account},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=node('a');a.href=url;a.download='藏宝阁账号清单.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
+ if(!account)return;const blob=new Blob([JSON.stringify(comparison?{format:'zzxai-comparison-v1',...comparison}:{format:'zzxai-account-v1',account},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=node('a');a.href=url;a.download=comparison?'藏宝阁账号对比.json':'藏宝阁账号清单.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 });
 for(const id of ['search','ownership','country','rarity','season','skill-type','gear-quality'])$(id).addEventListener('input',render);
 function selectTab(next){tab=next;for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).setAttribute('aria-selected',String(tab===kind));$(id).tabIndex=tab===kind?0:-1;}render();}
-for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).addEventListener('click',()=>selectTab(kind));$(id).addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();const next=event.key==='Home'?'heroes':event.key==='End'?'gear':['heroes','skills','gear'][(['heroes','skills','gear'].indexOf(kind)+(event.key==='ArrowLeft'?2:1))%3];selectTab(next);$(next+'-tab').focus();}});}
+for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).addEventListener('click',()=>selectTab(kind));$(id).addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();const tabs=comparison?['heroes','skills']:['heroes','skills','gear'];const next=event.key==='Home'?tabs[0]:event.key==='End'?tabs.at(-1):tabs[(tabs.indexOf(kind)+(event.key==='ArrowLeft'?tabs.length-1:1))%tabs.length];selectTab(next);$(next+'-tab').focus();}});}
 selectTab('heroes');setBusy(true);
 try{const response=await fetch('./account-assets/catalog.json');if(!response.ok)throw new Error('目录下载失败');catalog=await response.json();render();message('输入商品链接，或导入藏宝阁详情 JSON。');setBusy(false);}catch{message('图鉴目录载入失败，请刷新重试',true);}
+
+function showComparison(left,right){
+ comparison={left,right};account=left;differencesOnly=false;
+ $('account-info').hidden=false;$('account-status').textContent='账号对比';$('export-button').textContent='导出对比 JSON';
+ for(const id of ['account-type','account-server','account-summary','account-time','stats'])$(id).hidden=true;
+ $('comparison-summary').hidden=false;$('comparison-summary').replaceChildren();
+ for(const [label,data] of [['账号 A',left],['账号 B',right]]){const card=node('section',undefined,'comparison-account');card.append(node('h3',`${label} · ${data.metadata.accountType}`),node('p',data.metadata.server),node('p',`${data.metadata.status} · ${Number.isFinite(data.metadata.price)?data.metadata.price.toLocaleString()+' 元':'价格未知'}`),node('p',`${data.heroes.length} 张武将卡 · ${data.skills.length} 条战法`));$('comparison-summary').append(card);}
+ $('gear-tab').hidden=true;$('differences-only').hidden=false;$('differences-only').setAttribute('aria-pressed','false');
+ $('search').value='';$('country').value='all';$('rarity').value='all';$('season').value='all';$('skill-type').value='all';
+ selectTab(tab==='gear'?'heroes':tab);message('两个账号已载入，默认展示任一账号拥有的武将和战法。');
+}
+function renderComparison(){
+ const rows=compareCollections(catalog[tab],comparison.left[tab],comparison.right[tab],tab);
+ const search=$('search').value.trim().toLowerCase();
+ const filtered=rows.filter(row=>(!differencesOnly||row.different)&&(!search||row.label.toLowerCase().includes(search))&&(tab!=='heroes'||(($('country').value==='all'||row.country===$('country').value)&&($('rarity').value==='all'||String(row.rarity)===$('rarity').value)&&($('season').value==='all'||row.season===$('season').value)))&&(tab!=='skills'||$('skill-type').value==='all'||row.type===$('skill-type').value));
+ filtered.sort((a,b)=>(tab==='skills'?(skillOrder.indexOf(a.type)-skillOrder.indexOf(b.type)):0)||a.label.localeCompare(b.label,'zh-CN'));
+ $('country-filter').hidden=tab!=='heroes';$('season-filter').hidden=tab!=='heroes';$('rarity-filter').hidden=tab!=='heroes';$('type-filter').hidden=tab!=='skills';$('ownership-filter').hidden=true;$('gear-quality-filter').hidden=true;
+ $('search').placeholder=tab==='heroes'?'搜索武将名称、兵种或版本':'搜索战法名称';
+ $('catalog-note').textContent=tab==='heroes'?'同名武将按版本、兵种和阵营区分。':'战法按类别展示。';
+ $('result-count').textContent=`显示 ${filtered.length} / ${rows.length} 项 · 共 ${rows.filter(row=>row.different).length} 项差异`;
+ $('results').replaceChildren();$('results').setAttribute('aria-labelledby',tab+'-tab');$('empty').hidden=filtered.length!==0;$('empty').textContent=differencesOnly?'当前筛选下没有差异。':'没有符合条件的条目。';
+ const table=node('table',undefined,'comparison-table');const head=node('thead'),header=node('tr');
+ for(const label of [tab==='heroes'?'武将':'战法','账号 A','账号 B']){const th=node('th',label);th.scope='col';header.append(th);}head.append(header);table.append(head);const body=node('tbody');let previousType=null;
+ for(const row of filtered){
+  if(tab==='skills'&&previousType!==row.type){previousType=row.type;const group=node('tr',undefined,'comparison-group'),th=node('th',row.type||'未分类');th.colSpan=3;th.scope='rowgroup';group.append(th);body.append(group);}
+  const tr=node('tr',undefined,row.different?'comparison-row different':'comparison-row');tr.dataset.id=row.id;const name=node('th',row.label);name.scope='row';tr.append(name);
+  for(const copies of [row.left,row.right]){const cell=node('td',undefined,copies.length?'compare-owned':'compare-missing');if(!copies.length)cell.textContent='未拥有';else if(tab==='heroes'){for(const copy of [...copies].sort((a,b)=>b.red-a.red))cell.append(node('div',`${copy.red} 红${copy.awakened?' · 已觉醒':''}`));if(copies.length>1)cell.append(node('small',`${copies.length} 张`));}else{for(const copy of copies)cell.append(node('div',`已拥有 · ${copy.progress===null?'进度未知':copy.progress+'%'}`));}tr.append(cell);}
+  body.append(tr);
+ }
+ table.append(body);$('results').classList.add('comparing');$('results').append(table);
+}
+$('differences-only').addEventListener('click',()=>{differencesOnly=!differencesOnly;$('differences-only').setAttribute('aria-pressed',String(differencesOnly));render();});
