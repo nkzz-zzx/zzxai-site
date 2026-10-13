@@ -18,7 +18,8 @@ export function classifyAccountMetadata(metadata){
  const result=fromName.serverNum?fromName:fromNumber;
  if(result.accountTypeConfirmed)return result;
  const identifiersAgree=!fromName.serverNum||!fromNumber.serverNum||fromName.serverNum===fromNumber.serverNum;
- if(identifiersAgree&&metadata.accountTypeConfirmed===true&&['试师','征服'].includes(metadata.accountType))return {...result,accountType:metadata.accountType,accountTypeConfirmed:true,serverTypeTableUpdatedAt:metadata.serverTypeTableUpdatedAt||result.serverTypeTableUpdatedAt};
+ const confirmed=metadata.accountTypeConfirmed===true||(metadata.accountTypeConfirmed==null&&metadata.accountType==='试师');
+ if(identifiersAgree&&confirmed&&['试师','征服'].includes(metadata.accountType))return {...result,accountType:metadata.accountType,accountTypeConfirmed:true,serverTypeTableUpdatedAt:metadata.serverTypeTableUpdatedAt||result.serverTypeTableUpdatedAt};
  return result;
 }
 const countries = { 1:'汉', 2:'魏', 3:'蜀', 4:'吴', 5:'群', 6:'晋' };

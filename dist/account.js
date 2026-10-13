@@ -1,4 +1,4 @@
-import {parseAccountLink,importAccount,mergeCatalog,classifyAccountMetadata,compareCollections,canDismantle,heroSortOrder,treasureLabel,skillGradeOrder,isGuardHero} from './account-core.js?v=20261013-verified-types-v1';
+import {parseAccountLink,importAccount,mergeCatalog,classifyAccountMetadata,compareCollections,canDismantle,heroSortOrder,treasureLabel,skillGradeOrder,isGuardHero} from './account-core.js?v=20261013-verified-types-v2';
 const $=id=>document.getElementById(id);
 let catalog,account=null,tab='heroes',busy=false,comparison=null,differencesOnly=false;
 const skillOrder=['主动','被动','追击','指挥'];
@@ -21,7 +21,7 @@ function heroArt(item){
  }
  portraitNodes.set(cacheKey,art);return art;
 }
-if('serviceWorker' in navigator)navigator.serviceWorker.register('./account-portrait-sw.js?v=20261013-verified-types-v1',{scope:'./account.html',updateViaCache:'none'}).catch(()=>{});
+if('serviceWorker' in navigator)navigator.serviceWorker.register('./account-portrait-sw.js?v=20261013-verified-types-v2',{scope:'./account.html',updateViaCache:'none'}).catch(()=>{});
 function redStars(red,rarity){
  rarity=Math.min(5,Math.max(0,Number(rarity)||0));if(red!=null)red=Math.min(rarity,Math.max(0,Number(red)||0));
  const stars=node('span',undefined,'red-stars');stars.setAttribute('role','img');stars.setAttribute('aria-label',red==null?'红度未知':`${red} 红`);
@@ -138,7 +138,7 @@ for(const id of ['search','ownership','country','rarity','season','skill-type','
 function selectTab(next){tab=next;for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).setAttribute('aria-selected',String(tab===kind));$(id).tabIndex=tab===kind?0:-1;}render();}
 for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).addEventListener('click',()=>selectTab(kind));$(id).addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();const tabs=comparison?['heroes','skills']:['heroes','skills','gear'];const next=event.key==='Home'?tabs[0]:event.key==='End'?tabs.at(-1):tabs[(tabs.indexOf(kind)+(event.key==='ArrowLeft'?tabs.length-1:1))%tabs.length];selectTab(next);$(next+'-tab').focus();}});}
 selectTab('heroes');setBusy(true);
-try{const response=await fetch('./account-assets/catalog.json?v=20261013-verified-types-v1');if(!response.ok)throw new Error('目录下载失败');catalog=await response.json();render();message('输入商品链接，或导入藏宝阁详情 JSON。');setBusy(false);}catch{message('图鉴目录载入失败，请刷新重试',true);}
+try{const response=await fetch('./account-assets/catalog.json?v=20261013-verified-types-v2');if(!response.ok)throw new Error('目录下载失败');catalog=await response.json();render();message('输入商品链接，或导入藏宝阁详情 JSON。');setBusy(false);}catch{message('图鉴目录载入失败，请刷新重试',true);}
 
 function showComparison(left,right){
  comparison={left,right};account=left;differencesOnly=false;
