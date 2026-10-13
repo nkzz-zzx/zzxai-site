@@ -1,3 +1,4 @@
+import {serverTable} from './account-server-types.mjs';
 export function parseAccountLink(input) {
   let url;
   try { url = new URL(input.trim()); } catch { throw new Error('请输入完整的藏宝阁商品链接'); }
@@ -5,6 +6,12 @@ export function parseAccountLink(input) {
   const match = url.pathname.match(/^\/cgi\/(?:mweb|web)\/equip\/(\d+)\/([A-Za-z0-9-]+)\/?$/);
   if (!match || match[2].length > 100) throw new Error('无法识别商品链接，请复制商品详情页地址');
   return { serverid: match[1], ordersn: match[2], url: `https://stzb.cbg.163.com/cgi/mweb/equip/${match[1]}/${match[2]}` };
+}
+export function classifyServer(serverName) {
+  const match=String(serverName || '').match(/(?:^|[^A-Za-z0-9])X\s*(\d+)(?!\d)/i);
+  const serverNum=match?'X'+match[1].replace(/^0+(?=\d)/,''):'';
+  const entry=serverTable.servers.find(row=>row.serverNum===serverNum);
+  return {serverNum,accountType:entry?.type==='试师'?'试师':'征服',serverTypeTableUpdatedAt:serverTable.updatedAt};
 }
 const countries = { 1:'汉', 2:'魏', 3:'蜀', 4:'吴', 5:'群', 6:'晋' };
 const troops = { 1:'弓', 2:'步', 3:'骑' };
@@ -23,7 +30,7 @@ export function normalizeAccount(raw) {
     const effects=rows=>Array.isArray(rows)?rows.filter(Array.isArray).map(row=>({name:String(row[0] || ''),description:String(row[1] || '')})):[];
     return {id:`${g.gear_id}-${index}`,gearId:String(g.gear_id),iconId:String(g.show_gear_id ?? g.gear_id),name:String(g.name || '未知宝物'),phase:Number(g.phase || 0),level:Number(g.level || 0),advance:Number(g.advance || 0),bound:!!g.is_bind,defective:!!g.is_defective,heroId,equippedTo:hero?[hero.country,hero.name,hero.troop].join('·'):heroId?`武将 ID ${heroId}`:'',conditions:Array.isArray(g.equip_condition)?g.equip_condition.map(String):[],effects:effects(g.skillInfo),features:effects(g.feature)};
   }) : null;
-  return { metadata:{ status:equip.status_desc || '未知', sold:/买家取走|已售|交易成功/.test(equip.status_desc || ''), price:Number(equip.price)/100, server:[equip.area_name,equip.server_name].filter(Boolean).join(' · '), summary:equip.desc_sumup_short || '', order:equip.game_ordersn || '', fetchedAt:new Date().toISOString() }, heroes, skills, gear };
+  return { metadata:{ ...classifyServer(equip.server_name), status:equip.status_desc || '未知', sold:/买家取走|已售|交易成功/.test(equip.status_desc || ''), price:Number(equip.price)/100, server:[equip.area_name,equip.server_name].filter(Boolean).join(' · '), summary:equip.desc_sumup_short || '', order:equip.game_ordersn || '', fetchedAt:new Date().toISOString() }, heroes, skills, gear };
 }
 export function mergeCatalog(catalog, owned, kind) {
   const groups = new Map();
@@ -42,5 +49,5 @@ export function importAccount(raw) {
   for(const item of data.skills) if(item.progress !== null && !Number.isFinite(item.progress)) throw new Error('战法进度格式不正确');
   const gear=data.gear ?? null;
   if(gear !== null && (!Array.isArray(gear) || gear.some(g=>!g || typeof g.id!=='string' || typeof g.name!=='string' || !Number.isFinite(g.phase) || !Number.isFinite(g.level) || !Number.isFinite(g.advance) || !Array.isArray(g.effects) || !Array.isArray(g.features) || !Array.isArray(g.conditions) || [...g.effects,...g.features].some(e=>!e || typeof e.name!=='string' || typeof e.description!=='string')))) throw new Error('宝物清单格式不正确');
-  return {...data,gear};
+  return {...data,metadata:{...data.metadata,...classifyServer(data.metadata.serverNum || data.metadata.server)},gear};
 }

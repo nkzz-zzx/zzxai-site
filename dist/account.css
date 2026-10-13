@@ -3,3 +3,5 @@
 .skill-group-heading{grid-column:1/-1;margin:16px 0 2px;padding-bottom:10px;border-bottom:1px solid var(--line);font-size:18px;color:#1e3a8a}.skill-group-heading:first-child{margin-top:0}
 
 .hero-art,.gear-art{position:relative;background:#eef1f6;border-radius:8px;overflow:hidden;margin:12px 0 8px;isolation:isolate}.hero-art{aspect-ratio:4/5}.gear-art{aspect-ratio:1/1;background:radial-gradient(circle,#f5ead1,#f8fafc)}.entry-art{display:block;width:100%;height:100%;object-fit:contain;position:absolute;inset:0}.art-placeholder{position:absolute;inset:0;display:grid;place-items:center;color:#94a3b8;font-size:13px}.hero-entry.missing .entry-art{filter:grayscale(.85);opacity:.65}.hero-entry.owned{border-color:#bbd9c8}.hero-entry h3,.gear-entry h3{margin-top:10px}
+
+.account-title{display:flex;align-items:center;gap:12px;flex-wrap:wrap}.account-type{display:inline-block;padding:4px 12px;border-radius:8px;background:#eff6ff;color:#1d4ed8;font-size:14px;font-weight:600}.account-type.trial{background:#fff7ed;color:#c2410c}

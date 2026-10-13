@@ -1,4 +1,4 @@
-import {parseAccountLink,importAccount,mergeCatalog} from './account-core.mjs';
+import {parseAccountLink,importAccount,mergeCatalog,classifyServer} from './account-core.mjs';
 const $=id=>document.getElementById(id);
 let catalog,account=null,tab='heroes',busy=false;
 const skillOrder=['主动','被动','追击','指挥'];
@@ -64,7 +64,9 @@ function render(){
  $('results').append(fragment);
 }
 function showAccount(data){
+ data={...data,metadata:{...data.metadata,...classifyServer(data.metadata.serverNum || data.metadata.server)}};
  account=data;$('account-info').hidden=false;$('account-status').textContent=data.metadata.sold?'账号已售出':`账号状态：${data.metadata.status}`;
+ $('account-type').textContent=data.metadata.accountType;$('account-type').classList.toggle('trial',data.metadata.accountType==='试师');
  $('account-server').textContent=data.metadata.server;
  $('account-summary').textContent=data.metadata.summary;
  $('account-time').textContent=`${data.metadata.sold?'原展示价格':'展示价格'}：${Number.isFinite(data.metadata.price)?data.metadata.price.toLocaleString()+' 元':'未知'} · 查询时间（北京时间）：${new Date(data.metadata.fetchedAt).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai'})}${data.metadata.sold?' · 以下为交易后仍可查询的快照':''}`;

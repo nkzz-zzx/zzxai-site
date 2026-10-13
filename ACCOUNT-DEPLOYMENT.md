@@ -59,3 +59,7 @@ ACCOUNT_URL=http://127.0.0.1:8011/account.html CHROME_PATH=/usr/bin/chromium nod
 ## 武将与宝物图片
 
 武将使用官方图鉴对应 ID 的立绘，宝物使用官方 `gears/gear_icon/gear_icon_<ID>.jpg` 图片。资源保存在仓库及 `dist/`，不依赖访问者跨域加载。武将按立绘卡片展示，未拥有项使用灰色立绘；宝物图片与词条同时展示，战法仍为文字。使用 `python3 scripts/download-account-art.py` 补充本地资源，再刷新目录会保留这些资源映射。目录外无法匹配的条目显示图片占位，不使用其他角色或宝物的图片替代。
+
+## 试师与征服标记
+
+使用公开平台区服开区对照表，按藏宝阁 `server_name` 中的 X 区服编号精确匹配，而不是按副本名称、商品链接的 serverid=1 或游戏内部服务器 ID 推断。匹配试师区服显示“试师”，其他区服按需求默认显示“征服”。数据来自 `https://www.stzb163.online/api/kaiqu/timeline?limit=80`，保存为 `account-server-types.mjs` 并同步 `dist/`，用 `python3 scripts/update-account-servers.py` 刷新。对照表是第三方公开记录，有覆盖范围和更新时间限制；未匹配默认征服不等于官方确认。查询、原始 JSON 导入、旧清单导入及导出都使用同一规则。示例账号 X5992 按公开表归为试师。
