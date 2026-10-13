@@ -5,7 +5,7 @@ const assert=require('node:assert/strict');const {chromium}=require('playwright'
  const seasonal={hero_id:100496,name:'诸葛亮',country:3,hero_type:1,quality:5,season:'S3',advance_num:2};
  const shared={hero_id:100025,name:'曹植',country:2,hero_type:1,quality:4,season:'N',advance_num:3};
  const skill=(id,name,progress,type='指挥')=>({skill_id:id,name,skill_info:[name,'说明',type],research_progress:progress});
- const data=(right=false)=>normalizeAccount({equip:{status_desc:'买家取走',price:300000,server_name:right?'X6081 兵合车错':'X5992 百业争鸣',equip_desc:JSON.stringify({card:right?[{...regular,advance_num:3},shared]:[regular,seasonal,shared],skill:right?[skill(200220,'反计之策',100),skill(200098,'凿穿',100,'主动')]:[skill(200220,'反计之策',100),skill(200235,'浑水摸鱼',40,'主动')],gear:[]})}});
+ const data=(right=false)=>normalizeAccount({equip:{status_desc:'买家取走',price:300000,server_name:right?'X6081 兵合车错':'X5992 百业争鸣',equip_desc:JSON.stringify({card:right?[{hero_id:110461,name:'侍卫',country:6,hero_type:1,quality:5,advance_num:0},{...regular,advance_num:3},shared]:[regular,seasonal,shared],skill:right?[skill(200220,'反计之策',100),skill(200098,'凿穿',100,'主动')]:[skill(200220,'反计之策',100),skill(200235,'浑水摸鱼',40,'主动')],gear:[]})}});
  const b=await chromium.launch({executablePath:process.env.CHROME_PATH||'/usr/bin/chromium',headless:true});const p=await b.newPage({viewport:{width:1200,height:900}});const errors=[];p.on('pageerror',e=>errors.push(e.message));let failRight=false;
  await p.route('**/api/account?*',route=>{const right=new URL(route.request().url()).searchParams.get('url').endsWith('/right');return route.fulfill({status:failRight&&right?502:200,contentType:'application/json',body:JSON.stringify(failRight&&right?{error:'测试失败'}:data(right))});});
  try{

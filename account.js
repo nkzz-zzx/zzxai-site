@@ -1,4 +1,4 @@
-import {parseAccountLink,importAccount,mergeCatalog,classifyServer,compareCollections,canDismantle,heroSortOrder,treasureLabel,skillGradeOrder} from './account-core.js?v=20261013-five-default-v1';
+import {parseAccountLink,importAccount,mergeCatalog,classifyServer,compareCollections,canDismantle,heroSortOrder,treasureLabel,skillGradeOrder,isGuardHero} from './account-core.js?v=20261013-hide-guards-v1';
 const $=id=>document.getElementById(id);
 let catalog,account=null,tab='heroes',busy=false,comparison=null,differencesOnly=false;
 const skillOrder=['主动','被动','追击','指挥'];
@@ -21,7 +21,7 @@ function heroArt(item){
  }
  portraitNodes.set(cacheKey,art);return art;
 }
-if('serviceWorker' in navigator)navigator.serviceWorker.register('./account-portrait-sw.js?v=20261013-five-default-v1',{scope:'./account.html',updateViaCache:'none'}).catch(()=>{});
+if('serviceWorker' in navigator)navigator.serviceWorker.register('./account-portrait-sw.js?v=20261013-hide-guards-v1',{scope:'./account.html',updateViaCache:'none'}).catch(()=>{});
 function redStars(red,rarity){
  rarity=Math.min(5,Math.max(0,Number(rarity)||0));if(red!=null)red=Math.min(rarity,Math.max(0,Number(red)||0));
  const stars=node('span',undefined,'red-stars');stars.setAttribute('role','img');stars.setAttribute('aria-label',red==null?'红度未知':`${red} 红`);
@@ -33,8 +33,9 @@ function render(){
  if(comparison){renderComparison();return;}
  $('results').classList.remove('comparing');$('results').dataset.kind=tab;
  const kind={heroes:'武将',skills:'战法',gear:'宝物'}[tab],owned=account?.[tab]||[];
- const all=tab==='gear'?owned.map(item=>({...item,owned:true})):mergeCatalog(catalog[tab],owned,tab);
- $('catalog-note').textContent=tab==='gear'?(!account?'查询后查看账号宝物':account.gear==null?'当前数据未包含宝物，请重新查询或导入完整详情 JSON':`共 ${owned.length} 件宝物`):`${catalog[tab].length} 种${kind} · 更新于 ${catalog.asOf}${!account?' · 查询后查看拥有状态':''}`;
+ const definitions=tab==='heroes'?catalog.heroes.filter(h=>!isGuardHero(h)):catalog[tab];
+ const all=tab==='gear'?owned.map(item=>({...item,owned:true})):mergeCatalog(definitions,owned,tab).filter(item=>tab!=='heroes'||!isGuardHero(item));
+ $('catalog-note').textContent=tab==='gear'?(!account?'查询后查看账号宝物':account.gear==null?'当前数据未包含宝物，请重新查询或导入完整详情 JSON':`共 ${owned.length} 件宝物`):`${definitions.length} 种${kind} · 更新于 ${catalog.asOf}${!account?' · 查询后查看拥有状态':''}`;
  $('country-filter').hidden=tab!=='heroes';$('season-filter').hidden=tab!=='heroes';$('search').placeholder={heroes:'输入武将名称',skills:'输入战法名称',gear:'输入宝物名称或词条'}[tab];$('rarity-filter').hidden=tab!=='heroes';$('type-filter').hidden=tab!=='skills';
  $('ownership').disabled=!account;$('ownership-filter').hidden=tab==='gear';$('gear-quality-filter').hidden=tab!=='gear';
  const search=$('search').value.trim().toLowerCase();
@@ -87,7 +88,7 @@ function showAccount(data){
  $('account-server').textContent=data.metadata.server;
  $('account-summary').textContent=data.metadata.summary;
  $('account-time').textContent=`${data.metadata.sold?'原展示价格':'展示价格'}：${Number.isFinite(data.metadata.price)?data.metadata.price.toLocaleString()+' 元':'未知'} · 查询时间（北京时间）：${new Date(data.metadata.fetchedAt).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai'})}${data.metadata.sold?' · 以下为交易后仍可查询的快照':''}`;
- const stats=[['宝物数量',Array.isArray(data.gear)?data.gear.length:'—'],['稀世宝物',Array.isArray(data.gear)?data.gear.filter(g=>g.phase===3).length:'—'],['五星卡片',data.heroes.filter(h=>h.rarity===5).length],['武将卡片',data.heroes.length],['战法条目',data.skills.length],['研究完成',data.skills.filter(s=>s.progress===100).length]];
+ const stats=[['宝物数量',Array.isArray(data.gear)?data.gear.length:'—'],['稀世宝物',Array.isArray(data.gear)?data.gear.filter(g=>g.phase===3).length:'—'],['五星卡片',data.heroes.filter(h=>!isGuardHero(h)&&h.rarity===5).length],['武将卡片',data.heroes.filter(h=>!isGuardHero(h)).length],['战法条目',data.skills.length],['研究完成',data.skills.filter(s=>s.progress===100).length]];
  $('stats').replaceChildren(...stats.map(([title,value])=>{const el=node('div',undefined,'stat');el.append(node('strong',String(value)),node('span',title));return el;}));
  render();message('账号数据已载入。');
 }
@@ -133,21 +134,21 @@ for(const id of ['search','ownership','country','rarity','season','skill-type','
 function selectTab(next){tab=next;for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).setAttribute('aria-selected',String(tab===kind));$(id).tabIndex=tab===kind?0:-1;}render();}
 for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).addEventListener('click',()=>selectTab(kind));$(id).addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();const tabs=comparison?['heroes','skills']:['heroes','skills','gear'];const next=event.key==='Home'?tabs[0]:event.key==='End'?tabs.at(-1):tabs[(tabs.indexOf(kind)+(event.key==='ArrowLeft'?tabs.length-1:1))%tabs.length];selectTab(next);$(next+'-tab').focus();}});}
 selectTab('heroes');setBusy(true);
-try{const response=await fetch('./account-assets/catalog.json?v=20261013-five-default-v1');if(!response.ok)throw new Error('目录下载失败');catalog=await response.json();render();message('输入商品链接，或导入藏宝阁详情 JSON。');setBusy(false);}catch{message('图鉴目录载入失败，请刷新重试',true);}
+try{const response=await fetch('./account-assets/catalog.json?v=20261013-hide-guards-v1');if(!response.ok)throw new Error('目录下载失败');catalog=await response.json();render();message('输入商品链接，或导入藏宝阁详情 JSON。');setBusy(false);}catch{message('图鉴目录载入失败，请刷新重试',true);}
 
 function showComparison(left,right){
  comparison={left,right};account=left;differencesOnly=false;
  $('account-info').hidden=false;$('account-status').textContent='账号对比';$('export-button').textContent='导出对比 JSON';
  for(const id of ['account-type','account-server','account-summary','account-time','stats'])$(id).hidden=true;
  $('comparison-summary').hidden=false;$('comparison-summary').replaceChildren();
- for(const [label,data] of [['账号 A',left],['账号 B',right]]){const card=node('section',undefined,'comparison-account');card.append(node('h3',`${label} · ${data.metadata.accountType}`),node('p',data.metadata.server),node('p',`${data.metadata.status} · ${Number.isFinite(data.metadata.price)?data.metadata.price.toLocaleString()+' 元':'价格未知'}`),node('p',`${data.heroes.length} 张武将卡 · ${data.skills.length} 条战法`));$('comparison-summary').append(card);}
+ for(const [label,data] of [['账号 A',left],['账号 B',right]]){const card=node('section',undefined,'comparison-account');card.append(node('h3',`${label} · ${data.metadata.accountType}`),node('p',data.metadata.server),node('p',`${data.metadata.status} · ${Number.isFinite(data.metadata.price)?data.metadata.price.toLocaleString()+' 元':'价格未知'}`),node('p',`${data.heroes.filter(h=>!isGuardHero(h)).length} 张武将卡 · ${data.skills.length} 条战法`));$('comparison-summary').append(card);}
  $('gear-tab').hidden=true;$('differences-only').hidden=false;$('differences-only').setAttribute('aria-pressed','false');
  $('search').value='';$('country').value='all';$('rarity').value='5';$('season').value='all';$('skill-type').value='all';
  selectTab(tab==='gear'?'heroes':tab);message('两个账号已载入，默认展示任一账号拥有的武将和战法。');
 }
 function renderComparison(){
  $('results').dataset.kind=tab;
- const rows=compareCollections(catalog[tab],comparison.left[tab],comparison.right[tab],tab);
+ const rows=compareCollections(catalog[tab],comparison.left[tab],comparison.right[tab],tab).filter(row=>tab!=='heroes'||!isGuardHero(row));
  const search=$('search').value.trim().toLowerCase();
  const filtered=rows.filter(row=>(!differencesOnly||row.different)&&(!search||row.label.toLowerCase().includes(search))&&(tab!=='heroes'||(($('country').value==='all'||row.country===$('country').value)&&($('rarity').value==='all'||String(row.rarity)===$('rarity').value)&&($('season').value==='all'||row.season===$('season').value)))&&(tab!=='skills'||$('skill-type').value==='all'||row.type===$('skill-type').value));
  filtered.sort((a,b)=>(tab==='heroes'?(heroSortOrder(a)-heroSortOrder(b)||(b.rarity||0)-(a.rarity||0)):0)||(tab==='skills'?((skillOrder.indexOf(a.type)-skillOrder.indexOf(b.type))||skillGradeOrder(a)-skillGradeOrder(b)):0)||a.label.localeCompare(b.label,'zh-CN'));
