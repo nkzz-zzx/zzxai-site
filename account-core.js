@@ -75,3 +75,8 @@ export function canDismantle(skill, heroes) {
   const owned = new Set(heroes.map(hero => String(hero.id)));
   return skill.researchHeroIds.some(id => owned.has(String(id)));
 }
+
+export function heroSortOrder(item) {
+ const version=item.season && item.season!=='N'?item.season:item.version;
+ return {S2:0,S3:1,XP:2}[version] ?? 3;
+}
