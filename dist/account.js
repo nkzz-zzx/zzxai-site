@@ -1,4 +1,4 @@
-import {parseAccountLink,importAccount,mergeCatalog,classifyServer} from './account-core.mjs';
+import {parseAccountLink,importAccount,mergeCatalog,classifyServer} from './account-core.js';
 const $=id=>document.getElementById(id);
 let catalog,account=null,tab='heroes',busy=false;
 const skillOrder=['主动','被动','追击','指挥'];

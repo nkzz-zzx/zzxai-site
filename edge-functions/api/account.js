@@ -1,4 +1,4 @@
-import { parseAccountLink, normalizeAccount } from '../../account-core.mjs';
+import { parseAccountLink, normalizeAccount } from '../../account-core.js';
 const json = (body,status=200) => new Response(JSON.stringify(body), {status,headers:{'Content-Type':'application/json; charset=utf-8','Cache-Control':'no-store','X-Content-Type-Options':'nosniff'}});
 export default async function onRequest({request}) {
   if (request.method !== 'GET') return json({error:'仅支持 GET 请求'},405);

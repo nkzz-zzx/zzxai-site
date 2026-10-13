@@ -1,6 +1,6 @@
 const assert=require('node:assert/strict');const fs=require('node:fs');const path=require('node:path');const {chromium}=require('playwright');
 (async()=>{
- const {normalizeAccount}=await import('../account-core.mjs');
+ const {normalizeAccount}=await import('../account-core.js');
  const raw={equip:{status_desc:'买家取走',price:300000,area_name:'测试区',server_name:'X5992 百业争鸣',equip_desc:JSON.stringify({card:[{hero_id:100011,name:'贾诩',country:5,hero_type:2,quality:5,advance_num:3},{hero_id:100011,name:'贾诩',country:5,hero_type:2,quality:5,advance_num:0},{hero_id:999999,name:'<img src=x onerror=alert(1)>',country:2,hero_type:1,quality:4,advance_num:0}],gear:[{gear_id:1072,name:'大将',phase:3,level:10,advance:1,heroId:100011,is_bind:1,equip_condition:['武将等级达到20级'],skillInfo:[['护主','战斗开始后前2回合援护大营',0]],feature:[['灵动','速度属性提高14.0',0]]},{gear_id:1072,name:'大将',phase:1,level:0,skillInfo:[],feature:[]}],skill:[{skill_id:200220,name:'反计之策',skill_info:['反计之策','测试说明','指挥','','5'],research_progress:40}]})}};
  const b=await chromium.launch({executablePath:process.env.CHROME_PATH||'/usr/bin/chromium',headless:true});const p=await b.newPage({viewport:{width:1280,height:900}});const errors=[];p.on('pageerror',e=>errors.push(e.message));let failure=false;
  await p.route('**/api/account?*',route=>route.fulfill({status:failure?502:200,contentType:'application/json',body:JSON.stringify(failure?{error:'查询暂时失败'}:normalizeAccount(raw))}));

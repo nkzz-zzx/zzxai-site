@@ -19,5 +19,5 @@ for season in raw['data']['seasons']:
 if not rows or not any(row['type']=='试师' for row in rows.values()):raise ValueError('Empty or incomplete season table; existing file retained')
 text='// Generated from the public season/server table. Refresh with scripts/update-account-servers.py.\n'
 text+='export const serverTable = '+json.dumps(dict(source=SOURCE,updatedAt=datetime.datetime.now(datetime.timezone.utc).isoformat(),servers=list(rows.values())),ensure_ascii=False,indent=2)+';\n'
-for path in [ROOT/'account-server-types.mjs',ROOT/'dist/account-server-types.mjs']:path.write_text(text)
+for path in [ROOT/'account-server-types.js',ROOT/'dist/account-server-types.js']:path.write_text(text)
 print('Server mapping refreshed:',len(rows),'servers;',sum(row['type']=='试师' for row in rows.values()),'trial servers')

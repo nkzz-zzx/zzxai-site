@@ -26,7 +26,7 @@ python3 scripts/update-account-catalog.py
 
 - Git 项目根目录保留为仓库根目录；静态输出目录保持 `dist`，无前端编译步骤。
 - 确保项目构建识别根目录 `edge-functions/` 并部署边缘函数；处理器使用文档要求的默认导出。
-- `account-core.mjs` 是边缘函数和浏览器共用的解析模块，不需要 Node 专属 API 或第三方包。
+- `account-core.js` 是边缘函数和浏览器共用的解析模块，不需要 Node 专属 API 或第三方包。
 - 发布后访问 `/api/account?url=<编码后的藏宝阁商品链接>` 应返回 JSON，而不是静态 404 页面；打开 `account.html`，输入真实链接检验商品状态与清单。
 - 不要仅上传 `dist/` 的静态文件：这会遗漏边缘函数。请使用连接 Git 的 Pages 发布流程。若项目现有构建设置不处理边缘函数，请按上述文档启用后重新部署。
 
@@ -62,4 +62,4 @@ ACCOUNT_URL=http://127.0.0.1:8011/account.html CHROME_PATH=/usr/bin/chromium nod
 
 ## 试师与征服标记
 
-使用公开平台区服开区对照表，按藏宝阁 `server_name` 中的 X 区服编号精确匹配，而不是按副本名称、商品链接的 serverid=1 或游戏内部服务器 ID 推断。匹配试师区服显示“试师”，其他区服按需求默认显示“征服”。数据来自 `https://www.stzb163.online/api/kaiqu/timeline?limit=80`，保存为 `account-server-types.mjs` 并同步 `dist/`，用 `python3 scripts/update-account-servers.py` 刷新。对照表是第三方公开记录，有覆盖范围和更新时间限制；未匹配默认征服不等于官方确认。查询、原始 JSON 导入、旧清单导入及导出都使用同一规则。示例账号 X5992 按公开表归为试师。
+使用公开平台区服开区对照表，按藏宝阁 `server_name` 中的 X 区服编号精确匹配，而不是按副本名称、商品链接的 serverid=1 或游戏内部服务器 ID 推断。匹配试师区服显示“试师”，其他区服按需求默认显示“征服”。数据来自 `https://www.stzb163.online/api/kaiqu/timeline?limit=80`，保存为 `account-server-types.js` 并同步 `dist/`，用 `python3 scripts/update-account-servers.py` 刷新。对照表是第三方公开记录，有覆盖范围和更新时间限制；未匹配默认征服不等于官方确认。查询、原始 JSON 导入、旧清单导入及导出都使用同一规则。示例账号 X5992 按公开表归为试师。

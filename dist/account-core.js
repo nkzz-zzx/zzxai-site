@@ -1,4 +1,4 @@
-import {serverTable} from './account-server-types.mjs';
+import {serverTable} from './account-server-types.js';
 export function parseAccountLink(input) {
   let url;
   try { url = new URL(input.trim()); } catch { throw new Error('请输入完整的藏宝阁商品链接'); }
