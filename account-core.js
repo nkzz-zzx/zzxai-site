@@ -13,6 +13,14 @@ export function classifyServer(serverName) {
   const entry=serverTable.servers.find(row=>row.serverNum===serverNum);
   return {serverNum,accountType:entry?.type||'待核实',accountTypeConfirmed:!!entry,serverTypeTableUpdatedAt:serverTable.updatedAt};
 }
+export function classifyAccountMetadata(metadata){
+ const fromName=classifyServer(metadata.server),fromNumber=classifyServer(metadata.serverNum);
+ const result=fromName.serverNum?fromName:fromNumber;
+ if(result.accountTypeConfirmed)return result;
+ const identifiersAgree=!fromName.serverNum||!fromNumber.serverNum||fromName.serverNum===fromNumber.serverNum;
+ if(identifiersAgree&&metadata.accountTypeConfirmed===true&&['试师','征服'].includes(metadata.accountType))return {...result,accountType:metadata.accountType,accountTypeConfirmed:true,serverTypeTableUpdatedAt:metadata.serverTypeTableUpdatedAt||result.serverTypeTableUpdatedAt};
+ return result;
+}
 const countries = { 1:'汉', 2:'魏', 3:'蜀', 4:'吴', 5:'群', 6:'晋' };
 const troops = { 1:'弓', 2:'步', 3:'骑' };
 export function normalizeAccount(raw) {
@@ -49,7 +57,7 @@ export function importAccount(raw) {
   for(const item of data.skills) if(item.progress !== null && !Number.isFinite(item.progress)) throw new Error('战法进度格式不正确');
   const gear=data.gear ?? null;
   if(gear !== null && (!Array.isArray(gear) || gear.some(g=>!g || typeof g.id!=='string' || typeof g.name!=='string' || !Number.isFinite(g.phase) || !Number.isFinite(g.level) || !Number.isFinite(g.advance) || !Array.isArray(g.effects) || !Array.isArray(g.features) || !Array.isArray(g.conditions) || [...g.effects,...g.features].some(e=>!e || typeof e.name!=='string' || typeof e.description!=='string')))) throw new Error('宝物清单格式不正确');
-  return {...data,metadata:{...data.metadata,...classifyServer(data.metadata.serverNum || data.metadata.server)},gear};
+  return {...data,metadata:{...data.metadata,...classifyAccountMetadata(data.metadata)},gear};
 }
 
 export function heroLabel(item) {

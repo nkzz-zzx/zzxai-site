@@ -64,6 +64,19 @@ def main():
             conflicts.append(dict(serverNum=num,reason='游戏内确认的批次与官方当前区服不一致'));rows.pop(num,None);continue
         rows[num]={k:v for k,v in correction.items() if k!='evidence'}
         rows[num]['sources']=['游戏内确认：'+correction['evidence']]
+    # A rolling or incomplete public feed must not erase previously verified rows.
+    previous_path=ROOT/'account-server-types.js'
+    if previous_path.is_file():
+        text=previous_path.read_text()
+        match=re.search(r'export\s+const\s+serverTable\s*=\s*',text)
+        if not match:raise ValueError('Unexpected previous classification format')
+        previous,_=json.JSONDecoder().raw_decode(text,match.end())
+        disputed={row['serverNum'] for row in conflicts}
+        for row in previous.get('servers',[]):
+            num=row['serverNum']
+            if num in rows or num in disputed or row.get('type') not in ['试师','征服']:continue
+            if num in active and row.get('season')!=active[num]['season']:continue
+            rows[num]=dict(row)
     checked=datetime.datetime.now(datetime.timezone.utc).isoformat()
     missing=[active[num] for num in sorted(active,key=lambda n:int(n[1:])) if num not in rows]
     last=max(row.get('openedAt','') for row in list(a.values())+list(b.values()))
