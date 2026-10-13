@@ -76,3 +76,6 @@
 @media(max-width:600px){.grid[data-kind=heroes] .hero-entry .hero-visual .hero-art{margin:0}}
 
 @media(max-width:600px){.grid[data-kind=skills]:not(.comparing){grid-template-columns:repeat(5,minmax(0,1fr));gap:5px 4px}.grid[data-kind=skills] .entry h3{font-size:10.5px}}
+
+.badge.treasure-blue{color:#1d4ed8;background:#dbeafe}.badge.treasure-pink{color:#be185d;background:#fce7f3}.badge.treasure-red{color:#b91c1c;background:#fee2e2}
+@media(max-width:600px){.grid[data-kind=gear]{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.grid[data-kind=gear] .entry{padding:5px 4px}.grid[data-kind=gear] .entry h3{font-size:11px;margin:0 0 4px}.grid[data-kind=gear] .treasure-grade{font-size:9px;padding:1px 4px}.grid[data-kind=gear] .fourth-affix{font-size:10px;overflow-wrap:anywhere}}
