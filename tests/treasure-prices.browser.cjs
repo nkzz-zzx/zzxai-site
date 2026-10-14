@@ -1,0 +1,67 @@
+const assert = require('node:assert/strict');
+const {chromium} = require('playwright');
+const url = process.env.TREASURE_URL || 'http://127.0.0.1:8024/treasure-prices.html';
+(async()=>{
+  const browser = await chromium.launch({executablePath:process.env.CHROME_PATH || '/usr/bin/chromium',headless:true});
+  const page = await browser.newPage({viewport:{width:390,height:844}});
+  const errors=[], external=[];
+  page.on('pageerror',error=>errors.push(error.message));
+  page.on('request',request=>{if(new URL(request.url()).origin !== new URL(url).origin) external.push(request.url());});
+  try {
+    await page.goto(url+'?weapon=1108');
+    await page.locator('#weapon-select:enabled').waitFor();
+    assert.equal(await page.locator('#weapon-title').innerText(),'沧海');
+    assert.equal(await page.locator('#weapon-select option').count(),38);
+    assert.deepEqual(await page.locator('#base-features strong').allTextContents(),['稳固','坚忍','破浪']);
+    const jianren=page.locator('.feature-card[data-feature="坚忍"]');
+    assert.equal(await jianren.locator('.discounted-price').first().innerText(),'¥552.5');
+    assert.match(await jianren.locator('.hero-skill').innerText(),/被动 · 舍身卫主/);
+    assert.equal(await page.locator('img').count(),0);
+    await page.locator('#price-search').fill('典韦');
+    await page.locator('#main-type-select').selectOption('被动');
+    await page.locator('#quality-select').selectOption('粉');
+    await page.locator('#max-price').fill('600');
+    assert.equal(await page.locator('.feature-card[data-feature="坚忍"]').count(),1);
+    assert.equal(await jianren.locator('tbody tr').count(),1);
+    assert.equal(await page.locator('tr[data-quality="红"]').count(),0);
+    await page.locator('#reset-filters').click();
+    await page.locator('#price-search').fill('诸葛亮 S3');
+    await page.locator('#main-type-select').selectOption('指挥');
+    assert(await page.locator('.hero-item').count()>0);
+    assert(await page.locator('.hero-item').evaluateAll(items=>items.every(item=>item.dataset.heroId==='100496')));
+    assert.match(await page.locator('.hero-item').first().innerText(),/蜀 · 弓 · S3/);
+    assert.match(await page.locator('.hero-skill').first().innerText(),/指挥 · 明其虚实/);
+    await page.locator('#price-search').fill('没有这样的宝物');
+    assert(await page.locator('#price-empty').isVisible());
+    assert.equal(await page.locator('.feature-card').count(),0);
+    await page.locator('#reset-filters').click();
+    await page.locator('#weapon-select').selectOption('1117');
+    assert.deepEqual(await page.locator('#base-features strong').allTextContents(),['安居','课增','繁荣']);
+    await page.locator('#weapon-select').selectOption('1108');
+    for (const width of [320,390,768,1280]) {
+      await page.setViewportSize({width,height:900});
+      assert(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),`overflow at ${width}px`);
+    }
+    await page.setViewportSize({width:390,height:844});
+    await page.screenshot({path:'/tmp/treasure-prices-mobile.png',fullPage:true});
+    await page.setViewportSize({width:1280,height:900});
+    await page.screenshot({path:'/tmp/treasure-prices-desktop.png',fullPage:true});
+    await page.goto(new URL('./',url).href);
+    assert.equal(await page.locator('a.tool-card[href="./treasure-prices.html"]').count(),1);
+    await page.goto(new URL('./account.html',url).href);
+    await page.locator('#query-button:enabled').waitFor();
+    assert.equal(await page.locator('a[href="./treasure-prices.html"]').count(),1);
+    assert.equal(await page.locator('#rarity').inputValue(),'5');
+    assert.deepEqual(errors,[]);
+    assert.deepEqual(external,[]);
+    const failurePage=await browser.newPage();let fail=true;
+    await failurePage.route('**/treasure-assets/prices.json',route=>fail ? route.fulfill({status:503,body:'temporarily unavailable'}) : route.continue());
+    await failurePage.goto(url);
+    await failurePage.locator('#retry-load').waitFor();
+    assert.match(await failurePage.locator('#price-status').innerText(),/载入失败/);
+    fail=false;await failurePage.locator('#retry-load').click();
+    await failurePage.locator('#weapon-select:enabled').waitFor();
+    assert.equal(await failurePage.locator('#weapon-select option').count(),38);
+    console.log('PASS discounted prices, official base effects and main types, global search, budget/quality/type filters, variant labels, all viewport widths, site navigation, no external runtime requests, and failed-load recovery');
+  } finally { await browser.close(); }
+})().catch(error=>{console.error(error);process.exit(1)});

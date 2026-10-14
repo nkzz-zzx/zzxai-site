@@ -5,6 +5,7 @@
 
 - [工具列表](https://zzxai.cn/)
 - 藏宝阁账号图鉴（`account.html`）：输入商品链接，查看武将红度、战法研究进度、宝物及未拥有项。自动查询需要 EdgeOne Pages 边缘函数，详见 [部署与数据说明](ACCOUNT-DEPLOYMENT.md)。
+- 宝物价格（`treasure-prices.html`）：按红麒公开参考价的 85% 显示粉武、红武价格，补充官方前三词条及适配武将主战法类型，支持名称、类型和预算筛选。
 - [率土之滨 · 招募模拟](https://zzxai.cn/stzb-draw.html)：22 个常驻、赛季及活动卡包，含心愿武将、五星动画与本地记录。
 - [率土之滨 · 五星武将编年](https://zzxai.cn/stzb.html)：官方画像、常规服首次上架与重做回归记录，支持年份、阵营、名称、当前 XP 身份、赛季及活动限定、首发截止日期组合筛选。
 - [工资与个税计算器](https://zzxai.cn/salary-calculator.html)
@@ -19,6 +20,12 @@
 EdgeOne 已关联本仓库，`main` 推送会自动部署到 `zzxai.cn`；静态页面无需安装依赖或编译命令。藏宝阁账号图鉴的自动查询另需部署根目录 `edge-functions/` 中的边缘函数。
 
 本地预览：运行 `python3 -m http.server 8000 --directory dist`，打开 `http://localhost:8000`。
+
+### 更新宝物价格
+
+价格采用带采集日期的静态快照，浏览器只读取本站数据。先运行 `node scripts/update-treasure-prices.cjs`，再运行 `python3 scripts/build-treasure-catalog.py`。前者用 Playwright 读取红麒公开页面实际展示的价格及适配武将；后者结合网易官方宝物和战法配置生成根目录与 `dist/` 的价格目录。没有解码价格接口的加密载荷，也没有访问登录接口。云环境中 Chromium 无法使用系统代理证书时，可为前者加 `--trusted-proxy`，通过 Python 的受信 HTTPS 连接转发公开 GET 请求，保留 TLS 校验。
+
+刷新成功后提交价格数据。现阶段不自动跟随参考站变化；未展示或缺失的报价不会当作零元。第四词条的分档说明分别保留，价格计算保留到分。适配武将按真实 ID 与官方主战法匹配，同名武将显示阵营、兵种和赛季版本。验证：`node --test tests/treasure-prices.test.cjs`；启动上述静态预览后运行 `TREASURE_URL=http://127.0.0.1:8000/treasure-prices.html node tests/treasure-prices.browser.cjs`。
 
 ## 工资与个税计算器
 
