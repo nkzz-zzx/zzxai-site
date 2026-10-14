@@ -1,4 +1,4 @@
-import {parseAccountLink,importAccount,mergeCatalog,classifyAccountMetadata,compareCollections,canDismantle,heroSortOrder,treasureLabel,skillGradeOrder,isGuardHero} from './account-core.js?v=20261013-verified-types-v2';
+import {parseAccountLink,importAccount,mergeCatalog,classifyAccountMetadata,compareCollections,canDismantle,heroSortOrder,treasureLabel,skillGradeOrder,isGuardHero} from './account-core.js?v=20261014-compact-tools-v1';
 const $=id=>document.getElementById(id);
 let catalog,account=null,tab='heroes',busy=false,comparison=null,differencesOnly=false;
 const skillOrder=['主动','被动','追击','指挥'];
@@ -21,13 +21,21 @@ function heroArt(item){
  }
  portraitNodes.set(cacheKey,art);return art;
 }
-if('serviceWorker' in navigator)navigator.serviceWorker.register('./account-portrait-sw.js?v=20261013-verified-types-v2',{scope:'./account.html',updateViaCache:'none'}).catch(()=>{});
+if('serviceWorker' in navigator)navigator.serviceWorker.register('./account-portrait-sw.js?v=20261014-compact-tools-v1',{scope:'./account.html',updateViaCache:'none'}).catch(()=>{});
 function redStars(red,rarity){
  rarity=Math.min(5,Math.max(0,Number(rarity)||0));if(red!=null)red=Math.min(rarity,Math.max(0,Number(red)||0));
  const stars=node('span',undefined,'red-stars');stars.setAttribute('role','img');stars.setAttribute('aria-label',red==null?'红度未知':`${red} 红`);
  for(let i=0;i<rarity;i++){const star=node('span','★',red==null?'star unknown-star':i<red?'star red-star':'star');star.setAttribute('aria-hidden','true');stars.append(star);}
  return stars;
 }
+const gearOrder=['红武','粉极','粉武','蓝极','蓝武'];
+function gearPriority(item){const order=gearOrder.indexOf(treasureLabel(item));return order<0?gearOrder.length:order;}
+function collapseAccountPanels(){
+ $('query-toggle').hidden=false;$('query-controls').hidden=true;$('query-toggle').textContent='更换账号';$('query-toggle').setAttribute('aria-expanded','false');
+ $('account-details').hidden=true;$('overview-toggle').textContent='展开概览';$('overview-toggle').setAttribute('aria-expanded','false');
+}
+for(const [button,content,opened,closed] of [['query-toggle','query-controls','收起查询','更换账号'],['overview-toggle','account-details','收起概览','展开概览']])$(button).addEventListener('click',()=>{const expand=$(content).hidden;$(content).hidden=!expand;$(button).textContent=expand?opened:closed;$(button).setAttribute('aria-expanded',String(expand));});
+function canDismantleMissing(item,data){return !data.skills.some(skill=>skill.id===item.id)&&canDismantle(item,data.heroes);}
 function matchesSkillFilters(item){
  const grade=$('skill-grade').value,source=$('skill-source').value;
  return (grade==='all'||item.grade===grade)&&(source==='all'||(source==='exchange'?['典籍兑换','典藏兑换'].includes(item.acquisition):item.acquisition===source));
@@ -41,11 +49,13 @@ function render(){
  const all=tab==='gear'?owned.filter(item=>item.phase===3).map(item=>({...item,owned:true})):mergeCatalog(definitions,owned,tab).filter(item=>tab!=='heroes'||!isGuardHero(item));
  $('catalog-note').textContent=tab==='gear'?(!account?'查询后查看账号宝物':account.gear==null?'当前数据未包含宝物，请重新查询或导入完整详情 JSON':`共 ${all.length} 件稀世宝物`):`${definitions.length} 种${kind} · 更新于 ${catalog.asOf}${!account?' · 查询后查看拥有状态':''}`;
  $('country-filter').hidden=tab!=='heroes';$('season-filter').hidden=tab!=='heroes';$('search').placeholder={heroes:'输入武将名称',skills:'输入战法名称',gear:'输入宝物名称或词条'}[tab];$('rarity-filter').hidden=tab!=='heroes';$('type-filter').hidden=tab!=='skills';$('skill-grade-filter').hidden=tab!=='skills';$('skill-source-filter').hidden=tab!=='skills';
- $('ownership').disabled=!account;$('ownership-filter').hidden=tab==='gear';$('gear-quality-filter').hidden=true;
+ $('ownership').disabled=!account;$('dismantle').disabled=!account;$('ownership-filter').hidden=tab==='gear';$('gear-quality-filter').hidden=true;$('gear-kind-filter').hidden=tab!=='gear';$('dismantle-filter').hidden=tab!=='skills';
  const search=$('search').value.trim().toLowerCase();
  const results=all.filter(item=>{
   const haystack=[item.name,item.country,item.troop,item.type,...(item.features||[]).map(e=>e.name),...(item.effects||[]).map(e=>e.name)].join(' ').toLowerCase();
   if(search&&!haystack.includes(search))return false;
+  if(tab==='skills'&&$('dismantle').value==='available'&&(!account||!canDismantleMissing(item,account)))return false;
+  if(tab==='gear'&&$('gear-kind').value!=='all'&&treasureLabel(item)!==$('gear-kind').value)return false;
   if(tab!=='gear'&&account&&$('ownership').value!=='all'&&($('ownership').value==='owned'?!item.owned:item.owned))return false;
   if(tab==='heroes'&&(($('country').value!=='all'&&item.country!==$('country').value)||($('rarity').value!=='all'&&String(item.rarity)!==$('rarity').value)))return false;
   if(tab==='heroes'&&$('season').value!=='all'&&item.season!==$('season').value)return false;
@@ -53,7 +63,7 @@ function render(){
   if(tab==='skills'&&$('skill-type').value!=='all'&&item.type!==$('skill-type').value)return false;
   return true;
  });
- results.sort((a,b)=>(tab==='heroes'?(heroSortOrder(a)-heroSortOrder(b)||(b.rarity||0)-(a.rarity||0)):0)||(tab==='skills'?((skillOrder.includes(a.type)?skillOrder.indexOf(a.type):4)-(skillOrder.includes(b.type)?skillOrder.indexOf(b.type):4))||skillGradeOrder(a)-skillGradeOrder(b):0)||Number(b.owned)-Number(a.owned)||(b.phase||b.rarity||0)-(a.phase||a.rarity||0)||a.name.localeCompare(b.name,'zh-CN'));
+ results.sort((a,b)=>(tab==='gear'?gearPriority(a)-gearPriority(b):0)||(tab==='heroes'?(heroSortOrder(a)-heroSortOrder(b)||(b.rarity||0)-(a.rarity||0)):0)||(tab==='skills'?((skillOrder.includes(a.type)?skillOrder.indexOf(a.type):4)-(skillOrder.includes(b.type)?skillOrder.indexOf(b.type):4))||skillGradeOrder(a)-skillGradeOrder(b):0)||Number(b.owned)-Number(a.owned)||(b.phase||b.rarity||0)-(a.phase||a.rarity||0)||a.name.localeCompare(b.name,'zh-CN'));
  $('result-count').textContent=`显示 ${results.length} / ${all.length} 项${account&&tab!=='gear'?` · 已拥有 ${all.filter(x=>x.owned).length} 种${kind} · 目录内未拥有 ${all.filter(x=>!x.owned).length} 种`:''}`;
  $('results').replaceChildren();$('results').setAttribute('aria-labelledby',tab+'-tab');$('empty').hidden=results.length!==0;
  $('empty').textContent=tab==='gear'&&!account?'输入藏宝阁链接，查看账号宝物。':tab==='gear'&&account.gear==null?'请重新查询账号，获取宝物信息。':tab==='gear'&&all.length===0?'该账号没有稀世宝物。':'没有符合条件的条目，试试其他筛选条件。';
@@ -94,7 +104,7 @@ function showAccount(data){
  $('account-time').textContent=`${data.metadata.sold?'原展示价格':'展示价格'}：${Number.isFinite(data.metadata.price)?data.metadata.price.toLocaleString()+' 元':'未知'} · 查询时间（北京时间）：${new Date(data.metadata.fetchedAt).toLocaleString('zh-CN',{timeZone:'Asia/Shanghai'})}${data.metadata.sold?' · 以下为交易后仍可查询的快照':''}`;
  const stats=[['宝物数量',Array.isArray(data.gear)?data.gear.length:'—'],['稀世宝物',Array.isArray(data.gear)?data.gear.filter(g=>g.phase===3).length:'—'],['五星卡片',data.heroes.filter(h=>!isGuardHero(h)&&h.rarity===5).length],['武将卡片',data.heroes.filter(h=>!isGuardHero(h)).length],['战法条目',data.skills.length],['研究完成',data.skills.filter(s=>s.progress===100).length]];
  $('stats').replaceChildren(...stats.map(([title,value])=>{const el=node('div',undefined,'stat');el.append(node('strong',String(value)),node('span',title));return el;}));
- render();message('账号数据已载入。');
+ render();message('账号数据已载入。');collapseAccountPanels();
 }
 async function fetchAccount(url,signal,onRetry){
  for(let attempt=0;attempt<2;attempt++){
@@ -134,11 +144,11 @@ $('import-file').addEventListener('change',async event=>{
 $('export-button').addEventListener('click',()=>{
  if(!account)return;const blob=new Blob([JSON.stringify(comparison?{format:'zzxai-comparison-v1',...comparison}:{format:'zzxai-account-v1',account},null,2)],{type:'application/json'}),url=URL.createObjectURL(blob),a=node('a');a.href=url;a.download=comparison?'藏宝阁账号对比.json':'藏宝阁账号清单.json';a.click();setTimeout(()=>URL.revokeObjectURL(url),1000);
 });
-for(const id of ['search','ownership','country','rarity','season','skill-type','skill-grade','skill-source','gear-quality'])$(id).addEventListener('input',render);
+for(const id of ['search','ownership','country','rarity','season','skill-type','skill-grade','skill-source','gear-quality','gear-kind','dismantle'])$(id).addEventListener('input',render);
 function selectTab(next){tab=next;for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).setAttribute('aria-selected',String(tab===kind));$(id).tabIndex=tab===kind?0:-1;}render();}
 for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).addEventListener('click',()=>selectTab(kind));$(id).addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();const tabs=comparison?['heroes','skills']:['heroes','skills','gear'];const next=event.key==='Home'?tabs[0]:event.key==='End'?tabs.at(-1):tabs[(tabs.indexOf(kind)+(event.key==='ArrowLeft'?tabs.length-1:1))%tabs.length];selectTab(next);$(next+'-tab').focus();}});}
 selectTab('heroes');setBusy(true);
-try{const response=await fetch('./account-assets/catalog.json?v=20261013-verified-types-v2');if(!response.ok)throw new Error('目录下载失败');catalog=await response.json();render();message('输入商品链接，或导入藏宝阁详情 JSON。');setBusy(false);}catch{message('图鉴目录载入失败，请刷新重试',true);}
+try{const response=await fetch('./account-assets/catalog.json?v=20261014-compact-tools-v1');if(!response.ok)throw new Error('目录下载失败');catalog=await response.json();render();message('输入商品链接，或导入藏宝阁详情 JSON。');setBusy(false);}catch{message('图鉴目录载入失败，请刷新重试',true);}
 
 function showComparison(left,right){
  comparison={left,right};account=left;differencesOnly=false;
@@ -147,16 +157,17 @@ function showComparison(left,right){
  $('comparison-summary').hidden=false;$('comparison-summary').replaceChildren();
  for(const [label,data] of [['账号 A',left],['账号 B',right]]){const card=node('section',undefined,'comparison-account');card.append(node('h3',`${label} · ${data.metadata.accountType}`),node('p',data.metadata.server),node('p',`${data.metadata.status} · ${Number.isFinite(data.metadata.price)?data.metadata.price.toLocaleString()+' 元':'价格未知'}`),node('p',`${data.heroes.filter(h=>!isGuardHero(h)).length} 张武将卡 · ${data.skills.length} 条战法`));$('comparison-summary').append(card);}
  $('gear-tab').hidden=true;$('differences-only').hidden=false;$('differences-only').setAttribute('aria-pressed','false');
- $('search').value='';$('country').value='all';$('rarity').value='5';$('season').value='all';$('skill-type').value='all';$('skill-grade').value='all';$('skill-source').value='all';
- selectTab(tab==='gear'?'heroes':tab);message('两个账号已载入，默认展示任一账号拥有的武将和战法。');
+ $('search').value='';$('country').value='all';$('rarity').value='5';$('season').value='all';$('skill-type').value='all';$('skill-grade').value='all';$('skill-source').value='all';$('dismantle').value='all';
+ selectTab(tab==='gear'?'heroes':tab);message('两个账号已载入，默认展示任一账号拥有的武将和战法。');collapseAccountPanels();
 }
 function renderComparison(){
+ $('dismantle').disabled=false;
  $('results').dataset.kind=tab;
  const rows=compareCollections(catalog[tab],comparison.left[tab],comparison.right[tab],tab).filter(row=>tab!=='heroes'||!isGuardHero(row));
  const search=$('search').value.trim().toLowerCase();
- const filtered=rows.filter(row=>(!differencesOnly||row.different)&&(!search||row.label.toLowerCase().includes(search))&&(tab!=='heroes'||(($('country').value==='all'||row.country===$('country').value)&&($('rarity').value==='all'||String(row.rarity)===$('rarity').value)&&($('season').value==='all'||row.season===$('season').value)))&&(tab!=='skills'||matchesSkillFilters(row)&&($('skill-type').value==='all'||row.type===$('skill-type').value)));
+ const filtered=rows.filter(row=>(tab!=='skills'||$('dismantle').value!=='available'||canDismantleMissing(row,comparison.left)||canDismantleMissing(row,comparison.right))&&(!differencesOnly||row.different)&&(!search||row.label.toLowerCase().includes(search))&&(tab!=='heroes'||(($('country').value==='all'||row.country===$('country').value)&&($('rarity').value==='all'||String(row.rarity)===$('rarity').value)&&($('season').value==='all'||row.season===$('season').value)))&&(tab!=='skills'||matchesSkillFilters(row)&&($('skill-type').value==='all'||row.type===$('skill-type').value)));
  filtered.sort((a,b)=>(tab==='heroes'?(heroSortOrder(a)-heroSortOrder(b)||(b.rarity||0)-(a.rarity||0)):0)||(tab==='skills'?((skillOrder.indexOf(a.type)-skillOrder.indexOf(b.type))||skillGradeOrder(a)-skillGradeOrder(b)):0)||a.label.localeCompare(b.label,'zh-CN'));
- $('country-filter').hidden=tab!=='heroes';$('season-filter').hidden=tab!=='heroes';$('rarity-filter').hidden=tab!=='heroes';$('type-filter').hidden=tab!=='skills';$('skill-grade-filter').hidden=tab!=='skills';$('skill-source-filter').hidden=tab!=='skills';$('ownership-filter').hidden=true;$('gear-quality-filter').hidden=true;
+ $('country-filter').hidden=tab!=='heroes';$('season-filter').hidden=tab!=='heroes';$('rarity-filter').hidden=tab!=='heroes';$('type-filter').hidden=tab!=='skills';$('skill-grade-filter').hidden=tab!=='skills';$('skill-source-filter').hidden=tab!=='skills';$('ownership-filter').hidden=true;$('gear-quality-filter').hidden=true;$('gear-kind-filter').hidden=true;$('dismantle-filter').hidden=tab!=='skills';
  $('search').placeholder=tab==='heroes'?'搜索武将名称、兵种或版本':'搜索战法名称';
  $('catalog-note').textContent=tab==='heroes'?'同名武将按版本、兵种和阵营区分。':'战法按类别展示。';
  $('result-count').textContent=`显示 ${filtered.length} / ${rows.length} 项 · 共 ${rows.filter(row=>row.different).length} 项差异`;

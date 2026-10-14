@@ -1,9 +1,10 @@
+async function expandQuery(p){if(await p.locator('#query-controls').isHidden())await p.locator('#query-toggle').click();}
 const assert=require('node:assert/strict');const {chromium}=require('playwright');
 (async()=>{
  const b=await chromium.launch({executablePath:'/usr/bin/chromium',headless:true});const p=await b.newPage();
  try{
  await p.addInitScript(()=>{const original=setTimeout;window.setTimeout=(fn,ms,...args)=>original(fn,ms===22000?50:ms,...args);});
- await p.goto(process.env.ACCOUNT_URL||'http://127.0.0.1:8014/account.html');await p.locator('#query-button:enabled').waitFor();
+ await p.goto(process.env.ACCOUNT_URL||'http://127.0.0.1:8014/account.html');await p.locator('#query-button:enabled').waitFor({state:'attached'});
  await p.evaluate(()=>{
   const original=window.fetch;window.testMode='upstream';window.calls={};
   window.fetch=async(url,options)=>{
@@ -15,7 +16,7 @@ const assert=require('node:assert/strict');const {chromium}=require('playwright'
    return new Response(JSON.stringify({metadata:{fetchedAt:new Date().toISOString(),server:'X5992',status:'在售',price:100},heroes:[],skills:[],gear:[]}));
   };
  });
- const query=async(mode,dual=false)=>{await p.evaluate(mode=>{window.testMode=mode;window.calls={};},mode);await p.locator('#account-url').fill('https://stzb.cbg.163.com/cgi/mweb/equip/1/left');await p.locator('#compare-url').fill(dual?'https://stzb.cbg.163.com/cgi/mweb/equip/1/right':'');await p.locator('#query-button').click();await p.locator('#query-button:enabled').waitFor();return p.evaluate(()=>window.calls);};
+ const query=async(mode,dual=false)=>{await p.evaluate(mode=>{window.testMode=mode;window.calls={};},mode);await expandQuery(p);await p.locator('#account-url').fill('https://stzb.cbg.163.com/cgi/mweb/equip/1/left');await expandQuery(p);await p.locator('#compare-url').fill(dual?'https://stzb.cbg.163.com/cgi/mweb/equip/1/right':'');await expandQuery(p);await p.locator('#query-button').click();await p.locator('#query-button:enabled').waitFor({state:'attached'});return p.evaluate(()=>window.calls);};
  assert.deepEqual(await query('upstream'),{left:2});assert.match(await p.locator('#message').innerText(),/已载入/);
  assert.deepEqual(await query('local'),{left:2});assert.match(await p.locator('#message').innerText(),/已载入/);
  assert.deepEqual(await query('exhausted'),{left:2});assert.match(await p.locator('#message').innerText(),/重试一次后仍未成功.*仍显示/);
