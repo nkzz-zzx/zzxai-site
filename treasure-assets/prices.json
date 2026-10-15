@@ -20,6 +20,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-227aa1645519094f.webp",
       "mainSkill": {
         "id": "200003",
         "name": "金吾飞将",
@@ -33,6 +34,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-6e115cadbd51af0a.webp",
       "mainSkill": {
         "id": "200013",
         "name": "血溅黄砂",
@@ -46,6 +48,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-25af6d9a29b8d4e6.webp",
       "mainSkill": {
         "id": "200016",
         "name": "皇裔流离",
@@ -59,6 +62,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-dcd471aecb8187f4.webp",
       "mainSkill": {
         "id": "200020",
         "name": "匠心不竭",
@@ -72,6 +76,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-17c8bc155718246e.webp",
       "mainSkill": {
         "id": "200021",
         "name": "银龙冲阵",
@@ -85,6 +90,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-2cdfff82e428f2f1.webp",
       "mainSkill": {
         "id": "200022",
         "name": "长坂之吼",
@@ -98,6 +104,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-7ed31ef4ba8ffd63.webp",
       "mainSkill": {
         "id": "200023",
         "name": "魏武之世",
@@ -111,6 +118,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-c6bde36cdcfe5d11.webp",
       "mainSkill": {
         "id": "200024",
         "name": "驱虎吞狼",
@@ -124,6 +132,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-297bbe381539ba6e.webp",
       "mainSkill": {
         "id": "200026",
         "name": "千里单骑",
@@ -137,6 +146,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-b62beb2312e4513e.webp",
       "mainSkill": {
         "id": "200027",
         "name": "其疾如风",
@@ -150,6 +160,7 @@
       "troop": "弓",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-1d9868abde403d61.webp",
       "mainSkill": {
         "id": "200028",
         "name": "世仇",
@@ -163,6 +174,7 @@
       "troop": "弓",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-1ee76f348cb1c500.webp",
       "mainSkill": {
         "id": "200029",
         "name": "强势",
@@ -176,6 +188,7 @@
       "troop": "弓",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-63f14c13e1907042.webp",
       "mainSkill": {
         "id": "200030",
         "name": "九锡黄龙",
@@ -189,6 +202,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-02d26e0ea50de3a7.webp",
       "mainSkill": {
         "id": "200034",
         "name": "侵掠如火",
@@ -202,6 +216,7 @@
       "troop": "弓",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-a0af19ce1da2da9b.webp",
       "mainSkill": {
         "id": "200648",
         "name": "白衣渡江",
@@ -215,6 +230,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-f73141da7d2f9022.webp",
       "mainSkill": {
         "id": "200070",
         "name": "巾帼战阵",
@@ -228,6 +244,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-4df61a9ec6e1000f.webp",
       "mainSkill": {
         "id": "200603",
         "name": "白楼独舞",
@@ -241,6 +258,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-e6f003e6172832a8.webp",
       "mainSkill": {
         "id": "200790",
         "name": "青丘媚祸",
@@ -254,6 +272,7 @@
       "troop": "弓",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-e8ee6397bf34fe2f.webp",
       "mainSkill": {
         "id": "200805",
         "name": "迟智难酬",
@@ -267,6 +286,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-2a717ae3e1d54aab.webp",
       "mainSkill": {
         "id": "200770",
         "name": "盲侯奋勇",
@@ -280,6 +300,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-9c002a96b31828da.webp",
       "mainSkill": {
         "id": "200769",
         "name": "樊渊泅囚",
@@ -293,6 +314,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-e5584a466da799a6.webp",
       "mainSkill": {
         "id": "200772",
         "name": "夔吼象踏",
@@ -306,6 +328,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-fbce0673087c85f7.webp",
       "mainSkill": {
         "id": "200685",
         "name": "黄天余音",
@@ -319,6 +342,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-8cd91dd5a1b3d8c9.webp",
       "mainSkill": {
         "id": "200689",
         "name": "不动如山",
@@ -332,6 +356,7 @@
       "troop": "骑",
       "version": "S2",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-bf7a8188fb3069aa.webp",
       "mainSkill": {
         "id": "200692",
         "name": "奇佐鬼谋",
@@ -345,6 +370,7 @@
       "troop": "步",
       "version": "S2",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-bc245049173a129d.webp",
       "mainSkill": {
         "id": "200693",
         "name": "密谋定蜀",
@@ -358,6 +384,7 @@
       "troop": "步",
       "version": "S2",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-d5cce6245654cd54.webp",
       "mainSkill": {
         "id": "200694",
         "name": "火势风威",
@@ -371,6 +398,7 @@
       "troop": "弓",
       "version": "S2",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-83643556c24c5fc1.webp",
       "mainSkill": {
         "id": "200012",
         "name": "辕门射戟",
@@ -384,6 +412,7 @@
       "troop": "步",
       "version": "S2",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-13dc479bf63db640.webp",
       "mainSkill": {
         "id": "200014",
         "name": "酒池肉林",
@@ -397,6 +426,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-85d00323710877cc.webp",
       "mainSkill": {
         "id": "200730",
         "name": "火兽冲锋",
@@ -410,6 +440,7 @@
       "troop": "弓",
       "version": "S3",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-0ac70352188806b7.webp",
       "mainSkill": {
         "id": "200737",
         "name": "明其虚实",
@@ -423,6 +454,7 @@
       "troop": "骑",
       "version": "S3",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-312f22c0912a9ef4.webp",
       "mainSkill": {
         "id": "200739",
         "name": "虎豹督军",
@@ -436,6 +468,7 @@
       "troop": "弓",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-940017d475d0827d.webp",
       "mainSkill": {
         "id": "200773",
         "name": "金匮要略",
@@ -449,6 +482,7 @@
       "troop": "弓",
       "version": "SP",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-846698fac7736e97.webp",
       "mainSkill": {
         "id": "200791",
         "name": "西乡武功",
@@ -462,6 +496,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-a59910c2643e3246.webp",
       "mainSkill": {
         "id": "200824",
         "name": "西陵克晋",
@@ -475,6 +510,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-026fe76cffdbfe97.webp",
       "mainSkill": {
         "id": "200843",
         "name": "疮痍累身",
@@ -488,6 +524,7 @@
       "troop": "弓",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-85d5d71152b32c48.webp",
       "mainSkill": {
         "id": "200857",
         "name": "计谕废立",
@@ -501,6 +538,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-de9cc6062799d1da.webp",
       "mainSkill": {
         "id": "200865",
         "name": "奉令护蜀",
@@ -514,6 +552,7 @@
       "troop": "弓",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-0ae02163848cd786.webp",
       "mainSkill": {
         "id": "200882",
         "name": "谋谟帷幄",
@@ -527,6 +566,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-985d866fb06ed75b.webp",
       "mainSkill": {
         "id": "200884",
         "name": "巧音唤蝶",
@@ -540,6 +580,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-c5c6be3f6f0e711a.webp",
       "mainSkill": {
         "id": "200885",
         "name": "宣威再战",
@@ -553,6 +594,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-60850b559d0cdf69.webp",
       "mainSkill": {
         "id": "200898",
         "name": "京观垒冢",
@@ -566,6 +608,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-44b447a5bff4b8be.webp",
       "mainSkill": {
         "id": "200899",
         "name": "断首何怒",
@@ -579,6 +622,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-ec3da7f72727ab85.webp",
       "mainSkill": {
         "id": "200915",
         "name": "统军畏慎",
@@ -592,6 +636,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-3665669bd92115ac.webp",
       "mainSkill": {
         "id": "200927",
         "name": "将出关西",
@@ -605,6 +650,7 @@
       "troop": "弓",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-d4d6c16a449e5bbd.webp",
       "mainSkill": {
         "id": "200928",
         "name": "竭忠尽智",
@@ -618,6 +664,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-1a3468660b8da481.webp",
       "mainSkill": {
         "id": "200930",
         "name": "奇兵拒北",
@@ -631,6 +678,7 @@
       "troop": "弓",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-80cbc043c7609234.webp",
       "mainSkill": {
         "id": "200947",
         "name": "威震河朔",
@@ -644,6 +692,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-19c84519b8063c33.webp",
       "mainSkill": {
         "id": "200957",
         "name": "五兵之烈",
@@ -657,6 +706,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-f4cd0f92074f79b8.webp",
       "mainSkill": {
         "id": "200961",
         "name": "奋疾先登",
@@ -670,6 +720,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-d7d8fa58128d56b1.webp",
       "mainSkill": {
         "id": "200962",
         "name": "赐剑长驱",
@@ -683,6 +734,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-829df80c9712f901.webp",
       "mainSkill": {
         "id": "200966",
         "name": "尽言直谏",
@@ -696,6 +748,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-6caa5c090ab80de7.webp",
       "mainSkill": {
         "id": "200983",
         "name": "运筹决胜",
@@ -709,6 +762,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-3ecc3a351b410f01.webp",
       "mainSkill": {
         "id": "200985",
         "name": "谋议宏图",
@@ -722,6 +776,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-5a04f9d83cc6d6d5.webp",
       "mainSkill": {
         "id": "200986",
         "name": "盛气横凌",
@@ -735,6 +790,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-17b48d234571e831.webp",
       "mainSkill": {
         "id": "200989",
         "name": "持节镇西",
@@ -748,6 +804,7 @@
       "troop": "步",
       "version": "XP",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-3665b5d78787846e.webp",
       "mainSkill": {
         "id": "200990",
         "name": "赏顺伐逆",
@@ -761,6 +818,7 @@
       "troop": "步",
       "version": "XP",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-eb5445921386fae1.webp",
       "mainSkill": {
         "id": "200991",
         "name": "潜谋远计",
@@ -774,6 +832,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-dc3d3bad1970a940.webp",
       "mainSkill": {
         "id": "201006",
         "name": "同仇敌忾",
@@ -787,6 +846,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-2fb6134f4c71da3f.webp",
       "mainSkill": {
         "id": "200993",
         "name": "舍身卫主",
@@ -800,6 +860,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-3a9e61d893730654.webp",
       "mainSkill": {
         "id": "200246",
         "name": "缓师徐持",
@@ -813,6 +874,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-1c59eb3c5956d0b4.webp",
       "mainSkill": {
         "id": "200251",
         "name": "烈火焚舟",
@@ -826,6 +888,7 @@
       "troop": "步",
       "version": "XP",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-a6db8bb2f2fc36b4.webp",
       "mainSkill": {
         "id": "200254",
         "name": "衔命建功",
@@ -839,6 +902,7 @@
       "troop": "骑",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-27d794901685c860.webp",
       "mainSkill": {
         "id": "200255",
         "name": "伏波扬砂",
@@ -852,6 +916,7 @@
       "troop": "弓",
       "version": "XP",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-910e2dd2c1124da4.webp",
       "mainSkill": {
         "id": "200257",
         "name": "审时定计",
@@ -865,6 +930,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-6c38eca7b06d4a7e.webp",
       "mainSkill": {
         "id": "200262",
         "name": "僭号天子",
@@ -878,6 +944,7 @@
       "troop": "步",
       "version": "XP",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-a7e1362368d4a703.webp",
       "mainSkill": {
         "id": "200265",
         "name": "雅虑适时",
@@ -891,6 +958,7 @@
       "troop": "步",
       "version": "XP",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-cb180a7a1468cd1e.webp",
       "mainSkill": {
         "id": "200269",
         "name": "举贤决机",
@@ -904,6 +972,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-64a0e2da050a0041.webp",
       "mainSkill": {
         "id": "200272",
         "name": "当敌制决",
@@ -917,6 +986,7 @@
       "troop": "步",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-ec88fff8760c04ad.webp",
       "mainSkill": {
         "id": "200273",
         "name": "率尔方雅",
@@ -930,6 +1000,7 @@
       "troop": "骑",
       "version": "XP",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-bcb5b7dbae091ada.webp",
       "mainSkill": {
         "id": "200275",
         "name": "心战为上",
@@ -943,6 +1014,7 @@
       "troop": "步",
       "version": "XP",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-2434ff7e57a8e3fe.webp",
       "mainSkill": {
         "id": "200282",
         "name": "其徐如林",
@@ -956,6 +1028,7 @@
       "troop": "弓",
       "version": "XP",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-b2ce172f3e4bcb2a.webp",
       "mainSkill": {
         "id": "200283",
         "name": "自擅江表",
@@ -969,6 +1042,7 @@
       "troop": "弓",
       "version": "常规",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-a8ddf7944c63cf0d.webp",
       "mainSkill": {
         "id": "200296",
         "name": "敛微穷极",
@@ -982,6 +1056,7 @@
       "troop": "步",
       "version": "SP",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-17c8bc155718246e.webp",
       "mainSkill": {
         "id": "200704",
         "name": "银龙孤胆",
@@ -995,6 +1070,7 @@
       "troop": "弓",
       "version": "SP",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-92960c9a3a3380cf.webp",
       "mainSkill": {
         "id": "200706",
         "name": "方阵掩杀",
@@ -1008,6 +1084,7 @@
       "troop": "弓",
       "version": "SP",
       "rarity": 5,
+      "portrait": "./account-assets/portrait-thumbs/v1-0b75434a3f7caee2.webp",
       "mainSkill": {
         "id": "200072",
         "name": "列营守险",

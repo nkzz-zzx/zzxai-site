@@ -41,6 +41,10 @@ test('every rendered reference price is retained and all 38 treasures have three
 });
 
 test('official main-skill types distinguish variants and the passive new Dian Wei', () => {
+  for (const hero of Object.values(catalog.heroes)) {
+    assert(hero.portrait?.startsWith('./account-assets/portrait-thumbs/'));
+    assert.deepEqual(fs.readFileSync(path.join(root,hero.portrait)),fs.readFileSync(path.join(root,'dist',hero.portrait)));
+  }
   assert.equal(catalog.heroes['100769'].mainSkill.type,'被动');
   assert.equal(catalog.heroes['100769'].mainSkill.name,'舍身卫主');
   assert.equal(catalog.heroes['100496'].mainSkill.type,'指挥');

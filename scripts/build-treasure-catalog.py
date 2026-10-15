@@ -37,6 +37,8 @@ extra = {str(hero['id']): hero for hero in read_official('heroes')}
 bases = {str(gear['id']): gear for gear in read_official('gear-bases')}
 official_heroes = {str(hero['hero_id']): hero for hero in combat['hero'] + combat.get('special_hero', [])}
 skills = {str(skill['skill_id']): skill for skill in combat['skill']}
+portraits = {hero['id']: hero.get('thumbnail') or hero.get('portrait')
+             for hero in json.loads((ROOT / 'account-assets/catalog.json').read_text())['heroes']}
 types = {1: '被动', 2: '指挥', 3: '主动', 4: '追击'}
 versions = {'N': '常规', 'SP': 'SP', 'XP': 'XP', 'S2': 'S2', 'S3': 'S3'}
 notes = {
@@ -62,8 +64,12 @@ for hero_id in sorted(hero_ids):
     skill = skills.get(str(hero['skill_init']))
     if not skill or skill['skill_type'] not in types or str(details['methodId']) != str(hero['skill_init']):
         raise ValueError(f'Unresolved or inconsistent main skill: {hero_id}; existing catalog retained')
+    portrait = portraits.get(hero_id)
+    if not portrait or not (ROOT / portrait).is_file() or not (ROOT / 'dist' / portrait).is_file():
+        raise ValueError(f'Missing local hero portrait: {hero_id}; existing catalog retained')
     heroes[hero_id] = dict(id=hero_id, name=hero['name'], country=details['country'], troop=details['type'],
                            version=versions.get(hero.get('season'), ''), rarity=hero.get('star', hero['quality']),
+                           portrait=portrait,
                            mainSkill=dict(id=str(skill['skill_id']), name=skill['name'], type=types[skill['skill_type']]))
 
 weapons = []

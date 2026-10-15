@@ -5,33 +5,42 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="率土之滨宝物价格，查看宝物图片、粉武和红武分档价格、前三词条及适配武将主战法类型。">
   <title>宝物价格 · 智能工具小站</title>
-  <link rel="stylesheet" href="treasure-prices.css?v=20261015-2">
-  <script type="module" src="treasure-prices.js?v=20261015-2"></script>
+  <link rel="stylesheet" href="treasure-prices.css?v=20261015-3">
+  <script type="module" src="treasure-prices.js?v=20261015-3"></script>
 </head>
 <body>
-  <header>
-    <div class="wrap">
-      <nav aria-label="站点导航"><a href="./">← 工具小站</a><a href="./account.html">账号图鉴 →</a></nav>
-      <div class="title-row"><h1>宝物价格</h1></div>
-    </div>
-  </header>
-  <main class="wrap">
-    <section class="panel filters" aria-label="查找宝物">
-      <label class="search-field" for="price-search">搜索<input id="price-search" type="search" placeholder="宝物、词条或武将名称" autocomplete="off" disabled></label>
-      <label for="weapon-select">宝物<select id="weapon-select" disabled><option>正在载入…</option></select></label>
+  <header class="topbar">
+    <a class="back-button" href="./" aria-label="返回工具小站">‹</a>
+    <h1>宝物价格</h1>
+    <button id="filter-toggle" class="filter-toggle" type="button" aria-controls="filter-panel" aria-expanded="false">筛选</button>
+    <section id="filter-panel" class="filters" aria-label="筛选宝物" hidden>
       <label for="quality-select">品类<select id="quality-select" disabled><option value="all">粉武＋红武</option><option value="粉">只看粉武</option><option value="红">只看红武</option></select></label>
       <label for="main-type-select">适配武将主战法<select id="main-type-select" disabled><option value="all">全部类型</option><option>主动</option><option>指挥</option><option>被动</option><option>追击</option></select></label>
       <label for="max-price">最高价格<input id="max-price" type="number" min="0" step="0.01" inputmode="decimal" placeholder="金额 / 元" disabled></label>
       <button id="reset-filters" type="button" disabled>重置</button>
+      <a href="./account.html">账号图鉴 →</a>
+    </section>
+  </header>
+  <main class="selector-shell">
+    <aside class="arm-column" aria-label="宝物列表">
+      <div class="column-heading"><h2>宝物</h2><span id="weapon-count" class="count">0</span></div>
+      <label class="search-field"><span class="sr-only">搜索宝物、词条或武将</span><input id="price-search" type="search" placeholder="名称/词条/武将" autocomplete="off" disabled></label>
+      <div id="weapon-list" class="arm-list" role="tablist" aria-label="宝物" aria-orientation="vertical"></div>
+    </aside>
+    <section id="weapon-details" class="value-column" role="tabpanel" aria-labelledby="weapon-title" hidden>
+      <div class="detail-header">
+        <div class="selected-arm-heading"><img id="weapon-art" class="weapon-art" width="42" height="42" alt="" decoding="async"><div><span id="weapon-category"></span><h2 id="weapon-title"></h2></div><span id="feature-count"></span></div>
+        <details id="base-details" class="base-details"><summary>前三词条</summary><ol id="base-features"></ol></details>
+        <div id="feature-tabs" class="feature-tabs" role="tablist" aria-label="第四词条"></div>
+      </div>
+      <div id="price-results" class="value-list" role="tabpanel" tabindex="0"></div>
+      <section id="adapt-heroes" class="adapt-heroes" aria-labelledby="heroes-title" hidden>
+        <div class="adapt-heroes-heading"><h3 id="heroes-title">适配武将</h3><span id="hero-count" class="count"></span></div>
+        <div id="hero-grid" class="hero-grid"></div>
+      </section>
     </section>
     <div id="load-status" class="load-status"><p id="price-status" role="status" aria-live="polite">加载中…</p><button id="retry-load" type="button" hidden>重新载入</button></div>
-    <section id="weapon-details" class="panel base-panel" aria-labelledby="weapon-title" hidden>
-      <div class="section-title"><div class="weapon-heading"><img id="weapon-art" class="weapon-art" width="64" height="64" alt="" decoding="async"><div><h2 id="weapon-title"></h2><span id="weapon-category"></span></div></div></div>
-      <h3>前三词条</h3><ol id="base-features"></ol>
-    </section>
-    <div class="results-heading"><h2>词条价格</h2><span id="result-count" aria-live="polite"></span></div>
-    <div id="price-results" class="price-grid"></div>
-    <p id="price-empty" class="panel empty" hidden>暂无匹配结果</p>
+    <p id="price-empty" class="empty" role="status" hidden>暂无匹配结果</p>
   </main>
 </body>
 </html>
