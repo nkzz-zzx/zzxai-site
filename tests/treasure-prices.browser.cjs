@@ -17,7 +17,9 @@ const url = process.env.TREASURE_URL || 'http://127.0.0.1:8024/treasure-prices.h
     assert.equal(await jianren.locator('.price-value').first().innerText(),'¥552.5');
     assert.deepEqual(await jianren.locator('thead th').allTextContents(),['档位','价格']);
     assert.equal(await jianren.locator('tbody tr').first().locator('td').count(),2);
-    assert.doesNotMatch(await page.locator('body').innerText(),/八五折|参考价|¥650/);
+    assert.doesNotMatch(await page.locator('body').innerText(),/参考|红麒|官方|八五折|更新于|¥650/);
+    assert.equal(await page.locator('a[href^="http"],footer,.rule-note,.base-note,.no-heroes').count(),0);
+    assert(await page.locator('#load-status').isHidden());
     assert.match(await jianren.locator('.hero-skill').innerText(),/被动 · 舍身卫主/);
     await page.waitForFunction(()=>{const image=document.getElementById('weapon-art');return image.complete && image.naturalWidth>0;});
     assert.equal(await page.locator('#weapon-art').getAttribute('alt'),'沧海');
@@ -69,6 +71,7 @@ const url = process.env.TREASURE_URL || 'http://127.0.0.1:8024/treasure-prices.h
     fail=false;await failurePage.locator('#retry-load').click();
     await failurePage.locator('#weapon-select:enabled').waitFor();
     assert.equal(await failurePage.locator('#weapon-select option').count(),38);
+    assert(await failurePage.locator('#load-status').isHidden());
     console.log('PASS discounted prices, official base effects and main types, global search, budget/quality/type filters, variant labels, all viewport widths, site navigation, no external runtime requests, and failed-load recovery');
   } finally { await browser.close(); }
 })().catch(error=>{console.error(error);process.exit(1)});

@@ -34,7 +34,6 @@ function renderFeature({feature,tiers,heroes}) {
   [...new Set(heroes.map(hero => hero.mainSkill.type))].forEach(type => types.append(node('span',type,'type-tag')));
   heading.append(types);
   card.append(heading,node('p',tiers[0].description,'effect'));
-  if (feature.note) card.append(node('p',feature.note,'rule-note'));
   const table = node('table');
   table.setAttribute('aria-label',`${feature.name}价格`);
   const thead = node('thead'), header = node('tr');
@@ -64,7 +63,7 @@ function renderFeature({feature,tiers,heroes}) {
       list.append(item);
     });
     details.append(list);card.append(details);
-  } else card.append(node('p','参考页暂无适配武将','no-heroes'));
+  }
   return card;
 }
 function render(rebuildOptions=true) {
@@ -91,9 +90,10 @@ function render(rebuildOptions=true) {
 }
 async function load() {
   controls.forEach(id => $(id).disabled = true);
+  $('load-status').hidden = false;
   $('retry-load').hidden = true;
   $('price-status').classList.remove('error');
-  $('price-status').textContent = '正在载入宝物价格…';
+  $('price-status').textContent = '加载中…';
   const controller = new AbortController(), timer = setTimeout(()=>controller.abort(),15000);
   try {
     const response = await fetch('./treasure-assets/prices.json', {signal:controller.signal,cache:'no-cache'});
@@ -103,8 +103,9 @@ async function load() {
     catalog = data;
     controls.forEach(id => $(id).disabled = false);
     $('weapon-select').replaceChildren();
-    $('price-status').textContent = `${data.weapons.length} 种宝物 · 更新于 ${data.asOf}`;
     render();
+    $('price-status').textContent = '';
+    $('load-status').hidden = true;
   } catch (error) {
     $('price-status').classList.add('error');
     $('price-status').textContent = error.name === 'AbortError' ? '载入超时，请重新载入。' : '宝物价格载入失败，请重新载入。';
