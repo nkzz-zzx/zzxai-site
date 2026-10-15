@@ -14,9 +14,14 @@ const url = process.env.TREASURE_URL || 'http://127.0.0.1:8024/treasure-prices.h
     assert.equal(await page.locator('#weapon-select option').count(),38);
     assert.deepEqual(await page.locator('#base-features strong').allTextContents(),['稳固','坚忍','破浪']);
     const jianren=page.locator('.feature-card[data-feature="坚忍"]');
-    assert.equal(await jianren.locator('.discounted-price').first().innerText(),'¥552.5');
+    assert.equal(await jianren.locator('.price-value').first().innerText(),'¥552.5');
+    assert.deepEqual(await jianren.locator('thead th').allTextContents(),['档位','价格']);
+    assert.equal(await jianren.locator('tbody tr').first().locator('td').count(),2);
+    assert.doesNotMatch(await page.locator('body').innerText(),/八五折|参考价|¥650/);
     assert.match(await jianren.locator('.hero-skill').innerText(),/被动 · 舍身卫主/);
-    assert.equal(await page.locator('img').count(),0);
+    await page.waitForFunction(()=>{const image=document.getElementById('weapon-art');return image.complete && image.naturalWidth>0;});
+    assert.equal(await page.locator('#weapon-art').getAttribute('alt'),'沧海');
+    assert.match(await page.locator('#weapon-art').getAttribute('src'),/1108\.jpg$/);
     await page.locator('#price-search').fill('典韦');
     await page.locator('#main-type-select').selectOption('被动');
     await page.locator('#quality-select').selectOption('粉');
@@ -37,6 +42,8 @@ const url = process.env.TREASURE_URL || 'http://127.0.0.1:8024/treasure-prices.h
     await page.locator('#reset-filters').click();
     await page.locator('#weapon-select').selectOption('1117');
     assert.deepEqual(await page.locator('#base-features strong').allTextContents(),['安居','课增','繁荣']);
+    await page.waitForFunction(()=>{const image=document.getElementById('weapon-art');return image.complete && image.naturalWidth>0 && image.src.endsWith('/1117.jpg');});
+    assert.equal(await page.locator('#weapon-art').getAttribute('alt'),'大吉');
     await page.locator('#weapon-select').selectOption('1108');
     for (const width of [320,390,768,1280]) {
       await page.setViewportSize({width,height:900});

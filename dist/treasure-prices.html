@@ -3,17 +3,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="率土之滨宝物八五折参考价，查看粉武、红武分档价格、前三词条和适配武将主战法类型。">
+  <meta name="description" content="率土之滨宝物价格，查看宝物图片、粉武和红武分档价格、前三词条及适配武将主战法类型。">
   <title>宝物价格 · 智能工具小站</title>
-  <link rel="stylesheet" href="treasure-prices.css?v=20261014-1">
-  <script type="module" src="treasure-prices.js?v=20261014-1"></script>
+  <link rel="stylesheet" href="treasure-prices.css?v=20261015-1">
+  <script type="module" src="treasure-prices.js?v=20261015-1"></script>
 </head>
 <body>
   <header>
     <div class="wrap">
       <nav aria-label="站点导航"><a href="./">← 工具小站</a><a href="./account.html">账号图鉴 →</a></nav>
-      <div class="title-row"><h1>宝物价格</h1><span class="discount">八五折参考价</span></div>
-      <p>前三词条 · 适配武将 · 主战法类型</p>
+      <div class="title-row"><h1>宝物价格</h1></div>
+      <p>宝物图片 · 前三词条 · 主战法类型</p>
     </div>
   </header>
   <main class="wrap">
@@ -22,12 +22,12 @@
       <label for="weapon-select">宝物<select id="weapon-select" disabled><option>正在载入…</option></select></label>
       <label for="quality-select">品类<select id="quality-select" disabled><option value="all">粉武＋红武</option><option value="粉">只看粉武</option><option value="红">只看红武</option></select></label>
       <label for="main-type-select">适配武将主战法<select id="main-type-select" disabled><option value="all">全部类型</option><option>主动</option><option>指挥</option><option>被动</option><option>追击</option></select></label>
-      <label for="max-price">最高价格<input id="max-price" type="number" min="0" step="0.01" inputmode="decimal" placeholder="八五折后 / 元" disabled></label>
+      <label for="max-price">最高价格<input id="max-price" type="number" min="0" step="0.01" inputmode="decimal" placeholder="金额 / 元" disabled></label>
       <button id="reset-filters" type="button" disabled>重置</button>
     </section>
     <div class="catalog-meta"><p id="price-status" role="status" aria-live="polite">正在载入宝物价格…</p><button id="retry-load" type="button" hidden>重新载入</button><a href="https://www.stzb163.online/hongqi#/baowu" target="_blank" rel="noopener">红麒参考页 ↗</a></div>
     <section id="weapon-details" class="panel base-panel" aria-labelledby="weapon-title" hidden>
-      <div class="section-title"><h2 id="weapon-title"></h2><span id="weapon-category"></span></div>
+      <div class="section-title"><div class="weapon-heading"><img id="weapon-art" class="weapon-art" width="64" height="64" alt="" decoding="async"><div><h2 id="weapon-title"></h2><span id="weapon-category"></span></div></div></div>
       <h3>前三词条</h3><ol id="base-features"></ol>
       <p class="base-note">前两词条数值随锻造等级变化，以下展示初始效果。</p>
     </section>
@@ -35,6 +35,6 @@
     <div id="price-results" class="price-grid"></div>
     <p id="price-empty" class="panel empty" hidden>没有符合条件的宝物，试试其他关键词或筛选条件。</p>
   </main>
-  <footer class="wrap">价格按红麒参考价 × 85% 计算。适配武将参考红麒，主战法类型按官方武将与战法配置核对。</footer>
+  <footer class="wrap">价格与适配武将参考红麒，宝物词条与主战法类型按官方资料核对。</footer>
 </body>
 </html>

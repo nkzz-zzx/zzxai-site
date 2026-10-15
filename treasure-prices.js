@@ -16,6 +16,8 @@ function criteria() {
 function renderBase(weapon) {
   $('weapon-title').textContent = weapon.name;
   $('weapon-category').textContent = weapon.category;
+  $('weapon-art').src = `./account-assets/gear-images/${encodeURIComponent(weapon.id)}.jpg`;
+  $('weapon-art').alt = weapon.name;
   $('base-features').replaceChildren(...weapon.baseFeatures.map(item => {
     const row = node('li');
     row.append(node('strong',item.name),node('p',item.description));
@@ -36,7 +38,7 @@ function renderFeature({feature,tiers,heroes}) {
   const table = node('table');
   table.setAttribute('aria-label',`${feature.name}价格`);
   const thead = node('thead'), header = node('tr');
-  ['档位','参考价','八五折'].forEach(text => {const th=node('th',text);th.scope='col';header.append(th);});
+  ['档位','价格'].forEach(text => {const th=node('th',text);th.scope='col';header.append(th);});
   thead.append(header);
   const body = node('tbody');
   for (const tier of tiers) {
@@ -45,7 +47,7 @@ function renderFeature({feature,tiers,heroes}) {
     const value = node('td'), tag = node('span',`${tier.quality}武`,tier.quality === '红' ? 'quality-tag quality-red' : 'quality-tag quality-pink');
     value.append(tag,document.createTextNode(tier.value));
     value.title = tier.description;
-    row.append(value,node('td',formatPrice(tier.referencePrice),'reference-price'),node('td',formatPrice(discountedPrice(tier.referencePrice)),'discounted-price'));
+    row.append(value,node('td',formatPrice(discountedPrice(tier.referencePrice)),'price-value'));
     body.append(row);
   }
   table.append(thead,body);card.append(table);
