@@ -1,0 +1,7581 @@
+{
+  "updated": "2026-10-16",
+  "scope": "试师优先 · 通用队伍",
+  "sources": {
+    "table-a": {
+      "title": "主流队伍克制关系（上）",
+      "author": "永远配将",
+      "date": "2025-12-09",
+      "url": "https://m.ds.163.com/article/693783b1bf5d676d0f7f03e2/"
+    },
+    "table-b": {
+      "title": "主流队伍克制关系（下）",
+      "author": "永远配将",
+      "date": "2025-12-09",
+      "url": "https://m.ds.163.com/article/693784021c7e777c1154ce3d/"
+    },
+    "lineups-53": {
+      "title": "53支常用队伍配置图",
+      "author": "懒洋洋醉懒",
+      "date": "2026-04-11",
+      "url": "https://m.ds.163.com/article/69da457245e577559ffed178/"
+    },
+    "three-cao": {
+      "title": "三曹刀配队攻略",
+      "author": "浪部配将",
+      "date": "2026-05-16",
+      "url": "https://m.ds.163.com/article/6a082c9ee2380f61e7088220/"
+    },
+    "liu-huang": {
+      "title": "刘徽吕蒙黄盖实测与方案比较",
+      "author": "萌新指挥官道长",
+      "date": "2026-05-27",
+      "url": "https://m.ds.163.com/article/6a15e052e80aee323bda1dd1/"
+    },
+    "matchup-2026": {
+      "title": "常见队伍克制关系",
+      "author": "率土秋晚",
+      "date": "2026-05-21",
+      "url": "https://m.ds.163.com/article/6a0ee1c93da3af5607c78bda/"
+    }
+  },
+  "configurations": [
+    {
+      "id": "table-a-1",
+      "team": "chengyu",
+      "name": "程昱魏智",
+      "category": "魏智",
+      "label": "众谋火烧",
+      "members": [
+        {
+          "heroId": "100024",
+          "skills": [
+            "众谋",
+            "火烧"
+          ]
+        },
+        {
+          "heroId": "100787",
+          "skills": [
+            "战必",
+            "利兵"
+          ]
+        },
+        {
+          "heroId": "100476",
+          "skills": [
+            "磐阵",
+            "当阳桥"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 1 队"
+    },
+    {
+      "id": "table-a-2",
+      "team": "qiao-liumang",
+      "name": "大乔流氓",
+      "category": "流氓",
+      "label": "深谋三术",
+      "members": [
+        {
+          "heroId": "100619",
+          "skills": [
+            "深谋",
+            "三术"
+          ]
+        },
+        {
+          "heroId": "100526",
+          "skills": [
+            "正始",
+            "三军"
+          ]
+        },
+        {
+          "heroId": "100030",
+          "skills": [
+            "垒实",
+            "妖术"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 2 队"
+    },
+    {
+      "id": "table-a-3",
+      "team": "wenyang",
+      "name": "豹纹刀",
+      "category": "菜刀",
+      "label": "枭雄击势",
+      "members": [
+        {
+          "heroId": "100498",
+          "skills": [
+            "长兵",
+            "远攻"
+          ]
+        },
+        {
+          "heroId": "100704",
+          "skills": [
+            "枭雄",
+            "击势"
+          ]
+        },
+        {
+          "heroId": "100027",
+          "skills": [
+            "攻其",
+            "单骑"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 3 队"
+    },
+    {
+      "id": "table-a-4",
+      "team": "tongxin",
+      "name": "同心队",
+      "category": "肉队",
+      "label": "桃园敛众",
+      "members": [
+        {
+          "heroId": "100016",
+          "skills": [
+            "桃园",
+            "敛众"
+          ]
+        },
+        {
+          "heroId": "100792",
+          "skills": [
+            "无心",
+            "知己知彼"
+          ]
+        },
+        {
+          "heroId": "100449",
+          "skills": [
+            "百战",
+            "一夫"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 4 队"
+    },
+    {
+      "id": "table-a-5",
+      "team": "duyu",
+      "name": "杜预法刀",
+      "category": "法刀",
+      "label": "先驱·追击位",
+      "members": [
+        {
+          "heroId": "100705",
+          "skills": [
+            "先驱",
+            "@追击位"
+          ]
+        },
+        {
+          "heroId": "100707",
+          "skills": [
+            "反计",
+            "计险"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 5 队",
+      "notes": [
+        "来源未指定追击位的具体战法。"
+      ]
+    },
+    {
+      "id": "table-a-6",
+      "team": "machao-caochun",
+      "name": "曹纯菜刀",
+      "category": "菜刀",
+      "label": "乘胜枭雄",
+      "members": [
+        {
+          "heroId": "100013",
+          "skills": [
+            "乘胜",
+            "枭雄"
+          ]
+        },
+        {
+          "heroId": "100498",
+          "skills": [
+            "远攻",
+            "长兵"
+          ]
+        },
+        {
+          "heroId": "100027",
+          "skills": [
+            "单骑",
+            "攻其"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 6 队"
+    },
+    {
+      "id": "table-a-7",
+      "team": "sima-shi",
+      "name": "司马师小乔程昱",
+      "category": "魏智",
+      "label": "风声三军",
+      "members": [
+        {
+          "heroId": "100701",
+          "skills": [
+            "风声",
+            "三军"
+          ]
+        },
+        {
+          "heroId": "100687",
+          "skills": [
+            "浑水",
+            "落雷"
+          ]
+        },
+        {
+          "heroId": "100787",
+          "skills": [
+            "战必",
+            "磐阵"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 7 队"
+    },
+    {
+      "id": "table-a-8",
+      "team": "shu-cavalry",
+      "name": "关羽蜀骑",
+      "category": "蜀骑",
+      "label": "谋定全军",
+      "members": [
+        {
+          "heroId": "100615",
+          "skills": [
+            "磐阵",
+            "计险"
+          ]
+        },
+        {
+          "heroId": "100451",
+          "skills": [
+            "谋定",
+            "全军"
+          ]
+        },
+        {
+          "heroId": "100620",
+          "skills": [
+            "疾战",
+            "战必"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 8 队"
+    },
+    {
+      "id": "table-a-9",
+      "team": "zhanlong",
+      "name": "斩龙刀",
+      "category": "法刀",
+      "label": "先驱三军",
+      "members": [
+        {
+          "heroId": "100494",
+          "skills": [
+            "先驱",
+            "三军"
+          ]
+        },
+        {
+          "heroId": "100647",
+          "skills": [
+            "反计",
+            "衡轭"
+          ]
+        },
+        {
+          "heroId": "100023",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 9 队"
+    },
+    {
+      "id": "table-a-10",
+      "team": "zhao-jiang",
+      "name": "赵云姜维流氓",
+      "category": "流氓",
+      "label": "正始三军",
+      "members": [
+        {
+          "heroId": "102001",
+          "skills": [
+            "胜兵",
+            "击势"
+          ]
+        },
+        {
+          "heroId": "100526",
+          "skills": [
+            "正始",
+            "三军"
+          ]
+        },
+        {
+          "heroId": "102012",
+          "skills": [
+            "垒实",
+            "浑水"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 10 队"
+    },
+    {
+      "id": "table-a-11",
+      "team": "jin-infantry",
+      "name": "司马炎晋步",
+      "category": "肉队",
+      "label": "久战敛众",
+      "members": [
+        {
+          "heroId": "100703",
+          "skills": [
+            "久战",
+            "敛众"
+          ]
+        },
+        {
+          "heroId": "100708",
+          "skills": [
+            "擅兵",
+            "兵无"
+          ]
+        },
+        {
+          "heroId": "100709",
+          "skills": [
+            "利兵",
+            "诱敌"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 11 队"
+    },
+    {
+      "id": "table-a-12",
+      "team": "goudao",
+      "name": "狗刀",
+      "category": "法刀",
+      "label": "众谋河内",
+      "members": [
+        {
+          "heroId": "100024",
+          "skills": [
+            "众谋",
+            "河内"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "反计",
+            "道行"
+          ]
+        },
+        {
+          "heroId": "100023",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 12 队"
+    },
+    {
+      "id": "table-a-13",
+      "team": "machao",
+      "name": "大菜刀",
+      "category": "菜刀",
+      "label": "单骑飒沓",
+      "members": [
+        {
+          "heroId": "100013",
+          "skills": [
+            "乘胜",
+            "疾击"
+          ]
+        },
+        {
+          "heroId": "100027",
+          "skills": [
+            "攻其",
+            "浑水"
+          ]
+        },
+        {
+          "heroId": "100023",
+          "skills": [
+            "单骑",
+            "飒沓"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 13 队"
+    },
+    {
+      "id": "table-a-14",
+      "team": "zandao",
+      "name": "瓒刀",
+      "category": "菜刀",
+      "label": "勠力·追击位",
+      "members": [
+        {
+          "heroId": "100677",
+          "skills": [
+            "勠力",
+            "@追击位"
+          ]
+        },
+        {
+          "heroId": "100013",
+          "skills": [
+            "乘胜",
+            "枭雄"
+          ]
+        },
+        {
+          "heroId": "100027",
+          "skills": [
+            "单骑",
+            "长兵"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 14 队",
+      "notes": [
+        "来源未指定追击位的具体战法。"
+      ]
+    },
+    {
+      "id": "table-a-15",
+      "team": "lighter",
+      "name": "打火机",
+      "category": "流氓",
+      "label": "胜兵深谋",
+      "members": [
+        {
+          "heroId": "100478",
+          "skills": [
+            "胜兵",
+            "深谋"
+          ]
+        },
+        {
+          "heroId": "100526",
+          "skills": [
+            "正始",
+            "三军"
+          ]
+        },
+        {
+          "heroId": "100784",
+          "skills": [
+            "垒实",
+            "妖术"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 15 队"
+    },
+    {
+      "id": "table-a-16",
+      "team": "zhen-lv",
+      "name": "甄洛流氓",
+      "category": "流氓",
+      "label": "始计浑水",
+      "members": [
+        {
+          "heroId": "100479",
+          "skills": [
+            "一骑",
+            "击势"
+          ]
+        },
+        {
+          "heroId": "100015",
+          "skills": [
+            "战必",
+            "磐阵"
+          ]
+        },
+        {
+          "heroId": "100030",
+          "skills": [
+            "始计",
+            "浑水"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 16 队"
+    },
+    {
+      "id": "table-a-17",
+      "team": "gou-fa-guan",
+      "name": "狗法官",
+      "category": "魏智",
+      "label": "全军磐阵",
+      "members": [
+        {
+          "heroId": "100024",
+          "skills": [
+            "众谋",
+            "三术"
+          ]
+        },
+        {
+          "heroId": "100451",
+          "skills": [
+            "全军",
+            "磐阵"
+          ]
+        },
+        {
+          "heroId": "100582",
+          "skills": [
+            "战必",
+            "锋矢"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 17 队"
+    },
+    {
+      "id": "table-a-18",
+      "team": "dudu",
+      "name": "嘟嘟",
+      "category": "法刀",
+      "label": "胜兵合众",
+      "members": [
+        {
+          "heroId": "100478",
+          "skills": [
+            "胜兵",
+            "合众"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "反计",
+            "河内"
+          ]
+        },
+        {
+          "heroId": "100784",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 18 队"
+    },
+    {
+      "id": "table-a-19",
+      "team": "wangyi",
+      "name": "王异法刀",
+      "category": "法刀",
+      "label": "先驱枭雄",
+      "members": [
+        {
+          "heroId": "100028",
+          "skills": [
+            "先驱",
+            "枭雄"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "反计",
+            "河内"
+          ]
+        },
+        {
+          "heroId": "100023",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 19 队"
+    },
+    {
+      "id": "table-a-20",
+      "team": "huaxiong",
+      "name": "华雄撸铁",
+      "category": "菜刀",
+      "label": "单骑反计",
+      "members": [
+        {
+          "heroId": "100647",
+          "skills": [
+            "一骑",
+            "击势"
+          ]
+        },
+        {
+          "heroId": "100452",
+          "skills": [
+            "攻其",
+            "浑水"
+          ]
+        },
+        {
+          "heroId": "100023",
+          "skills": [
+            "单骑",
+            "反计"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 20 队"
+    },
+    {
+      "id": "table-a-21",
+      "team": "lv-xingbing",
+      "name": "吕布豹形兵",
+      "category": "形兵",
+      "label": "空城形兵",
+      "members": [
+        {
+          "heroId": "100479",
+          "skills": [
+            "一骑",
+            "击势"
+          ]
+        },
+        {
+          "heroId": "100452",
+          "skills": [
+            "攻其",
+            "浑水"
+          ]
+        },
+        {
+          "heroId": "100337",
+          "skills": [
+            "空城",
+            "形兵"
+          ]
+        }
+      ],
+      "source": "table-a",
+      "locator": "第 21 队"
+    },
+    {
+      "id": "table-b-1",
+      "team": "hezong-shu",
+      "name": "合纵蜀骑",
+      "category": "蜀骑",
+      "label": "凤仪合纵",
+      "members": [
+        {
+          "heroId": "100615",
+          "skills": [
+            "凤仪亭",
+            "计险"
+          ]
+        },
+        {
+          "heroId": "100645",
+          "skills": [
+            "全军",
+            "合纵"
+          ]
+        },
+        {
+          "heroId": "100620",
+          "skills": [
+            "势无",
+            "先驱"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 1 队"
+    },
+    {
+      "id": "table-b-2",
+      "team": "lv-liumang",
+      "name": "吕布流氓",
+      "category": "流氓",
+      "label": "正始三军",
+      "members": [
+        {
+          "heroId": "100479",
+          "skills": [
+            "一骑",
+            "击势"
+          ]
+        },
+        {
+          "heroId": "100526",
+          "skills": [
+            "正始",
+            "三军"
+          ]
+        },
+        {
+          "heroId": "100030",
+          "skills": [
+            "垒实",
+            "浑水"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 2 队"
+    },
+    {
+      "id": "table-b-3",
+      "team": "jiaxu",
+      "name": "贾诩魏智",
+      "category": "魏智",
+      "label": "众谋三术",
+      "members": [
+        {
+          "heroId": "100024",
+          "skills": [
+            "众谋",
+            "三术"
+          ]
+        },
+        {
+          "heroId": "100618",
+          "skills": [
+            "战必",
+            "极火"
+          ]
+        },
+        {
+          "heroId": "100476",
+          "skills": [
+            "磐阵",
+            "久战"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 3 队"
+    },
+    {
+      "id": "table-b-4",
+      "team": "crab",
+      "name": "荀彧螃蟹",
+      "category": "肉队",
+      "label": "攻其浑水",
+      "members": [
+        {
+          "heroId": "100024",
+          "skills": [
+            "不攻",
+            "三术"
+          ]
+        },
+        {
+          "heroId": "100023",
+          "skills": [
+            "攻其",
+            "浑水"
+          ]
+        },
+        {
+          "heroId": "100449",
+          "skills": [
+            "百战",
+            "一夫"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 4 队"
+    },
+    {
+      "id": "table-b-5",
+      "team": "wanghong",
+      "name": "网红队",
+      "category": "流氓",
+      "label": "垒实当阳",
+      "members": [
+        {
+          "heroId": "100479",
+          "skills": [
+            "一骑",
+            "击势"
+          ]
+        },
+        {
+          "heroId": "100337",
+          "skills": [
+            "正始",
+            "三军"
+          ]
+        },
+        {
+          "heroId": "100526",
+          "skills": [
+            "垒实",
+            "当阳桥"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 5 队"
+    },
+    {
+      "id": "table-b-6",
+      "team": "gui-cai",
+      "name": "鬼才队",
+      "category": "形兵",
+      "label": "胜兵形兵",
+      "members": [
+        {
+          "heroId": "100451",
+          "skills": [
+            "胜兵",
+            "形兵"
+          ]
+        },
+        {
+          "heroId": "100072",
+          "skills": [
+            "兵无",
+            "一骑"
+          ]
+        },
+        {
+          "heroId": "100030",
+          "skills": [
+            "战必",
+            "浑水"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 6 队"
+    },
+    {
+      "id": "table-b-7",
+      "team": "yu-huatian",
+      "name": "雨化田",
+      "category": "菜刀",
+      "label": "击势汜水",
+      "members": [
+        {
+          "heroId": "100451",
+          "skills": [
+            "胜兵",
+            "磐阵"
+          ]
+        },
+        {
+          "heroId": "100647",
+          "skills": [
+            "击势",
+            "汜水关"
+          ]
+        },
+        {
+          "heroId": "100692",
+          "skills": [
+            "战必",
+            "全军"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 7 队"
+    },
+    {
+      "id": "table-b-8",
+      "team": "yuanshao",
+      "name": "袁绍法刀",
+      "category": "法刀",
+      "label": "击势汜水",
+      "members": [
+        {
+          "heroId": "100670",
+          "skills": [
+            "击势",
+            "汜水关"
+          ]
+        },
+        {
+          "heroId": "100604",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "反计",
+            "河内"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 8 队"
+    },
+    {
+      "id": "table-b-9",
+      "team": "qiao-fadao",
+      "name": "大乔法刀",
+      "category": "法刀",
+      "label": "道行绝水",
+      "members": [
+        {
+          "heroId": "100619",
+          "skills": [
+            "众谋",
+            "河内"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "道行",
+            "绝水"
+          ]
+        },
+        {
+          "heroId": "100496",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 9 队"
+    },
+    {
+      "id": "table-b-10",
+      "team": "zhou-tank",
+      "name": "周泰肉步",
+      "category": "肉队",
+      "label": "桃园利兵",
+      "members": [
+        {
+          "heroId": "100574",
+          "skills": [
+            "三军",
+            "重整"
+          ]
+        },
+        {
+          "heroId": "100526",
+          "skills": [
+            "步步",
+            "妖术"
+          ]
+        },
+        {
+          "heroId": "100589",
+          "skills": [
+            "桃园",
+            "利兵"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 10 队"
+    },
+    {
+      "id": "table-b-11",
+      "team": "lejin-tank",
+      "name": "乐进肉步",
+      "category": "肉队",
+      "label": "百战击势",
+      "members": [
+        {
+          "heroId": "100574",
+          "skills": [
+            "三军",
+            "重整"
+          ]
+        },
+        {
+          "heroId": "100526",
+          "skills": [
+            "步步",
+            "妖术"
+          ]
+        },
+        {
+          "heroId": "100685",
+          "skills": [
+            "百战",
+            "击势"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 11 队"
+    },
+    {
+      "id": "table-b-12",
+      "team": "chen-xingbing",
+      "name": "陈宫豹形兵",
+      "category": "形兵",
+      "label": "不攻深谋",
+      "members": [
+        {
+          "heroId": "100443",
+          "skills": [
+            "不攻",
+            "深谋"
+          ]
+        },
+        {
+          "heroId": "100452",
+          "skills": [
+            "敛众",
+            "浑水"
+          ]
+        },
+        {
+          "heroId": "100337",
+          "skills": [
+            "空城",
+            "形兵"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 12 队"
+    },
+    {
+      "id": "table-b-13",
+      "team": "grandpa",
+      "name": "爷爷队",
+      "category": "肉队",
+      "label": "垒实健卒",
+      "members": [
+        {
+          "heroId": "100574",
+          "skills": [
+            "三军",
+            "重整"
+          ]
+        },
+        {
+          "heroId": "100526",
+          "skills": [
+            "悬权",
+            "妖术"
+          ]
+        },
+        {
+          "heroId": "100630",
+          "skills": [
+            "垒实",
+            "健卒"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 13 队"
+    },
+    {
+      "id": "table-b-14",
+      "team": "qiao-chengyu",
+      "name": "大章鱼",
+      "category": "肉队",
+      "label": "火烧三术",
+      "members": [
+        {
+          "heroId": "100619",
+          "skills": [
+            "火烧",
+            "三术"
+          ]
+        },
+        {
+          "heroId": "100526",
+          "skills": [
+            "正始",
+            "三军"
+          ]
+        },
+        {
+          "heroId": "100787",
+          "skills": [
+            "垒实",
+            "当阳桥"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 14 队"
+    },
+    {
+      "id": "table-b-15",
+      "team": "qiao-zhangzhao",
+      "name": "大张张",
+      "category": "肉队",
+      "label": "正始三术",
+      "members": [
+        {
+          "heroId": "100619",
+          "skills": [
+            "正始",
+            "三术"
+          ]
+        },
+        {
+          "heroId": "100526",
+          "skills": [
+            "妖术",
+            "三军"
+          ]
+        },
+        {
+          "heroId": "100648",
+          "skills": [
+            "垒实",
+            "利兵"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 15 队"
+    },
+    {
+      "id": "table-b-16",
+      "team": "ganning",
+      "name": "甘宁法刀",
+      "category": "法刀",
+      "label": "及锋汜水",
+      "members": [
+        {
+          "heroId": "100034",
+          "skills": [
+            "及锋",
+            "汜水关"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "反计",
+            "河内"
+          ]
+        },
+        {
+          "heroId": "100574",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 16 队"
+    },
+    {
+      "id": "table-b-17",
+      "team": "wu-bow",
+      "name": "SP太史慈吴弓",
+      "category": "法刀",
+      "label": "枭雄先驱",
+      "members": [
+        {
+          "heroId": "102003",
+          "skills": [
+            "枭雄",
+            "先驱"
+          ]
+        },
+        {
+          "heroId": "100031",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "反计",
+            "鹤翼"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 17 队"
+    },
+    {
+      "id": "table-b-18",
+      "team": "wangyi-xuhuang",
+      "name": "王异徐晃菜刀",
+      "category": "菜刀",
+      "label": "势无文伐",
+      "members": [
+        {
+          "heroId": "100028",
+          "skills": [
+            "势无",
+            "文伐"
+          ]
+        },
+        {
+          "heroId": "100027",
+          "skills": [
+            "攻其",
+            "浑水"
+          ]
+        },
+        {
+          "heroId": "100645",
+          "skills": [
+            "单骑",
+            "计险"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 18 队"
+    },
+    {
+      "id": "table-b-19",
+      "team": "nuclear",
+      "name": "张宁核弹弓",
+      "category": "法刀",
+      "label": "众谋河内",
+      "members": [
+        {
+          "heroId": "100604",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        },
+        {
+          "heroId": "100474",
+          "skills": [
+            "众谋",
+            "河内"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "反计",
+            "道行"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 19 队"
+    },
+    {
+      "id": "table-b-20",
+      "team": "zhurong-cavalry",
+      "name": "祝融衡轭",
+      "category": "菜刀",
+      "label": "击势三军",
+      "members": [
+        {
+          "heroId": "100494",
+          "skills": [
+            "击势",
+            "三军"
+          ]
+        },
+        {
+          "heroId": "100027",
+          "skills": [
+            "攻其",
+            "衡轭"
+          ]
+        },
+        {
+          "heroId": "100023",
+          "skills": [
+            "单骑",
+            "避其"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 20 队"
+    },
+    {
+      "id": "table-b-21",
+      "team": "pang-dong",
+      "name": "庞统刘备董卓",
+      "category": "肉队",
+      "label": "深谋三术",
+      "members": [
+        {
+          "heroId": "100477",
+          "skills": [
+            "深谋",
+            "三术"
+          ]
+        },
+        {
+          "heroId": "100016",
+          "skills": [
+            "步步",
+            "妖术"
+          ]
+        },
+        {
+          "heroId": "100480",
+          "skills": [
+            "健卒",
+            "反间"
+          ]
+        }
+      ],
+      "source": "table-b",
+      "locator": "第 21 队"
+    },
+    {
+      "id": "lineups-53-1",
+      "team": "pang-sima",
+      "name": "庞统刘备司马懿",
+      "category": "肉队",
+      "label": "垒实双减",
+      "members": [
+        {
+          "heroId": "100477",
+          "skills": [
+            "深谋",
+            "三术"
+          ]
+        },
+        {
+          "heroId": "100016",
+          "skills": [
+            "垒实",
+            "敛众"
+          ]
+        },
+        {
+          "heroId": "100807",
+          "skills": [
+            "避其",
+            "避锐"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 1"
+    },
+    {
+      "id": "lineups-53-2",
+      "team": "xun-zhu",
+      "name": "荀彧司马朱儁",
+      "category": "法刀",
+      "label": "战反神兵",
+      "members": [
+        {
+          "heroId": "100024",
+          "skills": [
+            "众谋",
+            "河内"
+          ]
+        },
+        {
+          "heroId": "100807",
+          "skills": [
+            "久战",
+            "神兵"
+          ]
+        },
+        {
+          "heroId": "100553",
+          "skills": [
+            "战必",
+            "反计"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 2"
+    },
+    {
+      "id": "lineups-53-3",
+      "team": "wenyang",
+      "name": "豹纹刀",
+      "category": "菜刀",
+      "label": "枭雄势无",
+      "members": [
+        {
+          "heroId": "100498",
+          "skills": [
+            "长兵",
+            "乘胜"
+          ]
+        },
+        {
+          "heroId": "100704",
+          "skills": [
+            "枭雄",
+            "势无"
+          ]
+        },
+        {
+          "heroId": "100027",
+          "skills": [
+            "单骑",
+            "攻其"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 3"
+    },
+    {
+      "id": "lineups-53-4",
+      "team": "masu",
+      "name": "马谡蜀骑",
+      "category": "蜀骑",
+      "label": "全军浑水",
+      "members": [
+        {
+          "heroId": "100615",
+          "skills": [
+            "磐阵",
+            "计险"
+          ]
+        },
+        {
+          "heroId": "100799",
+          "skills": [
+            "浑水",
+            "全军"
+          ]
+        },
+        {
+          "heroId": "100620",
+          "skills": [
+            "战必",
+            "除恶务尽"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 4"
+    },
+    {
+      "id": "lineups-53-5",
+      "team": "cao-crab",
+      "name": "曹彰螃蟹",
+      "category": "新核心",
+      "label": "一夫百战",
+      "members": [
+        {
+          "heroId": "100683",
+          "skills": [
+            "一骑",
+            "令无"
+          ]
+        },
+        {
+          "heroId": "100023",
+          "skills": [
+            "攻其",
+            "反计"
+          ]
+        },
+        {
+          "heroId": "100449",
+          "skills": [
+            "一夫",
+            "百战"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 5"
+    },
+    {
+      "id": "lineups-53-7",
+      "team": "huang-wei",
+      "name": "黄盖法刀",
+      "category": "法刀",
+      "label": "神赏枭雄",
+      "members": [
+        {
+          "heroId": "100035",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        },
+        {
+          "heroId": "100707",
+          "skills": [
+            "反计",
+            "百战精兵"
+          ]
+        },
+        {
+          "heroId": "100783",
+          "skills": [
+            "枭雄",
+            "先驱"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 7"
+    },
+    {
+      "id": "lineups-53-8",
+      "team": "gan-jin",
+      "name": "甘宁司马炎孙权",
+      "category": "流氓",
+      "label": "三军始计",
+      "members": [
+        {
+          "heroId": "100034",
+          "skills": [
+            "及锋",
+            "汜水关"
+          ]
+        },
+        {
+          "heroId": "100703",
+          "skills": [
+            "三军",
+            "始计"
+          ]
+        },
+        {
+          "heroId": "100030",
+          "skills": [
+            "垒实",
+            "妖术"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 8"
+    },
+    {
+      "id": "lineups-53-9",
+      "team": "chunhua-wei",
+      "name": "春华魏智",
+      "category": "魏智",
+      "label": "战必当阳",
+      "members": [
+        {
+          "heroId": "100024",
+          "skills": [
+            "众谋",
+            "风声"
+          ]
+        },
+        {
+          "heroId": "100787",
+          "skills": [
+            "磐阵",
+            "河内"
+          ]
+        },
+        {
+          "heroId": "100029",
+          "skills": [
+            "当阳桥",
+            "战必"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 9"
+    },
+    {
+      "id": "lineups-53-10",
+      "team": "xun-sima-cao",
+      "name": "荀彧司马曹操",
+      "category": "魏智",
+      "label": "神兵衡轭",
+      "members": [
+        {
+          "heroId": "100024",
+          "skills": [
+            "众谋",
+            "三术"
+          ]
+        },
+        {
+          "heroId": "100807",
+          "skills": [
+            "神兵",
+            "衡轭"
+          ]
+        },
+        {
+          "heroId": "100023",
+          "skills": [
+            "久战",
+            "反计"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 10"
+    },
+    {
+      "id": "lineups-53-11",
+      "team": "huangyueying",
+      "name": "黄月英蜀步",
+      "category": "肉队",
+      "label": "反间妖术",
+      "members": [
+        {
+          "heroId": "100016",
+          "skills": [
+            "避其",
+            "兵无"
+          ]
+        },
+        {
+          "heroId": "100480",
+          "skills": [
+            "反间",
+            "妖术"
+          ]
+        },
+        {
+          "heroId": "100020",
+          "skills": [
+            "利兵",
+            "百战"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 11"
+    },
+    {
+      "id": "lineups-53-12",
+      "team": "lv-xiandi",
+      "name": "汉吕布司马昭献帝",
+      "category": "流氓",
+      "label": "始计绝水",
+      "members": [
+        {
+          "heroId": "100003",
+          "skills": [
+            "击势",
+            "凤仪亭"
+          ]
+        },
+        {
+          "heroId": "100702",
+          "skills": [
+            "始计",
+            "绝水"
+          ]
+        },
+        {
+          "heroId": "100795",
+          "skills": [
+            "战必",
+            "磐阵"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 12"
+    },
+    {
+      "id": "lineups-53-13",
+      "team": "chengyu",
+      "name": "程昱魏智",
+      "category": "魏智",
+      "label": "众谋风声",
+      "members": [
+        {
+          "heroId": "100024",
+          "skills": [
+            "众谋",
+            "风声"
+          ]
+        },
+        {
+          "heroId": "100787",
+          "skills": [
+            "磐阵",
+            "焰焚箕轸"
+          ]
+        },
+        {
+          "heroId": "100476",
+          "skills": [
+            "久战",
+            "战必"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 13"
+    },
+    {
+      "id": "lineups-53-14",
+      "team": "jiaxu",
+      "name": "贾诩魏智",
+      "category": "魏智",
+      "label": "众谋河内",
+      "members": [
+        {
+          "heroId": "100024",
+          "skills": [
+            "众谋",
+            "河内"
+          ]
+        },
+        {
+          "heroId": "100618",
+          "skills": [
+            "战必",
+            "极火"
+          ]
+        },
+        {
+          "heroId": "100476",
+          "skills": [
+            "久战",
+            "磐阵"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 14"
+    },
+    {
+      "id": "lineups-53-15",
+      "team": "taishi-wei",
+      "name": "太史慈法刀",
+      "category": "法刀",
+      "label": "长兵枭雄",
+      "members": [
+        {
+          "heroId": "102003",
+          "skills": [
+            "先驱",
+            "枭雄"
+          ]
+        },
+        {
+          "heroId": "100707",
+          "skills": [
+            "长兵",
+            "计险"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 15"
+    },
+    {
+      "id": "lineups-53-16",
+      "team": "qiao-lusu",
+      "name": "大张鲁",
+      "category": "肉队",
+      "label": "三术避锐",
+      "members": [
+        {
+          "heroId": "100619",
+          "skills": [
+            "三术",
+            "避锐"
+          ]
+        },
+        {
+          "heroId": "100526",
+          "skills": [
+            "敛众",
+            "垒实"
+          ]
+        },
+        {
+          "heroId": "100741",
+          "skills": [
+            "正始",
+            "利兵"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 16"
+    },
+    {
+      "id": "lineups-53-17",
+      "team": "jiaxu",
+      "name": "贾诩魏智",
+      "category": "魏智",
+      "label": "双减魏智",
+      "members": [
+        {
+          "heroId": "100024",
+          "skills": [
+            "众谋",
+            "河内"
+          ]
+        },
+        {
+          "heroId": "100618",
+          "skills": [
+            "三术",
+            "无心"
+          ]
+        },
+        {
+          "heroId": "100476",
+          "skills": [
+            "知己知彼",
+            "避其"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 17"
+    },
+    {
+      "id": "lineups-53-18",
+      "team": "zhangfei",
+      "name": "张飞核弹",
+      "category": "流氓",
+      "label": "始计鼎足",
+      "members": [
+        {
+          "heroId": "100022",
+          "skills": [
+            "胜兵",
+            "击势"
+          ]
+        },
+        {
+          "heroId": "100496",
+          "skills": [
+            "始计",
+            "鼎足"
+          ]
+        },
+        {
+          "heroId": "100030",
+          "skills": [
+            "战必",
+            "计险"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 18"
+    },
+    {
+      "id": "lineups-53-19",
+      "team": "shu-cavalry",
+      "name": "关羽蜀骑",
+      "category": "蜀骑",
+      "label": "疾战战必",
+      "members": [
+        {
+          "heroId": "100615",
+          "skills": [
+            "磐阵",
+            "计险"
+          ]
+        },
+        {
+          "heroId": "100451",
+          "skills": [
+            "谋定",
+            "全军"
+          ]
+        },
+        {
+          "heroId": "100620",
+          "skills": [
+            "疾战",
+            "战必"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 19"
+    },
+    {
+      "id": "lineups-53-20",
+      "team": "wang-sima",
+      "name": "王异司马张辽",
+      "category": "菜刀",
+      "label": "文伐众谋",
+      "members": [
+        {
+          "heroId": "100028",
+          "skills": [
+            "文伐",
+            "众谋"
+          ]
+        },
+        {
+          "heroId": "100807",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        },
+        {
+          "heroId": "100027",
+          "skills": [
+            "反计",
+            "计险"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 20"
+    },
+    {
+      "id": "lineups-53-21",
+      "team": "xun-dian",
+      "name": "荀彧祝融典韦",
+      "category": "肉队",
+      "label": "衡轭神兵",
+      "members": [
+        {
+          "heroId": "100024",
+          "skills": [
+            "衡轭",
+            "神兵"
+          ]
+        },
+        {
+          "heroId": "100494",
+          "skills": [
+            "先驱",
+            "三军齐出"
+          ]
+        },
+        {
+          "heroId": "100769",
+          "skills": [
+            "一夫",
+            "空城"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 21"
+    },
+    {
+      "id": "lineups-53-22",
+      "team": "machao",
+      "name": "大菜刀",
+      "category": "菜刀",
+      "label": "长兵神赏",
+      "members": [
+        {
+          "heroId": "100013",
+          "skills": [
+            "乘胜",
+            "枭雄"
+          ]
+        },
+        {
+          "heroId": "100027",
+          "skills": [
+            "攻其",
+            "长兵"
+          ]
+        },
+        {
+          "heroId": "100023",
+          "skills": [
+            "单骑",
+            "大赏"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 22"
+    },
+    {
+      "id": "lineups-53-23",
+      "team": "jia-ning-zhu",
+      "name": "贾诩张宁朱儁",
+      "category": "法刀",
+      "label": "战反空城",
+      "members": [
+        {
+          "heroId": "100011",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        },
+        {
+          "heroId": "100474",
+          "skills": [
+            "众谋",
+            "河内"
+          ]
+        },
+        {
+          "heroId": "100553",
+          "skills": [
+            "反计",
+            "空城"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 23"
+    },
+    {
+      "id": "lineups-53-24",
+      "team": "jiangqin",
+      "name": "蒋钦菜刀",
+      "category": "菜刀",
+      "label": "乘胜威震",
+      "members": [
+        {
+          "heroId": "100671",
+          "skills": [
+            "势无",
+            "枭雄"
+          ]
+        },
+        {
+          "heroId": "100498",
+          "skills": [
+            "长兵",
+            "乘胜"
+          ]
+        },
+        {
+          "heroId": "100027",
+          "skills": [
+            "攻其",
+            "威震逍遥"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 24"
+    },
+    {
+      "id": "lineups-53-25",
+      "team": "xun-tian",
+      "name": "荀彧田丰夏侯惇",
+      "category": "肉队",
+      "label": "不攻令无",
+      "members": [
+        {
+          "heroId": "100024",
+          "skills": [
+            "不攻",
+            "令无"
+          ]
+        },
+        {
+          "heroId": "100692",
+          "skills": [
+            "反计",
+            "磐阵"
+          ]
+        },
+        {
+          "heroId": "100449",
+          "skills": [
+            "百战",
+            "垒实"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 25"
+    },
+    {
+      "id": "lineups-53-26",
+      "team": "cao-chunhua",
+      "name": "曹彰春华孙权",
+      "category": "新核心",
+      "label": "一骑击势",
+      "members": [
+        {
+          "heroId": "100683",
+          "skills": [
+            "一骑",
+            "击势"
+          ]
+        },
+        {
+          "heroId": "100029",
+          "skills": [
+            "始计",
+            "浑水"
+          ]
+        },
+        {
+          "heroId": "100030",
+          "skills": [
+            "战必",
+            "计险"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 26"
+    },
+    {
+      "id": "lineups-53-27",
+      "team": "sima-shi",
+      "name": "司马师小乔程昱",
+      "category": "魏智",
+      "label": "火烧风声",
+      "members": [
+        {
+          "heroId": "100701",
+          "skills": [
+            "火烧",
+            "风声"
+          ]
+        },
+        {
+          "heroId": "100687",
+          "skills": [
+            "落雷",
+            "浑水"
+          ]
+        },
+        {
+          "heroId": "100787",
+          "skills": [
+            "战必",
+            "磐阵"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 27"
+    },
+    {
+      "id": "lineups-53-28",
+      "team": "three-ma",
+      "name": "三马蜀骑",
+      "category": "蜀骑",
+      "label": "白刃全军",
+      "members": [
+        {
+          "heroId": "100615",
+          "skills": [
+            "磐阵",
+            "白刃"
+          ]
+        },
+        {
+          "heroId": "100799",
+          "skills": [
+            "全军",
+            "浑水"
+          ]
+        },
+        {
+          "heroId": "100785",
+          "skills": [
+            "战必",
+            "三军齐出"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 28"
+    },
+    {
+      "id": "lineups-53-29",
+      "team": "lv-chunhua",
+      "name": "吕布春华甄洛",
+      "category": "流氓",
+      "label": "令无当阳",
+      "members": [
+        {
+          "heroId": "100479",
+          "skills": [
+            "令无",
+            "一骑"
+          ]
+        },
+        {
+          "heroId": "100029",
+          "skills": [
+            "始计",
+            "当阳桥"
+          ]
+        },
+        {
+          "heroId": "100015",
+          "skills": [
+            "战必",
+            "磐阵"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 29"
+    },
+    {
+      "id": "lineups-53-30",
+      "team": "lusu-dudu",
+      "name": "鲁肃嘟嘟",
+      "category": "法刀",
+      "label": "胜兵河内",
+      "members": [
+        {
+          "heroId": "100478",
+          "skills": [
+            "胜兵",
+            "河内"
+          ]
+        },
+        {
+          "heroId": "100741",
+          "skills": [
+            "无心",
+            "避其"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 30"
+    },
+    {
+      "id": "lineups-53-31",
+      "team": "dudu",
+      "name": "嘟嘟",
+      "category": "法刀",
+      "label": "众谋楚歌",
+      "members": [
+        {
+          "heroId": "100478",
+          "skills": [
+            "众谋",
+            "楚歌四起"
+          ]
+        },
+        {
+          "heroId": "100784",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "反计",
+            "道行"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 31"
+    },
+    {
+      "id": "lineups-53-32",
+      "team": "gan-feng",
+      "name": "甘宁冯嫽司马炎",
+      "category": "流氓",
+      "label": "三军无心",
+      "members": [
+        {
+          "heroId": "100034",
+          "skills": [
+            "及锋",
+            "汜水关"
+          ]
+        },
+        {
+          "heroId": "100812",
+          "skills": [
+            "三军",
+            "无心"
+          ]
+        },
+        {
+          "heroId": "100703",
+          "skills": [
+            "垒实",
+            "浑水"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 32"
+    },
+    {
+      "id": "lineups-53-33",
+      "team": "cao-lutie",
+      "name": "曹彰撸铁",
+      "category": "新核心",
+      "label": "凤仪反计",
+      "members": [
+        {
+          "heroId": "100683",
+          "skills": [
+            "击势",
+            "凤仪亭"
+          ]
+        },
+        {
+          "heroId": "100452",
+          "skills": [
+            "攻其",
+            "浑水"
+          ]
+        },
+        {
+          "heroId": "100023",
+          "skills": [
+            "单骑",
+            "反计"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 33"
+    },
+    {
+      "id": "lineups-53-34",
+      "team": "wangyi-xuhuang",
+      "name": "王异徐晃菜刀",
+      "category": "菜刀",
+      "label": "文伐众谋",
+      "members": [
+        {
+          "heroId": "100028",
+          "skills": [
+            "文伐",
+            "众谋"
+          ]
+        },
+        {
+          "heroId": "100027",
+          "skills": [
+            "攻其",
+            "浑水"
+          ]
+        },
+        {
+          "heroId": "100645",
+          "skills": [
+            "单骑",
+            "计险"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 34"
+    },
+    {
+      "id": "lineups-53-35",
+      "team": "machao-weiyan",
+      "name": "马超魏延法刀",
+      "category": "法刀",
+      "label": "先驱疾击",
+      "members": [
+        {
+          "heroId": "100013",
+          "skills": [
+            "先驱",
+            "疾击"
+          ]
+        },
+        {
+          "heroId": "100649",
+          "skills": [
+            "反计",
+            "长兵"
+          ]
+        },
+        {
+          "heroId": "100023",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 35"
+    },
+    {
+      "id": "lineups-53-36",
+      "team": "zhao-chunhua",
+      "name": "赵云春华孙权",
+      "category": "流氓",
+      "label": "垒实妖术",
+      "members": [
+        {
+          "heroId": "102001",
+          "skills": [
+            "胜兵",
+            "汜水关"
+          ]
+        },
+        {
+          "heroId": "100029",
+          "skills": [
+            "知己知彼",
+            "三军"
+          ]
+        },
+        {
+          "heroId": "100030",
+          "skills": [
+            "垒实",
+            "妖术"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 36"
+    },
+    {
+      "id": "lineups-53-37",
+      "team": "cao-longhu",
+      "name": "曹彰龙虎骑",
+      "category": "新核心",
+      "label": "奇正战必",
+      "members": [
+        {
+          "heroId": "100683",
+          "skills": [
+            "击势",
+            "一骑"
+          ]
+        },
+        {
+          "heroId": "100498",
+          "skills": [
+            "奇正",
+            "战必"
+          ]
+        },
+        {
+          "heroId": "100692",
+          "skills": [
+            "全军",
+            "磐阵"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 37"
+    },
+    {
+      "id": "lineups-53-38",
+      "team": "duyu",
+      "name": "杜预法刀",
+      "category": "法刀",
+      "label": "先驱火积",
+      "members": [
+        {
+          "heroId": "100705",
+          "skills": [
+            "先驱",
+            "火积"
+          ]
+        },
+        {
+          "heroId": "100707",
+          "skills": [
+            "反计",
+            "计险"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "大赏",
+            "神兵"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 38"
+    },
+    {
+      "id": "lineups-53-39",
+      "team": "wutu",
+      "name": "木鹿兀突骨貂蝉",
+      "category": "形兵",
+      "label": "道行兼弱",
+      "members": [
+        {
+          "heroId": "100452",
+          "skills": [
+            "道行",
+            "兼弱攻昧"
+          ]
+        },
+        {
+          "heroId": "100519",
+          "skills": [
+            "凤仪亭",
+            "闪击"
+          ]
+        },
+        {
+          "heroId": "100337",
+          "skills": [
+            "擅兵",
+            "空城"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 39"
+    },
+    {
+      "id": "lineups-53-40",
+      "team": "crab",
+      "name": "荀彧螃蟹",
+      "category": "肉队",
+      "label": "攻其浑水",
+      "members": [
+        {
+          "heroId": "100024",
+          "skills": [
+            "不攻",
+            "三术"
+          ]
+        },
+        {
+          "heroId": "100023",
+          "skills": [
+            "攻其",
+            "浑水"
+          ]
+        },
+        {
+          "heroId": "100449",
+          "skills": [
+            "一夫",
+            "百战"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 40"
+    },
+    {
+      "id": "lineups-53-41",
+      "team": "cao-zhuge",
+      "name": "曹彰弓诸孙权",
+      "category": "新核心",
+      "label": "定军兵无",
+      "members": [
+        {
+          "heroId": "100683",
+          "skills": [
+            "击势",
+            "凤仪亭"
+          ]
+        },
+        {
+          "heroId": "100496",
+          "skills": [
+            "始计",
+            "鼎足"
+          ]
+        },
+        {
+          "heroId": "100030",
+          "skills": [
+            "定军山",
+            "兵无"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 41"
+    },
+    {
+      "id": "lineups-53-42",
+      "team": "tongxin",
+      "name": "同心队",
+      "category": "肉队",
+      "label": "避其三军",
+      "members": [
+        {
+          "heroId": "100016",
+          "skills": [
+            "避其",
+            "三军"
+          ]
+        },
+        {
+          "heroId": "100792",
+          "skills": [
+            "兵无",
+            "妖术"
+          ]
+        },
+        {
+          "heroId": "100449",
+          "skills": [
+            "一夫",
+            "百战"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 42"
+    },
+    {
+      "id": "lineups-53-43",
+      "team": "lejin-jin",
+      "name": "司马炎乐进典韦",
+      "category": "肉队",
+      "label": "百战合纵",
+      "members": [
+        {
+          "heroId": "100703",
+          "skills": [
+            "妖术",
+            "重整"
+          ]
+        },
+        {
+          "heroId": "100685",
+          "skills": [
+            "兵无",
+            "愈战愈勇"
+          ]
+        },
+        {
+          "heroId": "100769",
+          "skills": [
+            "百战",
+            "合纵"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 43"
+    },
+    {
+      "id": "lineups-53-44",
+      "team": "jin-infantry",
+      "name": "司马炎晋步",
+      "category": "肉队",
+      "label": "鼎足浑水",
+      "members": [
+        {
+          "heroId": "100703",
+          "skills": [
+            "敛众",
+            "鼎足"
+          ]
+        },
+        {
+          "heroId": "100708",
+          "skills": [
+            "擅兵",
+            "浑水"
+          ]
+        },
+        {
+          "heroId": "100709",
+          "skills": [
+            "利兵",
+            "诱敌"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 44"
+    },
+    {
+      "id": "lineups-53-45",
+      "team": "lv-xingbing",
+      "name": "吕布豹形兵",
+      "category": "形兵",
+      "label": "空城形兵",
+      "members": [
+        {
+          "heroId": "100479",
+          "skills": [
+            "一骑",
+            "击势"
+          ]
+        },
+        {
+          "heroId": "100452",
+          "skills": [
+            "攻其",
+            "浑水"
+          ]
+        },
+        {
+          "heroId": "100337",
+          "skills": [
+            "空城",
+            "形兵"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 45"
+    },
+    {
+      "id": "lineups-53-46",
+      "team": "guan-liumang",
+      "name": "关妹流氓",
+      "category": "流氓",
+      "label": "始计计险",
+      "members": [
+        {
+          "heroId": "100072",
+          "skills": [
+            "一骑",
+            "击势"
+          ]
+        },
+        {
+          "heroId": "100015",
+          "skills": [
+            "磐阵",
+            "战必"
+          ]
+        },
+        {
+          "heroId": "100030",
+          "skills": [
+            "始计",
+            "计险"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 46"
+    },
+    {
+      "id": "lineups-53-47",
+      "team": "zandao",
+      "name": "瓒刀",
+      "category": "菜刀",
+      "label": "钝兵怯心",
+      "members": [
+        {
+          "heroId": "100677",
+          "skills": [
+            "钝兵",
+            "怯心"
+          ]
+        },
+        {
+          "heroId": "100013",
+          "skills": [
+            "乘胜",
+            "疾击"
+          ]
+        },
+        {
+          "heroId": "100027",
+          "skills": [
+            "攻其",
+            "单骑"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 47"
+    },
+    {
+      "id": "lineups-53-48",
+      "team": "wangyi",
+      "name": "王异法刀",
+      "category": "法刀",
+      "label": "先驱文伐",
+      "members": [
+        {
+          "heroId": "100028",
+          "skills": [
+            "先驱",
+            "文伐"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "反计",
+            "河内"
+          ]
+        },
+        {
+          "heroId": "100023",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 48"
+    },
+    {
+      "id": "lineups-53-49",
+      "team": "cao-dian",
+      "name": "曹彰春华典韦",
+      "category": "新核心",
+      "label": "形兵始计",
+      "members": [
+        {
+          "heroId": "100683",
+          "skills": [
+            "全军",
+            "击势"
+          ]
+        },
+        {
+          "heroId": "100029",
+          "skills": [
+            "形兵",
+            "始计"
+          ]
+        },
+        {
+          "heroId": "100769",
+          "skills": [
+            "空城",
+            "计险"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 49"
+    },
+    {
+      "id": "lineups-53-50",
+      "team": "zhu-nuclear",
+      "name": "朱儁核弹弓",
+      "category": "法刀",
+      "label": "双减神赏",
+      "members": [
+        {
+          "heroId": "100604",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        },
+        {
+          "heroId": "100474",
+          "skills": [
+            "河内",
+            "众谋"
+          ]
+        },
+        {
+          "heroId": "100553",
+          "skills": [
+            "避其",
+            "无心"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 50"
+    },
+    {
+      "id": "lineups-53-51",
+      "team": "pang-chengyu",
+      "name": "胖章鱼",
+      "category": "肉队",
+      "label": "无心绝水",
+      "members": [
+        {
+          "heroId": "100477",
+          "skills": [
+            "正始",
+            "三术"
+          ]
+        },
+        {
+          "heroId": "100787",
+          "skills": [
+            "无心",
+            "绝水"
+          ]
+        },
+        {
+          "heroId": "100526",
+          "skills": [
+            "垒实",
+            "当阳桥"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 51"
+    },
+    {
+      "id": "lineups-53-52",
+      "team": "zhanlong",
+      "name": "斩龙刀",
+      "category": "法刀",
+      "label": "先驱三军齐出",
+      "members": [
+        {
+          "heroId": "100494",
+          "skills": [
+            "先驱",
+            "三军齐出"
+          ]
+        },
+        {
+          "heroId": "100647",
+          "skills": [
+            "反计",
+            "衡轭"
+          ]
+        },
+        {
+          "heroId": "100023",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 52"
+    },
+    {
+      "id": "lineups-53-53",
+      "team": "lv-zhuge",
+      "name": "吕布弓诸魏延",
+      "category": "法刀",
+      "label": "战磐神赏",
+      "members": [
+        {
+          "heroId": "100479",
+          "skills": [
+            "一骑",
+            "击势"
+          ]
+        },
+        {
+          "heroId": "100496",
+          "skills": [
+            "神兵",
+            "大赏"
+          ]
+        },
+        {
+          "heroId": "100649",
+          "skills": [
+            "计险",
+            "磐阵"
+          ]
+        }
+      ],
+      "source": "lineups-53",
+      "locator": "配置图 53"
+    },
+    {
+      "id": "three-cao-1",
+      "team": "three-cao",
+      "name": "三曹刀",
+      "category": "新核心",
+      "label": "一夫反计",
+      "members": [
+        {
+          "heroId": "100683",
+          "skills": [
+            "令无",
+            "一骑"
+          ]
+        },
+        {
+          "heroId": "100498",
+          "skills": [
+            "攻其",
+            "奇正"
+          ]
+        },
+        {
+          "heroId": "100023",
+          "skills": [
+            "一夫",
+            "反计"
+          ]
+        }
+      ],
+      "source": "three-cao",
+      "locator": "第 1 队",
+      "notes": [
+        "曹彰、曹纯转轻骑；曹操转重骑。",
+        "此方案需要令无；爆发依赖战法发动。"
+      ]
+    },
+    {
+      "id": "three-cao-2",
+      "team": "three-cao",
+      "name": "三曹刀",
+      "category": "新核心",
+      "label": "战必磐阵",
+      "members": [
+        {
+          "heroId": "100683",
+          "skills": [
+            "令无",
+            "一骑"
+          ]
+        },
+        {
+          "heroId": "100498",
+          "skills": [
+            "攻其",
+            "奇正"
+          ]
+        },
+        {
+          "heroId": "100023",
+          "skills": [
+            "磐阵",
+            "战必"
+          ]
+        }
+      ],
+      "source": "three-cao",
+      "locator": "第 2 队",
+      "notes": [
+        "战必磐阵是来源列出的防御替换方案；不沿用一夫反计方案的具体对局。"
+      ]
+    },
+    {
+      "id": "liu-huang-1",
+      "team": "liu-huang",
+      "name": "刘徽黄盖法刀",
+      "category": "新核心",
+      "label": "鼎足·势无",
+      "members": [
+        {
+          "heroId": "100814",
+          "skills": [
+            "神兵",
+            "鼎足"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "反计",
+            "河内"
+          ]
+        },
+        {
+          "heroId": "100783",
+          "skills": [
+            "先驱",
+            "势无"
+          ]
+        }
+      ],
+      "source": "liu-huang",
+      "locator": "第 1 队",
+      "notes": [
+        "黄盖转死士；刘徽速度快于吕蒙，吕蒙快于黄盖。",
+        "势无依赖普攻，遇战必需注意封普攻。"
+      ]
+    },
+    {
+      "id": "liu-huang-2",
+      "team": "liu-huang",
+      "name": "刘徽黄盖法刀",
+      "category": "新核心",
+      "label": "鼎足·枭雄",
+      "members": [
+        {
+          "heroId": "100814",
+          "skills": [
+            "神兵",
+            "鼎足"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "反计",
+            "河内"
+          ]
+        },
+        {
+          "heroId": "100783",
+          "skills": [
+            "先驱",
+            "枭雄"
+          ]
+        }
+      ],
+      "source": "liu-huang",
+      "locator": "第 2 队",
+      "notes": [
+        "换枭雄后减轻战必压力，但应对空城体系更吃力。",
+        "不带势无时，来源建议刘徽、吕蒙转长弓。"
+      ]
+    },
+    {
+      "id": "liu-huang-3",
+      "team": "liu-huang",
+      "name": "刘徽黄盖法刀",
+      "category": "新核心",
+      "label": "百家·定军",
+      "members": [
+        {
+          "heroId": "100814",
+          "skills": [
+            "@百家·陶渊明",
+            "神兵"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "定军山",
+            "河内"
+          ]
+        },
+        {
+          "heroId": "100783",
+          "skills": [
+            "先驱",
+            "势无"
+          ]
+        }
+      ],
+      "source": "liu-huang",
+      "locator": "第 3 队",
+      "notes": [
+        "百家·陶渊明需至少红色息交克险，并满足减伤词条条件。",
+        "定军山增强对王异、豹纹刀的抗性；资料未给出稳定反克结论。",
+        "刘徽快于吕蒙，吕蒙快于黄盖；黄盖转死士。"
+      ]
+    },
+    {
+      "id": "liu-huang-4",
+      "team": "liu-huang",
+      "name": "刘徽黄盖法刀",
+      "category": "新核心",
+      "label": "百家·反计",
+      "members": [
+        {
+          "heroId": "100814",
+          "skills": [
+            "@百家·陶渊明",
+            "神兵"
+          ]
+        },
+        {
+          "heroId": "100035",
+          "skills": [
+            "反计",
+            "河内"
+          ]
+        },
+        {
+          "heroId": "100783",
+          "skills": [
+            "先驱",
+            "势无"
+          ]
+        }
+      ],
+      "source": "liu-huang",
+      "locator": "第 4 队",
+      "notes": [
+        "百家·陶渊明需满足息交克险与减伤词条门槛。",
+        "反计偏向限制主动输出，不能直接套用定军方案的对局结论。"
+      ]
+    }
+  ],
+  "observations": [
+    {
+      "from": "table-a-1",
+      "to": "table-a-13",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 1 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-1",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 1 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-1",
+      "to": "table-a-5",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 1 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-1",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 1 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-1",
+      "to": "table-a-12",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 1 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-1",
+      "to": "table-a-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 1 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-1",
+      "to": "table-b-2",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 1 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-1",
+      "to": "table-b-10",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 1 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-1",
+      "to": "table-a-8",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 1 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-1",
+      "to": "table-b-8",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 1 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-1",
+      "to": "table-a-4",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 1 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-1",
+      "to": "table-a-11",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 1 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-1",
+      "to": "table-a-6",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 1 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-1",
+      "to": "table-b-9",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 1 张对照表 · 第 14 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-1",
+      "to": "table-a-3",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 1 张对照表 · 第 15 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-2",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 2 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-2",
+      "to": "table-a-20",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 2 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-2",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 2 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-2",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 2 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-2",
+      "to": "table-a-5",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 2 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-2",
+      "to": "table-b-10",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 2 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-2",
+      "to": "table-a-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 2 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-2",
+      "to": "table-a-12",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 2 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-2",
+      "to": "table-a-13",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 2 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-2",
+      "to": "table-a-11",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 2 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-2",
+      "to": "table-a-1",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 2 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-2",
+      "to": "table-b-7",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 2 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-2",
+      "to": "table-a-9",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 2 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-2",
+      "to": "table-b-1",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 2 张对照表 · 第 14 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-3",
+      "to": "table-a-1",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 3 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-3",
+      "to": "table-a-11",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 3 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-3",
+      "to": "table-a-9",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 3 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-3",
+      "to": "table-a-12",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 3 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-3",
+      "to": "table-a-15",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 3 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-3",
+      "to": "table-b-10",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 3 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-3",
+      "to": "table-a-5",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 3 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-3",
+      "to": "table-b-5",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 3 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-3",
+      "to": "table-b-2",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 3 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-3",
+      "to": "table-a-4",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 3 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-4",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 4 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-4",
+      "to": "table-a-13",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 4 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-4",
+      "to": "table-a-5",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 4 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-4",
+      "to": "table-b-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 4 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-4",
+      "to": "table-a-3",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 4 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-4",
+      "to": "table-a-1",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 4 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-4",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 4 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-4",
+      "to": "table-b-2",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 4 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-4",
+      "to": "table-a-2",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 4 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-4",
+      "to": "table-a-12",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 4 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-4",
+      "to": "table-a-9",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 4 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-4",
+      "to": "table-b-1",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 4 张对照表 · 第 14 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-5",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 5 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-5",
+      "to": "table-a-13",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 5 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-5",
+      "to": "table-a-12",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 5 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-5",
+      "to": "table-a-9",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 5 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-5",
+      "to": "table-b-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 5 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-5",
+      "to": "table-a-2",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 5 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-5",
+      "to": "table-b-4",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 5 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-5",
+      "to": "table-a-8",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 5 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-5",
+      "to": "table-b-3",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 5 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-5",
+      "to": "table-a-1",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 5 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-5",
+      "to": "table-a-4",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 5 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-5",
+      "to": "table-b-10",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 5 张对照表 · 第 14 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-6",
+      "to": "table-a-1",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 6 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-6",
+      "to": "table-a-11",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 6 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-6",
+      "to": "table-a-9",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 6 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-6",
+      "to": "table-a-12",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 6 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-6",
+      "to": "table-a-15",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 6 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-6",
+      "to": "table-b-10",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 6 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-6",
+      "to": "table-a-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 6 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-6",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 6 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-6",
+      "to": "table-b-2",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 6 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-6",
+      "to": "table-b-8",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 6 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-6",
+      "to": "table-a-2",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 6 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-6",
+      "to": "table-a-4",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 6 张对照表 · 第 15 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-7",
+      "to": "table-a-13",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 7 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-7",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 7 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-7",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 7 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-7",
+      "to": "table-a-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 7 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-7",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 7 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-7",
+      "to": "table-b-10",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 7 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-7",
+      "to": "table-b-4",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 7 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-7",
+      "to": "table-a-2",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 7 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-7",
+      "to": "table-b-7",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 7 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-7",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 7 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-7",
+      "to": "table-b-8",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 7 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-7",
+      "to": "table-a-6",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 7 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-7",
+      "to": "table-a-1",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 7 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-8",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 8 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-8",
+      "to": "table-b-10",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 8 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-8",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 8 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-8",
+      "to": "table-b-7",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 8 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-8",
+      "to": "table-b-5",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 8 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-8",
+      "to": "table-a-1",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 8 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-8",
+      "to": "table-a-2",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 8 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-8",
+      "to": "table-a-13",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 8 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-8",
+      "to": "table-b-4",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 8 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-8",
+      "to": "table-b-8",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 8 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-8",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 8 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-9",
+      "to": "table-a-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 9 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-9",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 9 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-9",
+      "to": "table-b-10",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 9 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-9",
+      "to": "table-a-11",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 9 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-9",
+      "to": "table-b-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 9 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-9",
+      "to": "table-a-4",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 9 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-9",
+      "to": "table-b-4",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 9 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-9",
+      "to": "table-a-12",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 9 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-9",
+      "to": "table-a-8",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 9 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-9",
+      "to": "table-a-6",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 9 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-9",
+      "to": "table-b-3",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 9 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-9",
+      "to": "table-a-1",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 9 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-9",
+      "to": "table-a-13",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 9 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-10",
+      "to": "table-a-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 10 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-10",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 10 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-10",
+      "to": "table-a-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 10 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-10",
+      "to": "table-a-1",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 10 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-10",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 10 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-10",
+      "to": "table-b-2",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 10 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-10",
+      "to": "table-a-13",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 10 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-10",
+      "to": "table-b-4",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 10 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-10",
+      "to": "table-a-20",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 10 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-10",
+      "to": "table-b-7",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 10 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-10",
+      "to": "table-b-8",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 10 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-10",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 10 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-11",
+      "to": "table-a-12",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 11 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-11",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 11 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-11",
+      "to": "table-b-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 11 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-11",
+      "to": "table-a-1",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 11 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-11",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 11 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-11",
+      "to": "table-a-2",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 11 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-11",
+      "to": "table-b-10",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 11 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-11",
+      "to": "table-a-14",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 11 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-11",
+      "to": "table-a-8",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 11 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-11",
+      "to": "table-a-9",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 11 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-11",
+      "to": "table-a-13",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 11 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-12",
+      "to": "table-a-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 12 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-12",
+      "to": "table-a-13",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 12 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-12",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 12 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-12",
+      "to": "table-b-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 12 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-12",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 12 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-12",
+      "to": "table-b-4",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 12 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-12",
+      "to": "table-b-10",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 12 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-12",
+      "to": "table-a-1",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 12 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-12",
+      "to": "table-a-2",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 12 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-12",
+      "to": "table-b-13",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 12 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-12",
+      "to": "table-a-6",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 12 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-12",
+      "to": "table-a-3",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 12 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-13",
+      "to": "table-a-9",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 13 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-13",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 13 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-13",
+      "to": "table-a-20",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 13 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-13",
+      "to": "table-a-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 13 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-13",
+      "to": "table-b-10",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 13 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-13",
+      "to": "table-b-2",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 13 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-13",
+      "to": "table-b-7",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 13 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-13",
+      "to": "table-a-2",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 13 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-13",
+      "to": "table-a-4",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 13 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-14",
+      "to": "table-b-10",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 14 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-14",
+      "to": "table-a-11",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 14 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-14",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 14 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-14",
+      "to": "table-a-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 14 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-14",
+      "to": "table-a-1",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 14 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-14",
+      "to": "table-b-2",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 14 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-14",
+      "to": "table-a-2",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 14 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-14",
+      "to": "table-a-20",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 14 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-14",
+      "to": "table-b-4",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 14 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-14",
+      "to": "table-a-4",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 14 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-14",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 14 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-14",
+      "to": "table-a-13",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 14 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-15",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 15 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-15",
+      "to": "table-a-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 15 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-15",
+      "to": "table-b-11",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 15 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-15",
+      "to": "table-a-13",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 15 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-15",
+      "to": "table-b-10",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 15 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-15",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 15 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-15",
+      "to": "table-b-4",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 15 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-15",
+      "to": "table-b-3",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 15 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-15",
+      "to": "table-a-20",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 15 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-15",
+      "to": "table-b-7",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 15 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-15",
+      "to": "table-a-8",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 15 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-15",
+      "to": "table-a-11",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 15 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-15",
+      "to": "table-a-1",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 15 张对照表 · 第 14 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-16",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 16 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-16",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 16 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-16",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 16 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-16",
+      "to": "table-a-20",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 16 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-16",
+      "to": "table-b-2",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 16 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-16",
+      "to": "table-a-2",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 16 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-16",
+      "to": "table-b-10",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 16 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-16",
+      "to": "table-a-8",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 16 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-16",
+      "to": "table-a-13",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 16 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-16",
+      "to": "table-b-8",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 16 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-16",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 16 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-16",
+      "to": "table-a-1",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 16 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-17",
+      "to": "table-b-10",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 17 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-17",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 17 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-17",
+      "to": "table-a-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 17 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-17",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 17 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-17",
+      "to": "table-a-15",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 17 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-17",
+      "to": "table-a-13",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 17 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-17",
+      "to": "table-a-8",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 17 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-17",
+      "to": "table-b-3",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 17 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-17",
+      "to": "table-b-4",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 17 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-17",
+      "to": "table-a-20",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 17 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-17",
+      "to": "table-b-8",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 17 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-17",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 17 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-17",
+      "to": "table-a-1",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 17 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-18",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 18 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-18",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 18 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-18",
+      "to": "table-a-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 18 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-18",
+      "to": "table-a-13",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 18 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-18",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 18 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-18",
+      "to": "table-a-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 18 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-18",
+      "to": "table-b-10",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 18 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-18",
+      "to": "table-b-8",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 18 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-18",
+      "to": "table-b-3",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 18 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-18",
+      "to": "table-a-20",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 18 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-18",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 18 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-18",
+      "to": "table-a-1",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 18 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-19",
+      "to": "table-a-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 19 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-19",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 19 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-19",
+      "to": "table-a-2",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 19 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-19",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 19 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-19",
+      "to": "table-a-1",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 19 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-19",
+      "to": "table-a-12",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 19 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-19",
+      "to": "table-b-8",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 19 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-19",
+      "to": "table-b-10",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 19 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-19",
+      "to": "table-a-11",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 19 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-19",
+      "to": "table-b-13",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 19 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-19",
+      "to": "table-a-6",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 19 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-20",
+      "to": "table-a-12",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 20 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-20",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 20 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-20",
+      "to": "table-b-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 20 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-20",
+      "to": "table-a-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 20 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-20",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 20 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-20",
+      "to": "table-a-1",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 20 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-20",
+      "to": "table-a-11",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 20 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-20",
+      "to": "table-a-14",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 20 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-20",
+      "to": "table-a-13",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 20 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-20",
+      "to": "table-b-10",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 20 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-20",
+      "to": "table-b-2",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 20 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-20",
+      "to": "table-a-2",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 20 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-21",
+      "to": "table-a-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 21 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-21",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 21 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-21",
+      "to": "table-b-8",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 21 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-21",
+      "to": "table-a-1",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 21 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-21",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-a",
+      "locator": "第 21 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-21",
+      "to": "table-a-13",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 21 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-21",
+      "to": "table-b-2",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 21 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-21",
+      "to": "table-a-12",
+      "result": "balanced",
+      "source": "table-a",
+      "locator": "第 21 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-21",
+      "to": "table-a-2",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 21 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-21",
+      "to": "table-b-7",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 21 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-21",
+      "to": "table-b-10",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 21 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-a-21",
+      "to": "table-b-13",
+      "result": "disadvantage",
+      "source": "table-a",
+      "locator": "第 21 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-1",
+      "to": "table-a-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 1 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-1",
+      "to": "table-b-10",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 1 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-1",
+      "to": "table-b-13",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 1 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-1",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 1 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-1",
+      "to": "table-a-4",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 1 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-1",
+      "to": "table-a-15",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 1 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-1",
+      "to": "table-b-5",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 1 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-1",
+      "to": "table-a-1",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 1 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-1",
+      "to": "table-a-13",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 1 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-1",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 1 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-2",
+      "to": "table-a-20",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 2 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-2",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 2 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-2",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 2 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-2",
+      "to": "table-a-13",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 2 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-2",
+      "to": "table-b-3",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 2 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-2",
+      "to": "table-b-10",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 2 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-2",
+      "to": "table-a-6",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 2 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-2",
+      "to": "table-a-2",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 2 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-2",
+      "to": "table-a-1",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 2 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-2",
+      "to": "table-a-8",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 2 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-2",
+      "to": "table-b-8",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 2 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-2",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 2 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-3",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 3 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-3",
+      "to": "table-b-13",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 3 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-3",
+      "to": "table-a-13",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 3 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-3",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 3 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-3",
+      "to": "table-b-10",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 3 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-3",
+      "to": "table-b-2",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 3 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-3",
+      "to": "table-a-1",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 3 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-3",
+      "to": "table-a-4",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 3 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-3",
+      "to": "table-a-8",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 3 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-3",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 3 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-3",
+      "to": "table-a-6",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 3 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-3",
+      "to": "table-a-20",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 3 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-4",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 4 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-4",
+      "to": "table-a-13",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 4 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-4",
+      "to": "table-a-8",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 4 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-4",
+      "to": "table-a-3",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 4 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-4",
+      "to": "table-a-5",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 4 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-4",
+      "to": "table-b-10",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 4 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-4",
+      "to": "table-b-2",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 4 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-4",
+      "to": "table-a-2",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 4 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-4",
+      "to": "table-b-8",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 4 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-4",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 4 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-5",
+      "to": "table-a-20",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 5 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-5",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 5 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-5",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 5 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-5",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 5 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-5",
+      "to": "table-a-12",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 5 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-5",
+      "to": "table-b-10",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 5 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-5",
+      "to": "table-a-13",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 5 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-5",
+      "to": "table-b-8",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 5 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-5",
+      "to": "table-b-7",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 5 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-5",
+      "to": "table-a-1",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 5 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-5",
+      "to": "table-b-1",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 5 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-6",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 6 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-6",
+      "to": "table-a-20",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 6 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-6",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 6 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-6",
+      "to": "table-a-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 6 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-6",
+      "to": "table-b-13",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 6 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-6",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 6 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-6",
+      "to": "table-a-8",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 6 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-6",
+      "to": "table-a-13",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 6 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-6",
+      "to": "table-a-14",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 6 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-6",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 6 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-6",
+      "to": "table-b-8",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 6 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-6",
+      "to": "table-a-1",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 6 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-6",
+      "to": "table-b-9",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 6 张对照表 · 第 14 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-7",
+      "to": "table-a-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 7 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-7",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 7 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-7",
+      "to": "table-a-1",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 7 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-7",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 7 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-7",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 7 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-7",
+      "to": "table-b-10",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 7 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-7",
+      "to": "table-a-13",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 7 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-7",
+      "to": "table-a-14",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 7 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-7",
+      "to": "table-a-8",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 7 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-7",
+      "to": "table-b-8",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 7 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-7",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 7 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-8",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 8 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-8",
+      "to": "table-a-13",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 8 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-8",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 8 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-8",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 8 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-8",
+      "to": "table-a-1",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 8 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-8",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 8 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-8",
+      "to": "table-a-8",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 8 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-8",
+      "to": "table-b-5",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 8 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-8",
+      "to": "table-a-4",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 8 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-8",
+      "to": "table-a-2",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 8 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-8",
+      "to": "table-b-10",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 8 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-8",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 8 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-9",
+      "to": "table-a-8",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 9 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-9",
+      "to": "table-a-12",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 9 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-9",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 9 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-9",
+      "to": "table-a-1",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 9 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-9",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 9 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-9",
+      "to": "table-a-13",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 9 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-9",
+      "to": "table-b-8",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 9 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-9",
+      "to": "table-b-10",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 9 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-9",
+      "to": "table-b-5",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 9 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-9",
+      "to": "table-a-2",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 9 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-9",
+      "to": "table-a-20",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 9 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-9",
+      "to": "table-a-6",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 9 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-9",
+      "to": "table-b-13",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 9 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-10",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 10 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-10",
+      "to": "table-a-20",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 10 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-10",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 10 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-10",
+      "to": "table-b-8",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 10 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-10",
+      "to": "table-a-13",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 10 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-10",
+      "to": "table-a-5",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 10 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-10",
+      "to": "table-b-2",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 10 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-10",
+      "to": "table-a-2",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 10 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-10",
+      "to": "table-a-12",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 10 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-10",
+      "to": "table-a-8",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 10 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-10",
+      "to": "table-b-7",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 10 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-10",
+      "to": "table-a-9",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 10 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-10",
+      "to": "table-b-1",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 10 张对照表 · 第 14 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-11",
+      "to": "table-a-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 11 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-11",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 11 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-11",
+      "to": "table-b-15",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 11 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-11",
+      "to": "table-b-10",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 11 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-11",
+      "to": "table-b-13",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 11 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-11",
+      "to": "table-a-11",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 11 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-11",
+      "to": "table-b-5",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 11 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-11",
+      "to": "table-b-4",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 11 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-11",
+      "to": "table-a-13",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 11 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-11",
+      "to": "table-a-8",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 11 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-11",
+      "to": "table-b-1",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 11 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-12",
+      "to": "table-a-1",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 12 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-12",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 12 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-12",
+      "to": "table-a-19",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 12 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-12",
+      "to": "table-a-12",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 12 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-12",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 12 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-12",
+      "to": "table-a-20",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 12 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-12",
+      "to": "table-a-13",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 12 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-12",
+      "to": "table-a-8",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 12 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-12",
+      "to": "table-b-5",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 12 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-12",
+      "to": "table-a-2",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 12 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-12",
+      "to": "table-b-2",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 12 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-12",
+      "to": "table-a-9",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 12 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-13",
+      "to": "table-a-13",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 13 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-13",
+      "to": "table-b-8",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 13 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-13",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 13 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-13",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 13 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-13",
+      "to": "table-a-12",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 13 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-13",
+      "to": "table-b-4",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 13 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-13",
+      "to": "table-b-10",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 13 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-13",
+      "to": "table-a-8",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 13 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-13",
+      "to": "table-b-3",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 13 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-13",
+      "to": "table-a-1",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 13 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-13",
+      "to": "table-b-1",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 13 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-14",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 14 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-14",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 14 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-14",
+      "to": "table-b-8",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 14 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-14",
+      "to": "table-a-12",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 14 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-14",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 14 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-14",
+      "to": "table-a-13",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 14 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-14",
+      "to": "table-a-2",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 14 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-14",
+      "to": "table-a-1",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 14 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-14",
+      "to": "table-b-3",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 14 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-14",
+      "to": "table-a-8",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 14 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-14",
+      "to": "table-b-7",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 14 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-14",
+      "to": "table-a-3",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 14 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-14",
+      "to": "table-b-1",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 14 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-15",
+      "to": "table-a-20",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 15 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-15",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 15 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-15",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 15 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-15",
+      "to": "table-a-13",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 15 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-15",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 15 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-15",
+      "to": "table-a-12",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 15 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-15",
+      "to": "table-b-10",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 15 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-15",
+      "to": "table-b-11",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 15 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-15",
+      "to": "table-b-3",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 15 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-15",
+      "to": "table-a-1",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 15 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-15",
+      "to": "table-b-1",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 15 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-16",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 16 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-16",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 16 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-16",
+      "to": "table-b-10",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 16 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-16",
+      "to": "table-a-8",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 16 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-16",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 16 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-16",
+      "to": "table-a-1",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 16 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-16",
+      "to": "table-a-13",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 16 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-16",
+      "to": "table-b-5",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 16 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-16",
+      "to": "table-b-8",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 16 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-16",
+      "to": "table-a-6",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 16 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-16",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 16 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-16",
+      "to": "table-b-13",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 16 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-17",
+      "to": "table-a-8",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 17 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-17",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 17 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-17",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 17 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-17",
+      "to": "table-b-3",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 17 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-17",
+      "to": "table-b-7",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 17 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-17",
+      "to": "table-a-1",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 17 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-17",
+      "to": "table-a-13",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 17 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-17",
+      "to": "table-a-12",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 17 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-17",
+      "to": "table-b-10",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 17 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-17",
+      "to": "table-a-2",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 17 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-17",
+      "to": "table-a-20",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 17 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-17",
+      "to": "table-b-13",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 17 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-18",
+      "to": "table-a-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 18 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-18",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 18 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-18",
+      "to": "table-b-10",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 18 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-18",
+      "to": "table-a-11",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 18 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-18",
+      "to": "table-a-13",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 18 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-18",
+      "to": "table-a-14",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 18 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-18",
+      "to": "table-b-3",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 18 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-18",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 18 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-18",
+      "to": "table-a-8",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 18 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-18",
+      "to": "table-b-13",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 18 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-18",
+      "to": "table-a-1",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 18 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-19",
+      "to": "table-a-8",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 19 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-19",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 19 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-19",
+      "to": "table-b-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 19 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-19",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 19 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-19",
+      "to": "table-a-13",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 19 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-19",
+      "to": "table-b-5",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 19 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-19",
+      "to": "table-b-3",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 19 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-19",
+      "to": "table-b-8",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 19 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-19",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 19 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-19",
+      "to": "table-a-6",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 19 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-19",
+      "to": "table-a-1",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 19 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-19",
+      "to": "table-a-20",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 19 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-20",
+      "to": "table-a-8",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 20 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-20",
+      "to": "table-b-10",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 20 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-20",
+      "to": "table-a-2",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 20 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-20",
+      "to": "table-b-13",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 20 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-20",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 20 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-20",
+      "to": "table-b-3",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 20 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-20",
+      "to": "table-b-2",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 20 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-20",
+      "to": "table-b-5",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 20 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-20",
+      "to": "table-a-1",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 20 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-20",
+      "to": "table-a-13",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 20 张对照表 · 第 10 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-20",
+      "to": "table-a-12",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 20 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-20",
+      "to": "table-b-8",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 20 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-21",
+      "to": "table-b-4",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 21 张对照表 · 第 1 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-21",
+      "to": "table-a-14",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 21 张对照表 · 第 2 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-21",
+      "to": "table-a-20",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 21 张对照表 · 第 3 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-21",
+      "to": "table-a-13",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 21 张对照表 · 第 4 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-21",
+      "to": "table-a-5",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 21 张对照表 · 第 5 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-21",
+      "to": "table-a-3",
+      "result": "advantage",
+      "source": "table-b",
+      "locator": "第 21 张对照表 · 第 6 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-21",
+      "to": "table-a-12",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 21 张对照表 · 第 7 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-21",
+      "to": "table-b-2",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 21 张对照表 · 第 8 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-21",
+      "to": "table-a-2",
+      "result": "balanced",
+      "source": "table-b",
+      "locator": "第 21 张对照表 · 第 9 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-21",
+      "to": "table-a-8",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 21 张对照表 · 第 11 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-21",
+      "to": "table-a-9",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 21 张对照表 · 第 12 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-21",
+      "to": "table-b-7",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 21 张对照表 · 第 13 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "table-b-21",
+      "to": "table-b-1",
+      "result": "disadvantage",
+      "source": "table-b",
+      "locator": "第 21 张对照表 · 第 14 行",
+      "scope": "configuration"
+    },
+    {
+      "from": "liu-huang-1",
+      "toTeam": "wangyi",
+      "result": "disadvantage",
+      "source": "liu-huang",
+      "locator": "配队痛点分析",
+      "scope": "archetype",
+      "note": "先手与爆头压力较大。"
+    },
+    {
+      "from": "liu-huang-1",
+      "toTeam": "wenyang",
+      "result": "disadvantage",
+      "source": "liu-huang",
+      "locator": "配队痛点分析",
+      "scope": "archetype",
+      "note": "枭雄爆发不受战必限制，依赖双方先手与发动。"
+    },
+    {
+      "from": "liu-huang-4",
+      "toTeam": "wenyang",
+      "result": "disadvantage",
+      "source": "liu-huang",
+      "locator": "配队痛点分析",
+      "scope": "archetype",
+      "note": "仅凭百家减伤仍可能吃力，取决于文鸯发动。"
+    },
+    {
+      "fromTeam": "cao-lutie",
+      "toTeam": "grandpa",
+      "result": "disadvantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "cao-lutie",
+      "toTeam": "xun-dian",
+      "result": "disadvantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "cao-lutie",
+      "toTeam": "lejin-jin",
+      "result": "disadvantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "cao-lutie",
+      "toTeam": "cao-dian",
+      "result": "disadvantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "chunhua-wei",
+      "toTeam": "crab",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "chunhua-wei",
+      "toTeam": "lejin-tank",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "xun-zhu",
+      "toTeam": "crab",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "xun-zhu",
+      "toTeam": "xun-sima-cao",
+      "result": "disadvantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "xun-zhu",
+      "toTeam": "cao-lutie",
+      "result": "disadvantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "zhangfei",
+      "toTeam": "zhou-tank",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "zhangfei",
+      "toTeam": "machao-caochun",
+      "result": "disadvantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "cao-crab",
+      "toTeam": "shu-cavalry",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "cao-crab",
+      "toTeam": "machao",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "cao-crab",
+      "toTeam": "crab",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "cao-crab",
+      "toTeam": "xun-dian",
+      "result": "disadvantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "qiao-lusu",
+      "toTeam": "zhangfei",
+      "result": "disadvantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "qiao-lusu",
+      "toTeam": "machao",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "masu",
+      "toTeam": "lv-liumang",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "masu",
+      "toTeam": "zhen-lv",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "masu",
+      "toTeam": "qiao-liumang",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "masu",
+      "toTeam": "machao",
+      "result": "disadvantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "cao-dian",
+      "toTeam": "shu-cavalry",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "cao-dian",
+      "toTeam": "crab",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "qiao-liumang",
+      "toTeam": "masu",
+      "result": "disadvantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "qiao-liumang",
+      "toTeam": "three-ma",
+      "result": "disadvantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "pang-chengyu",
+      "toTeam": "machao",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "pang-chengyu",
+      "toTeam": "shu-cavalry",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "zhao-jiang",
+      "toTeam": "chengyu",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "zhao-jiang",
+      "toTeam": "jiaxu",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    },
+    {
+      "fromTeam": "zhao-jiang",
+      "toTeam": "goudao",
+      "result": "advantage",
+      "source": "matchup-2026",
+      "locator": "对应队伍段落",
+      "scope": "archetype"
+    }
+  ],
+  "teamAliases": {
+    "wenyang": [
+      "鸟刀",
+      "文鸯菜刀"
+    ],
+    "qiao-liumang": [
+      "骨乔"
+    ],
+    "jin-infantry": [
+      "钱步",
+      "晋步"
+    ],
+    "liu-huang": [
+      "牛皇刀",
+      "牛黄刀"
+    ],
+    "taishi-wei": [
+      "太刀"
+    ],
+    "shu-cavalry": [
+      "蜀骑"
+    ],
+    "qiao-lusu": [
+      "大乔张机鲁肃"
+    ],
+    "cao-lutie": [
+      "新撸铁"
+    ],
+    "xun-zhu": [
+      "荀彧朱儁"
+    ],
+    "lv-liumang": [
+      "流氓"
+    ],
+    "nuclear": [
+      "核弹队"
+    ]
+  }
+}

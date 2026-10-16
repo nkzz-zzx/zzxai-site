@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="率土之滨队伍克制工具，选择队伍与战法组合，查看克制、被克制与对局参考。">
+  <title>队伍克制 · 智能工具小站</title>
+  <link rel="stylesheet" href="team-counters.css?v=20261016-1">
+  <script type="module" src="team-counters.js?v=20261016-1"></script>
+</head>
+<body>
+  <header class="topbar"><a class="back" href="./" aria-label="返回工具小站">‹</a><h1>队伍克制</h1><a class="treasure-link" href="./treasure-prices.html">宝物</a></header>
+  <main class="selector-shell">
+    <aside class="team-column" aria-label="选择队伍">
+      <div class="column-heading"><h2>队伍</h2><span id="team-count"></span></div>
+      <label class="sr-only" for="team-search">搜索队伍、武将或战法</label><input id="team-search" type="search" placeholder="队伍 / 武将 / 战法" autocomplete="off" disabled>
+      <label class="sr-only" for="category">队伍类型</label><select id="category" disabled><option value="all">全部队伍</option></select>
+      <div id="team-list" class="team-list" role="tablist" aria-label="队伍" aria-orientation="vertical"></div>
+      <p id="search-empty" class="empty" hidden>暂无匹配队伍</p>
+    </aside>
+    <section id="team-details" class="detail-column" role="tabpanel" aria-labelledby="team-title" hidden>
+      <div class="detail-header"><div class="title-row"><h2 id="team-title"></h2><span id="variant-count"></span></div><div id="variant-tabs" class="variant-tabs" role="tablist" aria-label="战法组合"></div></div>
+      <div class="detail-body">
+        <section id="configuration" role="tabpanel" aria-label="所选战法组合"><div id="members" class="members"></div><div id="variant-notes" class="variant-notes"></div><details class="source-details"><summary>配置依据</summary><div id="configuration-sources"></div></details></section>
+        <div class="matchup-heading"><h3>对局关系</h3><button id="copy-link" type="button">分享方案</button></div>
+        <div id="relation-filters" class="relation-filters" role="group" aria-label="对局筛选"><button type="button" data-result="all" aria-pressed="true">全部</button><button type="button" data-result="advantage" aria-pressed="false">克制</button><button type="button" data-result="disadvantage" aria-pressed="false">被克制</button><button type="button" data-result="balanced" aria-pressed="false">接近</button><button type="button" data-result="disputed" aria-pressed="false">有分歧</button></div>
+        <p class="scope-note">按所选战法对照；“队伍参考”仅指体系。红度、宝物、速度及环境会影响对局。</p>
+        <div id="matchups" aria-live="polite"></div>
+      </div>
+    </section>
+    <div id="load-status" class="load-status"><p id="status" role="status">加载队伍…</p><button id="retry-load" type="button" hidden>重新载入</button></div>
+  </main>
+  <div id="notice" class="notice" role="status" hidden></div>
+</body>
+</html>
