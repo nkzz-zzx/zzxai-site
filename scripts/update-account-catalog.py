@@ -76,7 +76,23 @@ for kind, records in [('heroes', heroes), ('skills', {s['id']: s for s in skills
         if key in records:
             records[key].update(fields)
         else:
-            raise SystemExit(f'Verified item {key} is absent from the official catalog; please verify its ID')
+            # Newly released base heroes may reach the public facade table before
+            # CBG updates its base-hero table. Require an exact official base-ID
+            # witness, plus the separately reviewed release announcement. Never
+            # add the facade itself as a hero or copy its cosmetic SP metadata.
+            witness = addition.get('evidence', {}).get('officialFacadeId')
+            facade = next((item for item in config.get('hero_facade', [])
+                           if str(item['hero_id']) == witness
+                           and str(item.get('base_hero_id')) == key), None) if kind == 'heroes' else None
+            if (not facade or not facade.get('is_release')
+                    or facade.get('name') != '成就·' + fields['name']
+                    or countries[int(facade['country'])] != fields['country']
+                    or troops[int(facade['hero_type'])] != fields['troop']
+                    or int(facade['quality']) != fields['rarity']
+                    or not addition.get('source') or not addition.get('releasedAt')
+                    or datetime.date.fromisoformat(addition['releasedAt']) > datetime.datetime.now(datetime.timezone(datetime.timedelta(hours=8))).date()):
+                raise SystemExit(f'Verified item {key} is absent from the official catalog; please verify its ID')
+            records[key] = fields
     if kind == 'skills':
         skills = list(records.values())
 if len(heroes) < 350 or len(skills) < 200 or len({s['id'] for s in skills}) != len(skills):

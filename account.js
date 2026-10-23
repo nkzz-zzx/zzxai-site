@@ -148,7 +148,7 @@ for(const id of ['search','ownership','country','rarity','season','skill-type','
 function selectTab(next){tab=next;for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).setAttribute('aria-selected',String(tab===kind));$(id).tabIndex=tab===kind?0:-1;}render();}
 for(const [id,kind]of [['heroes-tab','heroes'],['skills-tab','skills'],['gear-tab','gear']]){$(id).addEventListener('click',()=>selectTab(kind));$(id).addEventListener('keydown',event=>{if(['ArrowLeft','ArrowRight','Home','End'].includes(event.key)){event.preventDefault();const tabs=comparison?['heroes','skills']:['heroes','skills','gear'];const next=event.key==='Home'?tabs[0]:event.key==='End'?tabs.at(-1):tabs[(tabs.indexOf(kind)+(event.key==='ArrowLeft'?tabs.length-1:1))%tabs.length];selectTab(next);$(next+'-tab').focus();}});}
 selectTab('heroes');setBusy(true);
-try{const response=await fetch('./account-assets/catalog.json?v=20261014-compact-tools-v1');if(!response.ok)throw new Error('目录下载失败');catalog=await response.json();render();message('输入商品链接，或导入藏宝阁详情 JSON。');setBusy(false);}catch{message('图鉴目录载入失败，请刷新重试',true);}
+try{const response=await fetch('./account-assets/catalog.json?v=20261023-liuxiu-v1');if(!response.ok)throw new Error('目录下载失败');catalog=await response.json();render();message('输入商品链接，或导入藏宝阁详情 JSON。');setBusy(false);}catch{message('图鉴目录载入失败，请刷新重试',true);}
 
 function showComparison(left,right){
  comparison={left,right};account=left;differencesOnly=false;

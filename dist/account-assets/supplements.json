@@ -1,6 +1,26 @@
 {
-  "reviewedAt": "2026-10-13",
+  "reviewedAt": "2026-10-23",
   "heroes": [
+    {
+      "id": "100841",
+      "name": "刘秀",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "version": "庆典限定",
+      "iconId": "100841",
+      "portrait": "./account-assets/portraits/100841.jpg",
+      "releasedAt": "2026-10-22",
+      "source": "https://m.ds.163.com/article/6acca11ad96a1b266f1a0857/",
+      "sourceTitle": "十一周年庆典活动预告第二弹（经典服）",
+      "evidence": {
+        "officialFacadeId": "101707",
+        "officialConfig": "https://cbg-stzb.res.netease.com/js/game_auto_config.js",
+        "note": "官方庆典公告确认10月22日全赛季上线五星汉刘秀；藏宝阁hero_facade中成就·刘秀的base_hero_id为100841。基础hero表尚未收录，不能把外观ID 101707当作武将ID或将其SP字段作为武将赛季。",
+        "portrait": "https://g0.gph.netease.com/ngsocial/community/stzb/cn/cards/cut/card_medium_100841.jpg?gameid=g10"
+      }
+    },
     {
       "id": "100815",
       "name": "孟获",

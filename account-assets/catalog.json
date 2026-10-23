@@ -1,5 +1,5 @@
 {
-  "asOf": "2026-10-13",
+  "asOf": "2026-10-23",
   "sourceLabel": "藏宝阁官方游戏配置 + 官方更新公告 + 本站历史武将图鉴",
   "sources": [
     "https://cbg-stzb.res.netease.com/js/game_auto_config.js",
@@ -4637,6 +4637,21 @@
       "season": "",
       "portrait": "./stzb-assets/portraits/T05.jpg",
       "thumbnail": "./account-assets/portrait-thumbs/v1-4dbfea6901061152.webp"
+    },
+    {
+      "id": "100841",
+      "name": "刘秀",
+      "country": "汉",
+      "troop": "骑",
+      "rarity": 5,
+      "season": "N",
+      "version": "庆典限定",
+      "iconId": "100841",
+      "portrait": "./account-assets/portraits/100841.jpg",
+      "releasedAt": "2026-10-22",
+      "source": "https://m.ds.163.com/article/6acca11ad96a1b266f1a0857/",
+      "sourceTitle": "十一周年庆典活动预告第二弹（经典服）",
+      "thumbnail": "./account-assets/portrait-thumbs/v1-1ccb7138cab79f8c.webp"
     }
   ],
   "skills": [
