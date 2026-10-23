@@ -1,8 +1,8 @@
-export const DISCOUNT_RATE = 0.85;
+export const DISCOUNT_RATE = 0.8;
 
 export function discountedPrice(referencePrice) {
   if (typeof referencePrice !== 'number' || !Number.isFinite(referencePrice) || referencePrice < 0) return null;
-  return Math.round(Math.round(referencePrice * 100) * 85 / 100) / 100;
+  return Math.round(Math.round(referencePrice * 100) * DISCOUNT_RATE) / 100;
 }
 
 export function formatPrice(price) {

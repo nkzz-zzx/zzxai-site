@@ -20,12 +20,12 @@ const url = process.env.TREASURE_URL || 'http://127.0.0.1:8024/treasure-prices.h
     assert.equal(await page.locator('#feature-tabs [aria-selected="true"]').innerText(),'坚忍');
     assert.equal(await page.locator('#feature-tabs button').count(),6);
     assert.equal(await page.locator('#price-results .value-option').count(),3);
-    assert.equal(await page.locator('.price-value').first().innerText(),'¥552.5');
+    assert.equal(await page.locator('.price-value').first().innerText(),'¥520');
     assert.match(await page.locator('.hero-skill').innerText(),/被动 · 舍身卫主/);
     await page.waitForFunction(()=>{const image=document.querySelector('.hero-item[data-hero-id="100769"] img');return image.complete&&image.naturalWidth>0;});
     assert.match(await page.locator('.hero-item img').getAttribute('src'),/portrait-thumbs\/.*\.webp$/);
     assert(await page.locator('.hero-item img').first().evaluate(image=>{const r=image.getBoundingClientRect();return r.width/r.height>=.72&&r.width/r.height<=.8;}));
-    assert.doesNotMatch(await page.locator('body').innerText(),/参考|红麒|官方|八五折|更新于|¥650/);
+    assert.doesNotMatch(await page.locator('body').innerText(),/参考|红麒|官方|八五折|八折|更新于|¥650/);
     assert.equal(await page.locator('a[href^="http"],footer,.rule-note,.base-note,.no-heroes').count(),0);
     assert(await page.locator('#load-status').isHidden());
     assert.match(await page.locator('#weapon-art').getAttribute('src'),/1108\.jpg$/);
@@ -34,7 +34,7 @@ const url = process.env.TREASURE_URL || 'http://127.0.0.1:8024/treasure-prices.h
     assert(await page.locator('#base-features').isVisible());
     await page.locator('#base-details summary').click();
     await feature('戒备').click();
-    assert.equal(await page.locator('.price-value').first().innerText(),'¥1,020');
+    assert.equal(await page.locator('.price-value').first().innerText(),'¥960');
     assert.equal(await page.locator('#hero-grid .hero-item').count(),3);
     await page.locator('.value-main').first().click();
     assert.equal(await page.locator('.value-main').first().getAttribute('aria-expanded'),'true');
@@ -49,11 +49,11 @@ const url = process.env.TREASURE_URL || 'http://127.0.0.1:8024/treasure-prices.h
     await openFilters();
     await page.locator('#main-type-select').selectOption('被动');
     await page.locator('#quality-select').selectOption('粉');
-    await page.locator('#max-price').fill('600');await closeFilters();
+    await page.locator('#max-price').fill('550');await closeFilters();
     await weapon('1108').click();
     assert.equal(await page.locator('#feature-tabs [aria-selected="true"]').innerText(),'坚忍');
     assert.equal(await page.locator('.value-option').count(),1);
-    assert.equal(await page.locator('.price-value').innerText(),'¥552.5');
+    assert.equal(await page.locator('.price-value').innerText(),'¥520');
     assert.equal(await page.locator('.value-option[data-quality="红"]').count(),0);
     await reset();await page.locator('#price-search').fill('诸葛亮 S3');
     await openFilters();await page.locator('#main-type-select').selectOption('指挥');await closeFilters();
