@@ -5,8 +5,8 @@
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="率土之滨宝物价格，查看宝物图片、粉武和红武分档价格、前三词条及适配武将主战法类型。">
   <title>宝物价格 · 智能工具小站</title>
-  <link rel="stylesheet" href="treasure-prices.css?v=20261015-3">
-  <script type="module" src="treasure-prices.js?v=20261023-prices-v1"></script>
+  <link rel="stylesheet" href="treasure-prices.css?v=20261026-main-skill-v1">
+  <script type="module" src="treasure-prices.js?v=20261026-main-skill-v1"></script>
 </head>
 <body>
   <header class="topbar">
@@ -43,5 +43,18 @@
     <div id="load-status" class="load-status"><p id="price-status" role="status" aria-live="polite">加载中…</p><button id="retry-load" type="button" hidden>重新载入</button></div>
     <p id="price-empty" class="empty" role="status" hidden>暂无匹配结果</p>
   </main>
+  <dialog id="hero-skill-dialog" class="hero-skill-dialog" aria-labelledby="skill-hero-title skill-name">
+    <div class="skill-dialog-header">
+      <img id="skill-hero-art" width="60" height="80" alt="" decoding="async">
+      <div class="skill-hero-heading"><h2 id="skill-hero-title"></h2><p id="skill-hero-meta"></p></div>
+      <button id="close-hero-skill" class="skill-dialog-close" type="button" aria-label="关闭主战法详情" autofocus>×</button>
+    </div>
+    <div class="skill-dialog-body">
+      <div class="skill-name-row"><h3 id="skill-name"></h3><span id="skill-type"></span></div>
+      <dl id="skill-facts" class="skill-facts"></dl>
+      <h4 id="skill-effect-title">战法效果</h4>
+      <p id="skill-description" class="skill-description"></p>
+    </div>
+  </dialog>
 </body>
 </html>

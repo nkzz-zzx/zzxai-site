@@ -57,6 +57,38 @@ test('official main-skill types distinguish variants and the passive new Dian We
   assert.equal(catalog.heroes['100794'].mainSkill.type,'指挥');
 });
 
+test('all adapted heroes have complete exact-ID main-skill effects and only valid optional facts', () => {
+  assert.equal(Object.keys(catalog.heroes).length,77);
+  assert(catalog.officialSources.some(url=>url.includes('/skill_extra.json')));
+  for (const hero of Object.values(catalog.heroes)) {
+    const skill=hero.mainSkill;
+    assert(skill.id && skill.name && skill.type);
+    assert.equal(skill.descriptionLevel,10);
+    assert(typeof skill.description==='string' && skill.description.length>10,hero.id);
+    if (skill.probability) for (const value of skill.probability.match(/\d+(?:\.\d+)?/g)) assert(Number(value)>=0 && Number(value)<=100);
+    if (skill.distance!==undefined) assert(Number.isInteger(skill.distance) && skill.distance>0);
+  }
+  const s3=catalog.heroes['100496'].mainSkill;
+  assert.equal(s3.id,'200737');
+  assert.match(s3.description,/前3回合/);assert.doesNotMatch(s3.description,/前2回合/);
+  const regular=catalog.heroes['100021'].mainSkill,sp=catalog.heroes['102001'].mainSkill;
+  assert.equal(regular.name,'银龙冲阵');assert.equal(sp.name,'银龙孤胆');
+  assert.notEqual(regular.id,sp.id);assert.notEqual(regular.description,sp.description);
+  const dianwei=catalog.heroes['100769'].mainSkill;
+  assert.equal(dianwei.id,'200993');assert.equal(dianwei.probability,undefined);
+  assert.match(dianwei.description,/攻击伤害由典韦承担/);
+  // A repeated paragraph opening can be two legitimate effects; keep both.
+  const chengyu=catalog.heroes['100787'].mainSkill;
+  assert.match(chengyu.description,/敌军全体被施加特殊负面效果前/);
+  assert.match(chengyu.description,/我军全体被施加挑衅、围困以及控制效果时/);
+  const reviewed=JSON.parse(fs.readFileSync(path.join(root,'treasure-assets/main-skill-text-reviews.json'))).skills;
+  for (const [id,item] of Object.entries(reviewed)) {
+    const skill=Object.values(catalog.heroes).map(h=>h.mainSkill).find(s=>s.id===id);
+    if (skill) assert.equal(skill.description,item.description,id);
+    assert.match(item.sourceDescriptionSha256,/^[a-f0-9]{64}$/);
+  }
+});
+
 test('global hero and feature search combine with quality, actual hero main type, and discounted budget', async () => {
   const {filterWeapons,discountedPrice} = await core;
   const dianwei = filterWeapons(catalog,{search:'典韦',mainType:'被动',quality:'粉',maxPrice:550});

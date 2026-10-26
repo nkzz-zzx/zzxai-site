@@ -4,6 +4,7 @@ const $ = id => document.getElementById(id);
 const controls = ['price-search','quality-select','main-type-select','max-price','reset-filters'];
 const params = new URLSearchParams(location.search);
 let catalog, results = [], selectedWeaponId = params.get('weapon') || '', selectedFeatureName = params.get('feature') || '';
+let skillTrigger = null;
 function node(tag, text, className) {
   const element = document.createElement(tag);
   if (text !== undefined) element.textContent = text;
@@ -71,10 +72,12 @@ function renderPrices({feature,tiers,heroes}) {
     row.append(button);return row;
   }));
   $('hero-grid').replaceChildren(...heroes.map(hero => {
-    const item = node('figure',undefined,'hero-item');item.dataset.heroId=hero.id;item.title=heroLabel(hero);
+    const item = node('button',undefined,'hero-item');item.type='button';item.dataset.heroId=hero.id;item.title=heroLabel(hero);
+    item.setAttribute('aria-haspopup','dialog');item.setAttribute('aria-controls','hero-skill-dialog');
+    item.setAttribute('aria-label',`查看${heroLabel(hero)}的主战法${hero.mainSkill.name}详情`);
     const image = node('img');image.className='hero-art';image.src=hero.portrait;image.alt=heroLabel(hero);image.loading='lazy';image.decoding='async';image.width=90;image.height=120;
     const prefix = ['S2','S3','XP','SP'].includes(hero.version)?hero.version:'';
-    const text = node('figcaption');text.append(node('span',prefix+hero.name,'hero-name'),node('span',[hero.country,hero.troop].filter(Boolean).join(' · '),'hero-meta'),node('span',`${hero.mainSkill.type} · ${hero.mainSkill.name}`,'hero-skill'));
+    const text = node('span');text.append(node('span',prefix+hero.name,'hero-name'),node('span',[hero.country,hero.troop].filter(Boolean).join(' · '),'hero-meta'),node('span',`${hero.mainSkill.type} · ${hero.mainSkill.name}`,'hero-skill'));
     item.append(image,text);return item;
   }));
   $('hero-count').textContent=String(heroes.length);$('adapt-heroes').hidden=!heroes.length;
@@ -107,12 +110,35 @@ function selectFeature(name, focus=false) {
 function setFilters(open) {
   $('filter-panel').hidden=!open;$('filter-toggle').setAttribute('aria-expanded',String(open));
 }
+function showHeroSkill(hero, trigger) {
+  const skill=hero.mainSkill || {}, dialog=$('hero-skill-dialog');
+  skillTrigger=trigger;
+  $('skill-hero-art').src=hero.portrait;$('skill-hero-art').alt=heroLabel(hero);
+  $('skill-hero-title').textContent=hero.name;
+  $('skill-hero-meta').textContent=[hero.country,hero.troop,hero.version==='常规'?'':hero.version].filter(Boolean).join(' · ');
+  $('skill-name').textContent=skill.name || '主战法详情';
+  $('skill-type').textContent=skill.type || '';$('skill-type').hidden=!skill.type;
+  const facts=[];
+  for (const [label,value] of [['发动率',skill.probability],['有效距离',skill.distance],['目标',skill.target]]) {
+    if (value===undefined || value===null || value==='') continue;
+    const fact=node('div',undefined,label==='目标'?'skill-fact-target':'');
+    fact.append(node('dt',label),node('dd',String(value)));facts.push(fact);
+  }
+  $('skill-facts').replaceChildren(...facts);$('skill-facts').hidden=!facts.length;
+  const description=typeof skill.description==='string'?skill.description.trim():'';
+  $('skill-effect-title').textContent=description&&skill.descriptionLevel===10?'满级效果':'战法效果';
+  $('skill-description').textContent=description || '暂未收录该主战法的完整效果。';
+  $('skill-description').classList.toggle('is-unavailable',!description);
+  setFilters(false);document.body.classList.add('skill-dialog-open');
+  if (!dialog.open) dialog.showModal();
+  dialog.querySelector('.skill-dialog-body').scrollTop=0;
+}
 async function load() {
   controls.forEach(id=>$(id).disabled=true);$('load-status').hidden=false;$('price-empty').hidden=true;
   $('retry-load').hidden=true;$('price-status').classList.remove('error');$('price-status').textContent='加载中…';
   const controller=new AbortController(), timer=setTimeout(()=>controller.abort(),15000);
   try {
-    const response=await fetch('./treasure-assets/prices.json?v=20261023-prices-v1',{signal:controller.signal,cache:'no-cache'});
+    const response=await fetch('./treasure-assets/prices.json?v=20261026-main-skill-v1',{signal:controller.signal,cache:'no-cache'});
     if (!response.ok) throw new Error('载入失败');
     const data=await response.json();
     if (!Array.isArray(data.weapons)||!data.weapons.length||!data.heroes) throw new Error('数据不完整');
@@ -135,6 +161,27 @@ for (const [id,keys,select] of [['weapon-list',['ArrowUp','ArrowDown'],selectWea
 $('price-results').addEventListener('click',event=>{
   const button=event.target.closest('.value-main');if(!button)return;const open=button.getAttribute('aria-expanded')!=='true';
   $('price-results').querySelectorAll('.value-main').forEach(item=>{const expanded=item===button&&open;item.setAttribute('aria-expanded',String(expanded));item.parentElement.classList.toggle('is-expanded',expanded);});
+});
+$('hero-grid').addEventListener('click',event=>{
+  const button=event.target.closest('.hero-item');
+  const hero=button&&catalog?.heroes[button.dataset.heroId];
+  if (hero) showHeroSkill(hero,button);
+});
+$('close-hero-skill').addEventListener('click',()=>$('hero-skill-dialog').close());
+$('hero-skill-dialog').addEventListener('close',()=>{
+  document.body.classList.remove('skill-dialog-open');
+  if (skillTrigger?.isConnected) skillTrigger.focus({preventScroll:true});
+  skillTrigger=null;
+});
+let backdropPointerDown=false;
+function outsideSkillDialog(event) {
+  const bounds=$('hero-skill-dialog').getBoundingClientRect();
+  return event.clientX<bounds.left || event.clientX>bounds.right || event.clientY<bounds.top || event.clientY>bounds.bottom;
+}
+$('hero-skill-dialog').addEventListener('pointerdown',event=>{backdropPointerDown=event.target===$('hero-skill-dialog')&&outsideSkillDialog(event);});
+$('hero-skill-dialog').addEventListener('click',event=>{
+  if (backdropPointerDown && event.target===$('hero-skill-dialog') && outsideSkillDialog(event)) $('hero-skill-dialog').close();
+  backdropPointerDown=false;
 });
 for (const id of ['price-search','max-price']) $(id).addEventListener('input',render);
 for (const id of ['quality-select','main-type-select']) $(id).addEventListener('change',render);

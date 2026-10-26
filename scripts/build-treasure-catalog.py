@@ -1,6 +1,7 @@
 """Join rendered public prices with official treasure and main-skill definitions."""
 import argparse
 import datetime
+import hashlib
 import json
 import pathlib
 import re
@@ -10,6 +11,7 @@ ROOT = pathlib.Path(__file__).resolve().parents[1]
 SOURCES = {
     'combat': 'https://cbg-stzb.res.netease.com/js/game_auto_config.js',
     'heroes': 'https://g0.gph.netease.com/ngsocial/community/stzb/cfg/hero_extra.json?gameid=g10',
+    'skills': 'https://g0.gph.netease.com/ngsocial/community/stzb/cfg/skill_extra.json?gameid=g10',
     'gear-bases': 'https://g0.gph.netease.com/ngsocial/community/stzb/cfg/gear_id.json?gameid=g10',
 }
 parser = argparse.ArgumentParser()
@@ -34,6 +36,8 @@ def read_official(name):
 reference = json.loads((ROOT / 'treasure-assets/reference.json').read_text())
 combat = read_official('combat')
 extra = {str(hero['id']): hero for hero in read_official('heroes')}
+skill_details = {str(skill['id']): skill for skill in read_official('skills')}
+text_reviews = json.loads((ROOT / 'treasure-assets/main-skill-text-reviews.json').read_text())['skills']
 bases = {str(gear['id']): gear for gear in read_official('gear-bases')}
 official_heroes = {str(hero['hero_id']): hero for hero in combat['hero'] + combat.get('special_hero', [])}
 skills = {str(skill['skill_id']): skill for skill in combat['skill']}
@@ -64,13 +68,35 @@ for hero_id in sorted(hero_ids):
     skill = skills.get(str(hero['skill_init']))
     if not skill or skill['skill_type'] not in types or str(details['methodId']) != str(hero['skill_init']):
         raise ValueError(f'Unresolved or inconsistent main skill: {hero_id}; existing catalog retained')
+    main_skill = dict(id=str(skill['skill_id']), name=skill['name'], type=types[skill['skill_type']])
+    full = skill_details.get(main_skill['id'])
+    if full:
+        if full['name'] != main_skill['name'] or full['type'] != main_skill['type']:
+            raise ValueError(f'Inconsistent main-skill details: {hero_id}; existing catalog retained')
+        description = str(full.get('desc') or '').strip()
+        review = text_reviews.get(main_skill['id'])
+        if review and description != review['description']:
+            if hashlib.sha256(description.encode()).hexdigest() != review['sourceDescriptionSha256']:
+                raise ValueError(f'Main-skill text changed, please review {main_skill["id"]}; existing catalog retained')
+            description = review['description']
+        main_skill.update(description=description, descriptionLevel=10)
+        probability = str(full.get('probability') or '').strip()
+        percentages = re.fullmatch(r'(\d+(?:\.\d+)?)%(?:-(\d+(?:\.\d+)?)%)?', probability)
+        if percentages and all(0 <= float(n) <= 100 for n in percentages.groups() if n is not None):
+            main_skill['probability'] = probability
+        distance = full.get('distance')
+        if str(distance).isdigit() and int(distance) > 0:
+            main_skill['distance'] = int(distance)
+        target = str(full.get('targetShow') or '').strip()
+        if target and target not in ['--', '无']:
+            main_skill['target'] = target
     portrait = portraits.get(hero_id)
     if not portrait or not (ROOT / portrait).is_file() or not (ROOT / 'dist' / portrait).is_file():
         raise ValueError(f'Missing local hero portrait: {hero_id}; existing catalog retained')
     heroes[hero_id] = dict(id=hero_id, name=hero['name'], country=details['country'], troop=details['type'],
                            version=versions.get(hero.get('season'), ''), rarity=hero.get('star', hero['quality']),
                            portrait=portrait,
-                           mainSkill=dict(id=str(skill['skill_id']), name=skill['name'], type=types[skill['skill_type']]))
+                           mainSkill=main_skill)
 
 weapons = []
 for weapon in reference['weapons']:
