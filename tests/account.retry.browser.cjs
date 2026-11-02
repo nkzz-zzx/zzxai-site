@@ -12,6 +12,7 @@ const assert=require('node:assert/strict');const {chromium}=require('playwright'
    const right=new URL(url,location.href).searchParams.get('url').endsWith('/right');const key=right?'right':'left';const n=window.calls[key]=(window.calls[key]||0)+1;
    if(window.testMode==='local'&&n===1)return new Promise((resolve,reject)=>options.signal.addEventListener('abort',()=>reject(new DOMException('Timeout','AbortError')),{once:true}));
    if(window.testMode==='error')return new Response(JSON.stringify({error:'商品不存在'}),{status:502});
+   if(window.testMode==='login')return new Response(JSON.stringify({error:'藏宝阁要求登录后查看该商品，本站暂无法匿名获取详情。可导入已有的账号 JSON。',code:'UPSTREAM_LOGIN_REQUIRED',upstreamCode:'SESSION_TIMEOUT'}),{status:502});
    if(window.testMode==='exhausted'||window.testMode==='upstream'&&n===1||window.testMode==='dual'&&right&&n===1)return new Response(JSON.stringify({error:'查询超时',code:'QUERY_TIMEOUT',errorType:'AbortError'}),{status:502});
    return new Response(JSON.stringify({metadata:{fetchedAt:new Date().toISOString(),server:'X5992',status:'在售',price:100},heroes:[],skills:[],gear:[]}));
   };
@@ -21,6 +22,7 @@ const assert=require('node:assert/strict');const {chromium}=require('playwright'
  assert.deepEqual(await query('local'),{left:2});assert.match(await p.locator('#message').innerText(),/已载入/);
  assert.deepEqual(await query('exhausted'),{left:2});assert.match(await p.locator('#message').innerText(),/重试一次后仍未成功.*仍显示/);
  assert.deepEqual(await query('error'),{left:1});assert.match(await p.locator('#message').innerText(),/商品不存在/);
+ assert.deepEqual(await query('login'),{left:1});assert.match(await p.locator('#message').innerText(),/要求登录.*无法匿名获取.*仍显示/);
  assert.deepEqual(await query('dual',true),{left:1,right:2});assert(await p.locator('.comparison-table').isVisible());
  console.log('PASS local and upstream timeout retry, retry limit, retained results, no retry on other errors, independent dual-account retry');
  }finally{await b.close();}

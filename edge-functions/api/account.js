@@ -12,6 +12,7 @@ export default async function onRequest({request}) {
     stage='read';
     const text=await response.text(); if(text.length>5000000) return json({error:'账号响应过大'},502);
     let raw;try {raw=JSON.parse(text);} catch {return json({error:'藏宝阁返回了验证页面，请稍后重试或导入详情 JSON'},502);}
+    if(raw?.status_code==='SESSION_TIMEOUT')return json({error:'藏宝阁要求登录后查看该商品，本站暂无法匿名获取详情。可导入已有的账号 JSON。',code:'UPSTREAM_LOGIN_REQUIRED',upstreamCode:'SESSION_TIMEOUT'},502);
     try {return json(normalizeAccount(raw));}catch {return json({error:'藏宝阁未返回完整账号数据，商品可能已下架或需要登录'},502);}
   } catch(e) { return json({error:e.name==='AbortError'?'查询超时，请稍后重试':'无法获取藏宝阁详情，请稍后重试或导入详情 JSON',code:controller.signal.aborted?'QUERY_TIMEOUT':stage==='fetch'?'UPSTREAM_FETCH_FAILED':'UPSTREAM_READ_FAILED',errorType:e.name},502); }
   finally {clearTimeout(timeout);}

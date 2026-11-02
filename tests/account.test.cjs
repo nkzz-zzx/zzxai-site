@@ -1,5 +1,18 @@
 const {test}=require('node:test');const assert=require('node:assert/strict');
 const core=import('../account-core.js');
+test('CBG session restriction is reported as login required without turning it into an empty account or a timeout',async()=>{
+ const {default:handler}=await import('../edge-functions/api/account.js');
+ const previous=global.fetch;let calls=0;
+ try{
+  global.fetch=async()=>{calls++;return new Response(JSON.stringify({status:2,status_code:'SESSION_TIMEOUT',msg:'请先登录再查看',_request_id:'not-forwarded'}));};
+  const request=new Request('https://zzxai.cn/api/account?url='+encodeURIComponent('https://stzb.cbg.163.com/cgi/mweb/equip/1/sample'));
+  const result=await handler({request});const data=await result.json();
+  assert.equal(result.status,502);assert.equal(result.headers.get('Cache-Control'),'no-store');
+  assert.equal(data.code,'UPSTREAM_LOGIN_REQUIRED');assert.equal(data.upstreamCode,'SESSION_TIMEOUT');
+  assert.match(data.error,/要求登录.*无法匿名获取/);assert.doesNotMatch(data.error,/下架|查询超时/);
+  assert.equal(data.heroes,undefined);assert.equal(data.skills,undefined);assert.equal(data._request_id,undefined);assert.equal(calls,1);
+ }finally{global.fetch=previous;}
+});
 test('released Liu Xiu matches the base hero ID, retains local artwork and supports owned/missing comparison',async()=>{
  const {normalizeAccount,mergeCatalog,compareCollections,importAccount}=await core;
  const catalog=require('../account-assets/catalog.json');
