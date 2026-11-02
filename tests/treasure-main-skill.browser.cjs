@@ -13,7 +13,7 @@ const url=process.env.TREASURE_URL || 'http://127.0.0.1:8032/treasure-prices.htm
   try{
     await page.goto(url+'?weapon=1108&feature=坚忍');await hero('100769').waitFor();
     assert.equal(await hero('100769').getAttribute('aria-haspopup'),'dialog');
-    assert.equal(await page.locator('.price-value').first().innerText(),'¥520');
+    assert.equal(await page.locator('.price-value').first().innerText(),'¥585');
     const selectedUrl=page.url();
     await hero('100769').locator('img').click();await dialog.waitFor();
     assert.equal(await page.locator('#skill-hero-title').innerText(),'典韦');
@@ -37,7 +37,7 @@ const url=process.env.TREASURE_URL || 'http://127.0.0.1:8032/treasure-prices.htm
     await page.waitForFunction(()=>!document.body.classList.contains('skill-dialog-open'));
     assert.equal(await hero('100769').evaluate(el=>el===document.activeElement),true);
     assert.equal(page.url(),selectedUrl);
-    assert.equal(await page.locator('.price-value').first().innerText(),'¥520');
+    assert.equal(await page.locator('.price-value').first().innerText(),'¥585');
     await hero('100769').locator('.hero-name').click();await dialog.waitFor();await close();
     await hero('100769').evaluate(el=>{el.click();el.click();});await dialog.waitFor();
     assert.equal(await page.locator('dialog[open]').count(),1);
@@ -97,6 +97,6 @@ const url=process.env.TREASURE_URL || 'http://127.0.0.1:8032/treasure-prices.htm
     await missing.locator('#close-hero-skill').click();await missing.locator('#hero-skill-dialog').waitFor({state:'hidden'});
     await missing.close();
     assert.deepEqual(errors,[]);assert.deepEqual(external,[]);
-    console.log('PASS exact-version official tactic details, image/name/keyboard opening, repeat clicks, close button/Escape/backdrop, focus restore, mobile/desktop bounds, long-text scrolling, missing details, safe text and retained 80% prices');
+    console.log('PASS exact-version official tactic details, image/name/keyboard opening, repeat clicks, close button/Escape/backdrop, focus restore, mobile/desktop bounds, long-text scrolling, missing details, safe text and retained 90% prices');
   }finally{await browser.close();}
 })().catch(error=>{console.error(error);process.exitCode=1;});

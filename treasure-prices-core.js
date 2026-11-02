@@ -1,4 +1,4 @@
-export const DISCOUNT_RATE = 0.8;
+export const DISCOUNT_RATE = 0.9;
 
 export function discountedPrice(referencePrice) {
   if (typeof referencePrice !== 'number' || !Number.isFinite(referencePrice) || referencePrice < 0) return null;

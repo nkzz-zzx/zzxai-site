@@ -122,7 +122,7 @@ if len(weapons) < 30 or len({w['id'] for w in weapons}) != len(weapons):
     raise ValueError('Incomplete or duplicate treasure catalog')
 data = dict(asOf=datetime.datetime.fromisoformat(reference['fetchedAt'].replace('Z', '+00:00'))
             .astimezone(datetime.timezone(datetime.timedelta(hours=8))).date().isoformat(),
-            fetchedAt=reference['fetchedAt'], discountRate=0.8,
+            fetchedAt=reference['fetchedAt'], discountRate=0.9,
             referenceSource=reference['source'], referenceVersion=reference.get('sourceVersion'),
             officialSources=list(SOURCES.values()), heroes=heroes, weapons=weapons)
 content = json.dumps(data, ensure_ascii=False, indent=2) + '\n'

@@ -1,4 +1,4 @@
-import {filterWeapons, discountedPrice, formatPrice, heroLabel} from './treasure-prices-core.js?v=20261023-prices-v1';
+import {filterWeapons, discountedPrice, formatPrice, heroLabel} from './treasure-prices-core.js?v=20261102-price-90-v1';
 
 const $ = id => document.getElementById(id);
 const controls = ['price-search','quality-select','main-type-select','max-price','reset-filters'];
@@ -138,7 +138,7 @@ async function load() {
   $('retry-load').hidden=true;$('price-status').classList.remove('error');$('price-status').textContent='加载中…';
   const controller=new AbortController(), timer=setTimeout(()=>controller.abort(),15000);
   try {
-    const response=await fetch('./treasure-assets/prices.json?v=20261026-main-skill-v1',{signal:controller.signal,cache:'no-cache'});
+    const response=await fetch('./treasure-assets/prices.json?v=20261102-price-90-v1',{signal:controller.signal,cache:'no-cache'});
     if (!response.ok) throw new Error('载入失败');
     const data=await response.json();
     if (!Array.isArray(data.weapons)||!data.weapons.length||!data.heroes) throw new Error('数据不完整');

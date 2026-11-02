@@ -7,23 +7,23 @@ const catalog = JSON.parse(fs.readFileSync(path.join(root,'treasure-assets/price
 const reference = JSON.parse(fs.readFileSync(path.join(root,'treasure-assets/reference.json')));
 const core = import('../treasure-prices-core.js');
 
-test('80% price preserves fractional yuan, cent rounding, and missing prices', async () => {
+test('90% price preserves fractional yuan, cent rounding, and missing prices', async () => {
   const {DISCOUNT_RATE,discountedPrice,formatPrice} = await core;
-  assert.equal(DISCOUNT_RATE,0.8);
+  assert.equal(DISCOUNT_RATE,0.9);
   assert.equal(DISCOUNT_RATE,catalog.discountRate);
-  assert.equal(discountedPrice(650),520);
-  assert.equal(discountedPrice(1200),960);
-  assert.equal(discountedPrice(400),320);
-  assert.equal(discountedPrice(19.99),15.99);
-  assert.equal(discountedPrice(650.5),520.4);
-  assert.equal(discountedPrice(1.01),0.81);
+  assert.equal(discountedPrice(650),585);
+  assert.equal(discountedPrice(1200),1080);
+  assert.equal(discountedPrice(400),360);
+  assert.equal(discountedPrice(19.99),17.99);
+  assert.equal(discountedPrice(650.5),585.45);
+  assert.equal(discountedPrice(1.01),0.91);
   for (const price of [null,undefined,NaN,Infinity,-1,'650']) assert.equal(discountedPrice(price),null);
-  assert.equal(formatPrice(520.4),'¥520.4');
+  assert.equal(formatPrice(585.45),'¥585.45');
   assert.equal(formatPrice(null),'暂无报价');
 });
 
 test('every rendered reference price is retained and all 38 treasures have three official base features', () => {
-  assert.equal(catalog.discountRate,.8);
+  assert.equal(catalog.discountRate,.9);
   assert.equal(catalog.weapons.length,38);
   assert.equal(catalog.weapons.reduce((n,w)=>n+w.features.length,0),237);
   assert.equal(catalog.weapons.reduce((n,w)=>n+w.features.reduce((n,f)=>n+f.tiers.length,0),0),683);
@@ -91,15 +91,15 @@ test('all adapted heroes have complete exact-ID main-skill effects and only vali
 
 test('global hero and feature search combine with quality, actual hero main type, and discounted budget', async () => {
   const {filterWeapons,discountedPrice} = await core;
-  const dianwei = filterWeapons(catalog,{search:'典韦',mainType:'被动',quality:'粉',maxPrice:550});
+  const dianwei = filterWeapons(catalog,{search:'典韦',mainType:'被动',quality:'粉',maxPrice:600});
   const canghai = dianwei.find(item=>item.weapon.name === '沧海');
   assert(canghai);
   assert.deepEqual(canghai.features.map(item=>item.feature.name),['坚忍']);
   assert.equal(canghai.features[0].tiers.length,1);
-  assert.equal(discountedPrice(canghai.features[0].tiers[0].referencePrice),520);
+  assert.equal(discountedPrice(canghai.features[0].tiers[0].referencePrice),585);
   for (const item of dianwei) for (const {heroes,tiers} of item.features) {
     assert(heroes.every(hero=>hero.mainSkill.type === '被动' && hero.name.includes('典韦')));
-    assert(tiers.every(tier=>tier.quality === '粉' && discountedPrice(tier.referencePrice)<=550));
+    assert(tiers.every(tier=>tier.quality === '粉' && discountedPrice(tier.referencePrice)<=600));
   }
   const zhuge = filterWeapons(catalog,{search:'诸葛亮 S3',mainType:'指挥'});
   assert(zhuge.length);
