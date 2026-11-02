@@ -4,7 +4,7 @@ let catalog,account=null,tab='heroes',busy=false,comparison=null,differencesOnly
 const skillOrder=['主动','被动','追击','指挥'];
 const node=(tag,text,cls)=>{const el=document.createElement(tag);if(text!==undefined)el.textContent=text;if(cls)el.className=cls;return el;};
 function message(text,error=false){$('message').textContent=text;$('message').classList.toggle('error',error);}
-function setBusy(value){busy=value;$('query-button').disabled=value;$('import-file').disabled=value;$('query-form').setAttribute('aria-busy',String(value));}
+function setBusy(value){busy=value;$('query-button').disabled=value;$('import-file').disabled=value;$('query-form').setAttribute('aria-busy',String(value));if($('query-key'))$('query-key').disabled=value;if($('clear-query-key'))$('clear-query-key').disabled=value||!$('query-key')?.value;}
 const portraitNodes=new Map();
 const portraitObserver='IntersectionObserver' in window?new IntersectionObserver(entries=>{for(const entry of entries){if(!entry.isIntersecting)continue;const img=entry.target.querySelector('img[data-src]');if(img){img.src=img.dataset.src;delete img.dataset.src;}portraitObserver.unobserve(entry.target);}},{rootMargin:'300px'}):null;
 function heroArt(item){
@@ -106,16 +106,17 @@ function showAccount(data){
  $('stats').replaceChildren(...stats.map(([title,value])=>{const el=node('div',undefined,'stat');el.append(node('strong',String(value)),node('span',title));return el;}));
  render();message('账号数据已载入。');collapseAccountPanels();
 }
-async function fetchAccount(url,signal,onRetry){
+async function fetchAccount(url,signal,onRetry,queryKey=''){
  for(let attempt=0;attempt<2;attempt++){
   if(signal.aborted)throw new DOMException('查询已取消','AbortError');
   const controller=new AbortController();let timedOut=false;
   const cancel=()=>controller.abort();signal.addEventListener('abort',cancel,{once:true});
   const timer=setTimeout(()=>{timedOut=true;controller.abort();},22000);
   try{
-   const response=await fetch(`/api/account?url=${encodeURIComponent(url.trim())}`,{signal:controller.signal});
+   const options={signal:controller.signal};if(queryKey)options.headers={'Authorization':`Bearer ${queryKey}`};
+   const response=await fetch(`/api/account?url=${encodeURIComponent(url.trim())}`,options);
    let data;try{data=await response.json();}catch(e){if(controller.signal.aborted)throw e;const error=new Error('查询服务暂不可用，请稍后重试或导入详情 JSON');error.timeout=[408,504].includes(response.status);throw error;}
-   if(!response.ok){const error=new Error(data.error||'查询失败');error.timeout=data.code==='QUERY_TIMEOUT'||data.errorType==='AbortError'||[408,504].includes(response.status);throw error;}
+   if(!response.ok){if(data.authorizedQueryAvailable&&$('query-auth'))$('query-auth').open=true;const error=new Error(data.error||'查询失败');error.timeout=data.code==='QUERY_TIMEOUT'||data.errorType==='AbortError'||[408,504].includes(response.status);throw error;}
    return importAccount({format:'zzxai-account-v1',account:data});
   }catch(e){
    if(signal.aborted)throw new DOMException('查询已取消','AbortError');
@@ -126,14 +127,18 @@ async function fetchAccount(url,signal,onRetry){
  }
 }
 $('compare-url').addEventListener('input',()=>{$('query-button').textContent=$('compare-url').value.trim()?'对比账号':'查询账号';});
+$('query-key')?.addEventListener('input',()=>{if($('clear-query-key'))$('clear-query-key').disabled=busy||!$('query-key').value;});
+$('clear-query-key')?.addEventListener('click',()=>{$('query-key').value='';$('clear-query-key').disabled=true;$('query-key').focus();});
 $('query-form').addEventListener('submit',async event=>{
  event.preventDefault();if(busy||!catalog)return;
  const links=[$('account-url').value.trim(),$('compare-url').value.trim()].filter(Boolean);
  try{for(const link of links)parseAccountLink(link);}catch(e){message(e.message,true);return;}
+ const queryKey=$('query-key')?.value.trim()||'';
+ if(queryKey&&!/^[A-Za-z0-9_-]{32,256}$/.test(queryKey)){message('查询口令格式不正确，请填写维护者提供的口令。',true);return;}
  setBusy(true);message(links.length===2?'正在获取两个账号…':'正在获取藏宝阁详情…');
  const controller=new AbortController();
  try{
-  const data=await Promise.all(links.map((link,index)=>fetchAccount(link,controller.signal,()=>message(`${links.length===2?'账号 '+(index===0?'A':'B')+'：':''}查询超时，正在自动重试（1/1）…`)).catch(e=>{if(e.name==='AbortError')throw e;throw new Error(`${links.length===2?'账号 '+(index===0?'A':'B')+'：':''}${e.message}`);})));
+  const data=await Promise.all(links.map((link,index)=>fetchAccount(link,controller.signal,()=>message(`${links.length===2?'账号 '+(index===0?'A':'B')+'：':''}查询超时，正在自动重试（1/1）…`),queryKey).catch(e=>{if(e.name==='AbortError')throw e;throw new Error(`${links.length===2?'账号 '+(index===0?'A':'B')+'：':''}${e.message}`);})));
   if(data.length===2)showComparison(data[0],data[1]);else showAccount(data[0]);
  }catch(e){controller.abort();message(`${controller.signal.aborted&&e.name==='AbortError'?'查询超时，请稍后重试':e.message}${account?'。仍显示上一次成功查询的账号。':''}`,true);}finally{setBusy(false);}
 });

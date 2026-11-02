@@ -79,3 +79,5 @@
 
 .badge.treasure-blue{color:#1d4ed8;background:#dbeafe}.badge.treasure-pink{color:#be185d;background:#fce7f3}.badge.treasure-red{color:#b91c1c;background:#fee2e2}
 @media(max-width:600px){.grid[data-kind=gear]{grid-template-columns:repeat(4,minmax(0,1fr));gap:5px}.grid[data-kind=gear] .entry{padding:5px 4px}.grid[data-kind=gear] .entry h3{font-size:11px;margin:0 0 4px}.grid[data-kind=gear] .treasure-grade{font-size:9px;padding:1px 4px}.grid[data-kind=gear] .fourth-affix{font-size:10px;overflow-wrap:anywhere}}
+
+.query-auth{margin-top:12px;padding-top:10px;border-top:1px solid var(--line)}.query-auth summary{color:#475569;font-size:12px}.query-auth label{display:block;margin:10px 0 5px}.query-key-row{display:flex;gap:8px}.query-key-row input{flex:1;min-width:0}.query-key-row button{flex-shrink:0}.query-auth-note{font-size:11px;color:var(--muted);margin:6px 0 0}@media(max-width:600px){.query-auth{margin-top:9px;padding-top:7px}.query-auth summary{font-size:11px}.query-auth label{margin-top:8px}.query-key-row{gap:6px}.query-key-row input{font-size:16px}.query-auth-note{font-size:10px}}

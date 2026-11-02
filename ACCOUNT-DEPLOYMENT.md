@@ -20,7 +20,7 @@ python3 scripts/update-account-catalog.py
 
 ## EdgeOne Pages 部署
 
-藏宝阁不返回允许浏览器跨域访问的响应头。自动查询使用本项目自己的 `/api/account` 路由，由 `edge-functions/api/account.js` 提供，通过服务端请求藏宝阁详情。接口仅接受指定藏宝阁域名的商品链接，固定上游域名，不转发用户 Cookie，禁用上游重定向，设置查询超时，并仅返回页面需要的武将、战法与商品状态。
+藏宝阁不返回允许浏览器跨域访问的响应头。自动查询使用本项目自己的 `/api/account` 路由，由 `edge-functions/api/account.js` 提供，通过服务端请求藏宝阁详情。接口仅接受指定藏宝阁域名的商品链接，固定上游域名，不转发浏览器传来的 Cookie，禁用上游重定向，设置查询超时，并仅返回页面需要的武将、战法与商品状态。默认匿名；可选授权查询仅在本站查询口令验证通过后，使用服务端配置的网易会话。
 
 按照 [EdgeOne Edge Functions 官方文档](https://pages.edgeone.ai/document/edge-functions)：
 
@@ -30,9 +30,33 @@ python3 scripts/update-account-catalog.py
 - 发布后访问 `/api/account?url=<编码后的藏宝阁商品链接>` 应返回 JSON，而不是静态 404 页面；打开 `account.html`，输入真实链接检验商品状态与清单。
 - 不要仅上传 `dist/` 的静态文件：这会遗漏边缘函数。请使用连接 Git 的 Pages 发布流程。若项目现有构建设置不处理边缘函数，请按上述文档启用后重新部署。
 
-仓库 README 说明 `main` 推送会自动部署正式站点，因此合并或推送到 `main` 属于正式上线动作。无需新的 API 密钥。服务仍可能受到藏宝阁登录要求、限流或接口变更影响；页面会明确显示失败，不会把失败当成空账号。
+仓库 README 说明 `main` 推送会自动部署正式站点，因此合并或推送到 `main` 属于正式上线动作。匿名查询无需新的 API 密钥；授权查询另需配置下文的服务端变量。服务仍可能受到藏宝阁登录要求、限流或接口变更影响；页面会明确显示失败，不会把失败当成空账号。
 
 2026-11-02 排查确认，所测试商品的藏宝阁详情接口返回 HTTP 200，但业务响应为 `status=2`、`status_code=SESSION_TIMEOUT`、`msg=请先登录再查看`，没有 `equip` 数据。本站将该情况明确返回为 `UPSTREAM_LOGIN_REQUIRED`，不再仅显示笼统的“未返回完整账号数据”，也不把会话失效当作网络超时重试。用户在网易网页中的登录态不会自动传给本站的 EdgeOne 服务端；这里的提示不表示在网易登录后回本站重试即可成功。已有 JSON 导入仍可使用。该结论只适用于实际测试的商品，不据此断言全部在售商品的访问规则。
+
+## 授权查询配置
+
+EdgeOne 没有现成的“登录藏宝阁”按钮。本功能使用你在网易官方登录后、明确授权使用的会话。代码通过 EdgeOne 边缘函数的 `context.env` 读取生产环境变量，参见 [官方 EventContext 说明](https://pages.edgeone.ai/document/edge-functions)。这不是 ChatGPT 云环境的变量配置，两边不会自动同步。
+
+1. 在你自己的电脑浏览器打开藏宝阁并登录，完成官方要求的验证码或其他验证，确认目标商品的完整武将清单可以正常显示。
+2. 打开浏览器开发者工具的 Network（网络），刷新商品页，找到成功的 `get_equip_detail` 请求。在 Request Headers（请求标头）中取得 `Cookie` 的**值**，例如 `name=value; other=value` 的结构；不包含 `Cookie:` 字样，不复制响应的 `Set-Cookie`。如果这个请求自身仍要求登录，应先在网易官方解决，本站不能代替验证。
+3. 打开 EdgeOne 上本站对应项目的环境变量配置，在**生产环境**设置下面两项。Cookie 只填到 EdgeOne 服务端配置，不发到聊天、不提交到 GitHub，也不写进网页或带 `PUBLIC` / `VITE_` 等公开前缀的变量。
+
+| 变量名 | 内容 |
+| --- | --- |
+| `CBG_SESSION_COOKIE` | 第 2 步得到的、你授权使用的完整 Cookie 值 |
+| `CBG_QUERY_KEY` | 另外设置的本站查询口令：32–256 个随机字母、数字、下划线或短横线；不要使用网易密码 |
+
+查询口令可用密码管理器生成。也可在你自己浏览器的控制台运行 `Array.from(crypto.getRandomValues(new Uint8Array(24)), x => x.toString(16).padStart(2, '0')).join('')`，得到 48 位随机口令；生成结果自行保存并配置，不贴到聊天或公开文档。
+
+4. 保存配置后重新部署 `main`，确保根目录 `edge-functions/` 也部署。
+5. 在本站账号图鉴展开“授权查询（可选）”，填写 **`CBG_QUERY_KEY`**，然后输入链接查询。页面不填写网易 Cookie。口令仅随本站 API 请求头发送，不进入 URL、导出 JSON 或浏览器持久存储，可用“清除”移除。
+
+不填写本站口令时仍按原流程匿名查询；即使服务器配置了网易 Cookie，也不会自动给匿名访客使用。口令错误不会向网易发送请求。未完整设置两项变量、口令格式不合要求或 Cookie 含换行时，授权请求会停止并提示未配置。
+
+此接入已用模拟会话验证请求隔离与错误处理，**尚未验证任何真实网易授权会话能否从 EdgeOne 使用**。Cookie 可能过期、受 IP 或设备约束，不能保证配置后一定恢复查询或自动续期。如果会话未被接受，需在网易重新登录、确认可查看商品，再更新 EdgeOne 配置并重新部署；如返回验证码要求，必须在网易官方完成。不要把查询口令公开给不信任的访客，因为持有者可借用该会话查询该接口允许查看的内容。
+
+验证：`node --test tests/account.auth.test.cjs tests/account.test.cjs`；静态预览后运行 `ACCOUNT_URL=http://127.0.0.1:8000/account.html node tests/account.auth.browser.cjs`。
 
 ## 本地开发与验证
 
